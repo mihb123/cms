@@ -1,0 +1,361 @@
+/* Start Css year-experience */
+.ls-process{
+  padding-top: 19px;
+
+  & .nen{
+    height: 45px;
+    background: #ffffff;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 11px;
+
+
+    &-title{
+      background: #FFE3E6;
+      width: 34%;
+      flex-shrink: 0;
+      font-size: 15px;
+      line-height: 0.8;
+      letter-spacing: -0.3px;
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      border: 1px solid #FFCCD5;
+    }
+
+    &-content{
+      flex: 1;
+      border: 1px solid #FFCCD5;
+      max-width: 100%;
+      position: relative;
+
+      & .bar-graph{
+        background-image: linear-gradient(to bottom, rgba(#FC94A4, 0.3), #FC94A4);
+        margin: 20px 0 10px 0;
+        height: 15px;
+        position: relative;
+        & .ratio{
+          position: absolute;
+          right: -98.5px;
+          top: -12px;
+          z-index: 6;
+          font-size: 16px;
+          color: #000000;
+        }
+      }
+      & .item-1,
+      & .item-2,
+      & .item-3{
+        width: 1px;
+        height: 45px;
+        background: #f7a5b4;
+        position: absolute;
+        left: 25%;
+        z-index: 5;
+        top: 0;
+      }
+      & .item-2{
+        left: 50%;
+      }
+      & .item-3{
+        left: 75%;
+      }
+
+    }
+  }
+}
+.ls-process .nen:first-child .nen-content .item-1,
+.ls-process .nen:first-child .nen-content .item-2,
+.ls-process .nen:first-child .nen-content .item-3{
+  height: 54px;
+  top: -11px;
+}
+.ls-process .nen:first-child .nen-content::after{
+  content: "0";
+  color: #f7a5b4;
+  position: absolute;
+  top: -27.5px;
+  left: -5px;
+  font-size: 11px;
+}
+.ls-process .nen:first-child .nen-content::before{
+  content: "100%";
+  color: #f7a5b4;
+  position: absolute;
+  top: -27.5px;
+  right: -12px;
+  font-size: 11px;
+
+}
+.ls-process .nen:first-child .nen-content .item-1::after{
+  content: "25%";
+  color: #f7a5b4;
+  position: absolute;
+  top: -17.5px;
+  left: -10px;
+  font-size: 11px;
+}
+.ls-process .nen:first-child .nen-content .item-2::after{
+  content: "50%";
+  color: #f7a5b4;
+  position: absolute;
+  top: -17.5px;
+  left: -10px;
+  font-size: 11px;
+}
+.ls-process .nen:first-child .nen-content .item-3::after{
+  content: "75%";
+  color: #f7a5b4;
+  position: absolute;
+  top: -17.5px;
+  left: -10px;
+  font-size: 11px;
+}
+
+@media (max-width: 767px){
+  .ls-process{
+    width: 92.267vw;
+    padding-top: 0;
+
+    & .nen:first-child{
+      margin-top: 12.453vw;
+
+    }
+    & .nen{
+      position: relative;
+      height: 10.667vw;
+      margin-top: 14.187vw;
+
+      &-title{
+        position: absolute;
+        top: -6.667vw;
+        height: 6.667vw;
+        width: 49.333vw;
+        border-top-left-radius: 1.333vw;
+        border-top-right-radius: 1.333vw;
+        padding-left: 2.667vw;
+        font-size: 4vw;
+      }
+      &-content{
+
+        &::before,
+        &::after{
+          top: 0;
+        }
+        & .bar-graph{
+          margin: 4.667vw 0 2.213vw 0;
+          height: 3.504vw;
+          & .ratio{
+            right: 0 !important;
+            font-size: 4.267vw;
+          }
+        }
+        & .item-1,
+        & .item-2,
+        & .item-3{
+          height: 10.667vw;
+        }
+      }
+    }
+  }
+  .ls-process .nen:first-child .nen-content .item-1,
+  .ls-process .nen:first-child .nen-content .item-2,
+  .ls-process .nen:first-child .nen-content .item-3{
+    height: 10.667vw;
+    top: 0px;
+  }
+  .ls-process .nen:first-child .nen-content::after{
+    top: 12vw;
+  }
+  .ls-process .nen:first-child .nen-content::before{
+    top: 12vw;
+
+  }
+  .ls-process .nen:first-child .nen-content .item-1::after{
+    top: 12vw;
+  }
+  .ls-process .nen:first-child .nen-content .item-2::after{
+    top: 12vw;
+  }
+  .ls-process .nen:first-child .nen-content .item-3::after{
+    top: 12vw;
+  }
+}
+
+/* End Css year-experience */
+
+/* Start Css male-female */
+
+.male-female {
+  padding-bottom: 56.7px;
+  padding-top: 5px;
+  & .male{
+
+    height: 45px;
+    background: #ffffff;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 11px;
+
+
+    &-title{
+      background: #FFE3E6;
+      width: 34%;
+      flex-shrink: 0;
+      font-size: 15px;
+      line-height: 0.8;
+      letter-spacing: -0.3px;
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      border: 1px solid #FFCCD5;
+    }
+
+    &-content{
+      flex: 1;
+      border: 1px solid #FFCCD5;
+      max-width: 100%;
+      position: relative;
+      display: flex;
+      & .male-bar-graph{
+        background-image: linear-gradient(to bottom, rgba(#FC94A4, 0.3), #FC94A4);
+        margin: 20px 0 10px 0;
+        height: 15px;
+        position: relative;
+        & .ratio{
+          display: inline-flex;
+
+          &-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+      }
+      & .male-bar-graph:first-child{
+        & .ratio{
+          position: absolute;
+          top: 35px;
+          right: 15px;
+          z-index: 6;
+          color: #000000;
+
+          & span:first-child{
+            font-size: 15px;
+            color: #FC94A4;
+          }
+          &-content{
+            & span:first-child{
+              color: #535353;
+            }
+          }
+        }
+      }
+      & .male-bar-graph:nth-child(2){
+        background-image: linear-gradient(to bottom, rgba(#7FD8D6, 0.3), #7FD8D6);
+
+        & .ratio{
+          position: absolute;
+          top: 35px;
+          left: 45px;
+          z-index: 6;
+          color: #000000;
+
+          & span:first-child{
+            font-size: 16px;
+            color: #7FD8D6;
+          }
+          &-content{
+            & span:first-child{
+              color: #535353;
+            }
+          }
+        }
+      }
+      & .item-1,
+      & .item-2,
+      & .item-3{
+        width: 1px;
+        height: 55px;
+        top: -10px;
+        background: #f7a5b4;
+        position: absolute;
+        left: 25%;
+        z-index: 5;
+      }
+      & .item-2{
+        left: 50%;
+      }
+      & .item-3{
+        left: 75%;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 767px){
+
+  .male-female{
+    padding-top: 0;
+    padding-bottom: 12vw;
+
+    & .male{
+      position: relative;
+      height: 10.667vw;
+      margin-top: 10.4vw;
+
+      &-title{
+        position: absolute;
+        top: -6.667vw;
+        height: 6.667vw;
+        width: fit-content;
+        padding-left: 2.667vw;
+        padding-right: 4.533vw;
+        border-top-left-radius: 1.333vw;
+        border-top-right-radius: 1.333vw;
+      }
+      &-content{
+
+        & .male-bar-graph{
+          margin: 4.667vw 0 2.213vw 0;
+          height: 3.504vw;
+          & .ratio{
+
+            &-content{
+              display: block;
+              padding-left: 1.333vw;
+            }
+          }
+        }
+        & .male-bar-graph:first-child{
+          & .ratio{
+            right: 5.333vw;
+            top: 7.333vw;
+          }
+        }
+        & .male-bar-graph:nth-child(2){
+          & .ratio{
+            left: 5.333vw;
+            top: 7.333vw;
+          }
+
+        }
+        & .item-1,
+        & .item-2,
+        & .item-3{
+          height: 10.667vw;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+/* End Css male-female */

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127.225" height="92.507" viewBox="0 0 127.225 92.507">
+  <defs>
+    <filter id="right-arrow_1_" x="0" y="0" width="127.225" height="92.507" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#right-arrow_1_)">
+    <path id="right-arrow_1_2" data-name="right-arrow (1)" d="M26.225,68.682l-24.431,37.9a13.885,13.885,0,0,0,0,13.843c2.464,3.823,6.459,3.823,8.923,0L37.9,78.253a17.739,17.739,0,0,0,.012-19.127l-27.2-42.19c-2.464-3.823-6.459-3.823-8.924,0a13.887,13.887,0,0,0,0,13.844Zm9.317-37.9a13.885,13.885,0,0,1,0-13.843c2.464-3.823,6.459-3.823,8.923,0l27.2,42.19a17.739,17.739,0,0,1-.012,19.127L44.465,120.427c-2.464,3.823-6.459,3.823-8.923,0a13.886,13.886,0,0,1,0-13.843l24.431-37.9Z" transform="translate(132.29 6.05) rotate(90)" fill="#f4afbc" fill-rule="evenodd"/>
+  </g>
+</svg>

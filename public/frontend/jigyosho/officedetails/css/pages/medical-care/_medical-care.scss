@@ -1,0 +1,528 @@
+.medical-care {
+  .left-medical {
+    margin-right: 21px;
+
+    .text-right-procedures {
+      margin-bottom: 28px;
+      margin-left: 60px;
+      width: unset;
+      justify-content: unset;
+    }
+
+    @media(max-width: 767px) {
+      margin-right: 0;
+
+      .text-right-procedures {
+        margin-left: 0;
+        margin-bottom: 5.333vw;
+      }
+    }
+
+    .table-procedures {
+      .row-procedures {
+        display: flex;
+        border-bottom: 1px solid #F9CFD6;
+        border-top: 1px solid #F9CFD6;
+
+        .value-procedures {
+          border-bottom: 0;
+          min-width: 90px;
+          background-color: #FFEFF0;
+          border-right: 1px solid #F9CFD6;
+          border-left: 1px solid #F9CFD6;
+          margin-right: 4px;
+          border-top: 0;
+
+        }
+
+        .text-procedures {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-right: 1px solid #F9CFD6;
+          border-left: 1px solid #F9CFD6;
+          background-color: #fff;
+          border-top: 0;
+          position: relative;
+
+          @media(max-width: 767px) {
+            .required-pay__desc-comment {
+              width: 99vw;
+              z-index: 99;
+            }
+
+            .comment-title {
+              display: block;
+            }
+          }
+
+          .help-wrap {
+            position: relative;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            @media(max-width: 767px) {
+              margin-left: 2.667vw;
+              margin-right: 1.333vw;
+            }
+          }
+
+          .help-button {
+            border-radius: 4px;
+            border: 1px solid;
+            font-size: 13px;
+            padding: 2px;
+            width: 32px;
+            display: inline-block;
+            margin-left: 0;
+          }
+
+          p {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            line-height: 1.5;
+            font-size: 16px;
+            color: #333333;
+          }
+
+          p::after {
+            content: "";
+            display: block;
+            height: 1px;
+            background-color: #EBEAEA;
+            margin-left: 10px;
+            width: 100%;
+            flex: 1;
+          }
+
+          button {
+            margin: 0 20px;
+            border-radius: 8px;
+            border: 1px solid;
+            padding: 0 2px;
+            width: 45px;
+            font-size: 15px;
+          }
+
+          .required-pay__desc-comment .comment-footer__close svg path {
+            fill: #7D7D7D;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+  .right-medical {
+    margin-right: 0;
+
+    .desc-medical {
+      padding: 0;
+    }
+  }
+}
+
+.ls-text {
+  font-size: 14px;
+  line-height: 1.42;
+  color: #AEAEAE;
+}
+
+.medical-care2 {
+  margin-top: 30px;
+
+  .note-procedures {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .note-r4 {
+      color: #787676;
+      padding-left: 70px;
+    }
+
+    .text-r4 {
+      z-index: 2;
+      position: absolute;
+      left: 407px;
+      background: #FFF9F9;
+      top: -68px;
+      text-align: center;
+      padding: 0 25px;
+      color: #585858;
+    }
+  }
+
+  .title-equipment {
+    font-weight: normal;
+    margin-top: 14px;
+    margin-bottom: 4px;
+  }
+
+  .tab-inner-left:nth-child(2) .title-equipment {
+    margin-top: 49px;
+  }
+
+  .equipment {
+    width: max-content;
+
+    &__row {
+      border: 2px solid #F9CFD6;
+
+      &--inner {
+        .label-equipment {
+          width: 381px;
+          border-top: 1px solid #F9CFD6;
+          border-bottom: 0;
+          // border: 1px solid #F9CFD6;
+          border-right: 1px solid #F9CFD6;
+          margin-right: 1px;
+        }
+
+        .value-equipment {
+          width: 171px;
+          font-size: 20px;
+          line-height: 0.95;
+          color: #0C0C0C;
+          position: relative;
+          font-weight: bold;
+          text-align: center;
+          border-top: 1px solid #F9CFD6;
+          border-bottom: 0;
+          border-left: 1px solid #F9CFD6;
+        }
+      }
+
+      .title-equipment {
+        font-weight: normal;
+        margin-top: 14px;
+        margin-bottom: 4px;
+      }
+
+      .tab-inner-left:nth-child(2) .title-equipment {
+        margin-top: 49px;
+      }
+
+      .equipment {
+        width: max-content;
+
+        &__row {
+          border: 2px solid #F9CFD6;
+
+          &--inner {
+            .label-equipment {
+              width: 381px;
+              border-top: 1px solid #F9CFD6;
+              border-bottom: 0;
+              // border: 1px solid #F9CFD6;
+              border-right: 1px solid #F9CFD6;
+              margin-right: 1px;
+            }
+
+            .value-equipment {
+              width: 171px;
+              font-size: 20px;
+              line-height: 0.95;
+              color: #0C0C0C;
+              position: relative;
+              font-weight: bold;
+              text-align: center;
+              border-top: 1px solid #F9CFD6;
+              border-bottom: 0;
+              border-left: 1px solid #F9CFD6;
+
+              span {
+                font-size: 17px;
+              }
+
+
+            }
+
+
+
+          }
+
+          .equipment__row--inner:first-child .value-equipment {
+            border-top: 0 !important;
+          }
+        }
+      }
+    }
+
+    .medical-box {
+      margin-top: 2px;
+    }
+
+    .medical-box2 {
+      margin-top: 35px;
+    }
+
+    .box-table {
+      margin-left: 20px;
+
+      &__top {
+        max-width: max-content;
+        display: flex;
+        border: 3px solid #FFCCD5;
+        border-top-left-radius: 10px;
+        overflow: hidden;
+      }
+
+      .table-right {
+        width: 714px;
+        background: #FFEFF0;
+        padding: 5px 13px 17px 11px;
+        border-right: 1px solid #FFCCD5;
+        display: flex;
+
+        .text-table {
+
+          span {
+            font-size: 17px;
+          }
+
+
+        }
+
+
+
+      }
+
+      .equipment__row--inner:first-child .value-equipment {
+        border-top: 0 !important;
+      }
+    }
+  }
+}
+
+.medical-box {
+  margin-top: 2px;
+}
+
+.medical-box2 {
+  margin-top: 35px;
+}
+
+.box-table {
+  margin-left: 20px;
+
+  &__top {
+    max-width: max-content;
+    display: flex;
+    border: 3px solid #FFCCD5;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+  }
+
+  .table-right {
+    width: 714px;
+    background: #FFEFF0;
+    padding: 5px 13px 17px 11px;
+    border-right: 1px solid #FFCCD5;
+    display: flex;
+
+    .text-table {
+      font-size: 17px;
+      line-height: calc(22 /17);
+      color: #000000;
+      font-weight: normal;
+      display: block;
+      letter-spacing: 0;
+
+      .m-left {
+        margin-left: 48px;
+      }
+
+    }
+
+    .ls-mark-pink--small {
+      flex-shrink: 0;
+      margin-right: 13px;
+      margin-top: 5px;
+    }
+
+    .check-top {
+      margin-top: 10px;
+    }
+
+  }
+
+  .right-pading {
+    padding-bottom: 15px;
+    padding-right: 25px;
+  }
+
+  .padding-bottom {
+    padding-bottom: 23px;
+    padding-right: 22px;
+  }
+
+  .p-box6 {
+    padding-bottom: 23px;
+  }
+
+  .p-box7 {
+    min-height: 100px;
+    padding-right: 24px;
+  }
+
+  .table-left {
+    width: 175px;
+    background-color: #FFFFFF;
+    margin-left: 1px;
+    border-left: 1px solid #FFCCD5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .check-table {
+      font-size: 30px;
+      line-height: calc(40 / 30);
+    }
+  }
+
+  &__bottom {
+    background-color: #FFF7F7;
+    border: 1px solid #FFCCD5;
+    margin-top: 1px;
+    max-width: max-content;
+    padding-top: 6px;
+
+    .text-bottom {
+      padding-left: 12px;
+      color: #585858;
+      font-size: 16px;
+      line-height: calc(21 / 16);
+      letter-spacing: 3.2px;
+    }
+
+    .wp-table {
+      margin-left: 37px;
+      border-left: 2px solid #FFCCD5;
+      margin-top: 6px;
+
+      .block {
+        display: flex;
+        border-top: 1px solid #FFCCD5;
+
+        &-right {
+          width: 680px;
+          padding: 7px 0 5px 12px;
+          border-right: 1px solid #FFCCD5;
+
+          .text {
+            font-size: 16px;
+            line-height: calc(21 / 16);
+            letter-spacing: 3.2px;
+            color: #585858;
+          }
+        }
+
+        &-left {
+          width: 175px;
+          border-left: 1px solid #FFCCD5;
+          background-color: #FFFFFF;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 7px 0 5px;
+
+          .check-block {
+            font-size: 18px;
+            line-height: calc(24 / 18);
+          }
+        }
+
+      }
+    }
+  }
+
+  .span-line {
+    font-size: 14px;
+    color: #9A9A9A;
+    line-height: calc(19/ 14);
+  }
+
+  .box-height {
+    min-height: 120px;
+  }
+}
+
+@media(max-width: 767px) {
+  .medical-care .left-medical .table-procedures .row-procedures .value-procedures {
+    min-width: 0;
+    width: 20%;
+  }
+
+  .medical-care .left-medical .table-procedures .row-procedures .text-procedures {
+    width: 80%;
+    font-size: 3.467vw;
+  }
+
+  .medical-care .left-medical .table-procedures .row-procedures .text-procedures button {
+    margin: 0 0 0 2.667vw;
+  }
+
+  .medical-care2 .note-procedures .note-r4 {
+    padding-left: 0;
+  }
+
+  .medical-care2 .equipment {
+    width: auto;
+  }
+
+  .medical-care2 .equipment__row--inner .label-equipment {
+    width: 75%;
+    padding: 1.867vw;
+  }
+
+  .medical-care2 .equipment__row--inner .value-equipment {
+    width: 25%;
+    font-size: 4.267vw;
+    padding: 1.867vw;
+  }
+
+  .medical-care2 .equipment__row--inner .value-equipment span {
+    font-size: 3.467vw;
+  }
+
+  .box-table {
+    margin-left: 0;
+  }
+
+  .box-table .table-left .check-table {
+    font-size: 5.867vw;
+  }
+
+  .box-table .table-right {
+    padding: 1.867vw;
+    width: calc(100% - 60px);
+  }
+
+  .box-table .table-right .text-table {
+    font-size: 3.733vw;
+  }
+
+  .box-table .table-left {
+    width: 60px;
+  }
+
+  .box-table__bottom .text-bottom {
+    padding-left: 2.667vw;
+    font-size: 3.733vw;
+    letter-spacing: 1px;
+  }
+
+  .box-table__bottom .wp-table {
+    margin-left: 8vw;
+    margin-top: 1.867vw;
+  }
+
+  .box-table__bottom .wp-table .block-right .text {
+    font-size: 3.467vw;
+  }
+}

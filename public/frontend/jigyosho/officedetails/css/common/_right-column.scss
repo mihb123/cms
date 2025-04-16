@@ -1,0 +1,37 @@
+.right-column{
+  position: fixed;
+  width: 165px;
+  top: 10px;
+  left: -1000px;
+  .column-item{
+    &__header{
+      background-color: #FDEAF0;
+      border-radius: 3px 3px 0 0;
+      padding: 12px 10px 11px;
+    }
+    &__sub-title{
+      font-size: 12px;
+      line-height: 1.4;
+      color: #787575;
+      padding-left: 17px;
+    }
+    &__title{
+      font-size: 16px;
+      color: #787575;
+      line-height: 1.5;
+      .ls-mark-pink--large{
+        height: 20px;
+        top: 3px;
+      }
+    }
+    &__content{
+      min-height: 400px;
+      border-left: 1px solid #EBEAEA;
+      border-right: 1px solid #EBEAEA;
+      border-bottom: 1px solid #FDEAF0;
+    }
+  }
+  @media(max-width: 1199px){
+    display: none;
+  }
+}

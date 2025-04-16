@@ -1,0 +1,104 @@
+$color-bg: #f9cfd6;
+
+.banner-extension {
+  position: fixed;
+  z-index: 99999;
+  top: 18%;
+  right: 5.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include note {
+    right: 0;
+  }
+  @include tabletS {
+    display: none;
+  }
+  @include note {
+    right: calc(((100% - 1080px) / 2));
+  }
+  @include tabletLL {
+    right: calc(((100% - 1024px) / 2));
+  }
+  @include tabletL {
+    right: calc(((100% - 960px) / 2));
+  }
+  @include tabletM {
+    right: calc(((100% - 867px) / 2));
+  }
+  @include tableMS {
+    right: calc(((100% - 768px) / 2));
+  }
+  @media screen and (min-width: 1232px) {
+    right: calc(((100% - 1120px) / 2) - 1rem);
+  }
+
+  &__box-icon {
+    position: relative;
+    display: flex;
+    width: 6.5rem;
+    height: 6.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: $color-bg;
+    align-items: center;
+    justify-content: center;
+    @include tabletL {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+
+    &:hover {
+      background-color: #ee7e94;
+
+      .banner-extension__box-chat {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__box-chat {
+    position: absolute;
+    top: -8rem;
+    right: 6rem;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    width: 14rem;
+    height: 11rem;
+    transition: all 0.2s;
+    opacity: 0;
+    border-radius: 50%;
+    background-color: rgba(239, 138, 158, .9);
+    justify-content: center;
+
+    &::before {
+      position: absolute;
+      right: 1.4rem;
+      bottom: -.3rem;
+      width: 0;
+      height: 0;
+      content: '';
+      border-top: 1.5rem solid transparent;
+      border-right: 3rem solid rgb(239, 138, 158, .9);
+      border-bottom: 1.5rem solid transparent;
+      border-radius: 3px;
+    }
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+  }
+
+  &__img {
+    @include tabletL {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+}

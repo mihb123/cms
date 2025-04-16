@@ -1,0 +1,512 @@
+.section-2 {
+  .option-map {
+    display: grid;
+    padding: 0 3.6rem;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include tableMS {
+      padding: 0 2rem;
+    }
+    @include tabletS {
+      padding: 0 1.333vw;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.467vw;
+    }
+
+    &__item {
+      display: flex;
+      height: 7rem;
+      padding: 0 1rem;
+      border: 1px solid #d6d6d6;
+      border-radius: $radius;
+      box-shadow: 1px 2px 10px #f9cfd6;
+      flex: 1;
+      align-items: center;
+      gap: 3.5rem;
+      @include tableMS {
+        height: 5.5rem;
+        padding: 0 0 0 1rem;
+        gap: 1.3rem;
+      }
+      @include tabletS {
+        height: 12.8vw;
+        gap: 6.667vw;
+      }
+    }
+
+    &__img {
+      @include tableMS {
+        width: 29%;
+      }
+      @include tabletS {
+        width: 12vw;
+        height: 11.2vw;
+      }
+    }
+
+    &__text {
+      font-family: SourceHanSansJP-Medium, sans-serif;
+      color: #0867bf;
+
+      &--middle {
+        font-size: 2.8rem;
+        @extend .option-map__text;
+        @include tableMS {
+          font-size: 2.4rem;
+        }
+        @include tabletS {
+          font-size: 5.067vw;
+        }
+      }
+
+      &--small {
+        font-size: 1.6rem;
+        @extend .option-map__text;
+        @include tableMS {
+          font-size: 1.4rem;
+        }
+        @include tabletS {
+          font-size: 2.933vw;
+        }
+      }
+    }
+  }
+
+  .map {
+    position: relative;
+
+    &__title {
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      padding-left: 3rem;
+
+      &--big {
+        font-size: 1.3rem;
+        color: #949495;
+      }
+
+      &--small {
+        font-family: SourceHanSansJP-Light, sans-serif;
+        font-size: 0.8rem;
+        padding-left: 2.5rem;
+        color: #bbb;
+      }
+    }
+
+    &__list {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      border-bottom: 1px solid #ececec;
+      @include note {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__item {
+      position: relative;
+      z-index: 10;
+      max-width: 5.5rem;
+      cursor: pointer;
+      flex: 1;
+
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(9) {
+        .map__img {
+          transform: translateY(2.6rem);
+          @include note {
+            transform: translateY(2.5rem);
+          }
+          @include tabletM {
+            transform: translateY(2.9rem);
+          }
+        }
+
+        &:hover {
+          .map__img {
+            transform: scale(6) translate(-1rem, -1.1rem);
+            transform-origin: center;
+            @include note {
+              transform: scale(6) translate(-1rem, -1.1rem);
+            }
+            @include tabletM {
+              transform: scale(4) translate(-.8rem, -.5rem);
+            }
+          }
+
+          .map__text {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+
+      &:nth-child(6) {
+        .map__img {
+          transform: translateY(4.3rem);
+          @include note {
+            transform: translateY(4.3rem);
+          }
+        }
+
+        &:hover {
+          .map__img {
+            transform: scale(6) translate(-1.1rem, -.1rem);
+            transform-origin: center;
+            @include tabletM {
+              transform: scale(4) translate(-.9rem, .4rem);
+            }
+          }
+
+          .map__text {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+
+      &:nth-child(7) {
+        .map__img {
+          transform: translateY(4.6rem);
+          @include note {
+            transform: translateY(4.3rem);
+          }
+        }
+
+        &:hover {
+          .map__img {
+            transform: scale(6) translate(-1.1rem, -0rem);
+            transform-origin: center;
+            @include tabletM {
+              transform: scale(4) translate(-.9rem, .4rem);
+            }
+          }
+
+          .map__text {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+
+      &:nth-child(8) {
+        .map__img {
+          transform: translateY(4.2rem);
+          @include note {
+            transform: translateY(4.3rem);
+          }
+        }
+
+        &:hover {
+          .map__img {
+            transform: scale(6) translate(-1.1rem, -0.2rem);
+            transform-origin: center;
+            @include tabletM {
+              transform: scale(4) translate(-.9rem, .4rem);
+            }
+          }
+
+          .map__text {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+
+      &:hover {
+        .map__img {
+          transform: scale(6) translate(-1rem, 2px);
+          transform-origin: center;
+          @include note {
+            transform: scale(6) translate(-1.1rem, 1px);
+          }
+          @include tabletM {
+            transform: scale(4) translate(-.8rem, .7rem);
+          }
+        }
+
+        .map__text {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    &__img {
+      position: relative;
+      z-index: 2;
+      transition: all 0.2s;
+      transform: translateY(4.7rem);
+      @include note {
+        transform: translateY(4.8rem);
+      }
+
+      img {
+        width: 170%;
+        max-width: 170%;
+      }
+    }
+
+    &__text {
+      position: absolute;
+      z-index: 1;
+      top: -46.5rem;
+      left: 1.2rem;
+      display: flex;
+      visibility: hidden;
+      flex-direction: column;
+      width: 37rem;
+      height: 30rem;
+      padding-bottom: 5rem;
+      transition: all 0.2s;
+      opacity: 0;
+      background-image: url("../../../issets/images/select02/bg-chat.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      justify-content: space-evenly;
+      @include tabletM {
+        top: -27.5rem;
+        width: 29rem;
+        height: 21rem;
+      }
+    }
+
+    &__text3 {
+      .map {
+        &__text3-name {
+          padding: 3rem 0 0;
+          text-align: center;
+        }
+
+        &__text-intro {
+          font-family: SourceHanSansJP-Medium;
+          text-align: center;
+          color: white;
+
+          &--big {
+            font-size: 2.7rem;
+            @include tabletM {
+              font-size: 1.9rem;
+            }
+          }
+
+          &--middle {
+            font-size: 2.1rem;
+            @include tabletM {
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        &__text-address {
+          padding-top: 1rem;
+          padding-left: 4rem;
+        }
+
+        &__text3-note {
+          padding-left: 4rem;
+        }
+
+        &__text3-note-center {
+          padding-left: 0;
+          text-align: center;
+        }
+      }
+    }
+
+    &__text2 {
+      .map {
+        &__text2-name {
+          padding-left: 0;
+          text-align: center;
+        }
+
+        &__text-note-center {
+          padding-left: 10rem;
+        }
+      }
+    }
+
+    &__text4 {
+      .map {
+        &__text4-name {
+          padding-left: 0;
+          text-align: center;
+        }
+
+        &__text4-note {
+          padding-left: 0;
+          text-align: center;
+        }
+      }
+    }
+
+    &__text5 {
+      .map {
+        &__text5-name {
+          padding-left: 0;
+          text-align: center;
+        }
+
+        &__text5-address {
+          padding: 0.5rem 1.8rem 0;
+        }
+      }
+    }
+
+    &__text6 {
+      .map {
+        &__text6-name {
+          padding-top: 5rem;
+          padding-left: 0;
+          text-align: center;
+        }
+
+        &__text6-sp {
+          font-size: 2.3rem;
+          text-align: center;
+          @include tabletM {
+            font-size: 1.7rem;
+          }
+        }
+
+        &__text6-sp-second {
+          font-size: 1.9rem;
+          padding-left: 4rem;
+          text-align: start;
+          text-decoration: none;
+          @include tabletM {
+            font-size: 1.4rem;
+          }
+        }
+
+        &__text6-address {
+          padding-top: 0.5rem;
+          padding-left: 0;
+          text-align: center;
+        }
+
+        &__text-note {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &__text-name {
+      font-size: 0.9rem;
+      padding-top: 3rem;
+      padding-left: 26%;
+      color: #cccacb;
+    }
+
+    &__text-sp {
+      font-family: SourceHanSansJP-Medium;
+      font-size: 2.3rem;
+      text-align: center;
+      text-decoration: underline;
+      color: white;
+      @include tabletM {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__text-intro {
+      font-family: SourceHanSansJP-Medium;
+      text-align: center;
+      color: white;
+      @include tabletM {
+        &--big {
+          font-size: 1.4rem;
+        }
+
+        &--middle {
+          font-size: 1.6rem;
+        }
+
+        &--smalls {
+          font-size: 1.4rem;
+        }
+
+        &--small {
+          font-size: 1rem;
+        }
+
+        &--smallest {
+          font-size: 0.8rem;
+        }
+      }
+
+      &--big {
+        font-size: 3rem;
+      }
+
+      &--middle {
+        font-size: 2.4rem;
+      }
+
+      &--smalls {
+        font-size: 2.1rem;
+      }
+
+      &--small {
+        font-size: 1.6rem;
+      }
+
+      &--smallest {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__text-address {
+      font-family: SourceHanSansJP-Medium;
+      font-size: 1.3rem;
+      padding-left: 8rem;
+      color: white;
+      @include tabletM {
+        font-size: 1rem;
+      }
+    }
+
+    &__text-note {
+      font-family: SourceHanSansJP-Medium;
+      font-size: 1.2rem;
+      padding-left: 8rem;
+      color: white;
+      @include tabletM {
+        font-size: 0.8rem;
+      }
+    }
+
+    &__text-detail {
+      font-family: SourceHanSansJP-Medium;
+      font-size: 1.3rem;
+      display: flex;
+      padding-top: 0.4rem;
+      padding-right: 8rem;
+      text-decoration: underline;
+      color: #00a3e1;
+      justify-content: flex-end;
+      @include tabletM {
+        font-size: 1rem;
+      }
+    }
+
+    &__text-qa {
+      font-family: SourceHanSansJP-Medium;
+      font-size: 1.3rem;
+      padding-top: 1rem;
+      text-align: center;
+      text-decoration: underline;
+      color: #00a3e1;
+      @include tabletM {
+        font-size: 1rem;
+      }
+    }
+  }
+}

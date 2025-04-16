@@ -1,0 +1,90 @@
+.cms4-detail{
+    border-top: 1px solid #F3F3F3;
+    .main-content-left{
+        padding-top: 20px;
+    }
+}
+
+.cms4-detail-section{
+    .cms4-section-title{
+        margin-bottom: 0;
+    }
+    .top-product-slider{
+        overflow: hidden;
+        padding: 25px 50px 10px 0;
+        .owl-stage-outer{
+            overflow: visible;
+        }
+    }
+}
+
+.cms4-cta-fixed{
+    padding: 15px 18px 12px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+}
+.kc-cta-button{
+    padding: 9px 5px 10px;
+    background-image: linear-gradient(to top, #51881F 0%, #6FBA2C 10%, #6FBA2C 100%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include fontStyle(18, 0, 26, #FFF);
+    text-decoration: none;
+    box-shadow: 0 3px 23px rgba(255,255,255,0.22);
+    border: 1px solid #60A026;
+    border-radius: 3px;
+    position: relative;
+    min-width: 64px;
+    column-gap: 2px;
+    width: 100%;
+    .pp{
+        position: absolute;
+        background-color: #FFF;
+        border-radius: 25px;
+        padding: 0 15px;
+        top: -9px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-flex;
+        white-space: nowrap;
+        @include fontStyle(12, 0, 17, #DC7C94);
+        &::before{
+            content: '';
+            height: 0;
+            width: 0;
+            border: 5px solid;
+            border-color: #FFF transparent transparent transparent;
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: calc(50% - 4px);
+        }
+    }
+    .text{
+        text-shadow: 0 2px 8px #63A627;
+        small{
+            font-size: 14px;
+        }
+    }
+    &.estimate{
+        border-color: #FF8000;
+        background-image: linear-gradient(to top, #F77C00 0%, #FF9D3A 10%, #FF9D3A 100%);
+        .text{
+            small{
+                font-size: 10px;
+                margin-left: -5px;
+            }
+        }
+    }
+    &.email{
+        border-color: #DC7C94;
+        background-image: linear-gradient(to top, #FF88A3 0%, #FFB3D1 10%, #FFB3D1 100%);
+    }
+}

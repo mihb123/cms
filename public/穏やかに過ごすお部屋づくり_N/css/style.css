@@ -1,0 +1,542 @@
+@charset 'utf-8';
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 15px;
+  }
+  
+body {
+  width: calc(100% - 32px);
+  margin: 0 auto;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  }
+
+/* header */
+
+/* border */
+header div.border {
+  background: none;
+}
+
+/* header */
+.logo_tab,
+.logo_pc {
+  display: none;;
+}
+.logo_sp {
+  width: 140px;
+  height: auto;
+}
+.box_04 {
+  margin: 15px auto 0;
+  text-align: center;
+}
+/* sabu */
+
+header div.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 28px 0 0;
+}
+
+header div.h1 img.star {
+  display: block;
+  width: 20px;
+  height: auto;
+}
+
+header div.h1_00 {
+  text-align: center;
+}
+
+header div.h1 h1 {
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+}
+
+header div.h1 p.h1 {
+  font-size: 7px;
+  color: #AEAEAE;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+hr {
+  border: 0;
+	border-top: 1px solid #DCDCDC;
+  width: 100%;
+  margin: 15px auto 0;
+}
+
+/* main */
+
+  main span {
+    font-weight: bold;
+    background:linear-gradient(transparent 50%, #FFF4F7 60%);
+  }
+
+  main h6,
+  main h10,
+  main h14 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    margin: 50px auto 0;
+    padding: 0 0 5px 5px;
+    display: block;
+  }
+
+  main div.border_01 {
+    border: 3px solid #F1AABA;
+  }
+
+  main h7,
+  main h8,
+  main h9,
+  main h11,
+  main h12,
+  main h13 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  main div.h7,
+  main div.h8,
+  main div.h9,
+  main div.h11,
+  main div.h12,
+  main div.h13 {
+    background: #F5F5F5;
+    margin: 50px auto 0;
+    padding: 16px;
+  }
+
+  main p {
+    font-size: 17px;
+    color: #545454;
+    font-weight: normal;
+    margin: 25px auto 0;
+  }
+
+  main img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 25px auto 0;
+  }
+
+/* text */
+
+  main h2 {
+    font-size: 21px;
+    color: #000000;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+  }
+
+  main p.h2 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: normal;
+    margin: 0 auto;
+  }
+
+  main img.childroom {
+    margin: 15px auto 0;
+  }
+
+
+  main p.h2_00 {
+    font-size: 17px;
+    color: #1BA79A;
+    font-weight: bold;
+    margin: 25px auto 0;
+  }
+
+  main p.h2_01 {
+    margin: 15px auto 0;
+  }
+
+  
+  main div.container p {
+    padding-left:1em;
+	  text-indent:-1em;
+  }
+
+
+  main div.container_04 {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 50px auto 0;
+  }
+
+  main div.container_05 {
+    text-align: center;
+  }
+
+  main p.points_01 {
+    font-size: 10px;
+    color: #000000;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  main p.points_02 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin: 8px auto 0;
+  }
+
+  main p.points_03 {
+    font-size: 8px;
+    color: #AEAEAE;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 10px auto 0;
+  }
+
+  main img.man_doctor {
+    width: auto;
+    height: 100px;
+    margin: 0;
+  }
+
+
+  main div.txt_01 {
+    font-size: 17px;
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  main img.dishes {
+    width: 35px;
+    margin: 0;
+    opacity: .55;
+  }
+
+  main p#margin {
+    margin: 0 auto;
+  }
+
+
+  main div.box_house {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 25px;
+    margin: 35px auto 0;
+  }
+
+  main img.matome_house {
+    width: 75px;
+    height: auto;
+    margin: 0;
+  }
+
+/* 目次-1 */
+
+  main h3,
+  main h4,
+  main h5 {
+    font-size: 17px;
+    color: #000000;
+    font-weight: bold;
+    margin: 30px auto 0;
+  }
+
+  main div.container {
+    background: #FFF4F7;
+    border: 1px solid #E6E6E6;
+    margin: 50px auto 0;
+    padding: 16px 16px 50px 16px;
+  }
+
+  main div.container_00 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 9px auto 0;
+  }
+
+  main img.house_01 {
+    width: 25px;
+    margin: 0;
+  }
+
+  main p.mokuzi {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  main h3 {
+    background: linear-gradient(to right, #C1C1C1 3px, transparent 3px);
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
+    margin: 20px auto 0;
+    padding-top: 30px;
+  }
+
+  main p.h3,
+  main p.h4,
+  main p.h5 {
+    font-size: 16px;
+    color: #3891B6;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  main p.h3:hover,
+  main p.h4:hover,
+  main p.h5:hover {
+    text-decoration: underline;
+    color: rgba(56,145,182,.75);
+  }
+
+  main div.wrap {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    border-left: 1px solid #D8D8D8;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+
+
+/* 目次-2 */
+
+main div.box1 {
+  position: relative;
+  border: solid 1px #FEDFE0;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.05);
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  margin: 15px auto 0;
+  cursor: pointer;
+}
+
+main #first {
+  margin: 35px auto 0;
+}
+
+main span.box-title {
+  position: absolute;
+  display: inline-block;
+  top: -5px;
+  left: 15px;
+  padding: 0 5px;
+  line-height: 1;
+  font-size: 12px;
+  background: #ffffff;
+  color: #545454;
+  font-weight: normal;
+}
+
+main img.house_2 {
+  width: 50px;
+  margin: 0;
+}
+
+main div.box2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main p.title {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  margin: 0 0 0 15px;
+}
+
+main p.sab {
+  font-size: 7px;
+  color: rgba(136,136,136,.65);
+  font-weight: normal;
+  margin: 0 0 0 10px;
+}
+
+main img.down {
+  width: 20px;
+  margin: 0 0 0 auto;
+}
+
+/* back */
+
+  main div.container_02 {
+    display: flex;
+    flex-direction : row-reverse;
+  }
+
+  main img.mokujihemodoru {
+    display: block;
+    width: 50px;
+    height: auto;
+    margin: 25px 0 0 auto;
+    cursor: pointer;
+  }
+
+  main a {
+    text-decoration: none;
+  }
+
+/* footer */
+
+  footer div.container_02 {
+    display: flex;
+    flex-direction : row-reverse;
+    gap: 15px;
+    margin: 50px 0 100px 0;
+  }
+  
+  footer div.txt_00 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  footer img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  footer p {
+    font-size: 8px;
+    color: #9E9E9E;
+    margin-top: 7px;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+
+/* レスポンシブ */
+
+@media screen and (min-width:768px) {
+
+  /* header */
+
+  header div.border {
+    height: 5px;
+    background: linear-gradient(to bottom, #F8D3DD,#FAFAF2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  body {
+    max-width: 675px;
+    width: 100%;
+    margin: auto;
+  }
+
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6,
+  main h7,
+  main h8,
+  main h9,
+  main h10,
+  main h11,
+  main h12,
+  main h13,
+  main h14 {
+    color: #333333;
+  }
+
+  main p,
+  main p.mokuzi {
+    color: #333333;
+  } 
+
+  /* header */
+  .logo_sp,
+  .logo_pc {
+    display: none;;
+  }
+  .logo_tab {
+    display: block;
+    width: 160px;
+    height: auto;
+  }
+  .box_04 {
+    margin: 15px auto 0 0px;
+    text-align: center;
+  }
+  /* sabu */
+  header div.h1 {
+    margin: -15px 28px 0 0;
+  }
+
+
+  hr {
+    display: none;
+  }
+
+  /* main */
+
+  main div.container_03 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 675px;
+    max-width: 100%;
+  }
+
+  main div.box1 {
+    margin: 35px 0 0 0;
+    padding: 15px;
+  }
+
+  main div.box2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main img.down {
+    margin: 0 0 0 15px;
+  }
+}
+
+@media screen and (min-width:990px) {
+
+  /* header */
+.logo_sp,
+.logo_tab {
+  display: none;;
+}
+.logo_pc {
+  display: block;
+  width: 170px;
+  height: auto;
+}
+header div.h1 {
+  margin: -30px 28px 0 0;
+}
+}

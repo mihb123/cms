@@ -1,0 +1,154 @@
+.kc-pagination{
+    text-align: center;
+    padding-top: 15px;
+    .paginate{
+        margin-bottom: 13px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        .page-number{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 35px;
+            border: 1px solid #E2E2E2;
+            border-radius: 5px;
+            @include fontStyle(15, 50, 23, #6E6E6E);
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+            padding: 7px 5px 6px;
+            &.page-prev{
+                margin-right: 35px;
+            }
+            &.page-next{
+                margin-left: 35px;
+            }
+            &.current-page, &:not(.disabled):hover{
+                background-color: #F5B6C3;
+                border-color: #F5B6C3;
+                color: #FFF;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+                text-shadow: 0 3px 6px rgba(0,0,0,0.16);
+                position: relative;
+            }
+            &.current-page::before{
+                content: '';
+                display: block;
+                width: 14px;
+                height: 4px;
+                background-image: url("../images/pagi-arrow-down.svg");
+                background-size: 100% 100%;
+                position: absolute;
+                left: calc(50% - 7px);
+                top: -12px;
+            }
+            &.disabled{
+                background-color: #E8E8E8;
+                border-color: #E8E8E8;
+                color: #AAAAAA;
+                pointer-events: none;
+                cursor: default;
+            }
+        }
+    }
+    .page-count{
+        @include fontStyle(13, 50, 14, #6E6E6E);
+        .current{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+}
+
+.single-pagination{
+    display: flex;
+    gap: 54px;
+    margin-bottom: 60px;
+    padding: 0 10px;
+    .pagi-item{
+        width: calc(50% - 27px);
+    }
+    .sub-title{
+        display: block;
+        margin-bottom: 10px;
+        @include fontStyle(15, 50, 25, #D84160);
+        font-weight: bold;
+    }
+    .pagi-box{
+        display: flex;
+        padding: 20px 15px;
+        border: 1px solid #E2E2E2;
+        align-items: center;
+        gap: 20px;
+        height: 75px;
+        justify-content: space-between;
+        box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+        &.prev{
+            justify-content: flex-start;
+        }
+        &.next{
+            padding-left: 18px;
+        }
+        .text-group{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &.square-left{
+                padding-left: 25px;
+                &:before{
+                    top: calc(50% - 7px);
+                }
+            }
+            .text-ja{
+                @include fontStyle(16, 50, 25, #545454);
+                font-weight: bold;
+            }
+            .text-en{
+                @include fontStyle(10, 50, 15, #828282);
+                font-family: "Meiryo", sans-serif;
+                @media(min-width: 768px) and (max-width: 1024px){
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .prev-button{
+        .sub-title{
+            text-align: right;
+        }
+    }
+    .next-button,
+    .prev-button{
+        text-decoration: none;
+        display: block
+    }
+}
+body.tag .kc-pagination{
+    margin-bottom: 100px;
+}
+@media(max-width: 767px){
+    .kc-pagination .paginate .page-number.page-prev{
+        margin-right: 7px;
+        font-size: 12px;
+    }
+    .kc-pagination .paginate .page-number.page-next{
+        margin-left: 7px;
+        font-size: 12px;
+    }
+    .single-pagination{
+        flex-wrap: wrap;
+        max-width: 295px;
+        padding: 0;
+        margin: 0 auto 72px;
+        gap: 35px;
+        flex-direction: column-reverse;
+        .pagi-item{
+            width: 100%;
+        }
+    }
+    .single-pagination .sub-title,
+    .single-pagination .prev-button .sub-title{
+        text-align: center;
+    }
+}

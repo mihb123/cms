@@ -1,0 +1,267 @@
+.top-tab{
+    margin-bottom: 10px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px 0 0 0;
+    &--header{
+        background-image: linear-gradient(rgba(138, 217, 255, 0.4) 0%, rgba(229, 245, 252, 0.4) 2%, rgba(187, 233, 255, 0.4) 50%, rgba(215, 242, 255, 0.4) 94%, rgba(143, 217, 252, 0.4) 100%);
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border-top-left-radius: 5px;
+        .title{
+            @include fontStyle(16, 50, 24, #000);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: bold;
+            img{
+                max-height: 30px;
+                width: auto;
+            }
+        }
+        .title-en{
+            @include fontStyle(7, 200, 8, #AEAEAE);
+            font-family: "Inkfree", sans-serif;
+        }
+    }
+    &--body{
+        padding: 15px 10px 30px 18px;
+        background-color: #FFF;
+        min-height: 446px;
+        .kc-tab{
+            .tab-nav{
+                border-bottom: 1px solid #E2E2E2;
+                display: flex;
+                gap: 30px;
+                padding-left: 15px;
+                li{
+                    position: relative;
+                    cursor: pointer;
+                    padding-bottom: 9px;
+                    a, span{
+                        text-decoration: none;
+                        @include fontStyle(16, 50, 21, #747474);
+                        position: relative;
+                        display: inline-flex;
+                        align-items: center;
+                        min-height: 27px;
+                        transition: all 0.3s;
+                        text-shadow: 0 3px 6px rgba(112, 131, 192, 0.05);
+                        &::after{
+                            content: '';
+                            display: block;
+                            width: calc(100% + 10px);
+                            height: 4px;
+                            border-radius: 10px;
+                            position: absolute;
+                            bottom: -3px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-image: linear-gradient(#D3EFFD 0, #63CBFF 100%);
+                            opacity: 0;
+                            transition: all 0.3s;
+                        }
+                    }
+                    &:hover{
+                        a, span{
+                            font-weight: bold;
+                            color: #000000;
+                            &::after{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &.active{
+                        a, span{
+                            font-weight: bold;
+                            font-size: 18px;
+                            color: #000000;
+                            &::after{
+                                opacity: 1;
+                            }
+                        }
+                        &::after{
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border: 5px solid;
+                            border-color: #72D0FF transparent transparent transparent;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -11px;
+                        }
+                    }
+                }
+            }
+            .kc-tab-content-wrap{
+                padding-top: 25px;
+            }
+            .top-tab-content{
+                display: flex;
+                .content-left{
+                    width: calc(40% + 2px);
+                    text-align: center;
+                    .title{
+                        @include fontStyle(31, 100, 21, #6B6A6A);
+                    }
+                    .title-en{
+                        @include fontStyle(10, 200, 24, #C5C5C5);
+                        position: relative;
+                        z-index: 1;
+                    }
+                    .ratio{
+                        margin-top: -15px;
+                        border-radius: 50%;
+                    }
+                }
+                .content-right{
+                    padding-left: 3px;
+                    padding-top: 8px;
+                    width: calc(60% - 2px);
+                    .dashed-line{
+                        display: block;
+                        height: 0;
+                        width: calc(100% + 30px);
+                        position: relative;
+                        left: -30px;
+                        border-top: 1px dashed #E2E2E2;
+                    }
+                    .desc{
+                        margin-top: 10px;
+                        @include fontStyle(15, 48, 24, #747474);
+                        text-shadow: 0 3px 3px rgba(0,0,0,0.1);
+                        p{
+                            @include fontStyle(15, 48, 24, #747474);
+                            margin-bottom: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.kc-tab-content{
+    display: none;
+    width: 100%;
+    &.show{
+        display: block;
+    }
+}
+
+// Tab 2
+.top-tab-2{
+    .top-tab--header{
+        background-image: linear-gradient(rgba(255, 239, 178, 0.55) 0%, rgba(254, 247, 220, 0.55) 2%, rgba(252, 248, 231, 0.55) 50%, rgba(255, 249, 229, 0.55) 94%, rgba(255, 232, 148, 0.55) 100%);
+    }
+    .top-tab--body{
+        padding: 30px;
+    }
+    .kc-tab{
+        .tab-nav{
+            border-bottom: 0;
+            padding-left: 5px;
+            gap: 40px;
+            @media(max-width: 1024px) {
+                align-items: center;
+                border-bottom: 1px solid #E2E2E2;
+            }
+            li{
+                display: flex;
+                align-items: flex-end;
+                @media(max-width: 1024px){
+                    min-height: 41px;
+                }
+                &.active, &:hover{
+                    a, span{
+                        color: #328EB5;
+                        @media(max-width: 1024px){
+                            font-size: 24px;
+                        }
+                    }
+                    &::after{
+                        @media(min-width: 1025px) {
+                            display: none;
+                        }
+                        border-color: #F2BC13 transparent transparent transparent;
+
+                    }
+                }
+                span, a{
+                    color: #328EB5;
+                    @media(max-width: 1024px){
+                        font-size: 17px;
+                    }
+                    &::after{
+                        background-image: linear-gradient(#FFF7DA 0, #F1B703 100%);
+                    }
+                }
+            }
+        }
+        .kc-tab-content-wrap{
+            padding-top: 35px;
+            .tab-note{
+                @include fontStyle(14, 100, 25, #AEAAAA);
+                max-width: 599px;
+                margin: 35px auto 0;
+            }
+        }
+        .top-tab-content{
+            display: block;
+        }
+    }
+}
+
+.top-tab-content{
+    .desc-top{
+        @include fontStyle(18, 100, 30, #585858);
+        text-shadow: 1px 2px 8px rgba(0,0,0,0.12);
+        max-width: 581px;
+        margin: 0 auto;
+    }
+    .tab-2-img{
+        opacity: 0.85;
+        max-width: 90%;
+        margin: 0 auto 7px;
+    }
+    .caption{
+        text-shadow: 0 3px 6px rgba(0,0,0,0.11);
+        .title{
+            @include fontStyle(15, 100, 21, #636363);
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            border-bottom: 1px solid #E2E2E2;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            .icon{
+                position: relative;
+                top: 3px;
+            }
+        }
+        .desc-2{
+            @include fontStyle(16, 100, 30, #747474);
+            max-width: 581px ;
+            margin: 0 auto;
+            @media (max-width: 1024px) {
+                max-width: 96%;
+            }
+        }
+    }
+}
+
+.kc-tab.top{
+    position: relative;
+    .has-flick-tb::after{
+        bottom: -35px;
+    }
+}
+
+.call-24h{
+    margin-top: 45px;
+    text-align: center;
+}

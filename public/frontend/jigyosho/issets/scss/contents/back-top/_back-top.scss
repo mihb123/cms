@@ -1,0 +1,39 @@
+.back-button-head {
+  position: fixed;
+  right: 0;
+  bottom: 40%;
+  width: 5.5rem;
+  cursor: pointer;
+  z-index: 99;
+  right: 1rem;
+  display: none;
+  @media screen and (min-width: 1430px) {
+    right: calc((100% - 1120px) / 2 - 13rem);
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    font-family: SourceHanSansJP-Medium, sans-serif;
+    color: #f3a4b2;
+    @include tabletL {
+      font-size: 1rem;
+    }
+  }
+
+  &__icon-wrap {
+    height: 5.5rem;
+    padding-top: 0.8rem;
+    @include tabletL {
+      padding-top: 0;
+    }
+    svg {
+      @include tabletLL {
+        width: 5rem;
+      }
+
+      @include tabletL {
+        width: 4.5rem;
+      }
+    }
+  }
+}

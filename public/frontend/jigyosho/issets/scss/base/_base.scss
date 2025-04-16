@@ -1,0 +1,67 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+  scroll-behavior: smooth;
+  @include mobileS {
+    font-size: calc(1vw * 1000 / 360);
+  }
+}
+
+body {
+  font-size: $fs16;
+  line-height: 1.6;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  @include tabletS {
+    font-size: $fs14;
+  }
+}
+
+main {
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+article,
+section {
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  font-size: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  border: 0 none;
+}
+
+a:hover {
+  outline: 0;
+}
+
+a:active {
+  outline: 0;
+}
+
+select {
+  outline: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}

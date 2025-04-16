@@ -1,0 +1,94 @@
+.tag-search-form{
+    position: relative;
+    width: 278px;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .tag-search-field{
+        width: 100%;
+        padding: 7px 40px 7px 29px;
+        border-radius: 18px;
+        border: 1px solid #E6E6E6;
+        background-color: #F3F3F3;
+        @include fontStyle(14, 5, 21);
+        outline: none;
+        &:focus{
+            border: 1px solid #E6E6E6;
+        }
+    }
+    button[type="submit"]{
+        padding: 0;
+        border: 0;
+        padding: 0;
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        background-color: transparent;
+        right: 10px;
+        top: calc(50% - 14px);
+    }
+}
+
+.tag-search{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    .tag-search-overlay{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 99;
+        opacity: 1;
+        visibility: hidden;
+        transition: all 0.3s;
+    }
+    .tag-search-mark{
+        height: 37px;
+        width: 278px;
+        display: none;
+    }
+
+    &.active{
+        .tag-search-overlay{
+            opacity: 1;
+            visibility: visible;
+        }
+        .tag-search-form{
+            z-index: 999;
+            width: 300px;
+            position: fixed;
+            right: calc(50% - 150px);
+            top: 150px;
+            .tag-search-field{
+                min-height: 58px;
+                border-radius: 29px;
+            }
+            &::after{
+                display: none;
+            }
+        }
+        .tag-search-mark{
+            display: block;
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    .tag-search-form{
+        width: 180px;
+    }
+    .tag-search{
+        margin-right: 0;
+    }
+}

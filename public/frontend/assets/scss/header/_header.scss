@@ -1,0 +1,331 @@
+.main-header{
+    background-color: #FFF;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 99;
+    padding: 8px 0 5px;
+    .logo{
+        display: flex;
+        img{
+            max-height: 62px;
+            width: auto;
+        }
+    }
+}
+.slogan-top-page{
+    padding-bottom: 14px;
+    .slogan-wrap{
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        padding-left: 140px;
+        margin-bottom: 13px;
+        font-family: "Meiryo", sans-serif;
+        .text-group{
+            display: inline-flex;
+            align-items: center;
+        }
+        .star{
+            margin-right: 10px;
+            display: flex;
+            padding-bottom: 3px;
+        }
+        .slogan-text-1{
+            @include fontStyle(13, 200, 20);
+            font-weight: bold;
+            margin-right: 15px;
+            display: flex;
+        }
+        .slogan-text-2{
+            @include fontStyle(29, 200, 44);
+            color: #464646;
+            font-weight: bold;
+            display: flex;
+        }
+        .doctor-icon{
+            position: absolute;
+            left: calc(100% + 20px);
+            top: -52px;
+            height: 139px;
+            width: 139px;
+            svg{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .slogan-en{
+        @include fontStyle(9, 150, 11, #AEAEAE);
+        font-family: "Inkfree";
+        padding-left: 15px;
+    }
+}
+.humberger-wrap{
+    position: relative;
+    min-width: 90px;
+    .humberger-button{
+        padding: 10px;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        svg{
+            width: 15px;
+            height: auto;
+        }
+    }
+}
+
+//Global slogan
+.header-slogan{
+    margin-top: -48px;
+    padding-left: 209px;
+    display: flex;
+    padding-bottom: 14px;
+    .slogan-wrap{
+        display: flex;
+        gap: 8px;
+    }
+    .slogan-text{
+        .text-1{
+            display: block;
+            @include fontStyle(22, 200, 33);
+            font-family: "Meiryo", sans-serif;
+            color: #000000;
+            font-weight: bold;
+            margin-bottom: 2px;
+            span{
+                color: #585858;
+            }
+        }
+        .text-en{
+            @include fontStyle(8, 200, 10, #AEAEAE);
+            font-family: "Inkfree", "Meiryo", sans-serif;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+// Global title fixed
+.header-sp-fixed{
+    display: none;
+    position: fixed;
+    background-image: linear-gradient(to bottom, #FFF3F6 0%, #FFDEE5 100%);
+    top: 34px;
+    left: 0;
+    width: 100%;
+    z-index: 98;
+    padding: 5px 15px;
+    min-height: 44px;
+    align-items: center;
+    .title{
+        @include fontStyle(13, 0, 17, #000000);
+    }
+}
+
+//Tag detail
+.slogan-tag-details{
+    margin-top: -48px;
+    padding-left: 233px;
+    display: flex;
+    padding-bottom: 16px;
+    .slogan-wrap{
+        display: flex;
+        gap: 10px;
+    }
+    .slogan-text{
+        .text-1{
+            display: block;
+            @include fontStyle(22, 200, 33);
+            color: #000000;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        .text-en{
+            @include fontStyle(7, 200, 8, #AEAEAE);
+            font-family: "Inkfree", "Meiryo", sans-serif;
+            display: block;
+            padding-left: 23px;
+        }
+    }
+    .flower{
+        position: relative;
+        top: -15px;
+        left: -15px;
+        img{
+            height: 60px;
+            width: auto;
+        }
+    }
+}
+.mitori-taiken .slogan-tag-details{
+    padding-bottom: 0;
+}
+//Mitori
+.slogan-mitori{
+    margin-top: -55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    .slogan-wrap{
+        display: flex;
+        gap: 10px;
+    }
+    .slogan-text{
+        .text-1{
+            display: block;
+            @include fontStyle(24, 200, 36);
+            color: #1D3994;
+            font-weight: bold;
+            margin-bottom: 2px;
+            border-bottom: 1px dashed #C5C5C5;
+        }
+        .text-en{
+            @include fontStyle(13, 100, 16, #FCAEBF);
+            font-family: "Inkfree", "Meiryo", sans-serif;
+            display: block;
+            padding-left: 37px;
+            padding-top: 4px;
+        }
+    }
+}
+
+.header-slogin-sp{
+    text-align: center;
+    padding-bottom: 8px;
+    .text-ja{
+        display: inline-flex;
+        gap: 7px;
+        align-items: flex-start;
+        font-family: "Meiryo", sans-serif;
+        >span{
+            @include fontStyle(15, 150, 23, #585858);
+            font-weight: bold;
+            >span{
+                @include fontStyle(16, 150, 24, #272727);
+            }
+        }
+    }
+    .text-en{
+        @include fontStyle(10, 50, 15, #CFCFCF);
+        font-family: "Inkfree", "Meiryo", sans-serif;
+    }
+    .slogan-wrap{
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+.slogan-mitory-fixed{
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: #FFF;
+    top: 35px;
+    left: 0;
+    z-index: 98;
+    padding: 0 10px;
+    .slogan-text{
+        background-image: linear-gradient(to bottom, rgba(248, 170, 187, 0.61) 0%, #F8AABB 55% , rgba(248, 170, 187, 0.49) 100%);
+        border-radius: 10px 10px 0 0;
+        @include fontStyle(10, 200, 17, #FFF);
+        font-weight: bold;
+        font-family: "Meiryo", sans-serif;
+        box-shadow: 0 3px 6px rgba(112, 131, 192, 0.05);
+        text-align: center;
+        padding: 1px;
+        position: relative;
+        top: 1px;
+    }
+}
+
+.tag-detail-header-fixed{
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #FFF3F6 0%, #FFDEE5 100%);
+    top: 35px;
+    left: 0;
+    z-index: 98;
+    padding: 8px 15px;
+    box-shadow: inset 0 -3px 6px #FFF;
+    align-items: center;
+    column-gap: 12px;
+    .text-group{
+        display: flex;
+        flex-direction: column;
+        .text-ja{
+            @include fontStyle(13, 0, 20, #000000);
+            font-weight: bold;
+            font-family: "Meiryo", sans-serif;
+        }
+        .text-en{
+            @include fontStyle(6,50,7, #AEAEAE);
+            font-family: "Inkfree", sans-serif;
+            display: block;
+        }
+    }
+    .tag-name{
+        @include fontStyle(14, 50, 21, #FFF);
+        font-weight: bold;
+        display: inline-flex;
+        padding: 2px 5px 4px 5px;
+        border-radius: 5px;
+        background-color: #112375;
+        max-width: 196px;
+        overflow: hidden;
+        display: block;
+        max-height: 25px;
+        -webkit-line-clamp: 1;
+        display: box;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        white-space: normal;
+        font-family: "Arial", "Source Han Sans JP", sans-serif;
+        span{
+            font-weight: normal;
+        }
+    }
+}
+
+.is-sticky{
+    .header-top{
+        z-index: 9999;
+    }
+    .kc-tab.top{
+        z-index: 9;
+    }
+}
+@media(max-width: 767px){
+    .main-header{
+        position: relative;
+        padding-top: 60px;
+        .header-top{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+    .is-sticky{
+        .slogan-mitory-fixed{
+            display: block;
+        }
+        .tag-detail-header-fixed{
+            display: flex;
+        }
+        .header-sp-fixed{
+            display: flex;
+        }
+    }
+}

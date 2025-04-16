@@ -1,0 +1,97 @@
+.mitori-detail-item{
+    padding: 25px 15px 25px 20px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #E8E8E8;
+    &:nth-of-type(2){
+        border-top: 1px solid #E8E8E8;
+    }
+    .m-item-title:not(.active){
+        display: flex;
+        column-gap: 15px;
+        position: relative;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        .icon{
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background-color: #fdc3d0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            transition: all 0.3s;
+        }
+        .title-wrap{
+            display: block;
+            flex: 1;
+            @include fontStyle(18, 25, 25, #333333);
+            font-weight: bold;
+            span{
+                width: 100%;
+                display: block;
+            }
+            .title-en{
+                @include fontStyle(10, 100, 14, #CBCBCB);
+                font-weight: normal;
+                margin-top: 4px;
+                max-width: 300px;
+            }
+        }
+        .arrow-down{
+            position: absolute;
+            right: 0;
+            top: calc(50% - 11px);
+        }
+    }
+    .m-item-title.active{
+        cursor: pointer;
+        width: 100%;
+        max-width: 100%;
+        .arrow-down, .title-en{
+            display: none;
+        }
+    }
+    .acc-body{
+        padding-top: 22px;
+        padding-bottom: 20px;
+        @include fontStyle(17, 25, 22, #545454);
+    }
+}
+
+.mitori-detail-item.mitori-back-item{
+    border: 0;
+    position: relative;
+    padding: 0 0 0 80px;
+    margin-bottom: 45px;
+    .arrow-back{
+        position: absolute;
+        left: 35px;
+        top: calc(50% - 11px);
+    }
+    .m-item-title{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px){
+    .mitori-detail-item {
+        padding-right: 0;
+        .m-item-title.active .icon{
+            width: 55px;
+            height: 55px;
+            left: -15px;
+        }
+        .m-item-title.active {
+            max-width: 98%;
+            min-height: 40px;
+            padding-left: 45px;
+            display: flex;
+            align-items: center;
+            padding-right: 10px;
+        }
+    }
+}

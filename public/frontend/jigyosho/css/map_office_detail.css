@@ -1,0 +1,85 @@
+   #Map-search-view {
+    position: relative;
+    z-index: 0;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    /* 修正 (@ edited by a.u  2022.07.26) START */
+    /* [コメントアウト] min-height: 600px!important; */
+    /* [コメントアウト] max-height: 750px!important; */
+    height: 400px;
+    background: #FFF9F9;
+  }
+  
+ #Map-search-view-1 {
+    position: relative;
+    z-index: 0;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    /* 修正 (@ edited by a.u  2022.07.26) START */
+    /* [コメントアウト] min-height: 600px!important; */
+    /* [コメントアウト] max-height: 750px!important; */
+    height: 400px;
+    background: #FFF9F9;
+  }
+  
+  #Map-search-view-2 {
+    position: relative;
+    z-index: 0;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    /* 修正 (@ edited by a.u  2022.07.26) START */
+    /* [コメントアウト] min-height: 600px!important; */
+    /* [コメントアウト] max-height: 750px!important; */
+    height: 400px;
+    background: #FFF9F9;
+  }   
+
+ /* 960px以上に適用されるCSS（PC用） */
+@media screen and (min-width: 960px) {
+        
+    #Map-search-view {
+        position: relative;
+        z-index: 0;
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+        /* 修正 (@ edited by a.u  2022.07.26) START */
+        /* [コメントアウト] min-height: 600px!important; */
+        /* [コメントアウト] max-height: 750px!important; */
+        height: 75vh;
+        background: #FFF9F9;
+      }
+
+     #Map-search-view-1 {
+        position: relative;
+        z-index: 0;
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+        /* 修正 (@ edited by a.u  2022.07.26) START */
+        /* [コメントアウト] min-height: 600px!important; */
+        /* [コメントアウト] max-height: 750px!important; */
+        height: 75vh;
+        /* 追加 (@ edited by a.u  2022.08.30) 1 line */
+        background: #FFF9F9;
+      }
+
+      #Map-search-view-2 {
+        position: relative;
+        z-index: 0;
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+        /* 修正 (@ edited by a.u  2022.07.26) START */
+        /* [コメントアウト] min-height: 600px!important; */
+        /* [コメントアウト] max-height: 750px!important; */
+        height: 75vh;
+        background: #FFF9F9;
+      }
+  }
+  
+ 
+ 

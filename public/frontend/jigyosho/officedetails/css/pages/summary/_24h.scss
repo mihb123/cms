@@ -1,0 +1,36 @@
+
+.list-radios{
+  width: 100%;
+  display: inline-flex;
+  padding: 3px 23px 4px;
+  align-items: center;
+  border: 2px solid #F9CFD6;
+  background-color: #FFF;
+  .radio-item{
+    margin-right: 32px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    color: #000000;
+    line-height: 1.5;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+@media(max-width: 767px){
+  .twenty-four-hour{
+    .ls-box__title{
+      margin-bottom: 3.733vw;
+    }
+  }
+  .list-radios{
+    border-top-left-radius: 10px;
+    padding: 2.400vw;
+    .radio-item{
+      margin-right: 13.333vw;
+      span:not(.ls-cycle){
+        font-size: 3.733vw;
+      }
+    }
+  }
+}

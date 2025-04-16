@@ -1,0 +1,25 @@
+.section-3 {
+  position: relative;
+  // background-image: url(../../../../issets/images/select03/bg.svg);
+  // background-repeat: no-repeat;
+  // background-position: left 10%;
+  // min-height: max-content;
+  &:before {
+    position: absolute;
+    z-index: -1;
+    top: 72rem;
+    width: 100vw;
+    height: 72rem;
+    content: '';
+    background-color: #fff5f5;
+  }
+
+  .s-support {
+    display: flex;
+    flex-direction: row;
+    gap: 2.3rem;
+    @include tabletS {
+      flex-direction: column;
+    }
+  }
+}

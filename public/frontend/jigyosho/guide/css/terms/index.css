@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/* ------------------------------
+ width: all
+------------------------------ */
+html {
+  background-color: #FFF9F9;
+}
+
+.header02 .wrapper .t01 {
+  color: #315EA9;
+  padding-left: 290px;
+  position: relative;
+  max-width: 900px;
+}
+.header02 .wrapper .t01 span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+h1 {
+  color: #315EA9 !important;
+}
+
+main section.s01 {
+  padding: 60px 60px 0;
+}
+main section.s01 .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main section.s01 .wrapper dl dt {
+  border-bottom: 1px solid #D1D1D1;
+  padding-bottom: 15px;
+}
+main section.s01 .wrapper dl dt h2 {
+  font-size: 28px;
+  color: #383838;
+}
+main section.s01 .wrapper dl dd {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 20px;
+  color: #333;
+}
+main section.s01 .wrapper .box01 {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+main section.s01 .wrapper .box01 .img01 {
+  width: calc(100% - 310px) !important;
+  height: 6px !important;
+  display: block;
+}
+main section.s01 .wrapper .box01 .img02 {
+  width: 281px;
+  display: block;
+}
+main section.s02 {
+  padding: 0 60px 0;
+}
+main section.s02 .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main section.s02 .wrapper .dl01 + .dl01 {
+  margin-top: 20px;
+}
+main section.s02 .wrapper .dl01 a {
+  color: #2F499E;
+}
+main section.s02 .wrapper .dl01 dt {
+  font-size: 19px;
+}
+main section.s02 .wrapper .dl01 dd {
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 15px;
+  font-family: "メイリオ", "Meiryo", sans-serif !important;
+  margin-top: 5px;
+  color: #333 !important;
+  letter-spacing: 1px;
+}
+main section.s02 .wrapper .dl01 dd .ul01 .li01 {
+  position: relative;
+  font-size: 14px;
+  padding-left: 20px;
+  line-height: 30px;
+}
+main section.s02 .wrapper .dl01 dd .ul01 .li01 .span01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main section.s02 .wrapper .dl01 dd .ul02 .li02 {
+  position: relative;
+  font-size: 14px;
+  padding-left: 25px;
+  line-height: 30px;
+}
+main section.s02 .wrapper .dl01 dd .ul02 .li02 .span02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main section.s02 .wrapper .box03 {
+  text-align: right;
+  margin-top: 60px;
+}
+main section.s02 .wrapper .box03 .box04 {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #DBDBDB;
+  width: 380px;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+main section.s02 .wrapper .box03 .box04 p {
+  text-align: center;
+  font-size: 14px;
+}
+main section.s02 .wrapper .box03 .box04 p a {
+  color: #2F499E;
+}
+main section.s02 .wrapper .box03 .t05 {
+  text-align: right;
+  font-size: 16px;
+  margin-top: 30px;
+}
+main section.s02 .wrapper .box03 .t06 {
+  text-align: right;
+  font-size: 16px;
+  margin-top: 30px;
+}
+main section.s02 .wrapper .box05 {
+  width: 330px;
+  margin: 80px auto 0;
+}
+main section.s02 .wrapper .box05 p {
+  font-size: 18px;
+  line-height: 42px;
+}
+main section.s02 .wrapper .box05 .t08 {
+  text-align: right;
+}
+main section.s02 .wrapper .box05 img {
+  display: block;
+  margin: 50px auto 0;
+}
+main section.s02 .wrapper .box05 .t09 {
+  text-align: center;
+  color: #F3A4B5;
+  font-size: 22px;
+  margin-top: 10px;
+  letter-spacing: 5px;
+}
+
+/* ------------------------------
+ width < $width-1
+------------------------------ */
+@media screen and (max-width: 900px) {
+  .header02 .wrapper .t01 {
+    color: #315EA9;
+    padding-left: 76px;
+    position: relative;
+    max-width: 100%;
+  }
+  .header02 .wrapper .t01 span {
+    position: absolute;
+    top: 0;
+    right: 40px;
+  }
+
+  main section.s01 {
+    padding: 30px 15px 0;
+  }
+  main section.s01 .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  main section.s01 .wrapper dl dt {
+    border-bottom: 1px solid #D1D1D1;
+    padding-bottom: 10px;
+  }
+  main section.s01 .wrapper dl dt h2 {
+    font-size: 14px;
+  }
+  main section.s01 .wrapper dl dd {
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 12px;
+  }
+  main section.s01 .wrapper .box01 {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  main section.s01 .wrapper .box01 .img01 {
+    width: calc(100% - 159px) !important;
+    height: 6px !important;
+    display: block;
+  }
+  main section.s01 .wrapper .box01 .img02 {
+    width: 140.5px;
+    display: block;
+  }
+  main section.s02 {
+    padding: 20px 15px 0;
+  }
+  main section.s02 .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  main section.s02 .wrapper .dl01 + .dl01 {
+    margin-top: 20px;
+  }
+  main section.s02 .wrapper .dl01 a {
+    color: #2F499E;
+  }
+  main section.s02 .wrapper .dl01 dt {
+    font-size: 11px;
+  }
+  main section.s02 .wrapper .dl01 dd {
+    font-size: 10px;
+    line-height: 20px;
+    padding-left: 10px;
+  }
+  main section.s02 .wrapper .dl01 dd .ul01 .li01 {
+    position: relative;
+    font-size: 10px;
+    padding-left: 15px;
+    line-height: 20px;
+  }
+  main section.s02 .wrapper .dl01 dd .ul01 .li01 .span01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  main section.s02 .wrapper .dl01 dd .ul02 .li02 {
+    position: relative;
+    font-size: 10px;
+    padding-left: 20px;
+    line-height: 20px;
+  }
+  main section.s02 .wrapper .dl01 dd .ul02 .li02 .span02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  main section.s02 .wrapper .box03 {
+    text-align: right;
+    margin-top: 40px;
+  }
+  main section.s02 .wrapper .box03 .box04 {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #DBDBDB;
+    width: 215px;
+    background-color: #fff;
+    text-align: center;
+    padding: 13px 0;
+  }
+  main section.s02 .wrapper .box03 .box04 p {
+    text-align: center;
+    font-size: 11px;
+  }
+  main section.s02 .wrapper .box03 .box04 p a {
+    color: #2F499E;
+  }
+  main section.s02 .wrapper .box03 .t05 {
+    text-align: right;
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  main section.s02 .wrapper .box03 .t06 {
+    text-align: right;
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  main section.s02 .wrapper .box05 {
+    width: 200px;
+    margin: 50px auto 0;
+  }
+  main section.s02 .wrapper .box05 p {
+    font-size: 12px;
+    line-height: 28px;
+  }
+  main section.s02 .wrapper .box05 .t08 {
+    text-align: right;
+  }
+  main section.s02 .wrapper .box05 img {
+    width: 85px;
+    display: block;
+    margin: 30px auto 0;
+  }
+  main section.s02 .wrapper .box05 .t09 {
+    text-align: center;
+    color: #F3A4B5;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+  }
+}

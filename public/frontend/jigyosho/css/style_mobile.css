@@ -1,0 +1,232 @@
+@media screen and (max-width: 599px) {
+
+  /** PC:左側のブロック(div) ・モバイル:1段目のブロック **/
+  #Header-col1  {
+    width: 200px!important;
+    border: none !important;
+    text-align: left !important;
+    margin: 5px 0px 5px 10px;
+  }
+
+  /** PC:右側のブロック(div) ・モバイル:1段目のブロック **/
+  #Header-col2  {
+    text-align: right !important;
+    border: none !important;
+    margin: 10px 0px 5px 10px;
+  }
+
+  /** PC:右側のブロック(div) ・モバイル:1段目のブロック **/
+  #Header-col3  {
+    max-width: 50px!important;
+    text-align: right !important;
+    border: none !important;
+    margin: 0px 0px 0px 15px;
+  }
+
+  /** ロゴ **/
+  .siteHeader img {
+    display: flex !important;
+    
+    max-width: 75% !important;
+    margin: 15px 0px 5px 10px;
+    padding: 0px;
+
+  }
+
+  /*　ハンバーガーボタン　*/
+  .hamburger {
+    display : block;
+    position: fixed;
+    z-index : 10;
+    right : 13px;
+    top   : 40px;
+    width : 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 4px ;
+    left    : 6px;
+    background : #555;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  
+  .hamburger span:nth-child(1) {
+    top: 30px;
+  }
+  
+  .hamburger span:nth-child(2) {
+    top: 40px;
+  }
+  
+  .hamburger span:nth-child(3) {
+    top: 50px;
+  }
+
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 40px;
+    right: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 40px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+
+  nav.globalMenuSp.active {
+    position: fixed;
+    z-index : 11;
+    top  : 10;
+    right : 40;
+    color: #000;
+    background: #fff;
+    text-align: center;
+    transform: translateX(40%);
+    transition: all 0.6s;
+    width: 70%;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-riht: 0px;
+    padding-bottom: 10px;
+  }
+
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 11;
+    top  : 10;
+    right : 40;
+    color: #000;
+    background: #fff;
+    text-align: center;
+    transform: translateX(150%);
+    transition: all 0.6s;
+    width: 70%;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-riht: 0px;
+    padding-bottom: 10px;
+  }
+
+  nav.globalMenuSp ul {
+    background: #ccc;
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+  }
+
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+  }
+  
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  nav.globalMenuSp ul li:hover{
+    background :#ddd;
+  }
+
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #000;
+    padding: 1em 0;
+    text-decoration :none;
+  }
+
+  .mainSection {
+    margin: 20px 30px 10px 28px;
+    padding: 0;
+    min-width: 200px!important;
+    max-width: 580px!important;
+    min-height: 350px!important;
+    max-height: 450px!important;
+    text-align: center;
+  }
+  
+  /** 地図 **/
+  #Map-search-view {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-width: 200px!important;
+    max-width: 580px!important;
+    min-height: 350px!important;
+    max-height: 450px!important;
+  }
+  
+  .search_box {
+    display: none;
+  }
+  
+  #search_categories {
+    display: none;
+  }
+
+  .serch_box_01 {
+    display: none;
+  }
+
+  .serch_box_01_0 {
+    display: none;
+  }
+  .serch_box_01_1 {
+    display: none;
+  }
+  
+  .serch_box_01_2 {
+    display: none;
+  }
+
+  .serch_box_01_3 {
+    display: none;
+  }
+
+  .serch_box_01_4 {
+    display: none;
+  }
+  
+  .serch_box_01_2_text {
+    display: none;
+  }
+
+  .serch_box_01_3_text {
+    display: none;
+  }
+  
+  .fa-search {
+    display: none;
+  }
+  
+  .serch_box_line {
+    display: none;
+    
+  }
+
+  .serch_box_02 {
+    display: none;
+  }
+  
+  .serch_box_03 {
+    display: none;
+  }
+}

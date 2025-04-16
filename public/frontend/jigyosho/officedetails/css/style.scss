@@ -1,0 +1,78 @@
+//Base
+@import "base/reset";
+@import "base/breackpoint";
+@import "base/container";
+@import "base/general";
+//End Base
+
+//Common
+@import "common/header";
+@import "common/nav";
+@import "common/nav-option1";
+@import "common/nav-option2";
+@import "common/sidebar";
+@import "common/_list-sidebar-mobile";
+@import "common/footer";
+@import "common/category";
+@import "common/item-list-top";
+@import "common/right-column";
+@import "common/main-address";
+@import "common/icon-left";
+@import "common/summary";
+//End Common
+
+//Summary Page
+@import "pages/summary/main-guide";
+@import "pages/summary/manager";
+@import "pages/summary/personnel-structure";
+@import "pages/summary/medical-treatment-response";
+@import "pages/summary/implemented-services";
+@import "pages/summary/24h";
+@import "pages/summary/feature";
+@import "pages/summary/medical-achievements";
+@import "pages/summary/free_space";
+//End Summary Page
+
+//Office
+@import "pages/office/summary";
+@import "pages/office/business-hours";
+//End Office
+
+//Area
+@import "pages/area/16km";
+//End Area
+
+//Internal measures
+@import "pages/internal-measures/internal-measures";
+//End Internal measures
+
+//Consulration
+@import "pages/consultation/consultation";
+//End Consulration
+
+//24h
+@import "pages/24h/24h";
+//End 24h
+
+//uninsured-expenses
+@import "pages/uninsured-expenses/uninsured-expenses";
+//End uninsured-expenses
+
+//Cooperation
+@import "pages/cooperation/cooperation";
+//End Cooperation
+
+//Cooperation
+@import "pages/personnel-organization/personnel-organization";
+//End Cooperation
+
+// Medical-care
+@import "pages/medical-care/medical-care";
+@import "pages/medical-care/treatment-response";
+@import "pages/medical-care/careM.scss";
+@import "pages/medical-care/feature.scss";
+// End Medical-care
+
+// Uninsured expenses
+@import "pages/uninsured-expenses/uninsured-expenses";
+// End Uninsured expenses

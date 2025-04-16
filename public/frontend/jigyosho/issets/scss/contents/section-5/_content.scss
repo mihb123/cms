@@ -1,0 +1,48 @@
+.section-5 {
+  display: none;
+  @include tabletS {
+    display: block;
+  }
+}
+
+.section-5-qa {
+  position: relative;
+  display: flex;
+  width: 68vw;
+  height: 12vw;
+  margin-left: 17.333vw;
+  cursor: pointer;
+  border: 1px solid #ffd8d8;
+  border-radius: 1.6vw;
+  background-color: #ffeff1;
+  box-shadow: 0 1vw 1.2vw #f9cfd6;
+  align-items: center;
+  justify-content: center;
+
+  &__text-wrap {
+    //
+  }
+
+  &__text {
+    font-size: 2.4vw;
+    line-height: 1.3;
+    text-align: center;
+    color: #ee9dab;
+  }
+
+  &__email {
+    position: absolute;
+    right: 2.667vw;
+    display: flex;
+    width: 6.933vw;
+    height: 6.933vw;
+    border-radius: 50%;
+    background-color: #f9cfd6;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 4.267vw;
+  }
+}

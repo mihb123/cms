@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57.004" height="88.996" viewBox="0 0 57.004 88.996">
+  <defs>
+    <filter id="前面オブジェクトで型抜き_1" x="0" y="0" width="57.004" height="88.996" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_3714" data-name="グループ 3714" transform="translate(-326.998 -1587.004)">
+    <g transform="matrix(1, 0, 0, 1, 327, 1587)" filter="url(#前面オブジェクトで型抜き_1)">
+      <path id="前面オブジェクトで型抜き_1-2" data-name="前面オブジェクトで型抜き 1" d="M400.555,23536a35.5,35.5,0,1,1,0-71c1.148,0,2.308.055,3.447.164v70.668C402.879,23535.945,401.719,23536,400.555,23536Z" transform="translate(-356 -23459)" fill="#ffdee5"/>
+    </g>
+    <g id="グループ_2209" data-name="グループ 2209" transform="translate(327.207 1636.433)">
+      <g id="upload" transform="translate(23.793 -6.431)">
+        <path id="パス_2849" data-name="パス 2849" d="M16.771,10.793a1.009,1.009,0,0,0-1.433,0l-5.046,5.046a1.013,1.013,0,0,0,1.433,1.433l3.32-3.33v12.2a1.009,1.009,0,1,0,2.018,0v-12.2l3.32,3.33a1.013,1.013,0,1,0,1.433-1.433Z" transform="translate(-6.439 -0.588)" fill="#e886a1"/>
+        <path id="パス_2850" data-name="パス 2850" d="M27.129,5H6.054a1.01,1.01,0,1,0,0,2.018H27.129a1.01,1.01,0,1,0,0-2.018Z" transform="translate(-7 0)" fill="#e886a1"/>
+      </g>
+    </g>
+    <text id="上へ" transform="translate(349 1615)" fill="#e886a1" font-size="11" font-family="SourceHanSansJP-Bold, Source Han Sans JP" font-weight="700" letter-spacing="0.01em"><tspan x="0" y="0">上へ</tspan></text>
+    <text id="もどる" transform="translate(346 1628)" fill="#e886a1" font-size="9" font-family="SourceHanSansJP-Bold, Source Han Sans JP" font-weight="700" letter-spacing="0.01em"><tspan x="0" y="0">もどる</tspan></text>
+  </g>
+</svg>

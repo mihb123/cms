@@ -1,0 +1,154 @@
+.site-map{
+    margin-bottom: 60px;
+    .tab-title{
+        border-bottom: 1px solid #EBC5C8;
+        font-family: "Meiryo", sans-serif;
+        > span{
+            display: inline-flex;
+            background-image: linear-gradient(to bottom, #E699AA 0%, #F3BCC8 5%, #F5B2C1 20%, #FFB1C2 100%);
+            padding: 7px 30px 1px;
+            border-radius: 10px 10px 0 0;
+            @include fontStyle(18, 100, 27, #FFF);
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.16);
+            .text-en{
+                @include fontStyle(9, 200, 12, #FFF);
+                color: #FFF;
+                margin-left: 20px;
+                font-weight: 400;
+                position: relative;
+                top: -10px;
+            }
+        }
+    }
+    .sitemap-content{
+        padding: 13px 0 0 20px;
+    }
+}
+.sitemap-content-top{
+    margin-bottom: 38px;
+    .title{
+        @include fontStyle(14, 50, 17, #F39FAD);
+        margin-bottom: 5px;
+    }
+    .title-en{
+        @include fontStyle(10, 0, 12, #F9CDD4);
+        font-family: "Inkfree", "Meiryo", sans-serif;
+    }
+}
+.sitemap-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    .sitemap-col{
+        width: calc(33.33% - 10px);
+        margin-bottom: 30px;
+        .st-list-title{
+            @include fontStyle(16, 10, 22, #505050);
+            font-weight: bold;
+            margin-bottom: 18px;
+            display: flex;
+            column-gap: 8px;
+            align-items: center;
+            span{
+                flex: 1;
+            }
+        }
+    }
+}
+.st-list-links{
+    padding-left: 18px;
+    li{
+        margin-bottom: 15px;
+        a{
+            text-decoration: none;
+            padding-left: 16px;
+            display: block;
+            @include fontStyle(16, 10, 24, #7F7C7C);
+            position: relative;
+            transition: all 0.3s;
+            &:hover{
+                color: $main_color;
+                &::before{
+                    border-color: $main_color $main_color transparent transparent;
+                }
+            }
+            &::before{
+                content: '';
+                width: 6px;
+                height: 6px;
+                position: absolute;
+                left: -3px;
+                top: 8px;
+                transform: rotate(45deg);
+                display: block;
+                border: 1px solid;
+                border-color: #7F7C7C #7F7C7C transparent transparent;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+@media(max-width: 1024px){
+    .st-list-links li a{
+        font-size: 12px;
+    }
+    .st-list-links li a::before{
+        top: 5px;
+    }
+    .site-map .sitemap-content{
+        padding-left: 10px;
+    }
+    .sitemap-list .sitemap-col .st-list-title{
+        font-size: 14px;
+    }
+    .sitemap-list .sitemap-col{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 767px){
+    .site-map .tab-title{
+        border-bottom: 0;
+        position: relative;
+        width: 100%;
+        > span{
+            width: 100%;
+            border-radius: 0;
+            padding: 9px 20px 2px;
+            display: block;
+            .text-en{
+                top: 50%;
+                transform: translateY(-50%);
+                right: 10px;
+                position: absolute;
+            }
+        }
+    }
+    .site-map{
+        margin-bottom: 0;
+    }
+    .site-map .sitemap-content{
+        padding: 26px 10px 10px;
+    }
+    .sitemap-content-top{
+        padding: 0 12px 19px;
+        border-bottom: 1px solid #F2F2F2;
+        margin-bottom: 22px;
+    }
+    .sitemap-content-top .title{
+        @include fontStyle(16, 50, 18, #F39FAD);
+    }
+    .sitemap-content-top .title-en{
+        @include fontStyle(10, 100, 12, #F9CDD4);
+    }
+    .sitemap-list{
+        padding: 0 12px;
+    }
+    .sitemap-list .sitemap-col{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .sitemap-list .sitemap-col .st-list-title{
+        font-size: 16px;
+    }
+}

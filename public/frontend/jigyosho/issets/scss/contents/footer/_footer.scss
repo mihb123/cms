@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  height: 3rem;
+  // margin-top: 2rem;
+  background-color: #ffeff1;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    text-align: center;
+    color: white;
+  }
+}

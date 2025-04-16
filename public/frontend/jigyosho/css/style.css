@@ -1,0 +1,643 @@
+@charaset "utf-8";
+
+/*
+Description: LifeStar（テスト用）
+Author: A.U
+Tags: 共通CSS
+Version: 0.0.1
+*/
+
+body {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   /* vertical-align: baseline; */
+   /* max-width: 1300px!important; */
+   background: #FDF4EA;
+}
+
+.section, .siteContent, .container, .container-lg, .container-md, .container-sm, .container-xl, .row, .baseSection {
+   margin: 0;
+   padding: 0;
+   width: 100% !important;
+   background: #FDF4EA;
+}
+
+img[src*=".svg"]{
+width: 100%;
+height: auto;
+}
+
+
+/*#main {*/
+   /* margin: 0 auto; */
+   /* padding: 0 auto; */
+   /*background: #FDF4EA;*/
+/*}*/
+
+
+/* フッターウィジットエリア空白部分を非表示 */
+footer .sectionBox {
+    /* display: none !important; */
+    /* height: 0px; */
+}
+
+footer .footerMenu {
+    /*display: none !important; */
+}
+
+footer .copySection {
+  display: block !important;
+  border-top:none !important;
+  height: 80px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/** Map Icon **/
+.marker_kan {
+  background-image: url('../../../img/map_ico_kan_1.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.marker_kai {
+  background-image: url('../../../img/map_ico_kai_1.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.marker_nyu {
+  background-image: url('../../../img/map_ico_nyu_1.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.marker_nyu {
+  background-image: url('../../../img/map_ico_nyu_1.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.marker_rih {
+  background-image: url('../../../img/map_ico_rih_1.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.marker_tei {
+  background-image: url('../../../img/map_ico_tei_1.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.marker_yak {
+  background-image: url('../../../img/map_ico_yak_1.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.marker_tai {
+  background-image: url('../../../img/map_ico_tai_1.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.marker_han {
+  background-image: url('../../../img/map_ico_han_1.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/** PC用設定 **/
+@media screen and (min-width: 960px) {
+
+  /** Header **/
+  #Header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 1300px;
+    width: 95%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /** Hedder:1列目のブロック **/
+  #Header-col1  {
+    width: 400px;
+    border: none ;
+    text-align: left;
+    margin: 15px 0px 5px 10px;
+  }
+
+  /** Hedder:2列目のブロック **/
+  #Header-col2  {
+    text-align: right;
+    border: none;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  /** Hedder:3列目のブロック **/
+  #Header-col3  {
+    max-width: 200px;
+    text-align: right;
+    border: none;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  /** ロゴ **/
+  #HeaderLogoImage {
+    display: flex;
+    max-width: 50%;
+    margin: 20px 0px 0px 10px;
+    padding: 0px;
+  }
+  
+  /** Top icon **/
+  #Top-icon {
+    position: absolute;
+    z-index: 11;
+    top  : 10px;
+    left : 260px;
+    width: 400px;
+    padding: 0;
+    border: solid 0px;
+    opacity: 1;
+  }
+
+  #Top-icon-img {
+    max-width: 100%;
+  }
+  
+  /** Category title **/
+  .top-ctgry {
+    position: absolute;
+    display: none;
+    z-index: 12;
+    top  : 30px;
+    left : 500px;
+    width: 350px;
+    margin: 0px;
+    padding: 0;
+    opacity: 1;
+    text-align: center;
+    /* border-bottom: 2px solid #56D4F7; */
+    /* color: #56D4F7; */
+    /*
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #69DAFC 0%, #E3FBFF 55%, #69DAFC);
+    border-image-slice: 1;
+    */
+  }
+
+  #Top-ctgry-line {
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #69DAFC 0%, #E3FBFF 55%, #69DAFC);
+    border-image-slice: 1;
+  }
+
+  /* Category title 下三角 */
+  #Top-ctgry-trgl {
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-top: 15px solid #56D4F7;
+    margin-left: 155px;
+  }
+  
+  #Top-ctgry1 {
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  #Top-ctgry2 {
+    color: #000;
+    margin: 10px 0px 0px 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+    
+  .hamburger {
+    display: none;
+  }
+
+  nav.globalMenuSp {
+    display: none;
+  }
+
+  .mainSection {
+    margin: 30px 30px 10px 28px;
+    padding: 0;
+    width: 100%;
+    min-width: 940px!important;
+    max-width: 1500px!important;
+    min-height: 600px!important;
+    max-height: 950px!important;
+    text-align: center;
+  }
+
+  /** 地図 **/
+  
+  #map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  }
+
+  #Map-search-view {
+    position: relative;
+    z-index: 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    border: solid 1px;
+    min-width: 940px!important;
+    max-width: 1500px!important;
+    min-height: 600px!important;
+    max-height: 950px!important;
+  }
+  
+  /* 検索メニュー（BOX） */
+  .search_box {
+    position: fixed;
+    z-index : 2;
+    top  : 230px;
+    left : 40px;
+    color: #000;
+    /* background: #fff; */
+    text-align: center;
+    width: 250px;
+    height: 450px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0.75em;
+    background: -moz-linear-gradient(top, #56D4F7, #FFF);
+    background: -webkit-linear-gradient(top, #56D4F7, #FFF);
+    background: linear-gradient(to bottom, #56D4F7, #FFF);  
+  }
+  
+  .serch_box_01 {
+    margin: 5px 30px 0px 10px;
+    text-align: center;
+  }
+
+/*  .serch_box_01_0 {
+    margin: 0px;
+    width: auto;
+  }
+*/
+
+  .serch_box_01_1 {
+    margin: 0px 0px 0px 0px;
+    width: 5px;
+  }
+  
+  .serch_box_01_2 {
+    margin: 0px 0px 0px 5px;
+    width: 30px;
+  }
+
+  .serch_box_01_3 {
+    margin: 0px;
+    width: 30px;
+  }
+
+  .serch_box_01_4 {
+    margin: 0px;
+    width: 10px;
+  }
+  
+  /** Box:「まずは検索」 **/
+  .serch_box_01_2_text {
+    color: white;
+    font-size: 0.6em;
+  }
+
+  /** Box:「まずは検索」 **/
+  .serch_box_01_3_text {
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .fa-search {
+    color: white;
+    font-size: 1.4em;
+  }
+  
+  .serch_box_02 {
+    margin: 5px 10px 0px 10px;
+  }
+  
+  /** Box02:Line **/
+  .serch_box_line {
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+
+  /** Box03:カテゴリー **/
+  .serch_box_03 {
+    margin: 5px 10px 0px 10px;
+    text-align: left;
+  }
+
+  /** Box03:カテゴリー(コンボBox) **/
+  #search_categories {
+    height: 28px;
+    width:100%;
+    padding: 4px 0px 0px 0px;
+  }
+
+  /** Box04:郵便番号 **/
+  .serch_box_04 {
+    margin: 5px 10px 0px 10px;
+    text-align: left;
+  }
+
+  /** Box04:郵便番号(テキストボックス)  **/
+  #zipCode {
+    display:inline-block;
+    height: 28px;
+    width: 130px;
+    padding: 4px 0px 0px 0px;
+  }
+
+  /** Box04:郵便番号説明(テキストボックス) **/  
+  #zipCode_explain {
+    display:inline-block;
+    color: white;
+    font-size: 0.6em;
+    height: auto;
+    width: 80px;
+    padding: 4px 0px 0px 0px;
+  }
+  
+  /** Box05:都道府県 **/
+  .serch_box_05 {
+    margin: 5px 10px 0px 10px;
+    text-align: left;
+  }
+
+  /** Box05:都道府県(テキストボックス) **/
+  #address_1 {
+    height: 28px;
+    width: 130px;
+    padding: 4px 4px 0px 4px;
+  }
+
+  /** Box06:住所１ **/
+  .serch_box_06 {
+    margin: 5px 10px 0px 10px;
+    text-align: left;
+  }
+
+  /** Box06:住所１(テキストボックス) **/
+  #address_2 {
+    height: 28px;
+    width:100%;
+    padding: 4px 4px 0px 4px;
+  }
+
+  /** Box07:住所２ **/
+  .serch_box_07 {
+    margin: 5px 10px 0px 10px;
+    text-align: left;
+  }
+  
+  /** Box07:住所２(テキストボックス) **/
+  #address_3 {
+    height: 28px;
+    width:100%;
+    padding: 4px 4px 0px 4px;
+    background-color: #FFBBB1;
+  }
+
+  /** Box08:距離選択 **/
+  .serch_box_08 {
+    background: #72C0E7;
+    text-align: center;
+    /* width: 220px; */
+    height: 150px;
+    margin: 10px 10px 0px 10px;
+    padding: 8px 5px 1px 1px;
+    border-radius: 0.75em;
+  }
+
+  /** Box08_01:距離選択・タイトル(Box) **/
+  .serch_box_08_01 {
+    margin: 5px 10px 15px 10px;
+    text-align: center;
+  }
+  
+  /** Box08_01:距離選択・タイトルテキストボックス) **/
+   .serch_box_08_01_text {
+    color: white;
+    font-size: 1.0em;
+    width:100%;
+    margin: 0px;
+  }
+
+  /** Box08_02:距離選択・UP(Box) **/  
+  .serch_box_08_02 {
+    margin: 10px 0px 5px 10px;
+    text-align: center;
+  }
+
+  /** Box08_02:距離選択・UP(Button) **/  
+  .serch_box_08_button_up {
+    position: relative;
+    padding-left: 30px;
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .serch_box_08_button_up:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-top: solid 3px #333;
+    border-right: solid 3px #333;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -4px;
+    transform: rotate(-45deg);
+  }
+  .serch_box_08_button_up:hover {
+    cursor: pointer;
+  }
+
+  .serch_box_08_03 {
+    margin: 2px 0px 0px 10px;
+    width: 210px;
+    height: 30px;
+    overflow: hidden;
+  }
+
+  .slider-list {
+    width: 120px;
+    height: 30px;
+    margin: 0px 0px 0px 38px;
+  }
+    
+  .slider-item {
+    color: white;
+    width: 120px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 2px 0px 0px 0px;
+    margin-top: 0px;
+  }
+
+  .serch_box_08_04 {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .serch_box_08_button_down {
+    position: relative;
+    padding-left: 20px;
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  .serch_box_08_button_down:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-bottom: solid 3px #333;
+    border-right: solid 3px #333;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -6px;
+    transform: rotate(45deg);
+  }
+
+  .serch_box_08_button_down:hover {
+    cursor: pointer;
+  }
+
+  .serch_box_08_05 {
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    width: 220px;
+  }
+  
+  .serch_box_08_05_1 {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 70px;
+  }
+  
+  .serch_box_08_05_2 {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 40px;
+  }
+
+  .serch_box_08_05_3 {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 70px;
+  }
+
+  .serch_box_08_05_text_1 {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 0.7em;
+  }
+
+  #serch_box_08_05_text_2 {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 0.9em;
+    border: none;
+    background: none;
+    width: 40px;
+  }
+
+  .serch_box_08_05_text_3 {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 0.7em;
+  }
+
+  /** Box09:検索ボタン(Box) **/
+  .serch_box_09 {
+    /* margin: 10px 0px 0px 5px; */
+    margin: 10px 10px 0px 10px;
+    padding: 0px;
+    /* width: 220px; */
+    height: 40px;
+  }
+
+  .serchButton {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    text-decration: none;
+    background: #49a9d4;
+    color: #FFF;
+    text-align: center;
+    border-style: solid 1px;
+    border-color: #49a9d4;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px #1a6ea0;
+  }
+
+  .serchButton:hover {
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+
+  .serchButton:focus {
+    outline: none;
+  }
+}

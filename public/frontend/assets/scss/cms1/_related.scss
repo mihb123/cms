@@ -1,0 +1,17 @@
+.cms1-related{
+    margin-bottom: 55px;
+    .related-title{
+        padding: 0 22px;
+        margin-bottom: 20px;
+        @include fontStyle(16, 50, 28, #545454);
+    }
+}
+@media(max-width: 767px){
+    .cms1-related{
+        margin-bottom: 30px;
+    }
+    .cms1-related .related-title{
+        padding: 0 15px;
+        margin-bottom: 14px;
+    }
+}

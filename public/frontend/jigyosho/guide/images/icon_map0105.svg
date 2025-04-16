@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="165" viewBox="0 0 105 165">
+  <defs>
+    <filter id="長方形_369" x="0" y="0" width="105" height="165" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.38"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="コンポーネント_400_1" data-name="コンポーネント 400 – 1" transform="translate(19.5 22.5)">
+    <g id="グループ_1378" data-name="グループ 1378" transform="translate(-1829 -952)">
+      <g transform="matrix(1, 0, 0, 1, 1809.5, 929.5)" filter="url(#長方形_369)">
+        <rect id="長方形_369-2" data-name="長方形 369" width="60" height="120" rx="10" transform="translate(19.5 22.5)" fill="#fff"/>
+      </g>
+      <g id="plus" transform="translate(1847 969)">
+        <path id="パス_2284" data-name="パス 2284" d="M22.8,10.3H14.7V2.2a2.2,2.2,0,0,0-4.395,0V10.3H2.2a2.2,2.2,0,0,0,0,4.395H10.3V22.8a2.2,2.2,0,0,0,4.395,0V14.7H22.8a2.2,2.2,0,0,0,0-4.395Z" fill="#5d5d5d"/>
+      </g>
+      <g id="minus" transform="translate(1847 995)">
+        <path id="パス_2285" data-name="パス 2285" d="M22.581,50H2.419a2.419,2.419,0,1,0,0,4.839H22.581a2.419,2.419,0,1,0,0-4.839Z" fill="#5d5d5d"/>
+      </g>
+      <line id="線_192" data-name="線 192" x2="40" transform="translate(1839.5 1012.5)" fill="none" stroke="#e6e6e6" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

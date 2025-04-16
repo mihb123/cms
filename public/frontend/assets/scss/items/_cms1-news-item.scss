@@ -1,0 +1,88 @@
+.cms1-news-item{
+    border-bottom: 1px solid #F5F5F5;
+    transition: all 0.3s;
+    position: relative;
+    display: flex;
+    padding: 3px 60px 3px 30px;
+    column-gap: 22px;
+    align-items: center;
+    text-decoration: none;
+    .thumb{
+        width: 105px;
+        height: 105px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+    .caption{
+        flex: 1;
+        .title{
+            @include fontStyle(18, 25, 25, #0066CC);
+            font-family: "Arial", "Source Han Sans JP", sans-serif;
+            overflow: hidden;
+            max-height: 50px;
+            -webkit-line-clamp: 2;
+            display: box;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            white-space: normal;
+            margin-bottom: 12px;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.05);
+        }
+        .meta{
+            @include fontStyle(12, 50, 14, #949494);
+            font-weight: 300;
+            display: flex;
+            column-gap: 20px;
+        }
+    }
+    .arrow{
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        right: 80px;
+        top: calc(50% - 19px);
+        background-color: #FFF;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Meiryo", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1;
+        color: #F5B6C3;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    &:first-child{
+        border-top: 1px solid #F5F5F5;
+    }
+    &:hover{
+        background-color: #FFF6F8;
+        .arrow{
+            right: 60px;
+            opacity: 1;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .cms1-news-item{
+        padding: 3px 5px 3px 10px;
+        column-gap: 13px;
+        .arrow{
+            display: none;
+        }
+        .caption{
+            .title{
+                font-size: 17px;
+            }
+        }
+    }
+}

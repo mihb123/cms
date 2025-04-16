@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53.369" height="51.133" viewBox="0 0 53.369 51.133">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.661" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="グループ_5081" data-name="グループ 5081" transform="translate(0 -797)">
+    <path id="パス_2670" data-name="パス 2670" d="M25.184,0A25.22,25.22,0,1,1,0,25.22,25.2,25.2,0,0,1,25.184,0Z" transform="translate(3 797.693)" fill="#f9f9f9"/>
+    <path id="パス_2670_-_アウトライン" data-name="パス 2670 - アウトライン" d="M25.184,2A23.191,23.191,0,0,0,2,25.22a23.168,23.168,0,1,0,32.207-21.4A23.007,23.007,0,0,0,25.184,2m0-2A25.22,25.22,0,1,1,0,25.22,25.2,25.2,0,0,1,25.184,0Z" transform="translate(3 797.693)" fill="#fedfe0"/>
+    <g id="house_3_" data-name="house (3)" transform="translate(11.766 809.047)">
+      <path id="パス_2828" data-name="パス 2828" d="M41.207,363.934h2.006v4.678H41.207Z" transform="translate(-38.532 -344.14)" fill="#a35418"/>
+      <circle id="楕円形_140" data-name="楕円形 140" cx="3.678" cy="3.678" r="3.678" transform="translate(0 13.575)" fill="#64cc56"/>
+      <path id="パス_2829" data-name="パス 2829" d="M42.21,268.127a3.681,3.681,0,0,0-1,.138,3.679,3.679,0,0,1,0,7.079,3.678,3.678,0,1,0,1-7.217Z" transform="translate(-38.532 -254.552)" fill="#50a645"/>
+      <path id="パス_2830" data-name="パス 2830" d="M439.887,363.934h2.006v4.678h-2.006Z" transform="translate(-411.332 -344.14)" fill="#a35418"/>
+      <circle id="楕円形_141" data-name="楕円形 141" cx="3.678" cy="3.678" r="3.678" transform="translate(25.88 13.575)" fill="#64cc56"/>
+      <path id="パス_2831" data-name="パス 2831" d="M440.89,268.127a3.681,3.681,0,0,0-1,.138,3.679,3.679,0,0,1,0,7.079,3.678,3.678,0,1,0,1-7.217Z" transform="translate(-411.332 -254.552)" fill="#50a645"/>
+      <path id="パス_2832" data-name="パス 2832" d="M121.532,87.217v14.655H101.47V87.218L111.5,79.51Z" transform="translate(-94.883 -78.179)" fill="#ffd180"/>
+      <path id="パス_2833" data-name="パス 2833" d="M379.622,174.494v16.2h2.006V176.035Z" transform="translate(-354.98 -166.997)" fill="#ffba63"/>
+      <path id="パス_2834" data-name="パス 2834" d="M87.974,68.045l-11.5-8.838a1,1,0,0,0-1.221,0l-11.5,8.838a1,1,0,0,0,1.221,1.593L75.861,61.27l10.891,8.368a1,1,0,0,0,1.221-1.593Z" transform="translate(-59.244 -59)" fill="#ffaaac"/>
+      <path id="パス_2835" data-name="パス 2835" d="M145.771,271.218h6.018v9.918h-6.018Z" transform="translate(-136.309 -257.442)" fill="#bf6724"/>
+      <path id="パス_2836" data-name="パス 2836" d="M207.581,271.218h2.006v9.918h-2.006Z" transform="translate(-194.106 -257.442)" fill="#a35418"/>
+      <path id="パス_2837" data-name="パス 2837" d="M144.776,263.72h-6.019a.487.487,0,0,0-.487.487v9.917h.974v-9.431h5.045v9.431h.974v-9.917A.487.487,0,0,0,144.776,263.72Z" transform="translate(-129.294 -250.431)" fill="#fdeedf"/>
+      <path id="パス_2838" data-name="パス 2838" d="M272.226,335.034h-6.687a.267.267,0,0,1-.268-.267V333.3a.268.268,0,0,1,.268-.268h6.687a.268.268,0,0,1,.268.268v1.471A.268.268,0,0,1,272.226,335.034Z" transform="translate(-248.051 -315.24)" fill="#ff7043"/>
+      <path id="パス_2839" data-name="パス 2839" d="M343.511,333.028h-2.006a.268.268,0,0,1,.268.268v1.471a.268.268,0,0,1-.268.267h2.006a.268.268,0,0,0,.268-.267V333.3A.268.268,0,0,0,343.511,333.028Z" transform="translate(-319.337 -315.24)" fill="#ff5722"/>
+      <path id="パス_2840" data-name="パス 2840" d="M275.573,271.218h5.885v4.012h-5.885Z" transform="translate(-257.685 -257.442)" fill="#b2ebf2"/>
+      <path id="パス_2841" data-name="パス 2841" d="M335.324,271.218h2.006v4.012h-2.006Z" transform="translate(-313.557 -257.442)" fill="#80deea"/>
+      <circle id="楕円形_142" data-name="楕円形 142" cx="2.341" cy="2.341" r="2.341" transform="translate(14.277 5.921)" fill="#b2ebf2"/>
+      <path id="パス_2842" data-name="パス 2842" d="M215.271,142.711a2.827,2.827,0,1,0,2.827,2.827A2.831,2.831,0,0,0,215.271,142.711Zm1.8,2.371h-1.31V143.75A1.861,1.861,0,0,1,217.068,145.082Zm-2.284-1.333v1.333h-1.31A1.861,1.861,0,0,1,214.785,143.75Zm-1.293,2.307h1.293v1.271A1.861,1.861,0,0,1,213.491,146.056Zm2.267,1.271v-1.271h1.293A1.861,1.861,0,0,1,215.758,147.327Z" transform="translate(-198.654 -137.277)" fill="#fdeedf"/>
+      <path id="パス_2843" data-name="パス 2843" d="M274.445,263.717H268.56a.487.487,0,0,0-.487.487v4.012a.487.487,0,0,0,.487.487h5.885a.487.487,0,0,0,.487-.487V264.2A.487.487,0,0,0,274.445,263.717Zm-5.4.974h1.969v3.039h-1.969Zm4.911,3.039h-1.969v-3.039h1.969Z" transform="translate(-250.672 -250.428)" fill="#fdeedf"/>
+      <path id="パス_2844" data-name="パス 2844" d="M32.165,422.137H1.071A1.071,1.071,0,0,1,0,421.066H0a1.071,1.071,0,0,1,1.071-1.071H32.165a1.071,1.071,0,0,1,1.071,1.071h0A1.071,1.071,0,0,1,32.165,422.137Z" transform="translate(0 -396.561)" fill="#a35418"/>
+      <path id="パス_2845" data-name="パス 2845" d="M466.618,419.995h-2.006a1.071,1.071,0,0,1,0,2.143h2.006a1.071,1.071,0,0,0,0-2.143Z" transform="translate(-434.453 -396.562)" fill="#8c4815"/>
+    </g>
+    <g id="グループ_1927" data-name="グループ 1927" transform="translate(0 797)">
+      <circle id="楕円形_138" data-name="楕円形 138" cx="9" cy="9" r="9" transform="translate(0 1)" fill="url(#radial-gradient)"/>
+      <text id="_4" data-name="4" transform="translate(4 14)" fill="#e99cad" font-size="13" font-family="Meiryo-Bold, Meiryo" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">4</tspan></text>
+    </g>
+  </g>
+</svg>

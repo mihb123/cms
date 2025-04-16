@@ -1,0 +1,48 @@
+.backtop-backpage{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 36px;
+    margin-top: 50px;
+    &.center{
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    a{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+        text-decoration: none;
+        @include fontStyle(9, 0, 12, #9E9E9E);
+        font-weight: bold;
+        align-items: center;
+        span{
+            width: 100%;
+            display: block;
+        }
+    }
+    @media(max-width: 767px){
+        justify-content: center;
+    }
+}
+.backtop-backpage-2{
+    display: flex;
+    column-gap: 60px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    a{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        text-decoration: none;
+        @include fontStyle(11, 0, 15, #9E9E9E);
+        font-weight: bold;
+        align-items: center;
+        span{
+            width: 100%;
+            display: block;
+        }
+    }
+}

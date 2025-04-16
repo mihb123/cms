@@ -1,0 +1,118 @@
+
+//Feature
+.feature-box{
+  border: 2px solid #F9CFD6;
+  border-top-left-radius: 10px;
+  position: relative;
+  padding: 10px 8px;
+  background-color: #FFF;
+  .picture{
+    width: 102px;
+    height: 102px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    right: 17px;
+    top: -21px;
+    z-index: 11;
+  }
+  &__inner{
+    &--title{
+      margin: 0 0 4px;
+      display: inline-block;
+      font-size: 15px;
+      line-height: 1.26;
+      background-color: #FDEAF0;
+      border-radius: 5px 5px 0 0;
+      min-height: 24px;
+      padding: 2px 5px 1px 3px;
+      font-weight: normal;
+      min-width: 56px;
+    }
+    &--content{
+      height: 200px;
+      position: relative;
+      margin-bottom: 11px;
+      .parent{
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top:0;
+        overflow: hidden;
+        transition: all 0.5s;
+        background-color: #FFF;
+      }
+      .detail{
+        color: #0C0C0C;
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 300;
+        padding-left: 11px;
+        background-color: #FFF;
+      }
+      p{
+        margin: 0;
+      }
+      &.content-box-1{
+        p:first-child{
+          padding-right: 110px;
+        }
+      }
+      .show-more{
+        position: absolute;
+        bottom: 0;
+        height: 32px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #269BCF;
+        font-size: 12px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 97) 30%, rgba(255,255,255,100) 100%);
+        text-decoration: underline;
+      }
+    }
+  }
+  @media(max-width: 767px){
+    padding: 2.400vw 0 0;
+    border-radius: 10px;
+    margin-bottom: 3.253vw;
+    .picture{
+      width: 27.200vw;
+      height: 27.200vw;
+      right: 3.200vw;
+      top: -9.333vw;
+    }
+    &__inner{
+      &--title{
+        margin-left: 2.667vw;
+        font-size: 4vw;
+      }
+      &--content{
+        height: 38.933vw;
+        margin-bottom: 0;
+        .parent{
+          border-radius: 10px;
+        }
+        .detail{
+          //padding-left: 0;
+          font-size: 3.733vw;
+          padding: 0 3.200vw 1.333vw 2.667vw;
+          border-radius: 10px;
+        }
+        .show-more{
+          height: 5.333vw;
+          justify-content: flex-end;
+          padding-right: 3.200vw;
+          right: 0;
+        }
+        &.content-box-1{
+          p:first-child{
+            padding-right: 34.667vw;
+          }
+        }
+      }
+    }
+  }
+}
+//End Feature

@@ -1,0 +1,2034 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #FFFCFD;
+    font-family: 'Noto Sans JP', 'meiryo', sans-serif;
+}
+.text-center {
+    text-align: center;
+}
+/*@font-face {*/
+/*    font-family: inkfree;*/
+/*    src: url(/fonts/Inkfree.ttf) format("opentype");*/
+/*}*/
+/*@font-face {*/
+/*    font-family:'meiryo';*/
+/*    src: url(/fonts/meiryo.ttc) format("opentype");*/
+/*}*/
+/*@font-face {*/
+/*    font-family: HGSminchoE;*/
+/*    src: url(/fonts/HGSminchoE.TTC) format("opentype");*/
+/*}*/
+/*@font-face {*/
+/*    font-family: HGMaruGothicMPRO;*/
+/*    src: url(/fonts/HGMaruGothicMPRO.TTF);*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'SourceHanSans';*/
+/*    src: url(/fonts/SourceHanSansJP-Medium.otf) format("opentype");*/
+/*}*/
+/*@font-face {*/
+/*    font-family: MicrosoftJhengHei;*/
+/*    src: url(/fonts/MicrosoftJhengHei.ttf) format("opentype");*/
+/*    font-weight: Regular;*/
+/*}*/
+/* @font-face {
+    font-family: HGSMinchoE;
+    src: url(/MSMINCHO.TTF) format("opentype");
+} */
+button, input, textarea, select{
+    font-family: inherit;
+}
+
+.container {
+    max-width: 88.263vw;
+    width: 100%;
+    margin: 0 auto;
+}
+.mt-0 {
+    margin-top: 8px !important;
+}
+.black-text {
+    color: #111111;
+}
+.container-footer {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.page-main {
+    margin-top: 80px;
+}
+.page-main{
+    background-image: linear-gradient(rgba(255 ,249 ,249, 0), #FFF9F9);
+    width: 100%;
+}
+.nurse-highligh{
+    max-width: 5px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    position: absolute;
+    left: 5.443vw;
+}
+.page-main #nurse-contact {
+    width: 100%;
+}
+.nurse-header {
+    margin: 0 auto;
+    margin-top: 36.5px;
+    max-width: 1100px;
+    padding-right: 25px;
+}
+.nurse-header .nurse-header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.nurse-header .nurse-header__main .logo {
+
+}
+.nurse-header .nurse-header__main .main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+    height: 20px;
+}
+.nurse-header .nurse-header__main .main-menu .title-header {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    line-height: 1.27;
+    color: #F695C1;
+    font-family: 'inkfree';
+}
+.nurse-header .nurse-header__main .main-menu .hamburger {
+    position: relative;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu {
+    display: block;
+    position: absolute;
+    width: 290px;
+    top: 50px;
+    padding: 30px 24px 22px 16px;
+    background: #000000;
+    border-radius: 7px;
+    left: -250px;
+    z-index: 1;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 5px;
+    margin-top: -15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-header .img-search{
+    z-index: 1;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #ACACAC;
+    bottom: 8px;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-header .menu-header__title {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 2.31;
+    letter-spacing: 4.4px;
+    font-weight: 500;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul  {
+    margin-top: 20px;
+    margin-left: 34px;
+}
+/* .nurse-header .nurse-header__main .main-menu .hamburger .menu ul li {
+    list-style: none;
+    border-left: 1px dashed white;
+    padding-left: 15px;
+} */
+/* .nurse-header .nurse-header__main .main-menu .hamburger .menu ul li:last-child {
+    border-left: none;
+    padding-top: 16px;
+} */
+/* .nurse-header .nurse-header__main .main-menu .hamburger .menu ul li .last-href {
+    line-height: 0 !important;
+} */
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul li a.active {
+    background-repeat: no-repeat;
+    text-decoration: underline;
+   
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul li a:hover {
+    font-size: 17px;
+    background-repeat: no-repeat;
+    text-decoration: underline !important;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-footer__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-footer__close span{
+    color: #747474;
+    font-size: 16px;
+    letter-spacing: 3.2px;
+    line-height: 1.5;
+
+}
+.nurse-header .nurse-header__main .main-menu .hamburger.active .menu {
+    visibility: visible;
+    top: 65px;
+    opacity: 0.9;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-header .img-search{
+    z-index: 1;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #ACACAC;
+    bottom: 8px;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu .menu-header .menu-header__title {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 4.4px;
+    font-weight: 500;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger.active .menu ul  {
+    margin-top: 20px;
+    margin-left: 34px;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul li {
+    list-style: none;
+    border-left: 1px dashed white;
+    padding: 0 0 15px 15px;
+    transition: all 0.3s;
+    height: 35px;
+}
+
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul li a span {
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul li a.active {
+    text-decoration: underline;
+} 
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul li .arrow-menu-hover {
+    visibility: hidden;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .menu ul li.active span.arrow-menu-hover {
+    visibility: visible !important;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+/* .nurse-header .nurse-header__main .main-menu .hamburger.active .menu ul li:hover .arrow-menu-hover {
+    font-size: 17px;
+    transform: scale(1);
+    margin-left: 10px;
+    visibility: visible;
+    text-decoration: none;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger.active .menu ul li:hover {
+    font-size: 17px;
+    transform: scale(1);
+    visibility: visible;
+} */
+
+.nurse-header .nurse-header__main .main-menu .hamburger.active .menu .menu-footer__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger.active .menu .menu-footer__close span{
+    color: #747474;
+    font-size: 16px;
+    letter-spacing: 3.2px;
+    line-height: 1.5;
+
+}
+.nurse-header .nurse-header__main .main-menu .hamburger.active .hamburger-hover {
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    transform: rotate(91deg);
+    right: -7px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.nurse-header .nurse-header__main .main-menu .hamburger button {
+    background: none;
+    cursor: pointer;
+}
+.nurse-header .nurse-header__main .main-menu .hamburger .hamburger-hover {
+    display: none;
+}
+@media (min-width: 769px){
+    .nurse-header .nurse-header__main .main-menu .hamburger:hover .hamburger-hover {
+        display: block;
+        transition: 0.5s;
+        position: absolute;
+        transform: rotate(91deg);
+        right: -7px;
+        top: 15px;
+        cursor: pointer;
+    }
+    .nurse-header .nurse-header__main .main-menu .hamburger:hover .hamburger-button {
+        opacity: 0.4;
+        transform: translateY(0);
+    }
+}
+
+.page-main .nurse-content {
+    margin: 0 auto;
+    width: 100%;
+}
+.page-main .nurse-content .nurse-content__title {
+    display: flex;
+    align-items: center;
+    padding: 42px 0 2px 0;
+    width: 100%;
+    max-width: 870px;
+    margin: 0 auto;
+}
+.page-main .nurse-content .nurse-content__title .banner {
+    margin-top: -16px;
+}
+.page-main .nurse-content .nurse-content__title .content {
+    padding: 14px 0;
+    margin-left: 10px;
+}
+
+.page-main .nurse-content .nurse-content__title .content .content-center {
+    display: block;
+    text-align: end;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 400;
+    padding: 20px 0;
+    font-family: 'HGSMinchoE';
+    padding-left: 40px;
+}
+.page-main .nurse-content .nurse-content__title .content .content-footer {
+    text-align: center;
+    padding-right: 50px;
+    line-height: 1;
+}
+
+
+/* step-by-step */
+
+.page-main .step-by-step {
+    width: 100%;
+    margin: 0 auto;
+}
+.page-main .step-by-step .step-main .form {
+    max-width: 400px;
+    width: 100%;
+    padding-left: 3.385vw;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+/* =============================================== */
+
+/* page-content-one */
+.page-main .step-by-step .step-main .form .form-page__one {
+    max-width: 394px;
+    margin: 0 auto;
+    width: 100%;
+}
+.page-main .step-by-step .step-main .form .form-page__one .form-group {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #FFF0F0;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 16px;
+    margin-bottom: 20px;
+    margin-left: 2.604vw;
+    width: 330px;
+}
+.page-main .step-by-step .step-main .form .form-page__one .form-group .form-radio-input {
+    
+}
+
+.page-main .step-by-step .step-main .form  .form-page__one .form-group .check {
+    display: block;
+    position: relative;
+    padding-left: 52px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 25px;
+    line-height: 1.3;
+    color: #444444;
+    font-family: 'HGSMinchoE';
+  }
+  
+.page-main .step-by-step .step-main .form .form-page__one .form-group .check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+.page-main .step-by-step .step-main .form .form-page__one .form-group .checkmark {
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    height: 35px;
+    width: 35px;
+    background-color: #FFFCFD;
+    border-radius: 50%;
+}
+.page-main .step-by-step .step-main .form .form-page__one .form-group .checkmark:hover {
+    border: 1px solid #c3bfbf;
+}
+.page-main .step-by-step .step-main .form .form-page__one .form-group .check:hover input ~ .checkmark {
+    background-color: #FFFCFD;
+}
+  
+.page-main .step-by-step .step-main .form .form-page__one .form-group .check input:checked ~ .checkmark {
+    background-color: #FFFCFD;
+    border: 1px solid #c3bfbf;
+}
+.page-main .step-by-step .step-main .form .form-page__one .form-group .check .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.page-main .step-by-step .step-main .form .form-page__one .form-group .check input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.page-main .step-by-step .step-main .form .form-page__one .form-group .check .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #F1A1B4;
+}
+.page-main .step-by-step .step-main .form .form-page__one .form-next {
+    max-width: 157px;
+    width: 100%;
+    padding: 9px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE3E3;
+    margin: 0 auto;
+    margin-top: 39px;
+    cursor: pointer;
+    margin-left: 6.771vw;
+}
+.page-main .step-by-step .step-main .form .form-page__one .form-next button {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    color: #FFFCFD;
+    font-size: 25px;
+    line-height: 1.3;
+    font-family: 'HGSminchoE';
+}
+.page-main .step-by-step.active .step-main .form .form-page__one .form-next {
+    background-color: #FCA6BB;
+    -webkit-box-shadow: 0px 3px 8px #F1A1B4;
+    box-shadow: 0px 3px 8px #F1A1B4;
+}
+/* page-contact-one */
+
+/* ========================================= */
+
+
+/* page-contact-two */
+.page-main .step-by-step .step-main .form-two {
+    max-width: 970px;
+    padding-left: 0;
+    margin-top: 80px;
+}
+.nurse-content__two ,.form-page__two {
+    display: none;
+}
+.page-main .step-by-step .page-two .form .form-page__two .list {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    height: 253px;
+    margin-left: 0.521vw;
+}
+
+.page-main .step-by-step.active .page-two  .form .form-page__two .list .list-option {
+    cursor: pointer;
+}
+.page-main .step-by-step .page-two .form .form-page__two .list .list-option span {
+    font-size: 1.302vw;
+    line-height: 1.32;
+    letter-spacing: 1.25px;
+    color: #4D4D4D;
+    font-weight: 400;
+    margin-top: 7px;
+}
+
+.page-main .step-by-step .page-two .form .form-page__two .form-group {
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+}
+.page-main .step-by-step .page-two .form .form-page__two .form-group .check {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 25px;
+    line-height: 1.3;
+    color: #444444;
+  }
+  
+.page-main .step-by-step .page-two .form .form-page__two .form-group .check input {
+    position: absolute;
+    opacity: 0;
+    top: 15px;
+    left: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-50%);
+}
+  
+.page-main .step-by-step .page-two .form .form-page__two .form-group .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 35px;
+    width: 35px;
+    background-color: #FFFCFD;
+    border-radius: 50%;
+    border: 1px solid #C1BEBE;
+}
+ 
+.page-main .step-by-step .page-two .form .form-page__two .form-group .check:hover input ~ .checkmark {
+    background-color: #FFFCFD;
+}
+  
+.page-main .step-by-step .page-two .form .form-page__two .form-group .check input:checked ~ .checkmark {
+    background-color: #FFFCFD;
+    border: 1px solid #c3bfbf;
+}
+.page-main .step-by-step .page-two .form .form-page__two .form-group .check .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.page-main .step-by-step .page-two .form .form-page__two .form-group .check input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.page-main .step-by-step .page-two .form .form-page__two .form-group .check .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #F1A1B4;
+}
+
+.page-main .step-by-step .page-two .form .form-page__two .form-next {
+    max-width: 157px;
+    width: 100%;
+    padding: 9px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE3E3;
+    margin: 0 auto;
+    margin-top: 39px;
+    cursor: pointer;
+}
+.page-main .step-by-step .page-two .form .form-page__two .form-next button {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    color: #FFFCFD;
+    font-size: 25px;
+    line-height: 1.3;
+    font-family: 'HGSminchoE';
+    font-weight: 400;
+}
+.page-main .step-by-step.active .page-two .form .form-page__two .form-next {
+    background-color: #F2A5BA;
+    -webkit-box-shadow: 0px 3px 8px #F1A1B4;
+    box-shadow: 0px 3px 8px #F1A1B4;
+}
+.page-main .step-by-step.active .page-two.active .form .form-page__two .list .list-option.active .list-option__img {
+    background-color: #F2A5BA;
+    border-radius: 50%;
+    
+}
+.page-main .step-by-step .page-two.active .nurse-content__two {
+    display: block;
+}
+.page-main .step-by-step .page-two.active .form-two .form-page__two {
+    display: block ;
+    margin-top: -70px;
+}
+.page-main .step-by-step .page-two.active .nurse-content__one {
+    display: none;
+}
+.page-main .step-by-step .page-two.active .form-two .form-page__one {
+    display: none ;
+}
+.page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content {
+    margin-top: 20px;
+}
+.page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content .content-header {
+    font-size: 1.458vw;
+    line-height: 50px;
+    letter-spacing: 1.4px;
+    color: #000000;
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'HGSminchoE';
+}
+.page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content .content-header br{
+    display: none;
+}
+.page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content .content-header hr {
+    display: none;
+}
+.page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content .content-center {
+    font-size: 0.625vw;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    color: #C3C1BE;
+    padding-top: 11px;
+    text-align: left;
+    padding-left: 9.479vw;
+}
+.page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content .content-footer {
+    padding-left: 10px;
+}
+/* page-contact-two */
+
+/* ========================================= */
+
+/* page-contact-three */
+
+.nurse-content__three ,.form-page__three {
+    display: none;
+}
+.page-main .step-by-step .page-three.active .nurse-content__one {
+    display: none;
+}
+.page-main .step-by-step .page-three.active .form-page__one {
+    display: none;
+}
+.page-three.active .nurse-content__three {
+    display: block;
+}
+.page-three.active .form-page__three{
+    display: block;
+}
+.page-three.active .form {
+    max-width: 1120px !important;
+}
+
+.page-main #nurse-contact .step-by-step .page-three .nurse-content__title .content .content-header {
+    font-family: 'HGSMinchoE';
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 2.8px;
+    color: #000000;
+    font-weight: 400;
+}
+.page-main #nurse-contact .step-by-step .page-three .nurse-content__title .content .content-header {
+    font-family: 'HGSMinchoE';
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 2.8px;
+    color: #000000;
+    font-weight: 400;
+}
+.page-main #nurse-contact .step-by-step .page-three .nurse-content__title .content .content-center {
+    font-family: 'HGSMinchoE';
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 2.8px;
+    color: #000000;
+    font-weight: 400;
+    padding-left: 60px;
+    margin-top: -12px;
+    margin-left: 10px;
+}
+.page-main #nurse-contact .step-by-step .page-three .nurse-content__title .content .content-footer {
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 1.2px;
+    color: #C3C1BE;
+    font-weight: 400;
+    padding: 0;
+}
+
+
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    margin-left: 3.906vw;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background1 .background {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 243px;
+    width: 100%;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background1 .line {
+    max-width: 349px;
+    width: 100%;
+    border-top: 1px solid #DBDBDB;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background1 .background span {
+    font-size: 35px;
+    line-height: 1.34;
+    letter-spacing: 1.75px;
+    font-weight: 400;
+    width: 203px;
+    color: #4D4D4D;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background2 {
+   margin-top: 50px;
+   margin-left: -27px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DBDBDB;
+    padding-bottom: 42px;
+    width: 100%;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col {
+    margin-top: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3 - 20px*2/3);
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-img {
+    width: 270px;
+    height: 270px;
+    background: #F1A1B4;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-img img{
+    width: 100%;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-title {
+    margin-top: 26px;
+    max-width: 347px;
+    width: 100%;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-title span {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    color: #4D4D4D;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-description {
+    margin-top: 9px;
+    max-width: 270px;
+    width: 100%;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-description span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.68;
+    letter-spacing: 0.8px;
+    color: #606060;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form {
+    margin-top: 32px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title {
+    margin-top: 32px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title .content-main {
+    font-size: 19px;
+    color: #111111;
+    line-height: 1.36;
+    letter-spacing: 0.95px;
+    border-bottom: 1px solid #707070;
+    max-width: 211px;
+    width: 100%;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title .display-content {
+    display: flex;
+
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title .display-content .content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #585858;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title  .content-main.w-156 {
+    max-width: 156px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title .content {
+    font-size: 16px;
+    color: #585858;
+    line-height: 1.5;
+    margin-left: 33px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-description {
+    margin-top: 17px;
+    font-size: 16px;
+    color: #111111;
+    line-height: 1.68;
+    letter-spacing: 0.95px;
+    font-weight: 400;
+    padding-left: 37px;
+    margin-bottom: 27px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group {
+    margin-top: 21px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .infor label {
+    margin-top: 18px;
+    font-size: 18px;
+    color: #111111;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    padding-left: 13px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .infor .validate {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #CC3B5E;
+    line-height: 1.33;
+    letter-spacing: 0.8px;
+    padding-left: 19px;
+    position: relative;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input {
+    position: relative;
+    margin-bottom: 10px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group.pb-25 {
+    margin-top: 25px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group.area-mt {
+    margin-top: -4px;
+}
+
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input .text {
+    border: 1px solid #ABABAB;
+    border-radius: 10px;
+    max-width: 940px;
+    width: 100%;
+    padding: 12px 10px;
+    height: 55px;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input textarea {
+    border: 1px solid #ABABAB;
+    border-radius: 10px;
+    max-width: 940px;
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.9px;
+    resize: vertical;
+    outline: none;
+}
+textarea::-webkit-resizer {
+    border-width: 25px;
+  }
+.wrap {
+position: relative;
+}
+.wrap:after {
+content:"";
+background: url('../images/resize.png');
+z-index: 1;
+opacity: 0.5;
+position: absolute;
+right: 6px;
+bottom: 31px;
+width: 25px;
+pointer-events: none;
+height: 25px;
+background-repeat: no-repeat;
+}
+.pull-tab {
+height: 0px;
+width: 0px;
+background: url('../images/resize.png');
+position: absolute;
+bottom: 0px;
+right: -15px;
+pointer-events: none;
+z-index: 2;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input textarea.h-225 {
+    min-height: 225px;
+    font-size: 18px;
+    padding-right: 30px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input textarea.h-160 {
+    min-height: 160px;
+    font-size: 18px;
+    padding: 18px 10px;
+
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input.w-489 {
+    width: 489px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input.w-376 {
+    max-width: 376px;
+    width: 100%;
+    margin-right: 25px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input .form-input__span {
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    font-weight: 400;
+    color: #111111;
+    line-height: 1.5;
+    max-width: 940px;
+    width: 100%;
+    padding-right: 12px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .hr-form {
+    max-width: 1000px;
+    width: 100%;
+    margin-left: -20px;
+    border-top: 1px solid #707070;
+    margin-top: 25px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    width: 100%;
+    gap: 9px;
+    flex-wrap: wrap;
+}
+
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .unti{
+    max-width: 176px !important;
+}
+
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .unti .form-input .text{
+    text-align: center;
+}
+
+
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .money {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 11px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.08;
+    letter-spacing: 1.25px;
+    color: #8A8A8A;
+}
+
+
+/*  */
+div.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ABABAB;
+    padding: 0px 21px;
+    border-radius: 10px;
+    gap: 22px;
+    height: 55px;
+}
+div.options >  .item-radio {
+    display: none;
+}
+div.options >  .item-radio +label span{
+    display: inline-block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ABABAB;
+    border-radius: 7px;
+    vertical-align:middle;
+    margin:-2px 10px 0 0;
+    margin-right: 10px;
+    background:url(../images/img_check.svg) -35px top no-repeat;
+
+}
+
+div.options > .item-radio:checked +label span{
+    background: url(../images/img_check.svg) left top no-repeat;
+}
+
+
+div.options > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+div.options > label > span {
+   font-size: 22px;
+}
+div.options > label > .img-check{
+	display: inline-block;
+    padding: 0px;
+    height: 35px;
+    width: 35px;
+    background: none;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+div.options > label > input.img-check:checked::after  {  
+	content: '';
+}
+.form-radio-input {
+    border: 1px solid #ABABAB;
+    padding: 8px 35px 18px;
+    border-radius: 10px;
+    max-width: 940px;
+    width: 100%;
+}
+div.options-2 {
+    display: flex;
+    gap: 60px;
+    height: 55px;
+}
+
+div.options-2 >  .item-radio {
+    display: none;
+}
+div.options-2 >  .item-radio +label span{
+    display: inline-block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ABABAB;
+    border-radius: 7px;
+    vertical-align:middle;
+    margin:-2px 10px 0 0;
+    margin-right: 10px;
+    background:url(../images/img_check.svg) -35px top no-repeat;
+}
+
+div.options-2 > .item-radio:checked +label span{
+    background: url(../images/img_check.svg) left top no-repeat;
+}
+div.options-2 > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+div.options-2 > label span {
+    font-size: 18px;
+    color: #111111;
+}
+div.options-2 > label > .img-check{
+	display: inline-block;
+    padding: 0px;
+    height: 35px;
+    width: 35px;
+    background: none;
+    border: 1px solid #ABABAB;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+div.options > label > input.img-check:checked::after  {  
+	content: '';
+}
+
+/*  */
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .input-disable {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    gap: 30px;
+    padding-top: 7px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .input-disable span{
+    width: 50%;
+}
+@media(max-width: 768px){
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .input-disable span{
+        width: 100%;
+    }
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .input-disable input {
+    margin-top: 0px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #BEBEBE;
+    height: 37px;
+    font-size: 16px;
+    outline: none;
+    background: rgb(245, 245, 245);
+    border-width: 0 0 2px 0 !important;
+    min-width: 300px;
+    width: 100%;
+    padding-left: 10px;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ABABAB;
+}
+.page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    background-image: none;
+    flex: 1;
+    cursor:pointer;
+    padding: 7px;
+    width: 477px;
+    height: 55px;
+    font-size: 24px;
+    border-radius: 10px;
+  }
+  .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input select::-ms-expand {
+    display: none;
+  }
+  
+  .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .select::after {
+    content: '';
+    position: absolute;
+    background: url('../images/Component\ 377\ –\ 1.jpg');
+    top: 60%;
+    transform: translateY(-50%);
+    right: 0px;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+  }
+  .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .select:hover::after {
+    color: blue;
+  }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button {
+    max-width: 515px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+  .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button .content span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #403F3F;
+   }
+   .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button .content a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2F499E;
+    padding: 0 !important;
+   }
+  .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button .form-button__btn {
+    
+    margin-top: 28px;
+  }
+  .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button .form-button__btn button {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FFFCFD;
+    background: #F1A1B4;
+    padding: 15px 123px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+/* page-contact-three */
+
+/* step-by-step */
+
+
+
+/* footer */
+.page-1__footer {
+    width: 100%;
+    margin: 415px auto 0;
+    text-align: center;
+    margin-left: 10px;
+    padding-bottom: 60px;
+}
+.page-1__footer img{
+    width: 90px;
+}
+.page-1__footer .footer-line__one {
+    font-size: 13px;
+    letter-spacing: 0.65px;
+    line-height: 1.92;
+    font-weight: 400;
+    margin-top: 19px;
+    margin-left: -6px;
+    margin-bottom: -6px;
+    color: #232222;
+}
+.page-1__footer .footer-line__two {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+    line-height: 3.125;
+    font-weight: 400;
+    color: #AEAEAE;
+}
+.page-2__footer {
+    width: 100%;
+    margin: 285px auto;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+    text-align: center;
+    margin-left: 10px;
+}
+.page-2__footer img{
+    width: 90px;
+}
+.page-2__footer .footer-line__one {
+    font-size: 13px;
+    letter-spacing: 0.65px;
+    line-height: 1.92;
+    font-weight: 400;
+    margin-top: 19px;
+    margin-left: -6px;
+    margin-bottom: -6px;
+    color: #232222;
+}
+.page-2__footer .footer-line__two {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+    line-height: 3.125;
+    font-weight: 400;
+    color: #AEAEAE;
+}
+.page-3__footer, 
+.footer-two__page3 {
+    display: none;
+}
+.page-3__footer img{
+    width: 90px;
+}
+.main-page-3 .page-3__footer {
+    margin: 117px auto 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 65px;
+}
+.main-page-3 .page-3__footer .footer-line__one {
+    font-size: 13px;
+    letter-spacing: 0.65px;
+    line-height: 1.92;
+    font-weight: 400;
+    margin-top: 19px;
+    margin-left: -6px;
+    margin-bottom: -6px;
+    color: #232222;
+}
+.main-page-3 .page-3__footer .footer-line__two {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+    line-height: 3.125;
+    font-weight: 400;
+    color: #AEAEAE;
+}
+.main-page-3 .footer-two__page3 {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 70px;
+    display: block;
+    /* border-top: 1px solid #ccc;  //変更(@ edited by a.u  2023.07.20 */
+}
+.main-page-3 .footer-two__page3 .copy-right {
+    padding: 46px 0;
+    margin-left: 42.865vw;
+}
+.main-page-3 .footer-two__page3 .copy-right span {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 3.2;
+    letter-spacing: 0.325px;
+    color: #CCCCCC;
+}
+.main-page-3 .footer-two__page3 .img-footer{
+    margin: 0 auto;
+    padding-top: 92px;
+}
+.main-page-3 .footer-two__page3 .img-footer .footer_img{
+    text-align: center;
+}
+.main-page-3 .footer-two__page3 .infor-footer{
+    margin-top: 84.5px; 
+    text-align: center;
+}
+.main-page-3 .footer-two__page3 .infor-footer .content .content-center {
+    margin-top: 15px;
+}
+.main-page-3 .footer-two__page3 .infor-footer .content .content-footer {
+    margin-top: 35px;
+    margin-left: 27px;
+}
+.main-page-3 .footer-two__page3 .infor-footer .content .content-footer .footer-arrow {
+    margin-left: 12px;
+}
+.main-page-3 .footer-two__page3 .infor-footer .content .content-footer a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.14;
+    color: #2F499E;
+}
+.main-page-3 .footer-two__page3 .infor-footer .image {
+    position: relative;
+}
+.input-disable input[type=text]:focus{
+    background-color: #FFF !important;
+}
+/* footer */
+@media only screen and (max-width: 1220px) { 
+    .page-main {
+
+        padding-right: 0;
+        gap: 33px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-title {
+        height: 118px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-img {
+        width: 230px;
+        height: 230px;
+        padding: 25px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input.w-489 {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 970px) and (min-width: 769px) { 
+    .page-main {
+        padding-right: 0;
+        gap: 33px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-title {
+        height: 118px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-img {
+        width: 180px;
+        height: 180px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form {
+        padding-left: 0;
+    }
+}
+
+
+.form_bachground{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.form_bachground form{
+    position: relative;
+    z-index: 1;
+}
+.page__three__col{
+    position: relative;
+    z-index: 1;
+}
+
+.form_bachground .form_ovelay{
+    position: absolute;
+    width: 100%;
+    background: url(../images/backgrounf_form.svg) no-repeat;
+    height: 100%;
+    background-size: 100%;
+    background-position: top;
+    top: -215px;
+}
+
+.alert{
+    position: absolute;
+    width: 230px;
+    top: -50px;
+    left: 0;
+    display: none;
+}
+.alert_1{
+    width: 150px;
+}
+select.error ~ .alert,
+textarea.error ~ .alert,
+input.error ~ .alert{
+    display: block !important;
+}
+/*label.error{*/
+/*    display: none !important;*/
+/*}*/
+
+.form-input.error,
+.form-input .error{
+    background: #FFD5D5;
+    border: 1px solid #F1A1B4 !important;
+}
+.form-input.error > .input-disable input{
+    background: #FFD5D5 !important;
+}
+.nurse-content__two .nurse-content__title{
+    padding-top: 25px !important;
+}
+.nurse-content__two .nurse-content__title .content .content-header{
+    padding-left: 10px;
+}
+.page-two .form .form-page__two .form-next{
+    margin-top: 110px !important;
+    margin-left: 415px !important;
+}
+.list-option .list-option__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 191px;
+    height: 191px;
+}
+.list-option:nth-child(1) .list-option__img img{
+    width: 130px;
+    height: 130px;
+}
+.list-option:nth-child(2) .list-option__img img{
+    width: 154px;
+    height: 154px;
+}
+.list-option:nth-child(3) .list-option__img img{
+    width: 191px;
+    height: 191px;
+}
+.list-option:nth-child(4) .list-option__img img{
+    width: 136px;
+    height: 136px;
+}
+.list-option:nth-child(5) .list-option__img img{
+    width: 207px;
+    height: 207px;
+}
+
+.list-option:first-child{
+    margin-right: 7px;
+}
+
+.nurse-content__three .nurse-content__title .banner{
+    margin-top: -18px !important;
+}
+.nurse-content__three .nurse-content__title{
+    padding-top: 20px !important;
+    padding-left: 46px !important;
+}
+.nurse-content__three  .content{
+    padding-top: 25px !important; 
+}
+.page__col:first-child .col-img{
+    padding: 40px 15px 71px 40.4px;
+}
+.page__col:nth-child(2) .col-img{
+    padding: 52px 9.5px 61px 23px;
+}
+.page__col:nth-child(3) .col-img{
+    padding: 35.3px 31.3px 60px 39.9px;
+}
+.space{
+    display: block;
+    height: 10px;
+}
+.text_footer{
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+}
+.infor{
+    padding-bottom: 9px;
+}
+.form-input label.error,
+.form-input label.custom_error{
+    display: inline-block;
+    color: #ffffff;
+    position: absolute;
+    top: calc(100% + 9px);
+    right: 0;
+    background: #E15884;
+    font-size: 15px;
+    line-height: 1.47;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 8px 15px;
+    z-index: 2;
+}
+.error label.custom_error{
+    display: inline !important;
+}
+label.error::before ,
+label.custom_error:before{
+    content: '';
+    background: url(../images/alert.svg);
+    padding: 3px 19px;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+label.error::after,
+label.custom_error:after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #E15884;
+    z-index: 1;
+    top: -7px;
+    right: 19px;
+    transform: rotate(135deg);
+}
+.relative{
+    position: relative;
+}
+@media (max-width: 1023px){
+    .nurse-highligh{
+        display: none;
+    }
+}
+@media( max-width: 1440px){
+    .page-main .nurse-content .nurse-content__title{
+        justify-content: center;
+    }
+}
+@media (max-width: 768px){
+    .list-option .list-option__img img{
+        width: 130px !important;
+        height: 130px !important;
+    }
+    .page-main .step-by-step .step-main .form .form-page__two .list{
+        flex-wrap: wrap;
+        margin: 100px 0 0;
+        justify-content: space-around;
+        height: auto;
+        align-items: flex-start;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background1{
+        gap: 0;
+        margin-left: 0;
+    }
+    
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-title{
+        height: auto;
+        display: unset;
+        margin-top: 10px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-description br{
+        display: none;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-description{
+        max-width: unset;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col{
+        margin-top: 25px;
+        width: 100%;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .unti{
+        max-width: 130px !important;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .unti .form-input .text{
+        height: 40px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group-list{
+        gap: 0;
+    }
+    div.options,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input .text{
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    div.options > .item-radio:checked +label span {
+        background: url(../images/checkboxsp.svg) left top no-repeat;
+    }
+    div.options > .item-radio +label span{
+        width: 30px;
+        height: 30px;
+        background: url(../images/checkboxsp.svg) -30px top no-repeat;
+    }
+    div.options-2 > .item-radio +label span{
+        width: 30px;
+        height: 30px;
+    }
+    div.options-2 > .item-radio:checked +label span {
+        background: url(../images/checkboxsp.svg) left top no-repeat;
+    }
+    div.options > .item-radio:hover +label span{
+        background: url(../images/checkboxsp.svg) left top no-repeat;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group{
+        margin-top: 10px !important;
+    }
+    .f-1{
+        width: 100%;
+    }
+    .w-489, .w-376{
+        max-width: unset !important;
+        width: 100%;
+    }
+    .input-disable input{
+        width: 100%;
+    }
+    .nurse-header .nurse-header__main .main-menu .hamburger.active .menu ul li{
+        padding: 0 0 10px;
+        padding-left: 15px;
+    }
+    .nurse-header .nurse-header__main .main-menu .hamburger.active .menu ul li a{
+        line-height: 1 !important;
+        padding: 0;
+        margin: 0;
+    }
+    .nurse-header .nurse-header__main .main-menu .hamburger.active .menu ul li .arrow-menu-hover{
+        line-height: 1;
+    }
+    .nurse-header .nurse-header__main .main-menu .hamburger.active .menu ul .active span{
+        display: none;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background1 .background{
+        width: 90%;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background1 .background img{
+        margin-left: 20px;
+    }
+    .main-page-3 .footer-two__page3 .img-footer .footer_img{
+        width: 45vw;
+    }
+    .page-main .step-by-step .step-main .form .form-page__one .form-group{
+        width: 100%;
+        margin-left: 0;
+    }
+    .page-main .step-by-step .step-main .form .form-page__one .form-group .check{
+        padding-left: 15vw;
+    }
+    .page-main .step-by-step .step-main .form .form-page__one .form-next{
+        margin: 40px auto 0;
+    }
+    .list-option:first-child,
+    .list-option:nth-child(2),
+    .list-option:nth-child(3),
+    .list-option:nth-child(4){
+        margin-right: 0 !important;
+        margin-bottom: 50px;
+    }
+    .list-option .list-option__img{
+        width: 130px !important;
+        height: 130px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0 !important;
+    }
+    .page-two .form .form-page__two .form-next{
+        margin: 100px auto 0 !important;
+    }
+    .page-2__footer{
+        margin: 285px auto 0; 
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background2{
+        margin: 50px auto 0;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button{
+        margin-left: 0;
+    }
+    .main-page-3 .page-3__footer{
+        padding: 0;
+    }
+    .main-page-3 .footer-two__page3 .img-footer .footer_img{
+        margin: 0 auto;
+    }
+    .main-page-3 .footer-two__page3 .infor-footer .image{
+        width: 100%;
+    }
+    .main-page-3 .footer-two__page3 .infor-footer .image img{
+        width: 300px;
+    }
+    .text_footer{
+        bottom: 17px;
+        left: 159px;
+        font-size: 12px;
+    }
+    .main-page-3 .footer-two__page3 .copy-right{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .page-main {
+        margin-top: 0;
+        padding-right: 0;
+        gap: 10px;
+    }
+    .nurse-header {
+        margin: 0;
+        padding-right: 0;
+        margin-top: 15px;
+    }
+    .nurse-header .nurse-header__main {
+        margin: 0 12px;
+    }
+    .nurse-header .nurse-header__main .logo{
+        margin-right: 10px;
+    }
+    .nurse-header .nurse-header__main .logo img {
+        width: 100%;
+    }
+    .page-main .step-by-step .step-main .form .form-page__one {
+        padding-left: 0;
+    }
+    .page-main .nurse-content {
+        padding-left: 0px;
+        margin-left: 0;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .page-main .nurse-content .nurse-content__title {
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 !important;
+        margin-top: 70px;
+    }
+    .page-main .step-by-step {
+        margin-left: 0;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .page-main .nurse-content .nurse-content__title .content {
+        margin: 0 !important;
+        text-align: center;
+    }
+    .page-main .nurse-content .nurse-content__title .content .content-center {
+        text-align: center;
+        padding-right: 0;
+        font-size: 22px;
+        padding-left: 0;
+        line-height: 1.5;
+    }
+    
+    .page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content .content-header {
+        font-size: 24px;
+        padding: 0;
+    }
+    .page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content .content-header hr {
+        display: block;
+    }
+    .page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content .content-center {
+        font-size: 14px;
+        padding-left: 0;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-img {
+        width: 180px;
+        height: 180px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background2 img {
+        width: 100%;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col {
+        flex-wrap: wrap;
+    }
+    div.options-2 {
+        gap: 0;
+        justify-content: space-around;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button .form-button__btn button {
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .nurse-content__title .content .content-center {
+        padding: 20px 24px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .input-disable {
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .nurse-content__title .content .content-footer {
+        padding: 0 41px;
+    }
+    .wrap:after {
+        right: 0;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .hr-form {
+        margin-left: 0;
+    }
+    .page-main .step-by-step .page-two .form .form-page__two .list .list-option span {
+        font-size: 23px;
+    }
+    .main-page-3 .footer-two__page3 {
+        padding-left: 0;
+    }
+    .main-page-3 .footer-two__page3 .infor-footer {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+    .form-radio-input {
+        padding: 10px 4px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col {
+        margin-left: 0;
+        gap: 0;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-description {
+        padding-left: 0;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form{
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input select{ 
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+    }
+    .page-main .nurse-content .nurse-content__title .content .content-center span {
+        display: inline-block;
+    }
+    .page-main .nurse-content .nurse-content__title .content .content-footer {
+        padding-right: 0;
+    }
+    .page-main .step-by-step {
+        padding: 0 20px;
+    }
+    .page-main .step-by-step .step-main .form {
+        padding-left: 0;
+        margin-top: 0;
+    }
+        /* .page-main .step-by-step .step-main .form .form-page__two .list {
+            flex-direction: column;
+        } */
+    footer {
+        margin: 30px auto;
+    }
+    .page-main .step-by-step .step-main .form .form-page__one .form-group .check,
+    .page-main .step-by-step .step-main .form .form-page__one .form-next button,
+    .page-main .step-by-step .page-two .form .form-page__two .form-next button {
+        font-size: 23px;
+    }
+    .page-1__footer .footer-line__one,
+    .page-2__footer .footer-line__one,
+    .page-3__footer .footer-line__one {
+        font-size: 11px;
+    }
+    .nurse-header .nurse-header__main .main-menu .title-header {
+        font-size: 9px;
+    }
+    .page-1__footer .footer-line__two,
+    .page-2__footer .footer-line__two,
+    .page-3__footer .footer-line__two {
+        font-size: 6px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .nurse-content__title .content .content-header,
+    .page-main #nurse-contact .step-by-step .page-three .nurse-content__title .content .content-center {
+        font-size: 26px;
+        font-weight: 400;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .nurse-content__title .content .content-footer {
+        font-size: 10px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__background1 .background span {
+        font-size: 33px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-title span {
+        font-size: 28px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title .content-main {
+        font-size: 17px;
+        max-width: unset;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-description,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .infor .validate,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__col .page__col .col-description span,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input .form-input__span,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title .content,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button .content a,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button .content span,
+    .nurse-header .nurse-header__main .main-menu .hamburger.active .menu ul li a,
+    .nurse-header .nurse-header__main .main-menu .hamburger.active .menu .menu-footer__close span,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title .display-content .content {
+        font-size: 13px;
+        padding: 5px 10px;
+        line-height: 1.33;
+    }
+    .black-text{
+        padding: 0 !important;
+    }
+    
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .infor label,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input textarea,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input input,
+    div.options-2 > label span {
+        font-size: 16px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title .display-content {
+        flex-wrap: wrap;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-title .content {
+        margin-left: 0;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .money {
+        font-size: 18px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-button .form-button__btn button {
+        font-size: 20px;
+    }
+    .main-page-3 .footer-two__page3 .infor-footer .content .content-footer a {
+        font-size: 12px;
+    }
+    .main-page-3 .footer-two__page3 .copy-right span {
+        font-size: 11px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-input .input-disable input {
+        font-size: 14px;
+    }
+    div.options > label > span,
+    .nurse-header .nurse-header__main .main-menu .hamburger.active .menu .menu-header .menu-header__title {
+        font-size: 20px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .infor label {
+        padding-left: 0;
+    }
+    .nurse-header .nurse-header__main .main-menu{
+        height: auto;
+    }
+    .sp-show,
+    .content-center br, .content-header br,
+    .page-main .step-by-step .page-two.active .nurse-content__two .nurse-content__title .content .content-header br{
+        display: unset !important;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input textarea.h-160,
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .form-input textarea.h-225{
+        font-size: 13px;
+        padding-right: 10px;
+    }
+    .page-main #nurse-contact .step-by-step .page-three .form-page__three .page__three__form .form-group .infor .validate{
+        line-height: 1;
+        padding: 0 10px;
+    }
+}
+.px-none,
+.content-center br,
+.content-header br{
+    display: none;
+}

@@ -1,0 +1,33 @@
+.second-opinion{
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0 0 15px rgba(0,0,0,0.06);
+    margin-top: 10px;
+    .so-image{
+        width: 100%;
+        height: auto;
+    }
+    .more{
+        text-align: center;
+        padding: 52px 10px 55px 15px;
+        a{
+            display: inline-flex;
+            align-items: center;
+            @include fontStyle(18, 0, 27, #0A2682);
+            text-decoration: none;
+            .arrow-right{
+                margin-left: 2px;
+                transition: all 0.3s;
+                position: relative;
+                left: 0;
+            }
+            &:hover{
+                .arrow-right{
+                    left: 5px;
+                }
+            }
+        }
+    }
+
+}

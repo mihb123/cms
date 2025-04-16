@@ -1,0 +1,10 @@
+.top-news-list{
+    display: flex;
+    gap: 8px;
+    padding-top: 7px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    .top-news-item{
+        width: calc(50% - 4px);
+    }
+}

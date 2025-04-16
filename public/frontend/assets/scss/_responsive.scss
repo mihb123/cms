@@ -1,0 +1,1846 @@
+@media(max-width: 1024px){
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main-content-wrap .sidebar{
+        display: none;
+    }
+    .main-content-wrap .main-content-left{
+        padding-right: 0;
+        width: 100%;
+    }
+    .slogan-mitori{
+        padding-bottom: 20px;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .slogan-mitori .slogan-text .text-1{
+        @include fontStyle(16, 150, 24, #1D3994);
+        text-align: center;
+    }
+    .slogan-mitori .slogan-text .text-en{
+        padding-left: 0;
+        @include fontStyle(7, 100, 8);
+        text-align: center;
+    }
+    .humberger-wrap .humberger-button{
+        right: 20px;
+    }
+    .mitori-taiken{
+        background-image: none;
+    }
+    .mitori-layout-2 .main-content-wrap .main-content-left{
+        padding-bottom: 0;
+    }
+    // .person-taken-care,
+    // .person-care,
+    // .mitori-detail-top{
+    //     margin-left: 84px;
+    //     margin-right: 84px;
+    // }
+    .mitori-detail-wrap {
+        padding: 0 24px;
+    }
+    .mitori-slogan-top.top{
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        border-radius: 0;
+        padding-right: 10px;
+    }
+    .image-top-group .content-left{
+        display: none;
+    }
+    .image-top-group .content-right{
+        width: 100%;
+        text-align: center;
+    }
+    .image-top-group .content-right img{
+        max-width: 456px;
+    }
+    .main-footer-wrap .logo-footer{
+        margin-bottom: 25px;
+    }
+    .main-footer-wrap .list-staff-img{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main-footer-wrap .list-links{
+        padding-left: 20px;
+        padding-right: 0;
+        row-gap: 95px;
+    }
+    .main-footer-wrap .list-links--col{
+        width: 33.33%;
+    }
+    .main-footer-wrap .list-links--col:not(:first-child){
+        padding-left: 35px;
+    }
+    .main-footer-wrap .list-links--col:nth-of-type(4){
+        padding-left: 0;
+    }
+    .main-footer-wrap .list-links .last-column{
+        margin-top: 0;
+        width: 33.33%;
+        margin-left: 0;
+    }
+    .main-footer-wrap .list-links .last-column ul li{
+        width: 100%;
+    }
+    .main-footer-wrap .list-links .last-column ul{
+        display: block;
+    }
+    .sponsor{
+        margin-bottom: 70px;
+        padding: 0 20px;
+    }
+    .notice-item{
+        width: 100%;
+        min-height: 70px;
+        display: flex;
+        column-gap: 20px;
+        align-items: flex-start;
+        padding: 10px 37px;
+    }
+    .notice-item .meta{
+        min-width: 120px;
+    }
+    .notice-item .meta .date{
+        font-size: 10px;
+    }
+    .notice-item .title{
+        font-size: 14px;
+        flex: 1;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-right: 30px;
+    }
+    .notice-item .arrow-right{
+        right: 20px;
+        font-size: 18px;
+    }
+    .footer-basic .footer-tab-links{
+        padding: 20px 30px 18px;
+    }
+    .footer-basic .footer-tab-links li a{
+        font-size: 14px;
+    }
+    .footer-basic .footer-tab-links{
+        gap: 30px;
+        margin-bottom: 100px;
+    }
+    .footer-basic .footer-slogan{
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+    .main-footer-wrap .list-staff-img{
+        margin-bottom: 92px;
+    }
+    .footer-contact-box .box-body{
+        background-color: transparent;
+    }
+    .contact-footer--wrap .col-title{
+        margin-bottom: 13px;
+    }
+    .notice{
+        margin-bottom: 80px;
+    }
+    .contact-footer--wrap{
+        gap: 30px;
+        width: 100%;
+    }
+    .footer-contact-box .box-body{
+        padding: 0;
+    }
+    .qa-question__list{
+        padding: 0 6px 0 0;
+        max-height: 235px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .content-right .footer-contact-box .box-body{
+        border: 0;
+        padding: 0;
+    }
+    .contact-footer--wrap .content-left{
+        width: calc(50% - 10px);
+    }
+    .qa-form textarea{
+        background-color: transparent;
+        height: 240px;
+        border: 2px solid rgba(170, 168, 168, 0.6);
+    }
+    .form-note{
+        font-size: 12px;
+        padding-left: 25px;
+        padding-right: 30px;
+        clear: both;
+    }
+    .form-note span:first-child {
+        font-size: 12px;
+    }
+    .qa-form .form-groups button[type=submit]{
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 15px;
+        margin-bottom: 12px;
+        float: right;
+        clear: both;
+    }
+    .contact-footer{
+        margin-bottom: 93px;
+    }
+    .mitori-pickup{
+        border-bottom: 0;
+        padding-bottom: 15px;
+    }
+    .mitori-wrap{
+        padding: 40px 18px 50px;
+    }
+    .image-top-group{
+        border-bottom: 0;
+        padding-bottom: 0;
+        order: 2;
+        margin-bottom: 0;
+    }
+    .mitori-hero{
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .mitori-detail-slogan{
+        order: 1;
+        text-align: center;
+        margin-bottom: 15px;
+        .text-1{
+            display: inline-block;
+            @include fontStyle(24, 200, 36, #1D3994);
+            font-weight: bold;
+            font-family: "Meiryo", sans-serif;
+            border-bottom: 1px dashed #C5C5C5;
+            margin-bottom: 3px;
+        }
+        .text-en{
+            display: block;
+            @include fontStyle(13, 100, 16, #FCAEBF);
+            font-family: "Inkfree", "Meiryo", sans-serif;
+        }
+    }
+    .mitori-short-desc{
+        order: 3;
+    }
+    .slogan-top-page .slogan-wrap .text-group{
+        flex-wrap: wrap;
+        max-width: 320px;
+    }
+    .slogan-top-page .slogan-wrap .slogan-text-2{
+        width: 100%;
+        @include fontStyle(24, 200, 36);
+        padding-left: 32px;
+    }
+    .slogan-top-page .slogan-wrap{
+        padding-left: 235px;
+        margin-bottom: 5px;
+    }
+    .slogan-top-page .slogan-wrap .doctor-icon{
+        left: 98%;
+        width: 107px;
+        height: 107px;
+        top: -24px;
+    }
+    .slogan-top-page{
+        margin-top: -50px;
+        padding-bottom: 0;
+    }
+    .slogan-top-page .slogan-wrap .star{
+        position: relative;
+        top: -10px;
+    }
+    .tab-menu-scroll{
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 12px;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+    }
+    .tab-menu--list li a{
+        white-space: normal;
+
+    }
+    .tab-content .tab-content-left{
+        width: 100%;
+        padding-right: 0;
+    }
+    .tab-menu{
+        width: fit-content;
+        min-width: 100%;
+    }
+    .kc-tab.top{
+        .tab-content-wrap{
+            margin-top: -12px;
+        }
+    }
+    .home .main-content-wrap .main-content-left{
+        padding-bottom: 0;
+    }
+    .top-news.card .card--body{
+        overflow-x: auto;
+        position: relative;
+        width: calc(100% + 16px);
+        padding-right: 16px;
+    }
+    .top-news-list{
+        flex-wrap: nowrap;
+        width: fit-content;
+    }
+    .top-news-list .top-news-item{
+        width: 363px;
+    }
+    .map-bottom{
+        background-color: #FFF;
+        border-radius: 20px;
+        border: 5px solid #FEDFE0;
+        padding: 34px 0 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+    .map-bottom .map-note{
+        @include fontStyle(10, 50, 14, #A4A4A4);
+        bottom: 12px;
+        right: 20px;
+    }
+    .tokyo-map{
+        padding-left: 15px;
+        padding-right: 12px;
+        padding-top: 40px;
+    }
+    .tokyo-map .map-button{
+        transform: translate(-50%, -25%);
+    }
+    .tokyo-map--header{
+        left: 50px;
+        top: -20px;
+    }
+    .map-search-caption{
+        position: relative;
+        left: -20px;
+    }
+    .list-consult{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: 50%;
+            padding-right: 20px;
+        }
+    }
+    .top-slogan-bottom{
+        text-align: center;
+        margin-bottom: 84px;
+        @include fontStyle(14, 50, 35, #959595);
+        text-shadow: 0px 5px 6px rgba(255, 159, 192, 0.1);
+    }
+    .news-widget.in-content{
+        background-color: transparent;
+        .widget--header{
+            border-radius: 0;
+            gap: 190px;
+        }
+        .widget--body{
+            background-image: none;
+        }
+        .widget-news-item .thumb,
+        .widget-news-item .thumb a,
+        .widget-news-item .thumb img{
+            width: 100px;
+            height: 100px;
+        }
+        .widget-news-item .caption{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .widget-news-item{
+            padding: 10px;
+        }
+        .news-view-more{
+            margin-top: 25px;
+        }
+    }
+    .five-points.in-content{
+        .widget--header{
+            min-height: 43px;
+            gap: 5px;
+            padding: 5px 10px 7px 25px;
+            .text-en{
+                position: relative;
+                top: -2px;
+                br{
+                    display: none;
+                }
+            }
+            .title{
+                line-height: 1;
+                padding-bottom: 3px;
+            }
+            .sub-title{
+                padding-bottom: 3px;
+            }
+        }
+        .widget--body{
+            border: 1px solid #DEDEDE;
+            border-top: 0;
+            border-radius: 0 0 5px 5px ;
+        }
+        .widget--header .sub-title span{
+            line-height: 1;
+        }
+        .title-center{
+            @include fontStyle(16, 100, 21, #FFF);
+            text-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .nurse-box .nurse-desc{
+            margin-bottom: 45px;
+            padding-left: 5px;
+            padding-right: 0;
+        }
+        .view-more{
+            text-align: center;
+        }
+        .list-points .point-item .caption .title{
+            display: inline;
+        }
+        .list-points .point-item .caption{
+            flex: unset;
+            display: inline-flex;
+            padding-right: 100px;
+        }
+        .list-points .point-item:nth-of-type(2){
+            padding-left: 20px;
+        }
+        .list-points .point-item:nth-of-type(3){
+            padding-left: 40px;
+        }
+        .list-points .point-item:nth-of-type(4){
+            padding-left: 60px;
+        }
+        .list-points .point-item:nth-of-type(5){
+            padding-left: 80px;
+        }
+        .care-img{
+            position: absolute;
+            right: 35px;
+            top: 50%;
+            width: 269px;
+            height: 269px;
+            transform: translateY(-50%);
+        }
+        .list-points .point-item{
+            margin-bottom: 23px;
+        }
+        .list-points{
+            margin-bottom: 48px;
+        }
+        .nurse-header{
+            column-gap: 50px;
+            //.job{
+            //    margin-left: 25px;
+            //}
+        }
+    }
+    .three-it{
+        .widget--body{
+            display: flex;
+            padding: 25px 33px 20px;
+            border: 1px solid #DEDEDE;
+            border-top: 0;
+            border-radius: 0 0 5px 5px ;
+        }
+        .content-left{
+            width: 53%;
+            padding-right: 40px;
+            padding-top: 10px;
+        }
+        .content-right{
+            width: 47%;
+            padding-left: 27px;
+            padding-right: 10px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .header-3it{
+            margin-bottom: 46px;
+        }
+        .list-3it{
+            margin-bottom: 75px;
+        }
+        .widget--header{
+            min-height: 40px;
+            padding-top: 4px;
+            .title {
+                display: block;
+                padding-bottom: 0;
+                .text-en{
+                    bottom: 0;
+                    left: 50%;
+                    right: auto;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    .slogan-top-page{
+        position: relative;
+    }
+    .slogan-top-page .slogan-en{
+        position: absolute;
+        bottom: -25px;
+    }
+    .news-widget .news-header .icon{
+        width: 70px;
+        margin-right: 5px;
+    }
+    .kc-tab.top{
+        padding-top: 20px;
+    }
+    .tab-menu-scroll{
+        padding-top: 12px;
+    }
+    .tag-detail-box .tag-box-body{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .map-bottom{
+        margin-top: 0;
+    }
+    .md-filter-wrap .md-list-links{
+        right: -39px;
+        top: -90px;
+    }
+    .mitori-backtop{
+        right: -25px;
+    }
+    .mitori-taiken .slogan-tag-details .slogan-text .text-1{
+        @include fontStyle(17, 200, 25, #555555);
+    }
+    .mitori-taiken .slogan-tag-details{
+        top: -40px;
+    }
+    .tab-menu--list{
+        width: max-content;
+    }
+    .list-points .point-item .caption .title .small{
+        font-size: 14px;
+    }
+    .list-points .point-item .caption .title{
+        @include fontStyle(17, 100, 25);
+        .sub{
+            letter-spacing: 0;
+        }
+    }
+    .list-points .point-item:nth-of-type(4) .caption .title .sub{
+        font-size: 11px;
+    }
+    .five-points.in-content .list-points .point-item:nth-of-type(5) .caption .title{
+        @include fontStyle(17, -15, 25);
+        .small{
+            @include fontStyle(13, -30, 16);
+        }
+    }
+    .list-3it .item-3it .title-right .title span{
+        font-size: 15px;
+    }
+    .list-3it .item-3it .title-right .title span.small-2{
+        font-size: 17px;
+    }
+    .top-tab-content .desc-top{
+        max-width: 633px;
+    }
+    .map-search-caption img{
+        width: 43px;
+    }
+    .map-bottom .map-service{
+        margin-bottom: 5px;
+    }
+    .news-widget .news-header{
+        align-items: center;
+    }
+    .news-widget .news-header .caption .title{
+        font-size: 20px;
+    }
+    .consult-box{
+        padding-bottom: 25px;
+    }
+    .twitter-icon img{
+        width: 36px;
+        height: 36px;
+    }
+    .plus-dropdown{
+        min-width: 220px;
+        left: -10px;
+    }
+    .plus-dropdown .list-checkboxs{
+        font-size: 12px;
+    }
+    .tab-2-header .list{
+        min-width: 130px;
+    }
+    
+}
+
+
+@media(max-width: 1024px) and (min-width: 768px){
+    .list-3it .item-3it .title-right .title span{
+        font-size: 16px;
+    }
+    .news-widget.in-content .widget--body{
+        background-color: #FFF9FA;
+    }
+}
+
+
+
+
+// Responsive SP
+// Responsive SP
+// Responsive SP
+// Is Break Point
+@media(max-width: 767px){
+
+    .tab-menu--list li{
+        max-width: 140px;
+    }
+    .tab-menu--list li.active a{
+        padding-top: 0;
+    }
+
+    .main-footer-wrap .list-staff-img{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer-basic .back-groups{
+        order: 10;
+        column-gap: 50px;
+        a{
+            svg{
+                max-width: 40px;
+            }
+            .text{
+                font-size: 11px;
+            }
+        }
+    }
+    .footer-basic .footer-tab-links{
+        flex-wrap: wrap;
+        border-radius: 30px;
+        gap: 10px;
+        max-width: 90%;
+        margin: 0 auto 60px;
+        padding: 20px 30px;
+        justify-content: flex-start;
+        li{
+            width: 48%;
+        }
+    }
+    .main-footer-wrap .logo-footer{
+        img{
+            max-width: 138px;
+        }
+    }
+    .copyright{
+        font-size: 12px;
+    }
+
+    .mitori-item .item-right{
+        display: none;
+    }
+    .mitori-item .item-left{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mitori-slogan-top.top{
+        margin-left: -10px;
+        width: calc(100% + 20px);
+        box-shadow: inset 0 3px 11px rgba(255,255,255,0.7);
+        padding: 5px 10px;
+    }
+    .mitori-taiken .main-header{
+        background-color: #FFF;
+    }
+    .humberger-wrap .humberger-button{
+        right: 0;
+    }
+    .humberger-wrap{
+        position: absolute;
+        right: 0;
+        top: 8px;
+    }
+    .header-top{
+        padding: 12px 0 5px;
+        align-items: center;
+        justify-content: center;
+        /*.logo{
+            img{
+                max-width: 138px;
+            }
+        }*/
+    }
+    .logo-sticky{
+        display: none;
+    }
+    .is-sticky{
+        .logo-sticky{
+            display: inline;
+        }
+        .logo-normal{
+            display: none;
+        }
+        .header-top{
+            position: fixed;
+            width: 100%;
+            background: #FFF;
+            left: 0;
+            top: 0;
+            padding: 6px 0 7px;
+        }
+        .humberger-wrap{
+            top: 0;
+            right: 10px;
+            .humberger-button{
+                top: 1px;
+            }
+        }
+        .tab-menu-scroll{
+            position: fixed;
+            top: 35px;
+            z-index: 98;
+            max-width: 100%;
+            width: 100%;
+        }
+        &.tag-popup{
+            .header-top{
+                z-index: 99;
+            }
+        }
+    }
+
+    .main-footer-wrap{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        position: relative;
+    }
+
+    .st-list-links li a{
+        font-size: 16px;
+    }
+    .main-footer .container{
+        padding: 0;
+    }
+    .site-map{
+        order: 1;
+    }
+    .backtop-backpage-2{
+        order: 2;
+    }
+    .notice{
+        order: 3;
+    }
+    .contact-footer{
+        order: 4;
+    }
+    .footer-twitter{
+        order: 5;
+    }
+    .list-links{
+        order: 6;
+    }
+    .footer-slogan-en{
+        order: 7;
+    }
+    .list-staff-img{
+        order: 8;
+    }
+    .footer-slogan-ja{
+        order: 9;
+    }
+    .logo-footer{
+        order: 10;
+    }
+    .copyright-sp{
+        order: 11;
+    }
+    .footer-operating{
+        order: 12;
+    }
+    .notice>.title{
+        border-radius: 0;
+    }
+    .notice-item{
+        flex-wrap: wrap;
+        padding: 10px 3px;
+    }
+    .notice-item .meta{
+        width: 100%;
+    }
+    .notice-item .title{
+        width: 70%;
+        flex: unset;
+        height: auto;
+        @include fontStyle(11, 0, 15, #707070);
+    }
+    .list-notices{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .notice-item .arrow-right{
+        font-size: 14px;
+        right: 10px;
+    }
+    .notice-item .meta .date{
+        font-size: 14px;
+    }
+    .contact-footer{
+        padding-left: 13px;
+        padding-right: 12px;
+        margin-bottom: 70px;
+    }
+    .contact-footer--wrap{
+        flex-wrap: wrap;
+    }
+    .contact-footer--wrap .content-left{
+        width: 100%;
+        max-width: 100%;
+    }
+    .contact-footer--wrap .content-right{
+        flex: unset;
+        width: 100%;
+    }
+    .footer-twitter{
+        position: relative;
+        margin-bottom: 70px;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 0;
+            display: block;
+            border-bottom: 1px solid rgba(255, 178, 188, 0.63);
+            top: 50%;
+            left: 0;
+            position: absolute;
+        }
+        .twitter-icon{
+            margin-top: 0;
+            padding-left: 35px;
+            padding-right: 35px;
+            // background-color: #FFF;
+            line-height: 0;
+            position: relative;
+            img{
+                border-radius: 50%;
+                background-color: #FFF;
+                position: relative;
+                top: 3px;
+            }
+        }
+    }
+    .main-footer-wrap .list-links{
+        padding-left: 50px;
+        padding-right: 50px;
+        row-gap: 56px;
+        margin-bottom: 90px;
+    }
+    .main-footer-wrap .list-links--col{
+        width: 100%;
+    }
+    .menu-footer ul li:empty{
+        display: none;
+    }
+    .menu-footer .title{
+        font-size: 14px;
+        position: relative;
+        padding-bottom: 5px;
+        width: auto;
+        display: inline-flex;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 150%;
+            left: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, #F8C8D2 0%, #F9D3DB 80%, #FFFFFF 100%);
+        }
+    }
+    .menu-footer ul li a{
+        font-size: 14px;
+    }
+    .main-footer-wrap .list-links--col:not(:first-child){
+        padding-left: 0;
+    }
+    .main-footer-wrap .list-links .last-column{
+        width: 100%;
+    }
+    .footer-slogan-en .star-tb{
+        left: -40px;
+        top: -65px;
+    }
+    .main-footer-wrap .list-staff-img{
+        padding: 0 14px;
+        text-align: center;
+        margin-bottom: 68px;
+    }
+
+    .footer-slogan-ja{
+        max-width: 80%;
+        margin: 0 auto 77px;
+        @include fontStyle(14, 50, 36, #FFF);
+        text-shadow: 0 5px 6px rgba(255, 159, 192, 0.58);
+        text-align: center;
+    }
+    .main-footer-wrap .logo-footer{
+        margin-bottom: 100px;
+    }
+    .copyright-sp{
+        padding-top: 43px;
+        margin: 0 33px 33px;
+        border-top: 1px solid rgba(236, 236, 236, 0.45);
+        @include fontStyle(8, 100, 25, #FFF);
+
+    }
+    .footer-operating{
+        margin-bottom: 0;
+        @include fontStyle(9, 50, 25, #FFE4E9);
+        padding: 0 10px;
+    }
+    .main-footer{
+        position: relative;
+        &::before{
+            content: '';
+            width: 100%;
+            height: 1166px;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, #FFF 0%, #FEE9EE 45%, #F9D0D9 50%, #F7C5CF 53%, #F5B6C3 75%, rgba(243, 168, 184, 0.68) 98%, #FFD9D9 100%);
+        }
+    }
+    .mitori-layout-2 .list-title{
+        margin-bottom: 35px;
+    }
+    .mitori-layout-2 > .container{
+        background-color: #FFEEF1;
+        padding-bottom: 35px;
+    }
+    .mitori-layout-2 .main-footer-wrap{
+        padding-top: 0;
+    }
+    .mitori-layout-2 .mitori-slogan-top{
+        position: relative;
+        width: calc(100% + 20px);
+        left: -10px;
+        border-radius: 0;
+    }
+    .mitori-layout-2 .content-left-wrap{
+        padding: 0 10px;
+    }
+    .mitori-item .item-left .top .d-flex .title{
+        margin-right: 10px;
+    }
+    .list-mitori{
+        margin-top: 30px;
+    }
+    .mitori-filter .js-filter{
+        margin-right: 5px;
+    }
+    .mitori-layout-2 .mitori-filter{
+        margin-top: -40px;
+    }
+    .mitori-wrap{
+        border-radius: 45px 20px 45px 20px;
+        padding: 32px 10px 45px;
+    }
+    .image-top-group{
+        padding: 0;
+        max-width: 268px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .mitori-short-desc{
+        padding: 0 15px;
+        @include fontStyle(17, 25, 28, #333333);
+    }
+    .mitori-title{
+        padding-left: 10px;
+    }
+    .mitori-filter{
+        margin-top: -40px;
+    }
+    .filter-wrap{
+        width: 340px;
+    }
+    .mitori-pagination{
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+    .list-tags-bottom .sub-body{
+        padding-left: 20px;
+    }
+    .list-tags-bottom .sub-tag-title{
+        padding-bottom: 2px;
+        padding-left: 10px;
+    }
+    .list-tags-bottom .sub-list-tags{
+        padding-right: 10px;
+    }
+    .list-sp-pickup{
+        padding-left: 6px;
+        padding-right: 4px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .mitori-item{
+            position: relative;
+            border-radius: 5px;
+            border: 1px solid #E1E1E1;
+            background-color: #FFF;
+            margin-bottom: 18px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+        }
+        .arrow-right-cicle{
+            position: absolute;
+            right: -15px;
+            top: calc(50% - 15px);
+        }
+    }
+    .slogan-top-page{
+        margin-top: 30px;
+        .slogan-wrap{
+            padding-left: 19px;
+            width: 55%;
+        }
+
+    }
+    .slogan-top-page .slogan-wrap .slogan-text-2{
+        padding-left: 0;
+        @include fontStyle(27, 200, 41, #000);
+    }
+    .slogan-top-page .slogan-wrap .slogan-text-1{
+        font-size: 12px;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    .slogan-top-page .slogan-en{
+        width: 55%;
+        padding-left: 20px;
+        position: relative;
+        bottom: 0;
+    }
+    .tab-menu-scroll{
+        padding-top: 5px;
+        margin-top: -5px;
+    }
+    .slogan-top-page .slogan-wrap .doctor-icon{
+        width: 166px;
+        height: 166px;
+        max-width: unset;
+        max-height: unset;
+        top: -15px;
+    }
+    .tab-menu--list li:not(.active):hover .caret{
+        display: none;
+    }
+    .tab-menu--list li{
+        padding: 3px 7px 0;
+        &:not(.active){
+            overflow: hidden;
+        }
+    }
+    .tab-menu--list{
+        padding-top: 10px;
+        height: 55px;
+        column-gap: 3px;
+        padding-left: 7px;
+    }
+    .tab-menu--list li .caret{
+        bottom: 0;
+    }
+    .tab-menu--list li::after{
+        display: none;
+    }
+    .tab-menu--list li:not(.active):hover{
+        background-color: transparent;
+    }
+    .tab-menu--list li::before{
+        content: "";
+        position: absolute;
+        height: 45px;
+        width: 100%;
+        background-color: #F1AABA;
+        left: 0;
+        top: 0;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #F5CBD4;
+        box-sizing: border-box;
+    }
+    .tab-menu--list li.active::before{
+        border-radius: 5px 5px 0 0;
+    }
+    .tab-menu{
+        background-image: none;
+        background-color: #FEDFE0;
+        box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+    }
+    .main-content.home > .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .tab-content{
+        border: 0;
+        padding: 15px 8px;
+        overflow-x: hidden;
+    }
+    .tab-menu--list li.active::before{
+        width: 100%;
+        height: 50px;
+        top: -5px;
+        left: 0;
+        border: 2px solid #FBECF0;
+        box-sizing: border-box;
+        border-bottom: 0;
+    }
+    .tab-menu--list li.active:first-child::before{
+        width: calc(100% + 2px);
+        left: -2px;
+    }
+    .menu-tab-style-2 .tab-content--header-2 img{
+        padding-left: 0;
+        max-width: 370px;
+    }
+    .menu-tab-style-2 .tab-content--header-2 .meta-date{
+        font-size: 10px;
+    }
+    .tab-tag-wrap{
+        flex-wrap: wrap;
+        row-gap: 0;
+    }
+    .tab-tag-wrap .tag-col-1{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .tab-tag-wrap .tag-col-2{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .tab-content-main .more{
+        margin-top: 15px;
+    }
+    .list-items-sp{
+        border-top: 1px solid #E5EAEE;
+        padding-top: 3px;
+        margin-bottom: 16px;
+        .item-sp{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 6px;
+            .thumb{
+                width: 98px;
+                height: 98px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .caption{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 5px 0 3px;
+                border-bottom: 1px solid #E5EAEE;
+                gap: 10px;
+                .title{
+                    @include fontStyle(16, 50, 21, #1D3994);
+                    font-weight: bold;
+                    font-family: "Meiryo", sans-serif;
+                    overflow: hidden;
+                    display: block;
+                    max-height: 60px;
+                    -webkit-line-clamp: 3;
+                    display: box;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    text-overflow: ellipsis;
+                    white-space: normal;
+                }
+                .meta{
+                    @include fontStyle(10, 0, 21, #949494);
+                    font-family: "Meiryo", sans-serif;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 10px;
+                    .date{
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+    .list-more-sp{
+        text-align: center;
+        a{
+            @include fontStyle(16, 50, 24, #0A2682);
+            font-weight: bold;
+            font-family: "Meiryo", sans-serif;
+            text-decoration: none;
+            span{
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+            img{
+                margin-left: 3px;
+            }
+        }
+        margin-bottom: 25px;
+    }
+    .pickup-cta{
+        border: 1px solid rgba(217, 217, 217, 0.6);
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        padding: 9px 30px 7px 15px;
+        align-items: center;
+        font-family: "Meiryo", sans-serif;
+        margin-bottom: 15px;
+        .label{
+            background-color: #FFF;
+            padding: 0 10px;
+            @include fontStyle(14, 0, 21, #535353);
+            position: absolute;
+            left: 18px;
+            top: -10px;
+        }
+        .title{
+            flex: 1;
+            @include fontStyle(18, 50, 27, #000000);
+            font-weight: bold;
+        }
+        .ex-icon{
+            position: absolute;
+            right: 15px;
+            top: calc(50% - 5px);
+        }
+    }
+    .news-widget.in-content .widget--header{
+        gap: 12px;
+        .text-en{
+            @include fontStyle(8, 100, 10, #FFF);
+            font-family: "Inkfree", "Meiryo", sans-serif;
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            &.in-center{
+                top: calc(50% - 4px);
+                bottom: auto;
+            }
+        }
+    }
+    .news-widget.in-content .widget--body{
+        padding-left: 2px;
+        padding-right: 2px;
+        background-image: linear-gradient(to bottom, #FFF9FA 0%, #FFF9FA 95%, #FFF 100%);
+    }
+    .news-widget .news-header .caption .title-en{
+        font-size: 9px;
+    }
+    .news-widget .news-header .caption .title{
+        font-size: 20px;
+    }
+    .widget.top-product .widget--header .text-en{
+        @include fontStyle(8, 100, 10, #FFF);
+        font-family: "Inkfree", "Meiryo", sans-serif;
+        position: absolute;
+        right: 10px;
+        top: 13px;
+    }
+    .three-it .header-3it{
+        margin-bottom: 25px;
+    }
+    .three-it .list-3it{
+        margin-bottom: 50px;
+    }
+    .list-3it .item-3it .title-right .title br{
+        display: none;
+    }
+    .list-3it .item-3it{
+        gap: 0;
+        padding-left: 0;
+    }
+    .header-3it{
+        padding-left: 25px;
+    }
+    .widget.top-product .widget--header{
+        border-radius: 0;
+    }
+    .testimonials-box .desc{
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .testimonials-box .read-more{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .testimonials-box{
+        padding: 33px 25px;
+    }
+    .testimonials-box .psychological-care .text{
+        font-size: 8px;
+    }
+    .testimonials-box .psychological-care{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .testimonials-box .title{
+        font-size: 22px;
+        display: inline-flex;
+        max-width: 100%;
+    }
+    .testimonials-box .sub-title-en{
+        font-size: 13px;
+    }
+    .top-product.widget{
+        margin-bottom: 0;
+    }
+    .menu-tab-style-2 .bottom-links{
+        border: 1px solid #E5E5E5;
+        border-radius: 10px;
+        padding: 15px 23px;
+        justify-content: center;
+    }
+    .menu-tab-style-2 .tab-content-main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tab-tag-wrap .list-tag{
+        border-left: 0;
+        padding-left: 0;
+    }
+    .tab-tag-wrap .tag-header .tag-title{
+        background-color: transparent;
+    }
+    .tab-tag-wrap .tag-header .tag-title .title-en{
+        display: none;
+    }
+    .tab-tag-wrap .tag-header .tag-title .title,
+    .tab-tag-wrap .tag-col-2 .tag-header .tag-title .title{
+        color: #0A2682;
+        font-size: 15px;
+    }
+    .tab-tag-wrap .list-tag .tag-item{
+        font-size: 15px;
+    }
+    .menu-tab-style-2 .bottom-links a{
+        font-weight: bold;
+    }
+    .tag-header-basic.is-sp .tag-top-list{
+        margin-bottom: 0;
+    }
+    .tag-details-top{
+        background-color: transparent;
+        border: 0;
+        border-top: 1px dashed #e7e7e7;
+        box-shadow: none;
+        padding: 15px 0 0;
+        text-align: center;
+    }
+    .tag-details-top .nurse-header{
+        margin-left: 0;
+        margin-top: 0;
+        display: inline-flex;
+        text-align: left;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .tag-details-top .tag-title{
+        position: relative;
+        left: 0;
+        margin: 0 auto 16px;
+        text-align: left;
+        min-width: 250px;
+        max-width: 370px;
+        width: fit-content;
+        padding: 15px 40px 25px 40px;
+    }
+    .tag-filter-wrap{
+        text-align: center;
+    }
+    .tag-header-basic.is-sp .tag-top-list{
+        max-width: 230px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .tag-details-top.page-after .tag-filter-wrap{
+        text-align: left;
+    }
+    .tag-details-top.page-after{
+        margin-bottom: 0;
+        background-color: transparent;
+    }
+    .tag-details-top.page-after .tag-title{
+        margin-bottom: -5px;
+        position: relative;
+        z-index: 1;
+    }
+    .tag-detail-box .tag-box-body{
+        //margin-top: 15px;
+        padding: 15px;
+        border-left: 5px solid #EFEBE0;
+        border-right: 5px solid #EFEBE0;
+    }
+    .tag-detail-box .tag-box-body .double-line-sp{
+        margin-bottom: 20px;
+        img{
+            max-width: 87px;
+            height: auto;
+        }
+    }
+    .tag-detail-box .tag-box-body h3{
+        text-align: center;
+        padding-left: 0;
+        border-left: 0;
+        position: relative;
+        padding-bottom: 10px;
+        &::after{
+            content: '';
+            height: 5px;
+            width: 50px;
+            background-color: #FFD8E0;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 25px);
+
+        }
+    }
+    .tag-name-bottom span::before,
+    .tag-name-bottom span::after{
+        width: 52px;
+    }
+    .tag-details-top.page-after .tag-filter-wrap .tag-top-wrap{
+        left: -85px;
+    }
+    .main-content-wrap .main-content-left{
+        padding-bottom: 0;
+    }
+    .detail-scroll-top .scroll-to-top{
+        color: #F1A1B4;
+        gap: 12px;
+    }
+    .detail-scroll-top .scroll-to-top svg path{
+        fill: #F1A1B4;
+    }
+    .mitori-detail-top{
+        padding: 1px 20px;
+        .text-ja{
+            @include fontStyle(20, 200, 29);
+            font-weight: 500;
+        }
+    }
+    .mitori-detail-top-text{
+        text-align: center;
+        padding-top: 8px;
+        .title-en{
+            @include fontStyle(13, 100, 16, #FCAEBF);
+            font-family: "Inkfree", "Meiryo", sans-serif;
+            margin-bottom: 20px;
+        }
+        .sub-title{
+            @include fontStyle(12, 50, 17, #5B5B5B);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .title{
+            @include fontStyle(24, 25, 25, #000);
+            font-weight: bold;
+            margin-bottom: 25px;
+            max-width: 330px;
+            margin: 0 auto 25px;
+            text-align: left;
+        }
+    }
+    .person-care{
+        margin: 0 12px;
+        padding-top: 20px;
+        border-top: 1px solid #CECECE;
+    }
+    .person-box{
+        margin-bottom: 35px;
+        gap: 17px;
+    }
+    .person-box .check-mark{
+        top: -10px;
+        right: 15px;
+    }
+    .person-box .avatar{
+        width: 65px;
+        height: 65px;
+        margin-top: 10px;
+    }
+    .person-box .title{
+        margin-bottom: 0;
+        @include fontStyle(13, 25, 25, #686868);
+        font-weight: bold;
+    }
+    .person-box .title::before{
+        display: none;
+    }
+    .person-box .info{
+        gap: 10px;
+    }
+    .person-box .info .name{
+        @include fontStyle(12, 25, 25);
+    }
+    .person-box .info .name .sex{
+        @include fontStyle(12, 25, 25);
+        padding-left: 24px;
+    }
+    .person-box .info .meta{
+        gap: 10px;
+        @include fontStyle(12, 50, 17);
+    }
+    .person-care .mitori-detail-middle{
+        padding-bottom: 40px;
+    }
+    .person-care .mitori-detail-middle .date{
+        top: auto;
+        bottom: 10px;
+        right: 0;
+    }
+    .person-taken-care{
+        margin: 0 13px 25px;
+    }
+    .person-taken-care .title::before{
+        border-top: 1px solid #CECECE;
+    }
+    .person-taken-care .title::after{
+        width: 15px;
+    }
+    .mitori-detail-wrap{
+        padding: 0 13px;
+    }
+    .m-item-title.active{
+        @include fontStyle(18, 25, 25, #333333);
+        padding: 2px 15px 2px 30px;
+        margin-top: 0;
+        max-width: 92%;
+        right: -13px;
+    }
+    .mitori-detail-main-item{
+        padding: 8px 14px 35px;
+        margin-top: 35px
+    }
+    .mitori-detail-main-item .content{
+        @include fontStyle(17,25,25,#333333);
+    }
+    .mitori-backtop {
+        //right: -23px;
+        right: 0;
+        position: fixed;
+        bottom: 30px;
+        img{
+            width: 34px;
+            height: auto;
+        }
+    }
+    .mitori-detail-item{
+        padding: 20px 0 20px 0;
+    }
+    .mitori-detail-item .m-item-title:not(.active){
+        gap: 4px;
+    }
+    .mitori-detail-item .m-item-title{
+        padding-right: 30px;
+    }
+    .list-mitori-detail{
+        margin-bottom: 30px;
+    }
+    .mitori-detail-item.mitori-back-item .arrow-back{
+        left: 0;
+    }
+    .mitori-detail-item.mitori-back-item{
+        padding-left: 36px;
+        margin-bottom: 10px;
+    }
+    .mitori-detail-item.mitori-back-item .m-item-title{
+        padding-right: 0;
+    }
+    .slogan-mitory-fixed.detail .slogan-text{
+        padding: 0px 30px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .slogan-mitory-fixed.detail .md-filter-wrap{
+        top: -1px;
+    }
+    .slogan-mitory-fixed.detail .md-filter-wrap .md-filter{
+        @include fontStyle(13, 100, 17);
+
+    }
+    .md-filter-wrap .md-list-links{
+        width: 356px;
+        max-width: calc(100vw - 20px);
+        padding: 20px 13px 35px;
+        border-radius: 0 0 5px 5px;
+        border: 9px solid rgba(0, 0, 0, 0.74);
+        box-shadow: 0 80px 39px rgba(0,0,0,0.6);
+    }
+    .md-filter-wrap .md-overlay{
+        background-color: transparent;
+    }
+    .md-filter-wrap .md-list-links {
+        right: -13px;
+        top: 25px;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    .md-filter-wrap .md-list-links .person-box .info .meta span:last-child{
+        margin-left: 10px;
+    }
+    .md-filter-wrap .md-list-links .person-box .info .meta{
+        font-size: 14px;
+    }
+    .md-filter-wrap .md-list-links .person-box .info .name .sex{
+        margin-left: 14px;
+    }
+    .md-filter-wrap .md-list-links .person-box{
+        margin-bottom: 16px;
+    }
+    .md-filter-wrap .md-list-links .list-icon-text{
+        margin-bottom: 16px;
+    }
+    .md-filter-wrap .md-list-links .md-link-items{
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .md-filter-wrap .md-list-links .md-link-items li a{
+        padding-right: 10px;
+    }
+    .md-filter-wrap .md-list-links .md-link-items li a .arrow{
+        right: -10px;
+    }
+    .md-filter-wrap .md-list-links .md-link-items li a span{
+        max-width: calc(100%);
+    }
+    .md-filter-wrap .md-list-links .close-wrap{
+        text-align: right;
+    }
+    .md-filter-wrap .md-list-links .close-md {
+        position: relative;
+        top: 20px;
+        right: 10px;
+    }
+    .md-filter-wrap .md-filter .menu-3{
+        margin-left: 19px;
+    }
+    .mitori-layout-2.detail .container{
+        padding-top: 10px;
+    }
+    .tag-details-top .tag-title{
+        top: auto;
+    }
+    .mitori-layout-2.page-after .person-box{
+        margin-bottom: 0;
+    }
+    .mitori-layout-2.page-after .mitori-detail-main-item{
+        margin-top: 7px;
+    }
+    .mitori-layout-2.page-after .slogan-mitory-fixed{
+        display: block;
+        position: absolute;
+        top: -10px;
+        width: calc(100% + 20px);
+        left: -10px;
+        background-color: transparent;
+    }
+    .mitori-layout-2.page-after{
+        margin-top: 10px;
+    }
+    .mitori-layout-2.page-after .person-box .info .name{
+        padding-bottom: 3px;
+    }
+    .mitori-layout-2.page-after .person-box .avatar{
+        width: 50px;
+        height: 50px;
+    }
+    .mitori-layout-2.page-after .person-care{
+        padding-top: 25px;
+    }
+    .mitori-layout-2.page-after .person-box .info{
+        gap: 5px;
+    }
+    .mitori-layout-2.page-after .person-box .info .meta{
+        font-size: 16px;
+        span:last-child{
+            font-size: 15px;
+        }
+    }
+    .tab-content-main .list-items li a{
+        font-size: 16px;
+        font-weight: bold;
+        overflow: hidden;
+        max-height: 66px;
+        -webkit-line-clamp: 3;
+        display: box;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+    .widget.top-product .caption-top .title{
+        @include fontStyle(18, 100, 27);
+        padding-right: 15px;
+    }
+    .list-useful-topics .useful-topics-item .thumb{
+        width: 41px;
+        height: 41px;
+    }
+    .list-useful-topics .useful-topics-item .thumb img{
+        width: 100%;
+        height: auto;
+    }
+    .list-useful-topics .useful-topics-item .title{
+        @include fontStyle(20, 100, 25);
+        max-height: 50px;
+        flex: 1;
+    }
+    .list-useful-topics .useful-topics-item .external-icon{
+        width: 15px;
+        height: 15px;
+    }
+    .widget.top-product .list-top-product .top-product-slider.wg{
+        padding-right: 40px;
+        padding-left: 8px;
+    }
+    .useful-topics-articles>.title .text-jp{
+        font-size: 18px;
+    }
+    .is-sticky .mitori-layout-2.page-after .person-care{
+        position: fixed;
+        z-index: 1;
+        background: #FFF;
+        width: calc(100% - 22px);
+        left: 11px;
+        margin: 0;
+        top: 58px;
+        padding: 10px 10px 30px;
+    }
+    .is-sticky .mitori-layout-2.page-after .m-item-title.active{
+        position: fixed;
+        right: calc(50% - 13px);
+        transform: translateX(50%);
+        top: 140px;
+        z-index: 2;
+    }
+    .news-widget .news-view-more a{
+        font-size: 16px;
+    }
+    .list-useful-topics .useful-topics-item{
+        min-height: 68px;
+    }
+    .useful-topics-articles>.title .text-en{
+        font-size: 7px;
+    }
+    .mitori-detail-top-text{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .person-care .mitori-detail-middle .thumb{
+        max-width: 353px;
+    }
+    .person-box .info .name .name-group .na{
+        font-size: 16px;
+        color: #1D1D1D;
+        max-width: 220px;
+    }
+    .person-box .info .meta span:nth-of-type(2){
+        font-size: 12px;
+    }
+    .mitori-layout-2 .person-box .info{
+        justify-content: space-between;
+    }
+    .mitori-layout-2 .person-box{
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .mitori-layout-2 .person-box .title{
+        position: relative;
+        margin-bottom: 5px;
+        display: block;
+        .sex{
+            font-size: 8px;
+            font-weight: normal;
+            margin-left: 10px;
+        }
+    }
+    .md-filter-wrap .md-list-links .person-box{
+        max-width: 100%;
+    }
+    .md-filter-wrap .md-list-links .person-box .info .meta{
+        margin-left: 0;
+    }
+    .list-items-sp .item-sp{
+        text-decoration: none;
+    }
+    .main-content-wrap .main-content-left{
+        .product-title{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .top-section-1 .cms4-section-inner-title{
+        border-radius: 0;
+    }
+    .cms4-product-item .caption .cat{
+        line-height: 1.6;
+    }
+    .cms4-detail-section{
+        .top-product-slider{
+            padding-left: 10px;
+        }
+    }
+    .cms4-detail-section .top-product-item .pro-title{
+        font-size: 12px;
+        text-align: left;
+    }
+    .cms4-detail-section .cms4-section-inner-title{
+        border-radius: 0;
+    }
+    .cms4-media .large-image .image{
+        padding-top: 60px;
+    }
+    .zoom-popup .zoom-content .media-zoom .media-zoom-header img{
+        max-height: 35px;
+        width: auto;
+    }
+    .cms4-store-item .item-left .rank-address .address .city .city2{
+        white-space: nowrap;
+    }
+    .cms4-store-item .item-left .rank-address .address .city span:first-child{
+        word-break: break-all;
+    }
+    body { 
+        -webkit-text-size-adjust: none; 
+    }
+}

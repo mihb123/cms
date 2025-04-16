@@ -1,0 +1,143 @@
+/*リセットcss*/
+* {
+    
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    box-sizing: border-box;
+}
+
+/* header */
+#sp_err_header{
+    width: 100%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+#pc_err_header{
+    display:none
+}
+
+/* main */
+.err_h1{
+    font-size: 28px;
+    color: #000000;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.err_img {
+    width: 100%;
+    margin:30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sp_err_text{
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    color: #545454;
+    margin: 35px auto 0;
+    width: calc(100% - 32px);
+}
+
+.sp_err_text_cont {
+    margin-top: 27.2px;
+}
+
+.sp_err_text a{
+    text-decoration: none;
+}
+
+.pc_err_text{
+    display: none ;
+}
+
+.err_link  a{
+    background-image: linear-gradient(#FFBCCB 0%, #F6BCC8 5%, #F5B2C1 20%, #FFB1C2 100%);
+    border-radius: 8px;
+    color: #fff;
+
+    width:250px;
+    display:block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 8px;
+   font-size: 18px;
+   font-weight: 800;
+   text-decoration: none;
+}
+
+.err_link  a:hover{
+    background: #fac5cf;
+}
+
+.sp_err_text a:hover{
+    text-decoration:underline;
+    color: #F39FAD;
+}
+
+.pc_err_text a:hover{
+    text-decoration:underline;
+    color: #F39FAD;
+}
+
+footer{
+    text-align: center;
+    padding: 4px 0;
+    font-size: 15px;
+    color: #F39FAD;
+    letter-spacing: 1.5px;
+}
+
+
+@media screen and (min-width:768px) {
+    .sp_err_text{
+        display:  none
+    }
+   
+    .pc_err_text{
+     display: block;
+      font-size: 17px;
+      font-weight: normal;
+      color: #545454;
+      margin: 40px auto 0;
+      width: calc(100% - 50px);
+    }
+
+    .pc_err_text_cont {
+        margin-top: 27.2px;
+    }
+    
+    .err_link  a{
+        width:250px;
+        display:block;
+        text-align: center;
+    
+    }
+    .pc_err_text a{
+        text-decoration: none;
+    }
+
+}
+@media screen and (min-width:990px) {
+    .sp_err_text{
+        display:none 
+    }
+
+    .pc_err_text{
+        display: block;
+        font-size: 17px;
+        width: 990px;
+        padding-left: 150px;
+    }
+
+    .err_link  a{
+        width:250px;
+        display:block;
+        text-align: center;  
+    }
+}

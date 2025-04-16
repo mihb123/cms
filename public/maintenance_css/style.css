@@ -1,0 +1,141 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    box-sizing: border-box;
+}
+/* body */
+body {
+    background-color: #FFFAFB;
+}
+/* header */
+.header_sp {
+    display: block;
+    width: 160px;
+    height: auto;
+    margin: 25px auto 0;
+    text-align: center;
+}
+.header_tab {
+    display: none;
+}
+/* main */
+.main {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .1);
+    width: calc(100% - 10px);
+    margin: 25px auto 0;
+}
+.sp {
+    padding: 40px 16px;
+}
+.tab {
+    display: none;
+}
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+.main_img {
+    display: block;
+    width: 230px;
+
+    margin: 35px auto 0;
+}
+.main_text {
+    font-size: 14px;
+    font-weight: normal;
+    color: #000000;
+
+    margin: 35px auto 0;
+    padding: 0 4px;
+}
+/* footer */
+.footer_sp {
+    display: block;
+    width: calc(100% - 32px);
+    text-align: center;
+    margin: 80px auto 0;
+}
+.footer_tab {
+    display: none;
+}
+.footer_text {
+    font-size: 10px;
+    font-weight: normal;
+    color: #F39FAD;
+    text-align: center;
+    margin: 100px auto;
+}
+@media screen and (min-width:840px) {
+    /* header */
+    .header_sp {
+        display: none;
+    }
+    .header_tab {
+        display: block;
+        width: 200px;
+        height: auto;
+        margin: 35px auto 0;
+        text-align: center;
+    }
+    /* main */
+    .main {
+        width: calc(100% - 32px);
+        margin: 40px auto 0;
+    }
+    .sp {
+        display: none;
+    }
+    .tab {
+        display: block;
+        padding: 45px 35px;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .main_text {
+
+        padding: 0;
+        margin: 25px 0 0 0;
+    }
+    .main_img {
+        margin: 0;
+    }
+    /* footer */
+    .footer_sp {
+        display: none;
+    }
+    .footer_tab {
+        display: block;
+        width: calc(100% - 32px);
+        text-align: center;
+        margin: 100px auto 0;
+    }
+    .footer_text {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:990px) {
+    /* main */
+    .main {
+        max-width: 900px;
+    }
+    .main_img {
+        width: 250px;
+    }
+    /* footer */
+    .footer_tab {
+        max-width: 900px;
+        margin: 160px auto 0;
+    }
+}

@@ -1,0 +1,81 @@
+.life-box{
+    border: 1px solid #D3D3D3;
+    border-radius: 5px 0 0 0;
+    margin-bottom: 12px;
+    &--header{
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border-top-left-radius: 5px;
+        background-image: linear-gradient(#FFB4C0 0%, #FFE9ED 2%, #FCD3D9 50%, #FFDEE4 94%, #FFB7C3 100%);
+        .title{
+            @include fontStyle(16, 100, 21, #000);
+            display: flex;
+            align-items: center;
+            gap: 38px;
+            img{
+                max-height: 26px;
+            }
+        }
+        .title-en{
+            @include fontStyle(8, 50, 22, #FFF);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            padding-right: 13px;
+        }
+    }
+    &--content{
+        padding: 30px 30px 18px;
+        background-size: auto 100%;
+        background-position: 101% center;
+        background-repeat: no-repeat;
+        .list-tags{
+            display: inline-flex;
+            min-width: 370px;
+            max-width: 413px;
+            gap: 47px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #E5E5E5;
+            margin-bottom: 14px;
+            span, a{
+                @include fontStyle(16, 50, 21, #0A2682);
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+        .title{
+            @include fontStyle(16, 50, 21, #515151);
+            font-weight: bold;
+            margin-bottom: 13px;
+            max-width: 413px;
+        }
+        .desc{
+            @include fontStyle(15, 50, 22, #747474);
+            text-shadow: 0 3px 3px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            max-width: 413px;
+        }
+        .view-more{
+            @include fontStyle(15, 50, 22, #0033CC);
+            transition: all 0.3s;
+            text-decoration: none;
+            margin-right: 80px;
+            display: inline-flex;
+            .icon-link{
+                opacity: 0;
+                transition: all 0.3s;
+            }
+            &:hover{
+                text-decoration: underline;
+                color: #D56E85;
+                .icon-link{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .link-with-icon{
+        gap: 10px;
+    }
+}

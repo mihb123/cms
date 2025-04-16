@@ -1,0 +1,249 @@
+.card-sp{
+    .card-header{
+        min-height: 35px;
+        background-image: linear-gradient(#FFBCCB 0%, #F6BCC8 5%, #F5B2C1 20%, #FFB1C2 100%);
+        padding: 4px 15px;
+        display: flex;
+        gap: 10px;
+        position: relative;
+        &.center{
+            justify-content: center;
+        }
+        .title{
+            @include fontStyle(16, 100, 21, #FFF);
+            text-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            span{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .text-en{
+            @include fontStyle(8, 50, 10, #FFF);
+            font-family: "Inkfree", "Meiryo", sans-serif;
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            &.in-top{
+                top: 5px;
+            }
+            &.in-center{
+                top: 50%;
+                transform: translateY(-50%);
+                bottom: auto;
+            }
+        }
+
+    }
+}
+
+.three-it .card-body{
+    padding: 30px 17px 35px;
+}
+.mitori-test .card-body{
+    padding: 25px 25px 35px;
+}
+.map-bottom-sp .card-body{
+    padding: 20px 10px 0;
+}
+.five-points-sp .card-body{
+    padding: 33px 0 35px;
+}
+.tab-static-sp-1-2 .card-body{
+    padding: 6px 0 0;
+}
+
+.card-inner{
+    .card-inner-header{
+        border-radius: 5px 0 0 0;
+        background-image: linear-gradient(to bottom, rgba(138, 217, 255, 0.42) 0, rgba(229, 245, 252, 0.42) 2%, rgba(187, 233, 255, 0.5) 50%, rgba(215, 242, 255, 0.42) 95%, rgba(143, 217, 252, 0.42) 100%);
+        padding: 7px 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        box-shadow: 0 1px 2px rgba(255, 255, 255, 0.87);
+        img{
+            width: 37px;
+            height: auto;
+        }
+        .title-group{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            .title{
+                @include fontStyle(18, 50, 24, #000);
+                font-weight: bold;
+                margin-bottom: 3px;
+            }
+            .text-en{
+                @include fontStyle(10, 200, 12, #AEAEAE);
+                font-family: "Inkfree", "Meiryo", sans-serif;
+            }
+        }
+    }
+    .card-inner-body{
+        padding-bottom: 35px;
+    }
+    &.yellow-card{
+        .card-inner-header{
+            background-image: linear-gradient(to bottom, rgba(255, 239, 178, 0.55) 0, rgba(254, 247, 220, 0.55) 2%, rgba(252, 248, 231, 0.55) 50%, rgba(255, 250, 232, 0.55) 95%, rgba(255, 232, 146, 0.55) 100%);
+        }
+    }
+}
+
+.blue-menu-scroll{
+    margin-top: 40px;
+    max-width: 100%;
+    overflow-x: auto;
+    margin-left: 6px;
+    .list-blue-menu{
+        display: flex;
+        column-gap: 15px;
+        padding-bottom: 10px;
+        li{
+            text-align: center;
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            img, object{
+                width: calc(min(190px, 42.667vw));
+                height: calc(min(190px, 42.667vw));
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 0;
+                border: 1px solid #E5E5E5;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+            }
+            .title{
+                @include fontStyle(20, 48, 27, #000);
+                font-weight: bold;
+            }
+        }
+    }
+}
+.blue-tab-contents{
+    padding: 15px 21px 0;
+    .blue-tab-body{
+        display: none;
+        &.is-show{
+            display: block;
+        }
+    }
+    .desc{
+        @include fontStyle(16, 0, 24, #747474);
+        margin-bottom: 25px;
+        p{
+            margin-bottom: 20px;
+        }
+    }
+    .more{
+        text-align: right;
+        .link-with-icon{
+            gap: 15px;
+        }
+    }
+}
+
+.yellow-tab{
+    margin-top: 30px;
+    position: relative;
+    .list-yellow-menu{
+        position: relative;
+        z-index: 1;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        max-width: 36%;
+        li{
+            a{
+                @include fontStyle(18, 50, 27, #328EB5);
+                text-decoration: none;
+            }
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &:not(.is-active){
+                opacity: 0.65;
+            }
+        }
+    }
+    .yellow-tab-image{
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: calc(min(300px, 63%));
+        img, object, svg{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 50%;
+            display: none;
+            &.is-show{
+                display: block;
+            }
+        }
+    }
+    .yellow-tab-contents{
+        padding: 15px 21px 0;
+        .yellow-tab-body{
+            display: none;
+            &.is-show{
+                display: block;
+            }
+        }
+        .desc{
+            @include fontStyle(16, 0, 24, #747474);
+            margin-bottom: 25px;
+        }
+        .more{
+            text-align: right;
+            .link-with-icon{
+                gap: 15px;
+            }
+        }
+    }
+    .call-24h{
+        padding-left: 15px;
+        padding-right: 15px;
+        a{
+            line-height: 0;
+            display: block;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.hotline-24h{
+    border-radius: 10px;
+    border: 1px solid #FEDFE0;
+    background-color: #FFF;
+    display: inline-flex !important;
+    align-items: center;
+    width: 340px;
+    padding: 6px 20px 3px;
+    text-decoration: none;
+    justify-content: space-between;
+    .text{
+        display: flex;
+        flex-direction: column;
+        min-height: 48px;
+        text-align: left;
+        span{
+            display: block;
+            @include fontStyle(21, 0, 28, #333333);
+            &.text-small{
+                @include fontStyle(10, 100, 17, #333333);
+                margin-top: 3px;
+                font-family: "Meiryo", sans-serif;
+            }
+        }
+    }
+}

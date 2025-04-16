@@ -1,0 +1,49 @@
+$width-form-left: 7rem;
+$height-input-big: 5.2rem;
+$height-input-middle: 4.5rem;
+$padding-left: 1.5rem;
+$color-border: #d2d1d1;
+$color-form: #bebebe;
+$margin-top-small: 1rem;
+$margin-top-smallest: 0.5rem;
+
+.active-banner {
+  padding: 0 !important;
+}
+.banner {
+  position: relative;
+  margin-top: 7rem;
+  @include tabletS {
+    margin-top: 4rem;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 140rem;
+    min-height: 75rem;
+    margin: 0 auto;
+    background-image: url('../../../images/map.png');
+    // background-image: url("../../../issets/images/map.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include tabletS {
+      height: 133.333vw;
+      min-height: max-content;
+      background-image: url('../../../map/issets/images/map-mobile.svg');
+      // background-image: url('../../../issets/images/map-mobile.svg');
+      background-size: contain;
+    }
+  }
+}
+
+.banner-box {
+  position: relative;
+  display: flex;
+  min-height: 75rem;
+  align-items: center;
+  @include tabletS {
+    min-height: max-content;
+    justify-content: center;
+  }
+}

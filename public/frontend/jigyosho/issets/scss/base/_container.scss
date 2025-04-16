@@ -1,0 +1,86 @@
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+$note: 1219px;
+@media (max-width: ($note)) {
+  .container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+$tabletLL: 1080px;
+@media (max-width: ($tabletLL)) {
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+$tabletL: 1024px;
+@media (max-width: ($tabletL)) {
+  .container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+$tabletM: 960px;
+@media (max-width: ($tabletM)) {
+  .container {
+    max-width: 867px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+$tabletMS: 867px;
+@media (max-width: ($tabletMS)) {
+  .container {
+    max-width: 800px;
+    width: 99%;
+    margin: 0 auto;
+  }
+}
+$tabletS: 768px;
+@media (max-width: ($tabletS)) {
+  .container {
+    width: 100%;
+  }
+}
+// $mobileLL: 600px;
+// @media (max-width: ($mobileLL)) {
+//   .container {
+//     max-width: 425px;
+//     width: 100%;
+//     margin: 0 auto;
+//   }
+// }
+// $mobileL: 425px;
+// @media (max-width: ($mobileL)) {
+//   .container {
+//     max-width: 375px;
+//     width: 100%;
+//     margin: 0 auto;
+//   }
+// }
+// $mobileM: 375px;
+// @media (max-width: ($mobileM)) {
+//   .container {
+//     max-width: 359px;
+//     width: 100%;
+//     margin: 0 auto;
+//   }
+// }
+// $mobileS: 359px;
+// @media (max-width: ($mobileS)) {
+//   .container {
+//     max-width: 320px;
+//     width: 100%;
+//     margin: 0 auto;
+//   }
+// }

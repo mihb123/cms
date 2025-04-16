@@ -1,0 +1,181 @@
+.consultation {
+
+  &-flex{
+    padding-right: 85px;
+  }
+  .ls-table{
+    &__label{
+      width: 165px;
+      margin-right: 1px;
+      border-right: 2px solid #F9CFD6;
+      font-size: 15px;
+      color: #8A8787;
+      min-height: 38px;
+      padding-top: 9px;
+      align-items: center;
+
+      img{
+        width: 21px;
+        height: 21px;
+        margin-left: 11px;
+      }
+    }
+
+    &__value{
+      padding: 4.5px 10px;
+      &:after{
+        display: none;
+      }
+      .link-groups{
+        display: inline-flex;
+
+        a {
+          color: #269BCF;
+          text-decoration: underline;
+          font-size: 13px;
+          line-height: 1.46;
+          margin-left: 48px;
+
+        }
+      }
+    }
+
+    .font-number{
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.44;
+      letter-spacing: 2.5px;
+      padding: 10px;
+    }
+
+    @media(max-width: 767px){
+      .ls-table{
+        &__label{
+          width: 30vw;
+          padding: 0.800vw 1.333vw;
+          min-height: 0;
+          font-size: 3.733vw;
+        }
+        &__value{
+          width: calc(100% - 30vw);
+          padding: 0.800vw 1.333vw;
+          font-size: 4vw;
+          .link-groups{
+            display: flex;
+            justify-content: flex-end;
+            a{
+              margin-left: 0;
+              font-size: 3.200vw;
+            }
+          }
+        }
+      }
+      .font-number{
+        font-size: 5.333vw;
+      }
+    }
+    
+  }
+  .weekly-table{
+    min-height: 162px;
+    padding-right: 0;
+    &__column-left{
+      padding-top: 0;
+
+      &--label{
+        border: 2px solid #FFCCD5;
+        width: 162px;
+      }
+    }
+    &__column-right{
+      .dates-in-week .w-date__value{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 115px;
+      }
+    }
+    @media(max-width: 767px){
+      min-height: 32vw;
+      &__column-left{
+        width: 30vw;
+        &--label{
+          width: 100%;
+        }
+      }
+      &__column-right{
+        width: calc(100% - 30vw);
+        position: relative;
+        overflow-x: auto;
+        .dates-in-week{
+          .w-date__value{
+            min-height: 23.533vw;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 767px){
+    &-flex{
+      padding-right: 0;
+    }
+  }
+  
+}
+
+.consultation .feature{
+  padding-right: 30px;
+}
+
+.consultation .feature .ls-table__label{
+  align-items: flex-start;
+}
+.consultation .feature .last-item .ls-table__value{
+  min-height: 200px;
+  line-height: 1.4;
+  letter-spacing: 0.75px;
+}
+.consultation .feature .ls-table__value{
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.75px;
+}
+
+.table-space--9{
+  height: 9px;
+}
+
+.table-space--23{
+  height: 23px;
+}
+
+.color-blue{
+  color: #003BDE;
+}
+
+.color-red{
+  color: #E50000;
+}
+
+.s-12{
+  font-size: 12px !important;
+  padding-top: 9px !important;
+}
+@media(max-width: 767px){
+  .table-space--23{
+    height: 4vw;
+  }
+  .ls-box.consultation{
+    margin-bottom: 0;
+  }
+  .consultation .feature{
+    padding-right: 0;
+  }
+  .consultation .feature .last-item .ls-table__value{
+    min-height: 0;
+  }
+  .consultation .feature .ls-table__value{
+    font-size: 3.467vw;
+  }
+}

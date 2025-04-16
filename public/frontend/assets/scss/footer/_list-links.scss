@@ -1,0 +1,30 @@
+.menu-footer{
+    .title{
+        @include fontStyle(15, 10, 20, #F39FAD);
+        margin-bottom: 35px;
+        min-height: 21px;
+    }
+    ul{
+        li{
+            margin-bottom: 25px;
+            min-height: 21px;
+            a{
+                @include fontStyle(15, 10, 20, #7F7C7C);
+                text-decoration: none;
+                transition: all 0.3s;
+                display: block;
+                &:hover{
+                    color: #3BB1FF;
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &:not(:last-child){
+        margin-bottom: 65px;
+    }
+}

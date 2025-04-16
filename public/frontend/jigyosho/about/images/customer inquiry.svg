@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="215" height="50.617" viewBox="0 0 215 50.617">
+  <defs>
+    <filter id="お問い合わせはこちら" x="14" y="0" width="188" height="43" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="customer_inquiry" data-name="customer inquiry" transform="translate(0 1)">
+    <rect id="Rectangle_274" data-name="Rectangle 274" width="215" height="49.617" rx="5" fill="#40b7de"/>
+    <g id="Icon" transform="translate(82.111 1.617)">
+      <path id="Path_1956" data-name="Path 1956" d="M49.82,34.766a1.025,1.025,0,0,1,.075-.858,19.093,19.093,0,0,0-2.634-23.279A15.691,15.691,0,0,0,25.6,9.911a19.026,19.026,0,0,0-3.946,23.06C25.782,40.658,34.47,43.939,42.116,40.7a.819.819,0,0,1,.675,0l7.06,3.271a1.61,1.61,0,0,0,1.845-.356,1.955,1.955,0,0,0,.431-1.974ZM38.013,35.78a2.853,2.853,0,0,1-4.333-.008,3.536,3.536,0,0,1,.028-4.663,2.863,2.863,0,0,1,4.3,0,3.515,3.515,0,0,1,.006,4.671Zm2.465-13a10.974,10.974,0,0,0-1.767,1.785,4.145,4.145,0,0,0-.355,2.152,2.191,2.191,0,0,1-2.541,2.2c-1.808-.032-2.428-1.023-2.426-3.008A6.936,6.936,0,0,1,35.6,20.477c.642-.662,1.654-1.208,2.094-2.12.262-.41.167-1.389-.2-1.518a3.074,3.074,0,0,0-2.558-.145c-.577.363-.722,1.047-1.141,1.495a2.315,2.315,0,0,1-2.636.408,2.686,2.686,0,0,1-1.436-2.428c.176-3.3,3.419-5.2,6.487-5.092a6.923,6.923,0,0,1,6.032,2.9,5.7,5.7,0,0,1,.913,3.159,8.1,8.1,0,0,1-2.682,5.643ZM32.384,43.37a16.584,16.584,0,0,1-11.395,7.71,15.321,15.321,0,0,1-8.4-1.064.82.82,0,0,0-.675,0L4.852,53.283a1.61,1.61,0,0,1-1.845-.356,1.955,1.955,0,0,1-.431-1.974l2.307-6.866a1.028,1.028,0,0,0-.075-.858A18.96,18.96,0,0,1,2.142,30.862C3.184,22.6,9.3,16.187,16.961,15.321a15.653,15.653,0,0,1,2.58-.057,21.217,21.217,0,0,0-1.753,10.477c.042.505.105,1,.183,1.5H7.119a.927.927,0,0,0,0,1.848H18.342c-.005-.022-.008-.045-.013-.066a20.584,20.584,0,0,0,1.342,3.769l0-.008H7.119a.927.927,0,0,0,0,1.848H20.634a19.913,19.913,0,0,0,2.841,3.7H7.119a.927.927,0,0,0,0,1.848H25.568l-.025-.021a17.511,17.511,0,0,0,6.841,3.217Z" transform="translate(-1.991 -5.922)" fill="#30a3c8"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, -1)" filter="url(#お問い合わせはこちら)">
+      <text id="お問い合わせはこちら-2" data-name="お問い合わせはこちら" transform="translate(193 26)" fill="#fff" font-size="17" font-family="SourceHanSans-Medium, Source Han Sans" font-weight="500"><tspan x="-170" y="0">お問い合わせはこちら</tspan></text>
+    </g>
+    <text id="customer_inquiry-2" data-name="customer inquiry" transform="translate(162.424 40.617)" fill="#e1e1e1" font-size="10" font-family="Meiryo" letter-spacing="0.2em"><tspan x="-112.31" y="0">customer inquiry</tspan></text>
+    <text id="_" data-name="≫" transform="translate(174 42.617)" fill="#fff" font-size="12" font-family="SourceHanSans-Medium, Source Han Sans" font-weight="500"><tspan x="0" y="0">≫</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+.tag-item{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 7px 1px;
+    border-radius: 3px;
+    background-color: rgba(17, 35, 117, 0.06);
+    @include fontStyle(15, 50, 23, #112375);
+    span{
+        font-weight: normal;
+    }
+}

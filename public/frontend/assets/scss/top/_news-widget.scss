@@ -1,0 +1,87 @@
+.news-widget{
+    .widget--header{
+        min-height: 35px;
+        padding: 4px 5px 4px 25px;
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        .title{
+            @include fontStyle(16, 100, 21, #FFF);
+            font-weight: bold;
+            padding-bottom: 0;
+            border-radius: 5px 5px 0 0;
+        }
+        .sub-title{
+            @include fontStyle(12, 50, 18, #FFF);
+        }
+    }
+    .widget--body{
+        background-image: linear-gradient(rgba(255, 249, 250, 0) 0%, #FFF9FA 2%, #FFF9FA 90%, rgba(255, 249, 250, 0) 96%, #f9e6eb 100%);
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .news-header{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        .icon{
+            width: 40px;
+            height: auto;
+            line-height: 0;
+            img{
+                max-width: 100%;
+            }
+        }
+        .caption{
+            .title{
+                @include fontStyle(18, 0, 27, #000);
+                font-weight: bold;
+            }
+            .title-en{
+                @include fontStyle(7, 200, 8, #AEAEAE);
+                font-family: "Inkfree", sans-serif;
+                padding-left: 20px;
+            }
+        }
+    }
+    .news-desc{
+        @include fontStyle(12, 100, 22, #333);
+        padding-left: 23px;
+        padding-right: 20px;
+        margin-bottom: 14px;
+    }
+    .news-view-more{
+        text-align: center;
+        margin-top: 36px;
+        a{
+            text-decoration: none;
+            @include fontStyle(14, 50, 18, #0A2682);
+            font-weight: bold;
+            transition: all 0.3s;
+
+            .icon-link{
+                position: relative;
+                top: 3px;
+                left: 0;
+                transition: all 0.3s;
+            }
+            &:hover{
+                color: #D13434;
+                svg{
+                    left: 2px;
+                    top: 1px;
+                    path{
+                        fill: #D13434;
+                    }
+                }
+                span{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

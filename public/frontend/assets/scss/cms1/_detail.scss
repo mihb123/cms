@@ -1,0 +1,337 @@
+.cms1-detail-content, .cms12-detail-content{
+    .entry-content{
+        padding-left: 26px;
+        padding-right: 16px;
+        margin-top: 35px;
+        margin-bottom: 45px;
+        td{
+            word-break: break-all !important;
+        }
+        p{
+            margin-bottom: 25px;
+            word-break: break-all !important;
+        }
+        img{
+            max-width: 100%;
+            height: auto !important;
+        }
+        h3{
+            padding-bottom: 8px;
+            border-bottom: 4px solid #F5B6C3;
+            @include fontStyle(18, 100, 24, #000000);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h2{
+            @include fontStyle(24, 100, 28, #000000);
+        }
+    }
+    .cms1-detail-title{
+        @include fontStyle(33, 0, 44, #000000);
+        margin-bottom: 5px;
+    }
+    .cms1-detail-title-en{
+        @include fontStyle(11, 200, 14, #AEAEAE);
+        font-family: "Inkfree", "Meiryo", sans-serif;
+        margin-bottom: 25px;
+    }
+    .nurse-box {
+        margin-bottom: 25px;
+        .nurse-header{
+            margin-bottom: 0;
+            align-items: flex-start;
+            .avatar{
+                padding-top: 5px;
+            }
+        }
+    }
+    .cms1-author{
+        text-align: right;
+        padding: 0 30px;
+        @include fontStyle(14, 50, 28, #A1A1A1);
+        margin-bottom: 35px;
+    }
+    .detail-page-next{
+        padding-left: 20px;
+        padding-right: 20px;
+        @include fontStyle(18, 50, 24, #6E6E6E);
+        margin-bottom: 50px;
+        display: flex;
+        a{
+            color: #0066CC;
+            flex: 1;
+            text-underline-offset: 2px;
+        }
+    }
+    &.is-detail{
+        .kc-pagination{
+            background-color: transparent;
+            padding: 0 20px;
+            margin-bottom: 75px;
+        }
+    }
+    .top-product{
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+.nurse-box.in-detail{
+    display: flex;
+    
+    .pagination-small{
+        width: 50%;
+        padding-bottom: 20px;
+        .kc-pagination{
+            padding: 0;
+            margin-bottom: 0;
+            display: inline-block;
+            .page-count{
+                margin-bottom: 15px;
+                font-size: 13px;
+                .current{
+                    font-size: 19px;
+                }
+            }
+            .paginate .page-number.page-next{
+                margin-left: 8px;
+                font-size: 8px;
+            }
+            .paginate .page-number.page-prev{
+                margin-right: 8px;
+                font-size: 8px;
+            }
+            .paginate .page-number{
+                min-width: 24px;
+                height: 25px;
+                padding: 4px;
+                font-size: 10px;
+            }
+            .paginate .page-number.current-page::before{
+                width: 10px;
+                height: 3px;
+                left: calc(50% - 5px);
+                top: -10px;
+            }
+            .paginate{
+                justify-content: flex-start;
+            }
+        }
+    }
+    .nurse-header{
+        flex: 1;
+    }
+}
+
+.view-all-with-share{
+    margin-bottom: 40px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    .view-all{
+        width: 80%;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            @include fontStyle(14, 50, 21, #0A2682);
+            font-weight: bold;
+            font-family: "Meiryo", sans-serif;
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        img{
+            width: 19px;
+            height: auto;
+        }
+    }
+    .share{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+    }
+}
+.cms12-detail-content.is-detail{
+    .cms1-detail-title{
+        @include fontStyle(18, 0, 30, #000);
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+    .entry-content{
+        padding: 0;
+        margin-top: 20px;
+        p{
+            font-size: 17px;
+        }
+        .small{
+            font-size: 12px;
+        }
+        img + .small{
+            display: block;
+        }
+        h3{
+            border-bottom-color: #E4E4E4;
+        }
+    }
+    .meta{
+        text-align: right;
+        .date{
+            @include fontStyle(10, 50, 15, #939A93);
+            font-family: "Meiryo", sans-serif;
+            margin-bottom: 5px;
+        }
+        .company-logo{
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+    }
+    .detail-page-next{
+        display: block;
+        font-size: 14px;
+        a{
+            margin-top: 10px;
+            font-size: 17px;
+            display: block;
+            padding-left: 20px;
+        }
+    }
+    .kc-pagination{
+        margin-bottom: 50px;
+    }
+    .cms12-share{
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .nurse-box.in-detail{
+        justify-content: center;
+        margin-top: 15px;
+        .pagination-small{
+            display: inline-flex;
+            width: auto;
+            justify-content: center;
+        }
+    }
+}
+
+@media(min-width: 1025px){
+    .cms1 .has-flick::after{
+        right: 18%;
+        bottom: -25px;
+    }
+}
+
+@media(max-width: 767px){
+    .cms1-detail-content{
+        .entry-content{
+            margin-top: 26px;
+            padding-left: 18px;
+            padding-right: 9px;
+        }
+        .cms1-detail-title{
+            @include fontStyle(24, 0, 32);
+            margin-bottom: 6px;
+        }
+    }
+    .cms1{
+        .container{
+            padding-left: 0;
+        }
+    }
+    .cms1-detail-content .main-content-left .box-content{
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 0;
+        padding-top: 15px;
+        margin-top: -12px;
+    }
+    .view-all-with-share{
+        margin-bottom: 0;
+        padding-bottom: 30px;
+        .share{
+            width: 100%;
+        }
+    }
+    .cms1-detail-content.is-detail .kc-pagination{
+        margin-bottom: 60px;
+    }
+    .cms1-detail-content .entry-content p{
+        @include fontStyle(16, 25, 28);
+    }
+    .cms1-detail-content .detail-page-next{
+        flex-wrap: wrap;
+        @include fontStyle(17, 0, 22);
+        a{
+            width: 100%;
+            display: block;
+            flex: unset;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+    }
+    .nurse-box.in-detail{
+        flex-direction: column-reverse;
+    }
+    .nurse-box.in-detail .pagination-small{
+        width: 100%;
+        text-align: center;
+    }
+    .cms1-detail-content .nurse-box .nurse-header{
+        margin-bottom: 10px;
+        padding-left: 0;
+        align-items: flex-start;
+        .avatar{
+            padding-top: 5px;
+            img{
+                box-shadow: 0 0 2px rgba(0,0,0,.15);
+            }
+        }
+        .info{
+            font-size: 12px;
+            color: #333;
+            letter-spacing: 1.2px;
+            line-height: 2;
+            font-family: "Meiryo",sans-serif;
+            .name{
+                margin-bottom: 5px;
+            }
+            .job{
+                line-height: 1.2;
+                font-size: 10px;
+                color: #888;
+                max-width: 250px;
+            }
+        }
+    }
+    .nurse-box.in-detail .pagination-small{
+        padding-bottom: 0;
+        margin-top: 12px;
+    }
+    .cms12-detail-content.is-detail .entry-content p{
+        font-size: 16px;
+    }
+    .cms12-detail-content.is-detail .entry-content{
+        margin-top: 0;
+    }
+    .cms12-detail-content .main-content-left{
+        padding-top: 0;
+    }
+    .cms12-detail-content.is-detail .kc-pagination{
+        padding: 0;
+    }
+    .cms12-detail-content.is-detail .cms12-share{
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    .cms1 .has-flick::after{
+        bottom: -30px;
+    }
+}

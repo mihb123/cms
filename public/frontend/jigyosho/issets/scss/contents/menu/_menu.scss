@@ -1,0 +1,430 @@
+.menu-wrap {
+  // position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: inset 0 11px 8px -10px #ccc;
+}
+
+.box-menu {
+  position: relative;
+  width: 100%;
+
+  &__people-img {
+    position: absolute;
+    z-index: 2;
+    top: 1.4rem;
+    left: 15.1rem;
+    @include tabletLL {
+      top: 1rem;
+      left: 9.1rem;
+    }
+    @include tabletM {
+      top: 3rem;
+      left: 9.1rem;
+      width: 11rem;
+    }
+    @include tableMS {
+      width: 9rem;
+    }
+    @include tabletS {
+      top: 0;
+      left: 23.2vw;
+      width: 17.237vw;
+    }
+  }
+
+  &__circle-img {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 20rem;
+    transform: translateY(66%);
+    @include tabletLL {
+      left: 15rem;
+      width: 6rem;
+      transform: translateY(68%);
+    }
+    @include tabletM {
+      left: 13rem;
+      width: 5rem;
+    }
+    @include tableMS {
+      left: 12rem;
+      width: 4rem;
+      transform: translateY(50%);
+    }
+    @include tabletS {
+      top: 3.467vw;
+      left: 29.267vw;
+      width: 8vw;
+      transform: translateY(0);
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  height: 7rem;
+  justify-content: space-between;
+  align-items: center;
+  @include tabletS {
+    height: 10.667vw;
+  }
+
+  &__logo {
+    @include tabletLL {
+      max-width: 14.5rem;
+    }
+    @include tabletM {
+      max-width: 14.5rem;
+    }
+    @include tableMS {
+      max-width: 13.5rem;
+    }
+    @include tabletS {
+      width: 25.333vw;
+      margin-left: 1.6vw;
+    }
+  }
+}
+
+.menu-tab {
+  display: flex;
+  gap: 1.5rem;
+  @include tabletS {
+    display: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+
+  &__title {
+    font-family: BIZUDGothic-regula;
+    font-size: 1rem;
+    color: var(--colorTextPink);
+  }
+
+  &__text {
+    font-family: BIZUDGothic-bold;
+    font-size: 1.6rem;
+    transition: all 0.2s;
+    color: var(--colorTextPink);
+    @include tabletM {
+      font-size: 1.4rem;
+    }
+    @include tableMS {
+      font-size: 1.3rem;
+    }
+
+    &--double {
+      padding-left: 1rem;
+      @extend .menu-tab__text;
+    }
+
+    &--small {
+      font-size: 1.4rem;
+      @extend .menu-tab__text;
+    }
+
+    &--smallest {
+      font-size: 1.2rem;
+      @extend .menu-tab__text;
+    }
+  }
+
+  &__text-wrap {
+    &:hover {
+      .menu-tab__text {
+        transform: scale(1.1);
+        transform-origin: top;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.menu-btn {
+  display: flex;
+  height: 5rem;
+  gap: 0.5rem;
+  align-items: center;
+  @include tabletS {
+    gap: 0.2rem;
+  }
+
+  &__time {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    @include tableMS {
+      margin-right: 0;
+    }
+    @include tabletS {
+      display: none;
+    }
+
+    &:hover {
+      .menu-btn__time-img .hover {
+        display: block;
+      }
+
+      .menu-btn__time-img .active {
+        display: none;
+      }
+
+      .menu-btn__time-text {
+        color: #1210de !important;
+      }
+    }
+  }
+
+  &__time-img {
+    .hover {
+      display: none;
+    }
+    //
+  }
+
+  &__time-text {
+    font-size: 1.1rem;
+    color: #80b8ee !important;
+    @include tabletS {
+      color: #fff !important;
+    }
+  }
+
+  &__history {
+    display: flex;
+    padding-left: 1.4rem;
+    transition: all 0.2s;
+    border-radius: $radius;
+    background-image: linear-gradient(to bottom, rgb(239, 136, 155, .5) 0, rgb(239, 136, 155, .8) 30%, rgb(240, 135, 153, .93) 50%, rgb(240, 135, 153, 1) 100%);
+    align-items: center;
+    @include tabletS {
+      display: none;
+    }
+
+    &:hover {
+      .menu-btn {
+        &__history-title {
+          color: white;
+        }
+
+        &__history-line {
+          background-color: rgba(255, 255, 255, .733);
+        }
+
+        &__history-detail {
+          color: #fff;
+        }
+
+        &__history-icon img {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+
+  &__history-title {
+    font-family: SourceHanSansJP-Light;
+    font-size: 1.7rem;
+    transition: all 0.2s;
+    color: #f5f5f5;
+    @include tableMS {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 786px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__history-line {
+    width: 100%;
+    height: 1px;
+    transition: all 0.2s;
+    background-color: rgb(255, 255, 255, .27);
+  }
+
+  &__history-detail {
+    font-family: meiryo, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    transition: all 0.2s;
+    text-align: center;
+    color: #f9d1d8;
+    @media screen and (max-width: 786px) {
+      font-size: 0.7rem;
+    }
+  }
+
+  &__history-icon {
+    margin-top: 1rem;
+
+    img {
+      transition: all 0.2s;
+    }
+  }
+
+  &__hamburgers {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    max-width: 4.2rem;
+    height: 4.2rem;
+    cursor: pointer;
+    border-radius: $radius;
+    background-image: linear-gradient(to bottom, rgb(239, 136, 155, .5) 0, rgb(239, 136, 155, .8) 30%, rgb(240, 135, 153, .93) 50%, rgb(240, 135, 153, 1) 100%);
+    align-items: center;
+    justify-content: center;
+    @include tabletS {
+      width: 10.667vw;
+      height: 3.5rem;
+      border-radius: 0;
+      justify-content: center;
+    }
+
+    &:hover {
+      // outline: solid 3px #f5a7b5;
+      // outline-offset: -3px;
+      .menu-btn {
+        &__hamburgers-text {
+          color: rgb(255, 255, 255, 1);
+        }
+
+        &__hamburgers-arrow {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__hamburgers-arrow {
+    position: absolute;
+    z-index: 10;
+    top: 4.5rem;
+    right: -.2rem;
+    display: none;
+    width: max-content;
+    @include tabletS {
+      top: 6vw;
+    }
+
+    img {
+      width: 4rem;
+    }
+  }
+
+  &__hamburgers-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.4rem;
+    @include tabletS {
+      margin-top: 2px;
+    }
+  }
+
+  &__hamburgers-line {
+    width: 2.1rem;
+    height: 0.2rem;
+    border-radius: $radius;
+    background-color: #fff;
+    @include tableMS {
+      width: 1.95rem;
+    }
+  }
+
+  &__hamburgers-text {
+    font-size: 1rem;
+    color: rgb(255, 255, 255, .72);
+    @include tabletS {
+      font-size: 0.6rem;
+      padding-top: 2px;
+    }
+  }
+
+  &__nav-item {
+    width: 1.9rem;
+    height: 2px;
+    border-radius: 3px;
+    background-color: white;
+    filter: drop-shadow(0 0 1px white);
+    @media screen and (max-width: 450px) {
+      width: 4.067vw;
+    }
+  }
+
+  &__time-mobile {
+    position: static;
+    z-index: 100;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    max-width: 4.2rem;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgb(239, 136, 155, .5) 0, rgb(239, 136, 155, .8) 30%, rgb(240, 135, 153, .93) 50%, rgb(240, 135, 153, 1) 100%);
+    align-items: center;
+    justify-content: center;
+    @include tabletS {
+      display: flex;
+      width: 10.667vw;
+      height: 3.5rem;
+      justify-content: center;
+    }
+  }
+
+  &__time-img {
+    width: 2rem;
+  }
+
+  &__time-text {
+    font-size: 1rem;
+    color: #fff;
+    @include tabletS {
+      font-size: 0.6rem;
+      padding-top: 2px;
+    }
+  }
+
+  &__account-mobile {
+    position: static;
+    z-index: 100;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    max-width: 4.2rem;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgb(239, 136, 155, .5) 0, rgb(239, 136, 155, .8) 30%, rgb(240, 135, 153, .93) 50%, rgb(240, 135, 153, 1) 100%);
+    align-items: center;
+    justify-content: center;
+    @include tabletS {
+      display: flex;
+      width: 10.667vw;
+      height: 3.5rem;
+      justify-content: center;
+    }
+  }
+
+  &__account-img {
+    width: 2rem;
+  }
+
+  &__account-text {
+    font-size: 1rem;
+    color: #fff;
+    @include tabletS {
+      font-size: 0.6rem;
+      padding-top: 2px;
+    }
+  }
+}

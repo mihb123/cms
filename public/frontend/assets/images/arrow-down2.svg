@@ -1,0 +1,24 @@
+<svg id="arrow_1_" data-name="arrow (1)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.684" height="17.444" viewBox="0 0 17.684 17.444">
+  <defs>
+    <filter id="Path_3842" x="0" y="6.197" width="17.684" height="11.247" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.6"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_3843" x="0.095" y="0" width="17.589" height="11.153" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.6"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_3842)">
+    <path id="Path_3842-2" data-name="Path 3842" d="M3.379,15.425l7.482,7.482a1.36,1.36,0,0,0,1.918,0l7.482-7.482A1.36,1.36,0,0,0,18.342,13.5l-6.523,6.523L5.3,13.5a1.36,1.36,0,1,0-1.918,1.925Z" transform="translate(-2.93 -6.86)" fill="#f5b6c3"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_3843)">
+    <path id="Path_3843-2" data-name="Path 3843" d="M10.905,13.7a1.36,1.36,0,0,0,1.918,0L20.3,6.22A1.36,1.36,0,0,0,18.387,4.3l-6.523,6.523L5.342,4.3A1.36,1.36,0,0,0,3.424,6.22Z" transform="translate(-2.97 -3.94)" fill="#f5b6c3"/>
+  </g>
+</svg>

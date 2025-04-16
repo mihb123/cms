@@ -1,0 +1,942 @@
+@charset 'utf-8';
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 15px;
+}
+  
+body {
+  /* width: calc(100% - 32px); */
+  /* margin: auto; */
+}
+
+dl {
+  position: relative;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+dl>input {
+  display: none;
+}
+
+dt {
+  position: relative;
+  z-index: 1;
+}
+
+dd {
+  position: absolute;
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: .4s;
+}
+
+dl>input:checked+label+dd {
+  position: relative;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+dt::before {	
+	content:"";
+	width: 5px;
+	height: 5px;
+	border-top: 2px solid #F0A9B9;
+	border-right: 2px solid #F0A9B9;
+  border-radius: 1px;
+	position: absolute;
+  top: 20px;
+	right: 25px;
+	transform: rotate(135deg);
+  z-index: 5;
+}
+dt::after {
+	content:"";
+	width: 5px;
+	height: 5px;
+	border-top: 2px solid #F0A9B9;
+	border-right: 2px solid #F0A9B9;
+  border-radius: 1px;
+	position: absolute;
+  top: 24px;
+	right: 25px;
+	transform: rotate(135deg);
+  z-index: 5;
+}
+
+dl>input:checked+label>dt::before {
+	transform: rotate(-45deg) !important;
+}
+dl>input:checked+label>dt::after {
+	transform: rotate(-45deg) !important;
+}
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  }
+
+  header div.border {
+    background: none;
+  }
+  
+  /* menu */
+  
+  header img.menu {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 15px;
+    height: auto;
+  }
+  
+/* header */
+.logo_tab,
+.logo_pc {
+  display: none;;
+}
+.logo_sp {
+  width: 140px;
+  height: auto;
+}
+.box_04 {
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+
+  hr {
+    border: 0;
+    border-top: 1px solid #DCDCDC;
+    width: 100%;
+    margin: 15px auto 0;
+  }
+  
+  /* sabu */
+
+  header div.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 30px 0 0;
+  }
+  
+  header div.h1 img.star {
+    display: block;
+    width: 20px;
+    height: auto;
+  }
+  
+  header div.h1_00 {
+    text-align: center;
+  }
+  
+  header div.h1 h1 {
+    font-size: 15px;
+    color: #585858;
+    font-weight: bold;
+  }
+  
+  header div.h1 p.h1 {
+    font-size: 7px;
+    color: #AEAEAE;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+/* main */
+
+main span {
+  font-weight: bold;
+  background: linear-gradient(transparent 50%, #FFF4F7 60%);
+}
+
+main p {
+  font-size: 17px;
+  color: #545454;
+  font-weight: normal;
+}
+
+main p.txt {
+  width: calc(100% - 32px);
+  margin: 25px auto 0;
+}
+
+main img {
+  display: block;
+  height: auto;
+}
+
+/* margin */
+
+#space_0 {
+  margin: 0;
+}
+
+#space_15 {
+  margin: 15px auto 0;
+}
+
+#space_35 {
+  margin: 35px auto 0;
+}
+
+#space_50 {
+  margin: 50px auto 0;
+}
+
+/* 目次 */
+
+main div.background {
+  background: linear-gradient(to bottom, transparent 0%, #FEDFE0 25%, #FEDFE0 75%, transparent 100%);
+  /* margin: 10px 0; */
+  width: 100%;
+  box-sizing: border-box;
+  /* margin: 15px 0 -15px; */
+  margin-top: 25px;
+}
+
+main div.container {
+  margin: 0 auto;
+  /* padding: 25px 0; */
+  padding-top: 10px;
+  padding-bottom: 35px;
+
+  width: calc(100% - 60px);
+  box-sizing: border-box;
+}
+
+/* #first {
+  margin: 0 auto -3px;
+} */
+
+
+main div.mokuzi_box {
+  display: flex;
+  align-items: center;
+  /* margin: 25px auto -3px; */
+  /* margin: 0 auto -3px; */
+  /* margin-bottom: -3px; */
+  margin: 0 auto;
+}
+
+main div.box1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
+main span.box-title {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  padding: 0 2px;
+  margin: 2.5px;
+  line-height: 1;
+  font-size: 12px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 0px 2px 2px rgba(255,255,255);
+  color: #E99CAD;
+  font-weight: bold;
+}
+
+main div.border {
+  border-radius: 50%;
+  border: #FEDFE0 2px solid;
+  background-color: #F9F9F9;
+  box-shadow: 0px 2px 6px rgba(255,0,0,.1);
+}
+
+main img.mokuzi_icon {
+  width: 22px;
+  height: 22px;
+  padding: 12px;
+}
+
+main div.menu {
+  display: flex;
+  border: 3px #FEDFE0 solid;
+  box-shadow: 0px 3px 15px rgba(255,255,255,.6);
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+
+  margin-left: -22px;
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+main p.heading {
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+  line-height: 50px;
+
+  margin-left: 32px;
+  margin-right: 16px;
+  /* margin: 30px auto 0; */
+  /* border-radius: 1px;
+  background: linear-gradient(to right, #C1C1C1 3px, transparent 3px); */
+}
+
+main div.tab {
+  border: 3px #FEDFE0 solid!important;
+  box-shadow: 0px 3px 15px rgba(255,255,255,.6);
+  border-radius: 10px;
+  background: #ffffff!important;
+  width: 100%;
+  box-sizing: border-box;
+  /* margin-top: -32px; */
+  /* padding: 35px 25px 25px 25px; */
+  /* padding: 25px; */
+  /* padding: 35px 25px 25px 25px;
+  padding: 30px 20px 20px 20px; */
+  padding: 30px 15px 20px 15px;
+  /* margin-bottom: 25px; */
+
+  /* margin-top: -10px; */
+  margin-top: -10px;
+}
+
+main div.wrap {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  border-left: 1px solid #D8D8D8;
+  padding-left: 10px;
+}
+
+main p.li {
+  font-size: 17px;
+  color: #0A2682;
+  font-weight: normal;
+  cursor: pointer;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+
+main p.li:hover {
+  text-decoration: underline;
+  color: rgba(56,145,182,.75);
+}
+
+main img.flowers {
+  width: 100px;
+  margin: 15px 0 0 auto;
+}
+
+main span.mokuzi {
+  font-size: 12px;
+  color: #000000;
+  font-weight: bold;
+  background: none;
+}
+
+main span.mokuzi_2 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  background: none;
+}
+
+/* section-0 */
+
+main div.box_01 {
+  margin-top: 30px;
+  text-align: center;
+  margin-top: 75px;
+}
+
+main h1 {
+  font-size: 12px;
+  color: #272727;
+}
+
+main span.title_01 {
+  font-size: 10px;
+  color: #585858;
+  font-weight: bold;
+  background: none;
+}
+
+main h2 {
+  font-size: 22px;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+main span.title_02 {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+  background: none;
+}
+
+main p.h2 {
+  font-size: 10px;
+  color: #CFCFCF;
+  margin-top: 5px;
+}
+
+
+main div.box_flower {
+  text-align: center;
+  display: flex;
+  flex-flow: space-around;
+  align-items: center;
+  width: 250px;
+  margin: 10px auto 0;
+}
+
+main img.flower_01 {
+  width: 60px;
+}
+
+main img.flower_02 {
+  width: 30px;
+  margin: 0 0 0 auto;
+}
+
+
+main img.home_pc {
+  display: none;
+}
+
+main img.home {
+  margin: 5px auto 0;
+  /* transform: scale(1.25); */
+  width: 100%;
+  /* width: 100vw;
+   margin: 0 calc(50% - 50vw); */
+}
+
+/* section-1 */
+
+
+main p.points {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+main div.points {
+  position: relative;
+  display: inline-block;
+  padding: 2.5px 5px;
+  border: 1px solid #EEA1B2;
+  background: #EEA1B2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 50px auto 0 16px;
+}
+
+main div.points:before {
+  content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid #EEA1B2;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+}
+
+#pink {
+  color: #E99CAD;
+}
+
+#font_20 {
+  font-size: 20px;
+}
+
+main h3,
+main h7,
+main h10,
+main h14,
+main h17 {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  margin: 15px 0 0 5px;
+  border-left: 8px solid #F5B6C3;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* margin-top: 10px; */
+  display: block;
+}
+
+main span.small {
+  font-size: 15px;
+  color: #000000;
+  /* font-weight: normal; */
+  font-weight: bold;
+  background: none;
+}
+
+main span.sub_title {
+  font-size: 15px;
+  color: #000000;
+  font-weight: normal;
+  background: none;
+  display: block;
+  margin-top: 5px;
+}
+
+main div.h3,
+main div.h7,
+main div.h10,
+main div.h14,
+main div.h17 {
+  width: calc(100% - 10px);
+  height: 7px;
+  background: linear-gradient(to bottom, rgba(254,223,224,0),rgba(254,223,224,.5) 60%,rgba(254,223,224,1) 85%);
+  margin: 5px auto 0;
+}
+
+main h4,
+main h5,
+main h6,
+main h8,
+main h9,
+main h11,
+main h12,
+main h13,
+main h15,
+main h16,
+main h18,
+main h19,
+main h20 {
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+main div.h4,
+main div.h5,
+main div.h6,
+main div.h8,
+main div.h9,
+main div.h11,
+main div.h12,
+main div.h13,
+main div.h15,
+main div.h16,
+main div.h18,
+main div.h19,
+main div.h20  {
+  background: #F5F5F5;
+  margin: 50px auto 0;
+  padding: 16px;
+  margin: 50px auto 0;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+
+  border-left: 8px solid #F5B6C3;
+  padding-left: 16px;
+  display: block;
+
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, .05);
+}
+
+
+main p.sub {
+  font-size: 17px;
+  color: #1BA79A;
+  font-weight: bold;
+  /* margin: 40px auto 0; */
+  /* width: calc(100% - 32px); */
+}
+
+
+main img.pic {
+  aspect-ratio: 4 / 3;
+  display: block;
+  width: calc(100% - 32px);
+  margin: 25px auto 0;
+  object-fit: cover;
+}
+
+
+main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  
+  width: calc(100% - 48px);
+  margin: 50px auto 0;
+}
+
+main li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main p.maru_box {
+  width: 15px;
+  height: 15px;
+	position: relative;
+  background-color: #FBADBE;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+main p.maru_box:before {
+  content: "";
+	width: 3px;
+  height: 3px;
+	position: absolute;
+  z-index: 5;
+  background-color: #ffffff;
+	border-radius: 50%;
+	box-sizing: border-box;
+  line-height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main p.maru_txt {
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+}
+
+
+
+main img.title_icon {
+  width: 50px;
+}
+
+main div.title_box {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin-left: 16px;
+  /* width: calc(100% - 32px); */
+}
+
+main hr {
+  border: 0;
+	border-top: 1px solid #DCDCDC;
+  width: calc(100% - 16px);
+  margin: 35px auto 20px;
+}
+
+#mb_25 {
+  margin: 35px auto 25px;
+}
+
+main img.pic_01 {
+  height: 125px;
+  margin: 35px auto 0;
+}
+
+/* main img.pic_01 {
+  height: 125px;
+  margin: 0;
+} */
+
+main img.money {
+  height: 125px;
+  margin: 35px auto 0;
+}
+
+main img.smail {
+  width: 100px;
+  margin: 35px auto 0;
+}
+
+main img.pair {
+  width: 150px;
+  margin: 35px auto 0;
+}
+
+main img.doctors {
+  height: 100px;
+  margin: 35px auto 0;
+}
+
+#list_35 {
+  margin: 35px auto 0 16px;
+}
+
+/* main img.smail {
+  height: 125px;
+  margin: 35px auto 0;
+} */
+
+/* satosan */
+
+main div.container_03 {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 25px;
+  margin: 0 auto;
+  width: calc(100% - 32px);
+}
+
+main div.box3 {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+
+main img.satosan {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main p.nurse_title {
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+main p.nurse_txt {
+  font-size: 12px;
+  color: #333333;
+  font-weight: normal;
+}
+
+/* back */
+
+main div.container_02 {
+  display: flex;
+  flex-direction : row-reverse;
+}
+
+main img.mokujihemodoru {
+  display: block;
+  width: 50px;
+  height: auto;
+  margin: 25px 16px 0 auto;
+  cursor: pointer;
+}
+
+main a {
+  text-decoration: none;
+}
+
+/* footer */
+
+footer div.container_02 {
+  display: flex;
+  flex-direction : row-reverse;
+  gap: 15px;
+  margin: 75px 16px 100px 0;
+  /* width: 675px; */
+  /* margin: 75px auto 100px; */
+}
+
+footer div.txt_00 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+footer img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 8px;
+  color: #9E9E9E;
+  margin-top: 7px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+/* レスポンシブ */
+
+@media screen and (min-width:768px) {
+  header div.border {
+    height: 5px;
+    background: linear-gradient(to bottom, #F8D3DD,#FAFAF2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  body {
+    max-width: 675px;
+    width: 100%;
+    margin: auto;
+  }
+  /* header */
+  .logo_sp,
+  .logo_pc {
+    display: none;;
+  }
+  .logo_tab {
+    display: block;
+    width: 160px;
+    height: auto;
+  }
+  .box_04 {
+    margin: 15px auto 0 16px;
+  }
+
+  /* sabu */
+  header div.h1 {
+    margin: -15px 28px 0 0;
+  }
+
+  /* main */
+  main span.sub_title {
+    display: inline;
+    margin-top: 0;
+  }
+  br.sp {
+    display: none;
+  }
+  main img.pic {
+    aspect-ratio: 16 / 9;
+  }
+  main div.h1 {
+    margin-top: 25px;
+  }
+  main div.main {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 35px;
+    margin-left: 50px; */
+    margin: 35px 0 0 50px;
+  }
+  main div.main_sub {
+    display: flex;
+    flex-direction :column;
+    z-index: 5;
+
+    margin-right: -50px;
+  }
+  main img.home {
+    display: none;
+  }
+  main img.home_pc {
+    display: block;
+    width: 550px;
+    margin-left: -75px;
+  }
+
+  main div.box_01 {
+    text-align: center;
+    margin-top: 75px;
+
+    width: 300px;
+  }
+  main img.flowers {
+    margin: 0 0 0 auto;
+  }
+
+  /* 目次 */
+  main div.tab {
+    display: flex;
+    align-items: flex-end;
+  }
+  /* main p.heading {
+    font-size: 16px;
+  } */
+
+  /* section1 */
+  main div.ul_box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+    margin: 15px 0 0 32px;
+  }
+  main ul.ul {
+    margin: 35px 0 auto;
+  }
+  /* main img.pic_01 {
+    height: 125px;
+  } */
+
+  /* satosan */
+  main div.container_03 {
+    margin: -50px auto 0 24px;
+  }
+
+}
+
+
+@media screen and (min-width:990px) {
+
+  body {
+    max-width: 990px;
+    width: 100%;
+    margin: auto;
+  }
+  div.pc_res {
+    max-width: 675px;
+    width: 100%;
+    margin: auto;
+  }
+
+  /* header */
+  .logo_sp,
+  .logo_tab {
+    display: none;;
+  }
+  .logo_pc {
+    display: block;
+    width: 170px;
+    height: auto;
+  }
+  
+  /* sabu */
+  header div.h1 {
+    margin: -30px 28px 0 0;
+  }
+
+  /* main */
+  main img.home_pc {
+    /* width: 700px; */
+    width: 900px;
+    margin-left: -125px;
+  }
+  main div.main {
+    margin-left: 200px;
+  }
+  main div.box_01 {
+    margin-top: 100px;
+  }
+
+  main div.main {
+    /* margin: 35px 0 0 200px; */
+    padding-left: 100px;
+  }
+
+  /* satosan */
+  main div.container_03 {
+    /* margin: -75px auto 0 24px; */
+    margin: -175px auto 0 24px;
+  }
+
+  /* footer */
+  footer div.container_02 {
+    padding: 75px 16px 100px 0;
+    width: 675px!important;
+    box-sizing: border-box;
+    margin: 0 auto!important;
+  }
+}

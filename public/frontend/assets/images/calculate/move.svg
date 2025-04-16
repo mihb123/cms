@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.496" height="103.343" viewBox="0 0 61.496 103.343">
+  <defs>
+    <filter id="Path_5433" x="0" y="33.147" width="61.496" height="70.196" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="move" transform="translate(2 -1.5)">
+    <g transform="matrix(1, 0, 0, 1, -2, 1.5)" filter="url(#Path_5433)">
+      <path id="Path_5433-2" data-name="Path 5433" d="M49.222,37.872a4.348,4.348,0,0,1,0,6.151l-17.4,17.4a4.347,4.347,0,0,1-6.15,0l-17.4-17.4a4.349,4.349,0,0,1,6.151-6.151L24.4,47.846v-33a4.35,4.35,0,1,1,8.7,0v33l9.974-9.974a4.348,4.348,0,0,1,6.151,0Z" transform="translate(2 28.65)" fill="#fea4b7"/>
+    </g>
+    <path id="Path_5434" data-name="Path 5434" d="M22.049,27.6A13.049,13.049,0,1,1,35.1,14.549,13.049,13.049,0,0,1,22.049,27.6Z" transform="translate(6.699 0)" fill="#fea4b7" opacity="0.3"/>
+  </g>
+</svg>

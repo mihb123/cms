@@ -1,0 +1,30 @@
+.medical-feature .ls-box__title{
+    margin-bottom: 10px !important;
+}
+.m-feature-box{
+    background-color: #FFFDFD;
+    border: 2px solid #F9CFD6;
+    border-top-left-radius: 10px;
+    min-height: 174px;
+    padding: 12px 54px 12px 12px;
+    font-weight: 300;
+    &__thumb{
+        float: right;
+        margin-left: 20px;
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        position: relative;
+        top: -50px;
+    }
+    @media(max-width: 767px){
+        padding: 2.667vw;
+        &__thumb{
+            margin-left: 2.667vw;
+            width: 21.333vw;
+            height: 21.333vw;
+            top: -8vw;
+            font-size: 3.467vw;
+        }
+    }
+}

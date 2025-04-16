@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="105" viewBox="0 0 105 105">
+  <defs>
+    <filter id="長方形_368" x="0" y="0" width="105" height="105" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.38"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="コンポーネント_399_1" data-name="コンポーネント 399 – 1" transform="translate(19.5 22.5)">
+    <g id="グループ_1375" data-name="グループ 1375" transform="translate(-1829 -933)">
+      <g transform="matrix(1, 0, 0, 1, 1809.5, 910.5)" filter="url(#長方形_368)">
+        <rect id="長方形_368-2" data-name="長方形 368" width="60" height="60" rx="10" transform="translate(19.5 22.5)" fill="#fff"/>
+      </g>
+      <g id="location_2_" data-name="location (2)" transform="translate(1835 939)">
+        <path id="パス_2281" data-name="パス 2281" d="M46.594,22.594H45.046a21.093,21.093,0,0,0-19.64-19.64V1.406a1.406,1.406,0,0,0-2.812,0V2.953a21.092,21.092,0,0,0-19.64,19.64H1.406a1.406,1.406,0,0,0,0,2.813H2.953a21.093,21.093,0,0,0,19.64,19.64v1.547a1.406,1.406,0,0,0,2.813,0V45.046a21.093,21.093,0,0,0,19.64-19.64h1.547a1.406,1.406,0,0,0,0-2.812ZM25.406,42.228V40.781a1.406,1.406,0,0,0-2.812,0v1.446A18.311,18.311,0,0,1,5.772,25.406H7.219a1.406,1.406,0,1,0,0-2.812H5.772A18.311,18.311,0,0,1,22.594,5.772V7.219a1.406,1.406,0,1,0,2.813,0V5.772A18.311,18.311,0,0,1,42.228,22.594H40.781a1.406,1.406,0,0,0,0,2.813h1.446A18.311,18.311,0,0,1,25.406,42.228Z" fill="#5d5d5d"/>
+        <ellipse id="楕円形_92" data-name="楕円形 92" cx="2" cy="1" rx="2" ry="1" transform="translate(22 20)" fill="#5d5d5d"/>
+        <path id="パス_2282" data-name="パス 2282" d="M160.9,121a9.829,9.829,0,0,0-7.876,15.709l6.749,9.039a1.406,1.406,0,0,0,2.254,0l6.749-9.039A9.829,9.829,0,0,0,160.9,121Zm0,14.063a4.219,4.219,0,1,1,4.219-4.219A4.224,4.224,0,0,1,160.9,135.063Z" transform="translate(-136.905 -109.656)" fill="#5d5d5d"/>
+      </g>
+    </g>
+  </g>
+</svg>

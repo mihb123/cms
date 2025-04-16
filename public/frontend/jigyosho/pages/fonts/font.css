@@ -1,0 +1,82 @@
+@font-face {
+  font-family: SourceHanSansJP;
+  src: url(./SourceHanSansJP-Bold.otf) format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: SourceHanSansJP;
+  src: url(./SourceHanSansJP-ExtraLight.otf) format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: SourceHanSansJP;
+  src: url(./SourceHanSansJP-Heavy.otf) format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: SourceHanSansJP;
+  src: url(./SourceHanSansJP-Light.otf) format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: SourceHanSansJP;
+  src: url(./SourceHanSansJP-Medium.otf) format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: SourceHanSansJP;
+  src: url(./SourceHanSansJP-Normal.otf) format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: SourceHanSansJP;
+  src: url(./SourceHanSansJP-Regular.otf) format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BIZUDGothic;
+  src: url('./BIZUDGothic-Regular.ttf') format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BIZUDGothic;
+  src: url('./BIZUDGothic-Bold.ttf') format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Inkfree;
+  src: url(./Inkfree.ttf);
+}
+
+@font-face {
+  font-family: meiryo;
+  src: url(./meiryo.ttc);
+}
+
+@font-face {
+  font-family: 'ms-pgothic';
+  src: local('ms-pgothic'), url(./ms-pgothic.ttf) format("truetype");
+}
+
+@font-face{
+  font-family: 'microsoft-jhenghei';
+  src: local('microsoft-jhenghei'), url(./microsoft-jhenghei.ttf) format("truetype");
+}
+@font-face{
+  font-family: 'LetterGothicStd';
+  src: local('LetterGothicStd'), url(./LetterGothicStd.otf) format("truetype");
+}
+@font-face{
+  font-family: HGMaruGothicMPRO;
+  src: url(./hgrsmp.ttf) format("opentype");
+  font-weight: 400;
+}

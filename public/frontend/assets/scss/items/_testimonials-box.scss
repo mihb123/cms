@@ -1,0 +1,153 @@
+.testimonials-box{
+    padding: 30px 18px 20px 18px;
+    min-height: 465px;
+    width: 100%;
+    border-radius: 20px 35px 20px 35px;
+    text-align: center;
+    position: relative;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    box-shadow: 0 0 1px 1px #d1d1d1;
+    .title{
+        @include fontStyle(18, 200, 27, $blue_color);
+        font-weight: bold;
+        border-bottom: 1px dashed #C5C5C5;
+        padding-bottom: 5px;
+        max-width: 198px;
+        margin: 0 auto 10px;
+    }
+    .sub-title-en{
+        @include fontStyle(10, 100, 12, #FCAEBF);
+        font-family: "Inkfree", sans-serif;
+        margin-bottom: 5px;
+    }
+    .people{
+        width: 100%;
+        margin-bottom: 13px;
+    }
+    .desc{
+        @include fontStyle(12, 0, 22, #7A7A7A);
+        text-align: left;
+        margin-bottom: 19px;
+        font-family: "Inkfree", "Source Han Sans JP", sans-serif;
+    }
+    .psychological-care{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 9px;
+        margin-bottom: 8px;
+        .text{
+            @include fontStyle(5, 100, 7, #515151);
+            padding-left: 8px;
+            padding-bottom: 6px;
+        }
+    }
+    .read-more{
+        //text-decoration: underline;
+        text-underline-offset: 2px;
+        @include fontStyle(15, 50, 16, $blue_color);
+        transition: all 0.3s;
+        display: block;
+        padding-top: 3px;
+    }
+    .link-with-icon{
+        font-size: 15px;
+    }
+    .speech-bubble{
+        position: absolute;
+        top: 0;
+        right: -45px;
+        background-image: url('../images/speech-bubble.png');
+        width: 95px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include fontStyle(14, 0, 16, #FFF);
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.04);
+        padding-left: 5px;
+        transition: all 0.3s;
+        opacity: 0;
+        span:last-child{
+            @include fontStyle(11, 0, 16, #FFF);
+        }
+    }
+    .arrow-icon{
+        transition: all 0.2s;
+        width: 22px;
+        height: 22px;
+    }
+    &:hover{
+        border: 2px solid $main_color;
+        box-shadow: none;
+        .arrow-icon{
+            transform: scale(1.2);
+        }
+        .speech-bubble{
+            opacity: 1;
+        }
+        .read-more{
+            font-size: 16px;
+            text-decoration: underline;
+        }
+    }
+}
+
+.tab-content-right, .sidebar, .content-right{
+    .testimonials-box{
+        border: 2px solid $main_color;
+        box-shadow: none;
+        .read-more{
+            text-decoration: none;
+        }
+        //.arrow-icon{
+        //    transform: scale(1.2);
+        //}
+        .speech-bubble{
+            opacity: 1;
+        }
+        &:hover{
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            .read-more{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.mitori-test .testimonials-box{
+    border: 1px solid #d1d1d1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    &:hover{
+        border: 1px solid #d1d1d1;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    }
+}
+
+@media(max-width: 1024px){
+    .testimonials-box .desc{
+        margin-bottom: 10px;
+    }
+    .testimonials-box{
+        padding-top: 22px;
+    }
+    .testimonials-box .people{
+        max-width: 95%;
+    }
+    .testimonials-box{
+        min-height: 430px;
+    }
+}
+
+@media(max-width: 767px){
+    .testimonials-box{
+        .people{
+            margin-bottom: 8px;
+        }
+    }
+}

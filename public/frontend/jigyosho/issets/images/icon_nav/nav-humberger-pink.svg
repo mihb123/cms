@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="36.045" viewBox="0 0 43 36.045">
+  <defs>
+    <filter id="_1" x="0" y="15.363" width="43" height="20.682" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.651"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_2" x="0" y="7.682" width="43" height="20.682" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.651"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_3" x="0" y="0" width="43" height="20.682" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-color="#fff" flood-opacity="0.651"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1535" data-name="Group 1535" transform="translate(-337.375 -4)">
+    <g transform="matrix(1, 0, 0, 1, 337.38, 4)" filter="url(#_1)">
+      <rect id="_1-2" data-name="1" width="25" height="2.682" rx="1" transform="translate(9 21.36)" fill="#f6bccc"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 337.38, 4)" filter="url(#_2)">
+      <rect id="_2-2" data-name="2" width="25" height="2.682" rx="1" transform="translate(9 13.68)" fill="#f6bccc"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 337.38, 4)" filter="url(#_3)">
+      <rect id="_3-2" data-name="3" width="25" height="2.682" rx="1" transform="translate(9 6)" fill="#f6bccc"/>
+    </g>
+  </g>
+</svg>

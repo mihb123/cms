@@ -1,0 +1,519 @@
+/*
+Theme Name: Lightning Child
+Theme URI: test.shiawasenomonosashi.com
+Template: lightning
+Description: 幸せのものさし.com（テスト用）
+Author: A.U
+Tags: TOPページCSS
+Version: 0.1.2
+*/
+
+div.row {
+  text-align: center;
+}
+
+/***** media for：PC *****/
+
+#Top-page-head {
+   //max-width: 1185px !important;
+   width: 100% !important;
+   height: 20px;
+   border: none;
+}
+
+#Top-page-container  {
+   z-index: 1;
+   max-width: 1190px !important;
+   //width: 80% !important;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   padding: 0;
+   grid-gap: 10px;
+   //margin-left: 2%;
+   margin-left: 0;
+   border: none;
+}
+
+/** PC:左側のブロック(div) ・モバイル:1段目のブロック **/
+#Top-page-col1  {
+  position: relative;
+  padding: 30px 0px 0px 0px;
+  min-width: 690px!important;
+  max-width: 740px!important;
+  margin-right: 10px;
+}
+
+/** PC:右側のブロック(div) ・モバイル:1段目のブロック **/
+#Top-page-col2  {
+  position: relative;
+  padding-top: 30px;
+  min-width: 500px!important;
+  max-width: 550px!important;
+}
+
+/** カテゴリータイトル行全体の共通クラス **/
+.top-page-category-title {
+  text-align: left;
+  padding: 50px 0px 30px 20px;
+}
+
+/** カテゴリーブロック内ボタンの文字・共通クラス(小) **/
+.top-page-category-bottun-txt1 {
+  font-size: 12px;
+}
+/** カテゴリーブロック内のボタンの文字・共通クラス(中) **/
+.top-page-category-bottun-txt2 {
+  font-size: 13px;
+}
+/** カテゴリーブロック内のボタンの文字・共通クラス(大) **/
+.top-page-category--bottun-txt3 {
+  font-size: 15px;
+}
+/** カテゴリー・ボタン群ブロックの共通クラス **/
+.top-page-category-buttons-row  {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  //width: 600px;
+}
+
+
+/** Blueカテゴリー・ブロック **/
+#Top-page-category-blue {
+   z-index: 2;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: white;
+  height: 410px;
+  border: solid 2px #99CCFF;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#Top-page-category-blue-img {
+  z-index: 3;
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 180px;
+}
+/** Bluカテゴリータイトル行・小サイズ文字のクラス**/
+.top-page-category-blue-title-small {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #00BFFF;
+}
+/** Bluカテゴリータイトル行・大サイズ文字のクラス**/
+.top-page-category-blue-title-large {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 800;
+  color: #00BFFF;
+  margin-left: 5px;
+}
+
+/** Blueカテゴリー・タイトル群ブロック **/
+div #Top-page-blue-buttons-titile-container {
+  display: inline-block;
+  height: 300px;
+  vertical-align: top;
+  color: #969696;
+  font-size: 14px;
+  font-weight: 500;
+}
+/** Blueカテゴリー・ボタン群タイトル文字の共通クラス **/
+.top-page-blue-buttons-title-txt {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  width: 60px;
+}
+/** Blueカテゴリー・ボタン群タイトル「＞」文字の共通クラス **/
+.top-page-blue-buttons-title-allow {
+  display: inline-block;
+  width: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/** Blueカテゴリー・ボタン群タイトル1 **/
+/** 「在宅サポート」の文字 **/
+div #Top-page-blue-buttons-title1  {
+  padding-left: 0px;
+  padding-right: 5px;
+  //text-decoration: none;
+  height: 105px;
+  text-align: left;
+}
+/** Blueカテゴリー・ボタン群タイトル2 **/
+div #Top-page-blue-buttons-title2  {
+  padding-left: 0px;
+  padding-right: 5px;
+  //text-decoration: none;
+  height: 112px;
+  text-align: left;
+}
+/** Blueカテゴリー・ボタン群タイトル3 **/
+div #Top-page-blue-buttons-title3  {
+  padding-left: 0px;
+  padding-right: 5px;
+  //text-decoration: none;
+  height: 50px;
+  text-align: left;
+}
+
+/** Blueカテゴリー・ボタン群ブロック **/
+div #Top-page-blue-buttons-container {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  vertical-align: top;
+  width: 580px;
+}
+
+div #Top-page-blue-buttons-rows {
+  display: inline-block;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-decoration: none;
+  color: #969696;
+  height: 80px;
+}
+div #Top-page-blue-buttons-row2 {
+  padding-bottom: 10px;
+}
+div #Top-page-blue-buttons-row4 {
+  padding-bottom: 10px;
+}
+
+/** Blueカテゴリー・ボタンの共通クラス **/
+.top-page-category-blue-bottun {
+  display: inline-block;
+  padding: 0.1em 0.1em;
+  text-decoration: none;
+  color: #555555;
+  border: solid 2px #DDDDDD;
+  border-radius: 5px;
+  transition: .4s;
+  margin-right: 5px;
+  width: 135px;
+  text-align: center;
+}
+.top-page-category-blue-bottun:hover {
+  background: #67c5ff;
+  color: white;
+  transform: scale(1.3, 1.3);
+  text-decoration: none;
+}
+
+/** Pinkカテゴリーのブロック **/
+#Top-page-category-pink {
+  grid-column: 1/2;
+  grid-row: 2/2;
+  background-color: white;
+  height: 240px;
+  border: solid 2px #FF9999;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 65px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+#Top-page-category-pink-img {
+  z-index: 3;
+  position: absolute;
+  left: 5px;
+  top: 470px;
+  width: 180px;
+}
+/** Pinkカテゴリータイトル行・小サイズ文字のクラス**/
+.top-page-category-pink-title-small {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FF9999;
+}
+/** Pinkカテゴリータイトル行・大サイズ文字のクラス**/
+.top-page-category-pink-title-large {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 800;
+  color: #FF9999;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/** Pinkカテゴリー・ボタンタイトル群ブロック **/
+div #Top-page-pink-buttons-titile-container {
+  display: inline-block;
+  height: 115px;
+  vertical-align: top;
+  color: #969696;
+  font-size: 14px;
+  font-weight: 550;
+}
+/** Pinkカテゴリー・ボタン群タイトル1 **/
+div #Top-page-pink-buttons-title1  {
+  padding-left: 5px;
+  padding-right: 0px;
+  text-decoration: none;
+  height: 115px;
+  width: 170px;
+}
+/** Pinkカテゴリー・ボタン群ブロック **/
+div #Top-page-pink-buttons-container {
+  display: inline-block;
+  text-align: left;
+  margin: 0px 0px 0px 10px;
+  padding: 0;
+  height: 115px;
+  vertical-align: top;
+  width: 500px;
+  text-align: left;
+}
+/** 「支援者にお願いできること」の文字 **/
+div #Top-page-pink-buttons-title1-txt {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  width: 130px;
+  padding-left: 5px;
+  text-align: left;
+}
+/** 「＞」の文字 **/
+div #Top-page-pink-buttons-title1-allow {
+  display: inline-block;
+  width: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/** Pinkカテゴリー・ボタンの共通クラス **/
+.top-page-category-pink-bottun {
+  display: inline-block;
+  padding: 0.2em 0.2em;
+  text-decoration: none;
+  color: #555555;
+  border: solid 2px #DDDDDD;
+  border-radius: 5px;
+  transition: .4s;
+  margin-right: 5px;
+  width: 140px;
+  text-align: center;
+}
+.top-page-category-pink-bottun:hover {
+  background: #FF9999;
+  color: white;
+  transform: scale(1.3, 1.3);
+  text-decoration: none;
+}
+
+/** Greenカテゴリーのブロック **/
+#Top-page-category-green {
+  z-index: 2;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  background-color: white;
+  height: 500px;
+  border: solid 2px #00AA00;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#Top-page-category-green-img {
+  z-index: 3;
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 180px;
+}
+/** Greenカテゴリータイトル行・小サイズ文字のクラス**/
+.top-page-category-green-title-small {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #00AA00;
+}
+/** Greenカテゴリータイトル行・大サイズ文字のクラス**/
+.top-page-category-green-title-large {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 800;
+  color: #00AA00;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/** Orangeカテゴリーのブロック **/
+#Top-page-category-orange {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  background-color: white;
+  height: 200px;
+  border: solid 2px #FF9900;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 5px;
+}
+#Top-page-category-orange-img {
+  z-index: 3;
+  position: absolute;
+  left: 5px;
+  top: 560px;
+  width: 180px;
+}
+/** Orangeカテゴリータイトル行・小サイズ文字のクラス**/
+.top-page-category-orange-title-xsmall {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FF9900;
+}
+.top-page-category-orange-title-small {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FF9900;
+}
+/** Orangeカテゴリータイトル行・大サイズ文字のクラス**/
+.top-page-category-orange-title-large {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 800;
+  color: #FF9900;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/** Orangeカテゴリー・ボタンタイトル群ブロック **/
+div #Top-page-orange-buttons-titile-container {
+  display: inline-block;
+  height: 80px;
+  color: #969696;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+/** Orangeカテゴリー・ボタン群タイトル1 **/
+div #Top-page-orange-buttons-title1  {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 0px;
+  text-decoration: none;
+  height: 50px;
+  width: 150px;
+}
+/** Orangeカテゴリー・ボタン群ブロック **/
+div #Top-page-orange-buttons-container {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  vertical-align: top;
+  width: 310px;
+}
+/** 「いくらかかる？」の文字 **/
+div #Top-page-orange-buttons-title1-txt {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  width: 110px;
+  padding: 0;
+  margin: 15px 0px 0px 0px;
+}
+/** 「＞」の文字 **/
+div #Top-page-orange-buttons-title1-allow {
+  display: inline-block;
+  width: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/** Orangeカテゴリー・ボタンの共通クラス **/
+.top-page-category-orange-bottun {
+  display: inline-block;
+  padding: 0.2em 0.2em;
+  text-decoration: none;
+  color: #555555;
+  border: solid 2px #DDDDDD;
+  border-radius: 5px;
+  transition: .4s;
+  margin-right: 5px;
+  width: 140px;
+  text-align: center;
+}
+.top-page-category-orange-bottun:hover {
+  background: #FF570D;
+  color: white;
+  transform: scale(1.3, 1.3);
+  text-decoration: none;
+}
+
+/** カテゴリー内のブロック **/
+.top-page-category-container {
+  margin: 3px;
+}
+
+/** Pinkカテゴリーのボタン **/
+.top-page-category-pink-bottun {
+
+}
+
+
+
+
+@media screen and (max-width: 450px)  {
+
+#Top-page-container  {
+   max-width: 1190px !important;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   margin: 0;
+   padding: 0;
+}
+
+#Top-page-col1  {
+  background-color: #DDDDDD;
+  min-width: 300px!important;
+  max-width: 400px!important;
+}
+
+#Top-page-col2  {
+  min-width: 400px!important;
+  max-width: 500px!important;
+}
+
+#Top-page-category-blue {
+  grid-column: 1/1;
+  grid-row: 1/4;
+  background-color: #99CCFF;
+}
+
+#Top-page-category-green {
+  grid-column: 1/1;
+  grid-row: 2/4;
+  background-color: #99FFCC;
+}
+
+#Top-page-category-pink {
+  grid-column: 1/1;
+  grid-row: 3/4;
+  background-color: #FFCCCC;
+}
+
+#Top-page-category-orange {
+  background-color: #FFCC33;
+  grid-column: 1/1;
+  grid-row: 4/4;
+}
+
+}

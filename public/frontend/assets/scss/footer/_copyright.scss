@@ -1,0 +1,34 @@
+.copyright{
+    background-color: #FFEFF1;
+    text-align: center;
+    padding: 4px 0;
+    @include fontStyle(15, 100, 21, #F39FAD);
+    position: relative;
+    span{
+        padding: 0 20px;
+        background-color: #FFEFF1;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    @media(max-width: 1024px){
+        &::before{
+            content: '';
+            width: calc(100% - 30px);
+            height: 0;
+            border-bottom: 1px solid #FED4D9;
+            display: block;
+            position: absolute;
+            left: 15px;
+            top: 14px;
+        }
+    }
+}
+
+.copyright-sp{
+    text-align: center;
+    @include fontStyle(12, 100, 38, #CECECE);
+    margin-bottom: 50px;
+    font-family: "Meiryo", sans-serif;
+}

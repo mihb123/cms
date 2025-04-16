@@ -1,0 +1,291 @@
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.wrapper * {
+  position: relative;
+}
+
+body {
+  font-family: SourceHanSansJP-Regular, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.05rem;
+  color: black;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before {
+  content: '';
+  content: none;
+}
+
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  text-decoration: none;
+}
+
+mark {
+  font-weight: bold;
+  font-style: italic;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  border: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  appearance: none;
+}
+/* reset (form)
+----------------------------------------------------------------- */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  color: inherit;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  display: block;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+label {
+  cursor: pointer;
+}
+/* spin-button(chrome,safari) */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button,
+input[type='month']::-webkit-outer-spin-button,
+input[type='month']::-webkit-inner-spin-button,
+input[type='datetime-local']::-webkit-outer-spin-button,
+input[type='datetime-local']::-webkit-inner-spin-button,
+input[type='week']::-webkit-outer-spin-button,
+input[type='week']::-webkit-inner-spin-button,
+input[type='time']::-webkit-outer-spin-button,
+input[type='time']::-webkit-inner-spin-button,
+input[type='date']::-webkit-outer-spin-button,
+input[type='date']::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+  -webkit-appearance: none;
+}
+/* spin-button(firefox) */
+input[type='number'],
+input[type='month'],
+input[type='datetime-local'],
+input[type='week'],
+input[type='time'],
+input[type='date'] {
+  -moz-appearance: textfield;
+}
+/* clear-button */
+input[type='date']::-webkit-clear-button,
+input[type='month']::-webkit-clear-button,
+input[type='datetime-local']::-webkit-clear-button,
+input[type='time']::-webkit-clear-button,
+input[type='week']::-webkit-clear-button {
+  -webkit-appearance: none;
+}
+/* input */
+input {
+  height: 100%;
+  color: inherit;
+  border: 1px solid transparent;
+  outline: 0;
+}
+/* input:focus */
+input:focus {
+  //
+}
+/* search */
+input[type='search']::-webkit-search-cancel-button {
+  /* search cancel */
+  -webkit-appearance: none;
+}
+
+input[type='search']::-webkit-search-decoration {
+  display: none;
+}
+
+input[type='search']:focus {
+  outline-offset: -2px;
+}
+/* password(IE、Edge) */
+input[type='password']::-ms-reveal {
+  display: none;
+}

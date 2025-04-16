@@ -1,0 +1,266 @@
+.section-3 {
+  .wrap-section3 {
+    position: relative;
+    width: 186rem;
+    max-width: 100%;
+    margin: 0 auto;
+    @include tabletS {
+      overflow: hidden;
+    }
+  }
+
+  .s-sp {
+    width: 100%;
+    max-width: 71.42%;
+    @include tabletS {
+      max-width: 100%;
+    }
+  }
+
+  .s-sp-left {
+    display: flex;
+    width: 100%;
+    max-width: 80rem;
+    margin-top: 2rem;
+    border-bottom: 0.3rem solid #f9cfd6;
+    align-items: flex-end;
+    justify-content: space-between;
+    @include tableMS {
+      margin-top: 1rem;
+    }
+    @include tabletS {
+      height: unset;
+    }
+  }
+
+  .s-sp-title {
+    display: flex;
+    height: 6.5rem;
+    padding: 0 3rem;
+    border: 0.3rem solid #f9cfd6;
+    border-bottom: 0;
+    border-top-left-radius: $radius-middle;
+    border-top-right-radius: $radius-middle;
+    background-color: #fdf4f4;
+    align-items: center;
+    @include tabletM {
+      padding: 0 1.5rem;
+    }
+    @include tableMS {
+      height: 5.5rem;
+      padding: 0 2rem;
+    }
+    @include tabletS {
+      width: 45.333vw;
+      height: 8vw;
+      padding: 0;
+      justify-content: center;
+    }
+
+    &__text {
+      display: inline;
+      color: #090909;
+      @include tabletS {
+        line-height: 1;
+      }
+
+      &--big {
+        font-size: 2.5rem;
+        @extend .s-sp-title__text;
+        @include tabletL {
+          font-size: 2.4rem;
+        }
+        @include tabletM {
+          font-size: 2rem;
+        }
+        @include tableMS {
+          // font-size: 2.4rem;
+        }
+        @include tabletS {
+          font-size: 3.467vw;
+        }
+      }
+
+      &--middle {
+        font-size: 1.8rem;
+        @extend .s-sp-title__text;
+        @include tableMS {
+          font-size: 1.6rem;
+        }
+        @include tabletS {
+          font-size: 2.4vw;
+        }
+      }
+    }
+  }
+
+  .text-sp {
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+    padding-left: 4rem;
+    color: #70757a;
+    @include tabletM {
+      padding-left: 1.5rem;
+    }
+    @include tabletS {
+      font-size: 2.133vw;
+      margin: 1.333vw 0;
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+  .s-sp-logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 5rem;
+    @include tableMS {
+      gap: 3rem;
+    }
+    @include tabletS {
+      margin-right: 2.667vw;
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #f9d3da;
+      @include tableMS {
+        font-size: 0.9rem;
+      }
+      @include tabletS {
+        font-family: SourceHanSansJP-Light, sans-serif;
+        font-size: 1.6vw;
+        margin-bottom: 1.333vw;
+      }
+    }
+
+    &__img-box {
+      @include tabletS {
+        width: 16vw;
+        height: 10.667vw;
+      }
+    }
+  }
+
+  .s-sp-more {
+    display: none;
+    margin-top: 4.8vw;
+    justify-content: center;
+    @include tabletS {
+      display: flex;
+    }
+
+    &__btn {
+      display: flex;
+      width: 66.667vw;
+      height: 8vw;
+      cursor: pointer;
+      border-radius: 2.5vw;
+      background-color: #fff9f9;
+      box-shadow: 0 0 1.5rem #f9cfd6;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__text {
+      font-size: 3.2vw;
+      color: #010101;
+    }
+
+    &__icon {
+      margin-top: 2.133vw;
+    }
+  }
+
+  .bg-sky {
+    position: absolute;
+    z-index: -1;
+    bottom: -37rem;
+    left: 6rem;
+    @include tabletS {
+      display: none;
+    }
+    @include desktopS {
+      left: -3%;
+    }
+    @include tabletL {
+      bottom: -30rem;
+    }
+    @include tabletM {
+      bottom: -27rem;
+    }
+    @include tableMS {
+      bottom: -23rem;
+    }
+    @media screen and (max-width: 1670px) {
+      left: 2%;
+    }
+    @media screen and (max-width: 1520px) {
+      left: -3%;
+    }
+    @media screen and (max-width: 1320px) {
+      left: -12%;
+    }
+  }
+
+  .bg-sky-content {
+    position: absolute;
+    top: 23%;
+    left: 28rem;
+
+    &__text {
+      font-family: BIZUDGothic-regular, sans-serif;
+      font-size: 2rem;
+      color: #fff;
+
+      &:nth-child(4) {
+        margin-top: 10rem;
+        @include tabletL {
+          margin-top: 7rem;
+        }
+      }
+    }
+    &__img{
+      margin-top: 380px;
+    }
+  }
+
+  .bg-mobile {
+    position: relative;
+    display: none;
+    width: 100%;
+    min-height: 88vw;
+    /* background-image: url("../../../map/issets/images/select03/bg2.svg"); 修正 (@ edited by a.u  2022.08.03) */
+    background-image: url("../../../issets/images/select03/bg2.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+    @include tabletS {
+      display: block;
+    }
+
+    &__text {
+      font-family: SourceHanSansJP-Light, sans-serif;
+      font-size: 2.667vw;
+      color: #fff;
+
+      &:first-child {
+        padding-top: 13.333vw;
+        padding-left: 4.267vw;
+      }
+
+      &:nth-child(2) {
+        padding-left: 9.067vw;
+      }
+    }
+
+    &__logo {
+      position: absolute;
+      bottom: 11.733vw;
+      left: 41.067vw;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.star-box{
+    position: relative;
+    width: 334px;
+    border: 1px solid #C4C4C4;
+    padding: 18px 18px 18px 28px;
+    margin: 0 auto 35px;
+    display: block;
+    text-align: center;
+    .five-stars{
+        position: absolute;
+        background-color: #FFF;
+        padding: 0 20px;
+        left: 50px;
+        top: -12px;
+    }
+    .link-with-icon{
+        @include fontStyle(18, 50, 27, #3B3B3B);
+        text-decoration: none;
+        font-weight: bold;
+        transform-origin: center;
+        .text{
+            text-decoration: none;
+        }
+    }
+}

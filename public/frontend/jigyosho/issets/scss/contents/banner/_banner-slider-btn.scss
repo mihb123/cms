@@ -1,0 +1,106 @@
+.banner-slide-btn {
+  display: flex;
+  height: 3rem;
+  margin-left: calc($width-form-left + 1rem);
+  align-items: center;
+  gap: 1rem;
+  @include tabletS {
+    display: none;
+  }
+
+  &__button-title {
+    font-size: 1.5rem;
+    display: flex;
+    width: max-content;
+    min-width: 16rem;
+    height: 2.6rem;
+    padding: 0 3.5rem 0 1.5rem;
+    color: white;
+    border-radius: $radius;
+    background-color: #f4b3b7;
+    align-items: center;
+  }
+
+  &__slide-box {
+    display: flex;
+    overflow: hidden;
+    margin-right: 9rem;
+    @include tableMS {
+      margin-right: 0;
+    }
+  }
+
+  &__slide-content {
+    overflow: hidden;
+    height: 2.6rem;
+  }
+
+  &__button {
+    font-size: 1.5rem;
+    display: flex;
+    width: max-content;
+    height: 2.6rem;
+    transition: all 0.2s;
+    color: white;
+    border-radius: $radius;
+    background-color: #fbf5f5;
+    align-items: center;
+
+    &:hover {
+      background-color: #f9cfd6;
+    }
+  }
+
+  &__button-text {
+    font-family: BIZUDGothic-regular, sans-serif;
+    font-size: $small;
+    padding: 0 1rem;
+    color: #0867bf;
+    border-radius: $radius;
+    box-shadow: 1px 1px 3px $color-border;
+  }
+
+  &__back {
+    padding: 0 1rem;
+    cursor: pointer;
+    color: #f4b3b7;
+  }
+
+  &__next {
+    padding: 0 1rem;
+    cursor: pointer;
+    color: #f4b3b7;
+  }
+}
+
+.banner-label-mobile {
+  display: flex;
+  display: none;
+  width: 77.333vw;
+  height: 4.533vw;
+  margin-top: 2.667vw;
+  padding-left: 1.867vw;
+  border-radius: 1.067vw;
+  background-color: #fcc9cc;
+  align-items: center;
+  @include tabletS {
+    display: flex;
+  }
+
+  &__text {
+    line-height: 1;
+
+    &--small {
+      font-size: 2.133vw;
+      color: #fba5b3;
+      @extend .banner-label-mobile__text;
+    }
+
+    &--middle {
+      font-family: SourceHanSansJP-Medium;
+      font-size: 2.4vw;
+      color: #f899a9;
+      @extend .banner-label-mobile__text;
+    }
+  }
+}

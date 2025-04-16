@@ -1,0 +1,174 @@
+.main-footer-wrap{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    .logo-footer{
+        text-align: center;
+        margin-bottom: 55px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .list-staff-img{
+        text-align: center;
+        margin-bottom: 64px;
+        position: relative;
+        object{
+            width: 100%;
+        }
+        img{
+            max-width: 100%;
+        }
+        .twitter-icon{
+            bottom: 0;
+            right: -30px;
+            position: absolute;
+        }
+    }
+    .list-links{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 59px;
+        flex-wrap: wrap;
+        &--col{
+            width: 25%;
+            &:not(:first-child){
+                padding-left: 50px;
+            }
+        }
+        .last-column{
+            width: 100%;
+            margin-left: 50%;
+            margin-top: -70px;
+            ul{
+                display: flex;
+                li{
+                    width: 50%;
+
+                }
+            }
+        }
+    }
+    .bottom-slogan{
+        text-align: center;
+        @include fontStyle(14, 50, 35, #959595);
+        text-shadow: 0 5px 6px rgba(255, 159, 192, 0.1);
+        margin-bottom: 80px;
+    }
+}
+
+.footer-basic{
+    .back-groups{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 147px;
+        margin-bottom: 80px;
+        a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            .text{
+                transition: all 0.3s;
+                @include fontStyle(14, 0, 19, #9E9E9E);
+            }
+            svg path{
+                transition: all 0.3s;
+            }
+            &:hover{
+                .text{
+                    color: #F1A1B4;
+                }
+                svg path{
+                    fill: #F1A1B4 !important;
+                }
+            }
+        }
+    }
+    .footer-tab-links{
+        background-color: #FFF;
+        border-radius: 100px;
+        box-shadow: 0 2px 14px rgba(0,0,0,0.03);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 40px 18px;
+        gap: 50px;
+        margin-bottom: 180px;
+        li{
+            a{
+                text-decoration: none;
+                @include fontStyle(16, 50, 24, #4E5665);
+                font-weight: bold;
+                transition: all 0.3s;
+                &:hover{
+                    color: #F1A1B4;
+                }
+            }
+        }
+    }
+    .footer-slogan{
+        margin-top: 40px;
+        margin-bottom: 180px;
+        text-align: center;
+        .footer-slogan-ja{
+            @include fontStyle(14, 50, 35, #F6BAC6);
+            width: fit-content;
+            max-width: 250px;
+            position: relative;
+            margin: 0 auto 38px;
+            img{
+                position: absolute;
+                top: -60px;
+                left: -85px;
+            }
+        }
+        .footer-slogan-en{
+            @include fontStyle(10, 50, 20, #FFAEBE);
+            font-family: "Inkfree", "Meiryo", sans-serif;
+            max-width: 290px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.footer-slogan-en{
+    padding-top: 8px;
+    margin-bottom: 90px;
+    .text{
+        @include fontStyle(10, 50, 20, #FFAEBE);
+        font-family: "Inkfree", "Meiryo", sans-serif;
+        max-width: 290px;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .star-tb{
+        position: absolute;
+        left: -60px;
+        top: -45px;
+    }
+
+}
+.col-top-title{
+    text-align: center;
+    @include fontStyle(16, 0, 24, #B97088);
+    margin-bottom: 3px;
+}
+.twitter-icon{
+    display: inline-block;
+    text-align: center;
+    margin-top: 78px;
+}
+.footer-operating{
+    text-align: center;
+    margin-bottom: 45px;
+    @include fontStyle(13, 20, 36, #FFD1D9);
+    font-family: "Meiryo", sans-serif;
+}

@@ -1,0 +1,194 @@
+
+#tab-new2{
+  .tab-header--title{
+    font-size: 65px;
+    line-height: 1;
+    letter-spacing: 6.5px;
+    margin-bottom: 39px;
+    margin-left: 11px;
+    .img_title{
+      margin-left: 11px;
+    }
+  }
+  .tab-header{
+    margin-top: 77px;
+  }
+  .tab-header
+  {
+    &__right{
+      display: flex;
+      top: -59px;
+      left: 33px;
+
+    }
+  } 
+  .tab-header__right .tab-right__content{
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 25px;
+    padding: 0;
+  }
+  .tab-header__right .tab-right__desc{
+    margin-top: 0;
+  }
+  .tab-container{
+    margin-top: 98px;
+  }
+  .tab-left .personal .personal-content__main .main-line{
+    padding: 3px 0;
+  }
+  .tab-right{
+    margin-bottom: 103px;
+    &__title{
+      font-size: 16px;
+      letter-spacing: 1.6px;
+      line-height: 1.5;
+      color: #8A8787;
+      font-weight: 500;
+      position: absolute;
+      top: -40px;
+      right: 182px;
+    }
+    .tab-list .tab-item {
+      width: 100%;
+      min-height: unset;
+      flex-direction: row;
+      align-items: center;
+      box-shadow: 0px 3px 6px #ccc;
+    }
+    .tab-item{
+      img{
+        padding: 8px 10px 8px 12px;
+      }
+      &__back{
+        display: inline-block;
+        height: 100%;
+        vertical-align: bottom;
+        padding: 10px 0 0 9px;
+        letter-spacing: 0;
+        &--sub{
+          font-size: 18px;
+          letter-spacing: 1.8px;
+          line-height: 1.45;
+          color: #505050;
+        }
+        &--title{
+          font-size: 24px;
+          line-height: 1.46;
+          color: #0066CC;
+          font-weight: bold;
+        }
+        &--desc{
+          font-size: 16px;
+          letter-spacing: 1.6px;
+          line-height: 1.5;
+          color: #919191;
+          padding-top: 3px;
+          color: #919191;
+        }
+      }
+      &__service{
+        display: inline-block;
+        max-width: 230px;
+        vertical-align: bottom;
+        height: 100%;
+        padding-top: 34px;
+        margin-left: 32px;
+        letter-spacing: 0;
+        color: #505050;
+        font-weight: 500;
+
+      }
+      &__text{
+        padding-left: 14px;
+        a{
+          display: inline-block;
+          letter-spacing: 0;
+          transition: all 0.3s;
+          color: #269BCF;
+          font-weight: 500;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        
+      }
+    }
+    &__button{
+      margin-top: 39px;
+      &--text{
+        margin-left: 8px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .tab-header{
+      &--title{
+        display: flex;
+        margin-left: 0; 
+        font-size: 18vw;
+      }
+    }
+    .tab-right__title{
+      right: 5.333vw;
+    }
+    .tab-right .tab-list .tab-item{
+      flex-wrap: wrap;
+      border-radius: 2%;
+    }
+    .tab-right .tab-item__back{
+      width: 60%;
+      height: auto;
+      &--title{
+        font-size: 4.267vw;
+      }
+      &--sub{
+        font-size: 3.733vw;
+      }
+      &--desc{
+        font-size: 12px;
+      }
+    }
+    .tab-right .tab-item{
+      &__service{
+      height: auto;
+      padding: 0;
+      margin: 2.667vw 1.333vw;
+      max-width: unset;
+      font-size: 3.467vw;
+      }
+      &__text{
+        width: 100%;
+        a{
+          width: 100%;
+          text-align: right;
+          padding: 2.667vw;
+        }
+      }
+    }
+  }
+}
+.tab-2{
+  padding-right: 15px;
+  cursor: pointer;
+  .right-desc{
+    padding: 0 20px !important;
+  }
+  .tym_hover{
+    display: none;
+  }
+  .tym,
+  .tym_hover{
+    width: 30px;
+  }
+  &:hover .tym{
+    display: none;
+  }
+  &:hover .tym_hover{
+    display: unset;
+  }
+  &:hover{
+    text-decoration: underline;
+  }
+
+ }

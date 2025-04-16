@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("nsjp-regular.woff2") format("woff2"),
+      url("nsjp-regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("nsjp-light.woff2") format("woff2"),
+      url("nsjp-light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("nsjp-medium.woff2") format("woff2"),
+      url("nsjp-medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("nsjp-bold.woff2") format("woff2"),
+      url("nsjp-bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: HGSMinchoE;
+  src: url("HGSminchoE.woff2") format("woff2"),
+      url("HGSminchoE.woff") format("woff");
+  font-weight: 700;
+}
+
+/*@font-face {*/
+/*  font-family: SourceHanSansJP-Bold;*/
+/*  src: url(./SourceHanSansJP-Bold.otf);*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: SourceHanSansJP-ExtraLight;*/
+/*  src: url(./SourceHanSansJP-ExtraLight.otf);*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: SourceHanSansJP-Heavy;*/
+/*  src: url(./SourceHanSansJP-Heavy.otf);*/
+/*}*/
+
+@font-face {
+  font-family: SourceHanSansJP-Light;
+  src: url(./SourceHanSansJP-Light.otf);
+}
+
+/*@font-face {*/
+/*  font-family: SourceHanSansJP-Medium;*/
+/*  src: url(./SourceHanSansJP-Medium.otf);*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: SourceHanSansJP-Normal;*/
+/*  src: url(./SourceHanSansJP-Normal.otf);*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: SourceHanSansJP-Regular;*/
+/*  src: url(./SourceHanSansJP-Regular.otf);*/
+/*}*/
+/*@font-face {*/
+/*  font-family: SourceHanSansJP;*/
+/*  src: url(./SourceHanSansJP-Medium.otf) format("opentype");*/
+/*}*/

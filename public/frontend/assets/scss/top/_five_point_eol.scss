@@ -1,0 +1,249 @@
+.five-points{
+    .widget--header{
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        position: relative;
+        .title{
+            @include fontStyle(14, 100, 22, #FFF);
+            font-weight: bold;
+            display: inline-flex;
+            padding-bottom: 0;
+        }
+        .text-en{
+            position: absolute;
+            @include fontStyle(10, 100, 12, #FFF);
+            font-family: "Inkfree", sans-serif;
+            right: 8px;
+            top: 5px;
+        }
+        .sub-title{
+            @include fontStyle(16, 200, 22, #FFF);
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            font-weight: bold;
+            position: relative;
+            bottom: -3px;
+            span{
+                font-size: 26px;
+            }
+        }
+    }
+    .link-with-icon{
+        gap: 10px;
+    }
+}
+
+.list-points{
+    margin-bottom: 14px;
+    position: relative;
+    .point-item{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 16px;
+        .thumb{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            img{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .caption{
+            flex: 1;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                display: block;
+                width: calc(100% + 10px);
+                height: 1px;
+                background-image: linear-gradient(to right, #F8C8D2 0%, #F9D3DB 20%, #FFF 100%);
+                left: -10px;
+                bottom: 1px;
+            }
+            .title{
+                @include fontStyle(17, 0 , 25, #333333);
+                font-family: "Meiryo", sans-serif;
+                font-weight: bold;
+                .small{
+                    font-size: 15px;
+                }
+                .small-2{
+                    font-size: 16px;
+                    display: inline-flex;
+                    padding-left: 7px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        height: 3px;
+                        width: 3px;
+                        border-radius: 50%;
+                        background-color: #333333;
+                        left: 3px;
+                        top: 36%;
+                        position: absolute;
+                    }
+                }
+                .sub{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+.nurse-box{
+    .nurse-header{
+        margin-bottom: 17px;
+        padding-left: 13px;
+    }
+    .nurse-desc{
+        @include fontStyle(14, 100, 22, #333333);
+        font-family: "Meiryo", sans-serif;
+        padding-left: 9px;
+        padding-right: 6px;
+        margin-bottom: 16px;
+    }
+}
+
+.five-points-sp{
+    .center-top{
+        margin-bottom: 10px;
+        padding: 0 10px;
+        text-align: center;
+        .title{
+            @include fontStyle(19, 100, 26, #000000);
+            font-weight: bold;
+            margin-bottom: 5px;
+            span{
+                font-size: 14px;
+            }
+        }
+        .text-en{
+            @include fontStyle(10, 50, 15, #CFCFCF);
+            font-family: "Inkfree", "Meiryo", sans-serif;
+        }
+    }
+    .nurse-box{
+        padding-left: 33px;
+        padding-right: 25px;
+        margin-bottom: 20px;
+        .nurse-header{
+            padding-left: 0;
+        }
+        .nurse-desc{
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+    .list-points{
+        padding: 0 10px;
+        margin-bottom: 30px;
+        background-image: linear-gradient(to bottom, rgba(254, 223, 224, 0) 0%, rgba(254, 223, 224, 0.72) 20%, rgba(254, 223, 224, 0.72) 75%, rgba(254, 223, 224, 0) 100%);
+    }
+    .point-item{
+        width: 100%;
+        margin-bottom: 12px;
+        display: block;
+        .point-header{
+            width: calc(100% - 25px);
+            position: relative;
+            margin-left: 25px;
+            border: 3px solid #FEDFE0;
+            background-color: #FFF;
+            border-radius: 10px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px 5px 28px;
+            cursor: pointer;
+            .title{
+                @include fontStyle(18, -50, 22, #333333);
+                font-weight: bold;
+                span{
+                    font-size: 80%;
+                }
+            }
+            .icon{
+                position: absolute;
+                left: -34px;
+                top: -3px;
+                width: 53px;
+                height: auto;
+            }
+            .arrow-down{
+                position: absolute;
+                right: 7px;
+                top: calc(50% - 12px);
+            }
+        }
+        .point-content{
+            border-radius: 10px;
+            border: 3px solid #FEDFE0;
+            background-color: #FFF;
+            padding: 30px 10px 15px 20px;
+            margin-top: -9px;
+            .title{
+                @include fontStyle(18, 50, 27, #0A2682);
+                font-weight: bold;
+                font-family: "Meiryo", sans-serif;
+                padding-left: 25px;
+                position: relative;
+                margin-bottom: 20px;
+                &::before{
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                    background-color: #0A2682;
+                }
+            }
+            ul{
+                list-style: disc;
+                @include fontStyle(17, 25, 24, #000000);
+                font-weight: bold;
+                padding-left: 27px;
+                margin-bottom: 20px;
+                border-left: 1px solid #ccc;
+                li{
+                    margin-bottom: 15px;
+                    &::marker{
+                        font-size: 14px;
+                    }
+                }
+            }
+            .desc{
+                @include fontStyle(17, 25, 28, #545454);
+                margin-bottom: 50px;
+            }
+            .more{
+                text-align: right;
+                padding-right: 15px;
+                .link-with-icon{
+                    gap: 15px;
+                }
+            }
+        }
+        &.is-active{
+            .point-header{
+                .arrow-down{
+                    transform: rotate(180deg);
+                    top: calc(50% - 18px);
+                }
+            }
+        }
+    }
+    .view-more{
+        text-align: right;
+        padding: 0 30px;
+    }
+}

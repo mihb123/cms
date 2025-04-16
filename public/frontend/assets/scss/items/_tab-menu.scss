@@ -1,0 +1,155 @@
+.tab-menu{
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    min-height: 42px;
+    position: relative;
+    @media(min-width: 1025px){
+        margin-right: 130px;
+        padding-bottom: 20px;
+        margin-bottom: -20px;
+        overflow: hidden;
+    }
+    @media(max-width: 1024px){
+        position: relative;
+        background-image: url('../images/tab-bg.png');
+        background-repeat: repeat-x;
+        background-size: auto 100%;
+        box-shadow: inset 0 0 2px #FFF;
+    }
+    &--list{
+        display: flex;
+        width: fit-content;
+        @media(min-width: 1025px){
+            max-height: 50px;
+            // display: block;
+            width: 100%;
+            overflow: visible;
+        }
+        li, .nav-item{
+            height: 42px;
+            padding: 4px 11px 1px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 78px;
+            max-width: 150px;
+            position: relative;
+            background: transparent;
+            transition: all 0.3s;
+            @media(max-width: 1024px){
+                height: 44px; 
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0;
+                height: 30px;
+                border-right: 1px solid #E39EAC;
+                box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.31);
+            }
+            .caret{
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.2s;
+                height: 7px;
+                position: absolute;
+                bottom: -8px;
+                z-index: 1;
+                line-height: 0;
+            }
+            a{
+                @include fontStyle(15, 50, 17, #FFF);
+                font-weight: 500;
+                text-decoration: none;
+                text-shadow: 0 2px 1px rgba(74, 72, 72, 0.32);
+                transition: all 0.3s;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                max-height: 35px;
+                -webkit-line-clamp: 2;
+                display: box;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                white-space: normal;
+                font-family: "Arial", "Source Han Sans JP", sans-serif;
+                text-align: left;
+            }
+            &:not(.active):hover{
+                background-color: rgba(255, 255, 255, 0.16);
+                a{
+                    transform: scale(1.04);
+                }
+                .caret{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            &.active{
+                padding: 5px 11px 0;
+                @media(max-width: 767px){
+                    padding: 5px 7px 0;
+                }
+                a{
+                    color: $dark_color;
+                    font-weight: bold;
+                    text-shadow: none;
+                    padding-top: 2px;
+                }
+                .caret{
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    height: 41px;
+                    width: calc(100% - 8px);
+                    background-color: #FFF;
+                    left: 4px;
+                    top: 5px;
+                    border-radius: 3px 3px 0 0;
+                }
+            }
+        }
+    }
+    &--about-button{
+        position: absolute;
+        right: 18px;
+        top: 7px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        .text-ja{
+            @include fontStyle(11, 100, 15, #FFF);
+        }
+        .text-en{
+            @include fontStyle(9, 100, 11, #FFF);
+            font-family: "Inkfree", sans-serif;
+        }
+        &:hover{
+            .text-ja{
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+        }
+    }
+}
+
+.menu-tab-slider .nav-item{
+    width: auto;
+}
+
+@media(min-width: 1025px){
+    .tab-menu-scroll{
+        position: relative;
+        background-image: url('../images/tab-bg.png');
+        background-repeat: repeat-x;
+        background-size: auto calc(100% - 20px);
+        box-shadow: inset 0 0 2px #FFF;
+    }
+}

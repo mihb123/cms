@@ -1,0 +1,100 @@
+.ls-table{
+  .supported-area{
+    .ls-table__value{
+      font-size: 15px;
+      min-height: 55px;
+    }
+  }
+  .office-name, .service-type{
+    .ls-table__value{
+      font-size: 18px;
+    }
+  }
+  .business-years{
+    .big-text{
+      font-size: 20px;
+      line-height: 1;
+    }
+    .date{
+      font-size: 15px;
+      color: #706F6F;
+      line-height: 1.4;
+      letter-spacing: 0.75px;
+      margin-left: 92px;
+    }
+  }
+
+  .location{
+    .ls-table__value {
+      min-height: 70px;
+      .postcode {
+        font-size: 15px;
+      }
+
+      .link {
+        position: absolute;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        line-height: 1.4;
+        top: 5px;
+        right: 10px;
+        a {
+          color: #269BCF;
+        }
+      }
+    }
+    @media(max-width: 767px){
+      .ls-table__value {
+        font-size: 3.200vw;
+        .postcode {
+          font-size: 3.200vw;
+        }
+        .link{
+          display: block;
+          position: relative;
+          top: 0;
+          right: 0;
+          font-size: 3.200vw;
+          letter-spacing: 0;
+          margin-top: 4vw;
+          a{
+            text-decoration: underline;
+          }
+          .space-15{
+            width: 0.800vw;
+          }
+        }
+      }
+    }
+  }
+  .operating-corporation{
+    .ls-table__value{
+      span{
+        display: inline-block;
+      }
+    }
+  }
+  @media(max-width: 767px){
+    .office-name, .service-type{
+      .ls-table__value{
+        font-size: 3.733vw;
+      }
+    }
+    .supported-area{
+      .ls-table__value{
+        font-size: 3.733vw;
+        min-height: 0;
+      }
+    }
+    .business-years{
+      .big-text{
+        font-size: 4.800vw;
+      }
+      .date{
+        font-size: 2.667vw;
+        letter-spacing: 0.133vw;
+        margin-left: 1.2vw;
+      }
+    }
+  }
+}

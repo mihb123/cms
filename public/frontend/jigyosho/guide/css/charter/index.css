@@ -1,0 +1,202 @@
+/* ------------------------------
+ width: all
+------------------------------ */
+html {
+  background-color: #FFF9F9;
+}
+
+h1 {
+  letter-spacing: 8px !important;
+}
+
+main section.s01 {
+  padding: 80px 60px 80px;
+}
+main section.s01 .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main section.s01 .wrapper h2 {
+  font-size: 28px;
+  color: #848484;
+  letter-spacing: 4px;
+}
+main section.s01 .wrapper .t01 {
+  font-size: 18px;
+  line-height: 34px;
+  margin-top: 40px;
+  color: #848484;
+  letter-spacing: 3px;
+}
+main section.s01 .wrapper dl {
+  margin-top: 80px;
+}
+main section.s01 .wrapper dl dt {
+  border-bottom: 1px solid #F1A1B4;
+  font-size: 36px;
+  line-height: 52px;
+  color: #F3A4B5;
+  padding-bottom: 12px;
+}
+main section.s01 .wrapper dl dt span {
+  font-size: 28px;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+  margin-top: 3px;
+}
+main section.s01 .wrapper dl dd ul li {
+  margin-top: 30px;
+  padding-left: 35px;
+  font-size: 18px;
+  line-height: 30px;
+  position: relative;
+  color: #4D4D4D;
+  letter-spacing: 3px;
+}
+main section.s01 .wrapper dl dd ul li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+main section.s01 .wrapper .t02 {
+  text-align: center;
+  margin-top: 200px;
+  color: #848484;
+  font-size: 18px;
+}
+main section.s01 .wrapper .box01 {
+  margin-top: 80px;
+}
+main section.s01 .wrapper .box01 .box02 {
+  width: 500px;
+  margin-left: calc(100% - 500px);
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main section.s01 .wrapper .box01 .box02 .photo {
+  width: 170px;
+  display: block;
+}
+main section.s01 .wrapper .box01 .box02 p {
+  width: 330px;
+  text-align: right;
+  font-size: 18px;
+  line-height: 42px;
+  color: #848484;
+}
+
+/* ------------------------------
+ width < $width-1
+------------------------------ */
+@media screen and (max-width: 900px) {
+  h1 {
+    letter-spacing: 2px !important;
+  }
+
+  main section.s01 {
+    padding: 30px 15px;
+  }
+  main section.s01 .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  main section.s01 .wrapper h2 {
+    font-size: 12px;
+    color: #848484;
+    letter-spacing: 2px;
+  }
+  main section.s01 .wrapper .t01 {
+    font-size: 11px;
+    line-height: 22.5px;
+    margin-top: 20px;
+    color: #848484;
+    letter-spacing: 2px;
+  }
+  main section.s01 .wrapper dl {
+    margin-top: 50px;
+  }
+  main section.s01 .wrapper dl dt {
+    border-bottom: 1px solid #F1A1B4;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F3A4B5;
+    padding-bottom: 6px;
+  }
+  main section.s01 .wrapper dl dt span {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    margin-top: 1px;
+  }
+  main section.s01 .wrapper dl dd {
+    margin-top: 15px;
+  }
+  main section.s01 .wrapper dl dd ul li {
+    margin-top: 15px;
+    padding-left: 20px;
+    font-size: 11px;
+    line-height: 16px;
+    position: relative;
+    letter-spacing: 2px;
+  }
+  main section.s01 .wrapper dl dd ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+  }
+  main section.s01 .wrapper .t02 {
+    text-align: center;
+    margin-top: 50px;
+    color: #848484;
+    font-size: 11px;
+    line-height: 21px;
+  }
+  main section.s01 .wrapper .t02 span {
+    display: none;
+  }
+  main section.s01 .wrapper .box01 {
+    margin: 50px auto 0;
+    width: 250px;
+  }
+  main section.s01 .wrapper .box01 .box02 {
+    width: 250px;
+    margin: 0;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.s01 .wrapper .box01 .box02 .photo {
+    width: 85px;
+    display: block;
+  }
+  main section.s01 .wrapper .box01 .box02 p {
+    width: 165px;
+    text-align: right;
+    font-size: 10px;
+    line-height: 21px;
+    color: #848484;
+  }
+}

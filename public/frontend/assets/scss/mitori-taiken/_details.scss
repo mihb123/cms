@@ -1,0 +1,653 @@
+.person-care{
+    margin: 20px auto 27px;
+    max-width: 570px;
+    .title{
+        @include fontStyle(14, 25, 23, #333333);
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        margin-bottom: 15px;
+        align-items: flex-start;
+        .m-text{
+            display: inline-flex;
+            padding: 1px 20px;
+            background-color: #FFD8E0;
+            border-radius: 3px 3px 10px 3px;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: '';
+                width: 10px;
+                background-color: #FFF;
+                position: absolute;
+                right: -10px;
+                z-index: 1;
+                display: block;
+                height: 100%;
+                top: 0;
+            }
+        }
+        &::before{
+            content: '';
+            width: 100%;
+            height: 0;
+            position: absolute;
+            border-top: 1px dashed #CECECE;
+            right: 0;
+            top: 10px;
+        }
+        .white-space{
+            display: none;
+        }
+        .slogan-inner{
+            @include fontStyle(24, 25, 25, #000000);
+            background-color: #FFF;
+            display: inline-flex;
+            position: relative;
+            z-index: 1;
+            margin-left: 30px;
+            flex: 1;
+        }
+    }
+
+    .mitori-detail-middle{
+        text-align: center;
+        position: relative;
+        .thumb{
+            max-width: 203px;
+            margin: 0 auto;
+            line-height: 0;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .date{
+            @include fontStyle(10, 50, 12, #333333);
+            font-family: "Inkfree", Meiryo, sans-serif;
+            position: absolute;
+            top: 30%;
+            right: 10px;
+        }
+    }
+}
+
+.mitori-detail-shushi{
+    text-align: center;
+    position: relative;
+    padding-top: 45px;
+    max-width: 570px;
+    margin: 0 auto;
+    .title{
+        @include fontStyle(24, 25, 25, 000);
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .text-en{
+        margin-bottom: 12px;
+        @include fontStyle(13, 100, 16, #FCAEBF);
+        font-family: "Inkfree", "Meiryo", sans-serif;
+    }
+    .thumb{
+        max-width: 610px;
+        margin: 0 auto;
+        line-height: 0;
+        padding-bottom: 10px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .date{
+        @include fontStyle(10, 50, 12, #333333);
+        font-family: "Inkfree", Meiryo, sans-serif;
+        position: absolute;
+        bottom: -10px;
+        right: 10px;
+    }
+}
+
+.person-box{
+    display: flex;
+    column-gap: 34px;
+    position: relative;
+    .avatar{
+        width: 75px;
+        height: 75px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .info{
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        .name{
+            @include fontStyle(20, 25, 25, #5B5B5B);
+            font-weight: bold;
+            display: inline-flex;
+            .name-group{
+                display: inline-flex;
+                align-items: flex-end;
+                column-gap: 10px;
+                .na{
+                    max-width: 330px;
+                    overflow: hidden;
+                    display: block;
+                    max-height: 50px;
+                    -webkit-line-clamp: 2;
+                    display: box;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    text-overflow: ellipsis;
+                    white-space: normal;
+                    font-family: "Arial", "Source Han Sans JP", sans-serif;
+                    position: relative;
+                    top: 1.5px;
+                }
+            }
+            .ms{
+                // padding-left: 5px;
+                font-size: 14px;
+                font-weight: normal;
+                white-space: nowrap;
+                position: relative;
+            }
+            .sex{
+                font-size: 14px;
+                color: #5B5B5B;
+                font-weight: normal;
+                max-width: 120px;
+            }
+        }
+        .meta{
+            @include fontStyle(16, 50, 20, #5B5B5B);
+            column-gap: 31px;
+            display: flex;
+            span{
+                min-width: 28px;
+            }
+            /*span:nth-of-type(2){
+                max-width: 160px;;
+                overflow: hidden;
+                display: inline-flex;
+                max-height: 50px;
+                position: relative;
+                -webkit-line-clamp: 2;
+                display: box;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                white-space: normal;
+                font-family: "Arial", "Source Han Sans JP", sans-serif;
+                position: relative;
+                top: 3px;
+                @media(max-width: 1024px){
+                    font-size: 18px;
+                }
+            }*/
+        }
+
+    }
+    .check-mark{
+        position: absolute;
+        right: 10px;
+        top: -13px;
+    }
+}
+
+.person-taken-care{
+    max-width: 570px;
+    margin: 0 auto 65px;
+    .title{
+        display: flex;
+        position: relative;
+        z-index: 1;
+        @include fontStyle(14, 25, 23, #333333);
+        font-weight: bold;
+        margin-bottom: 13px;
+        span{
+            display: inline-flex;
+            padding: 1px 20px;
+            background-color: #FFD8E0;
+            border-radius: 3px 3px 10px 3px;
+            position: relative;
+            z-index: 1;
+        }
+        &::before{
+            content: '';
+            width: 100%;
+            height: 0;
+            position: absolute;
+            border-top: 1px dashed #CECECE;
+            right: 0;
+            top: 40%;
+        }
+        &::after{
+            content: '';
+            height: 20px;
+            width: 25px;
+            background-color: #FFF;
+            position: relative;
+            z-index: 1;
+            display: block;
+        }
+    }
+    .taken-header{
+        display: flex;
+        padding: 5px 24px;
+        background-color: #FEECF0;
+        border-radius: 5px 5px 20px 5px;
+        align-items: center;
+        column-gap: 29px;
+        margin-bottom: 7px;
+        .name{
+            @include fontStyle(22, 50, 30, #545454);
+            font-weight: bold;
+        }
+        .name-en{
+            @include fontStyle(11, 50, 15, #545454);
+            font-weight: 300;
+        }
+    }
+    .person-info{
+        position: relative;
+        &::before{
+            content: '';
+            background-color: #FEECF0;
+            border-radius: 5px 5px 12px 5px;
+            width: 149px;
+            height: calc(100% + 3px);
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .info-row{
+            display: flex;
+            @include fontStyle(15, 50, 20, #545454);
+            border-bottom: 1px solid #D1D1D1;
+            .label{
+                width: 149px;
+                padding: 9px 11px;
+                position: relative;
+            }
+            .value{
+                flex: 1;
+                padding: 9px 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.mitori-detail-wrap{
+    padding: 0 18px;
+}
+.mitori-detail-main-item{
+    margin-top: 55px;
+    margin-bottom: 35px;
+    position: relative;
+    .kc-pagination{
+        margin-top: 50px;
+    }
+    .m-item-title{
+        //margin: -40px auto 18px;
+        margin: 0 auto;
+    }
+    .content{
+        border-radius: 10px;
+        margin-top: -10px;
+        padding: 28px 20px 20px 24px;
+        background-color: #FFF7F7;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        @include fontStyle(17, 25, 28, #333333);
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+.m-item-title.active{
+    padding: 5px 20px 5px 30px;
+    background-color: #FFD8E0;
+    border-radius: 5px 5px 12px 5px;
+    position: relative;
+    @include fontStyle(22, 25, 25, #333333);
+    font-weight: bold;
+    width: max-content;
+    max-width: 95%;
+    right: -13px;
+    transition: all 0.3s;
+    .icon{
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background-color: #FDC3D0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -37px;
+        top: calc(50% - 28px);
+        position: absolute;
+        padding: 5px;
+        transition: all 0.3s;
+    }
+}
+
+.list-mitori-detail{
+    margin-bottom: 46px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #E8E8E8;
+    .mitori-detail-item{
+        &:first-child{
+            border-top: 1px solid #E8E8E8;
+        }
+        border-bottom: 1px solid #E8E8E8;
+    }
+}
+
+.mitori-backtop{
+    display: inline-flex;
+    position: absolute;
+    z-index: 1;
+    right: -18px;
+    bottom: -33px;
+}
+
+.mitori-detail-top{
+    border-radius: 10px 10px 0 0;
+    padding: 5px 10px;
+    background-image: linear-gradient(to bottom, rgba(255, 178, 195, 0.59) 0%, #FBC3CF 5%, #FEB7C7 25%, #FB9EB2 60%, #F6A9BA 85%, rgba(247, 170, 187, 0.7) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: calc(100% + 2px);
+    left: -1px;
+    top: -1px;
+    .text-ja{
+        display: block;
+        @include fontStyle(22, 200, 32, #FFF);
+        text-shadow: 0 3px 5px rgba(255,255,255,0.15);
+        font-weight: 500;
+    }
+    .text-en{
+        @include fontStyle(10, 100, 12, #F8DAE1);
+        font-family: "Meiryo", sans-serif;
+    }
+}
+.mitori-layout-2 .white-box{
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    position: relative;
+}
+.md-filter-wrap{
+    position: absolute;
+    right: 23px;
+    top: 15px;
+    text-align: left;
+    min-width: 130px;
+    @media(min-width: 768px) and (max-width: 1024px){
+        right: 50px;
+    }
+    .md-filter{
+        cursor: pointer;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        background-color: transparent;
+        font-family: inherit;
+        @include fontStyle(16, 100, 21, #707070);
+        //font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        .menu-3{
+            margin-left: 23px;
+        }
+        .arrow-down-3{
+            margin-left: 5px;
+        }
+    }
+    .md-overlay{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(0,0,0,0.61);
+        z-index: 3;
+        transition: all 0.2s;
+    }
+    .md-list-links{
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s;
+        background-color: #FFF;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+        border-radius: 10px 0 0 10px;
+        width: 533px;
+        position: absolute;
+        z-index: 99;
+        right: 0;
+        top: 0;
+        padding: 17px 130px 65px 65px;
+        .close-md{
+            display: inline-flex;
+            align-items: center;
+            @include fontStyle(14, 0, 20, #6e6e6e);
+            gap: 8px;
+            position: absolute;
+            right: 38px;
+            top: 17px;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+        .sub-title{
+            text-align: center;
+            @include fontStyle(12, 50, 17, #5B5B5B);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .title{
+            text-align: left;
+            @include fontStyle(24, 25, 25, #000);
+            font-weight: bold;
+            margin-bottom: 15px;
+            overflow: hidden;
+            display: block;
+            max-height: 30px;
+            -webkit-line-clamp: 1;
+            display: box;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            white-space: normal;
+            font-family: "Arial", "Source Han Sans JP", sans-serif;
+        }
+        .person-box{
+            gap: 17px;
+            margin-bottom: 34px;
+            width: calc(100% + 30px);
+            .avatar{
+                width: 90px;
+                height: 90px;
+            }
+            .info{
+                gap: 10px;
+                .name{
+                    @include fontStyle(12, 25, 18, #5B5B5B);
+                    padding-bottom: 15px;
+                    align-items: flex-end;
+                    border-bottom: 1px solid #D1D1D1;
+                    .sex{
+                        padding-left: 0;
+                        margin-left: 24px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #5B5B5B;
+                    }
+                    .ms{
+                        font-size: 10px;
+                    }
+                }
+                .meta{
+                    @include fontStyle(15, 50, 21, #545454);
+                    gap: 2px;
+                    margin-left: 20px;
+                    span:last-child{
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+        .list-icon-text{
+            @include fontStyle(16, 100, 21, #000);
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 23px;
+            padding-left: 15px;
+            margin-bottom: 22px;
+        }
+        .md-link-items{
+            padding-left: 10px;
+            border-left: 3px solid #FFD8E0;
+            padding-top: 10px;
+            li{
+                margin-bottom: 17px;
+                a{
+                    position: relative;
+                    display: inline-flex;
+                    align-items: center;
+                    @include fontStyle(15, 25, 25, #000000);
+                    font-weight: bold;
+                    text-decoration: none;
+                    padding-left: 12px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: calc(50% - 2px);
+                        left: 0;
+                        background-color: #ACACAC;
+                    }
+                    span{
+                        border-bottom: 1px dashed #545454 ;
+                    }
+                    .arrow{
+                        position: absolute;
+                        right: -30px;
+                        top: calc(50% - 4px);
+                    }
+                }
+            }
+        }
+    }
+    &.is-active{
+        .md-list-links,
+        .md-overlay{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.page-after .md-filter-wrap{
+    top: 5px;
+}
+.detail-top-title{
+    display: inline-flex;
+    padding: 3px 25px;
+    background-image: linear-gradient(to bottom, rgba(255, 178, 195, 0.59) 0%, #FBC3CF 5%, #FEB7C7 25%, #FB9EB2 60%, #F6A9BA 85%, rgba(247, 170, 187, 0.7) 100%);
+    @include fontStyle(18, 200, 24, #FFF);
+    font-weight: 500;
+    text-shadow: 0 3px 5px rgba(255,255,255,0.15);
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    bottom: calc(100% + 1px);
+    left: 0;
+}
+.mitori-layout-2.page-after .white-box{
+    border-radius: 0 0 10px 10px;
+}
+.mitori-layout-2.page-after{
+    margin-top: 30px;
+    .mitori-detail-main-item{
+        margin-top: 45px;
+    }
+}
+.detail-top-sub-title{
+    position: absolute;
+    display: inline-flex;
+    @include fontStyle(14, 25, 25, #777777);
+    right: 0;
+    bottom: calc(100% + 5px);
+    max-width: 50%;
+    overflow: hidden;
+    display: block;
+    max-height: 25px;
+    -webkit-line-clamp: 1;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-family: "Arial", "Source Han Sans JP", sans-serif;
+}
+.mitori-layout-2.page-after .person-box .info .name{
+    padding-bottom: 14px;
+    border-bottom: 1px solid #D1D1D1;
+    align-items: flex-end;
+}
+
+@media(max-width: 767px){
+    .mitori-layout-2 .person-box .info{
+        display: block;
+    }
+    .person-care .person-box .info .name .ms{
+        font-size: 10px;
+    }
+    .person-care .person-box .info .name{
+        font-size: 14px;
+        bottom: 6px;
+        line-height: 1.3;
+        display: block;
+        margin-bottom: 6px;
+    }
+    .person-care .person-box .info .name .sex{
+        max-width: 80px;
+        position: relative;
+        top: 2px;
+        font-size: 10px;
+    }
+    .mitori-detail-main-item {
+        background-color: #FFF7F7;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+        .content {
+            box-shadow: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .m-item-title.active .icon {
+            width: 46px;
+            height: 46px;
+            left: -30px;
+            top: calc(50% - 23px);
+        }
+    }
+}

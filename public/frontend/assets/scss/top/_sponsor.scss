@@ -1,0 +1,64 @@
+.sponsor{
+    padding: 50px 0 0;
+    .register-sponsor{
+        text-align: right;
+        a{
+            @include fontStyle(12, 100, 16, #7A7A7A);
+            font-family: "Yumincho", "Meiryo", sans-serif;
+            text-decoration: none;
+        }
+    }
+    .title{
+        margin-bottom: 14px;
+        font-family: "Mincho", "Meiryo", sans-serif;
+        font-size: 14px;
+        color: #7A7A7A;
+    }
+    .sponsor-note{
+        display: flex;
+        justify-content: flex-end;
+        @include fontStyle(12, 100, 16, #7A7A7A);
+        margin-bottom: 40px;
+    }
+}
+.sponsor-box{
+    background-color: #FFF;
+    padding: 32px 42px 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    .title-box{
+        @include fontStyle(12, 50, 14, #333333);
+        padding-left: 35px;
+        margin-bottom: 18px;
+        font-family: "Yumincho", "Meiryo", sans-serif;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.16);
+    }
+    .sponsor-list{
+        max-width: 600px;
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        .sponsor-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 7px 20px;
+            border: 1px solid #ddd;
+            border-right: 0;
+            min-height: 42px;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            &:nth-child(6n){
+                border-right: 1px solid #ddd;
+            }
+            &:last-child{
+                border-right: 1px solid #ddd;
+                border-top: 0;
+            }
+            &:nth-of-type(n+7){
+                border-top: 0;
+            }
+        }
+    }
+}

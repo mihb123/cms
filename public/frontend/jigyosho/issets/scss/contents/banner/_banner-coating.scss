@@ -1,0 +1,20 @@
+.banner__coating {
+  position: fixed;
+  z-index: 2;
+  top: 7rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.banner__coating-two {
+  position: fixed;
+  z-index: 100;
+  top: 7rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  // background-color: rgba(255, 0, 0, 0.223);
+}

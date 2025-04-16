@@ -1,0 +1,137 @@
+.section-1 {
+  .search-option {
+    display: flex;
+    height: 14.5rem;
+    border-bottom: 0.3rem solid #f9cfd6;
+    align-items: flex-end;
+    justify-content: space-between;
+    @include tabletS {
+      height: unset;
+    }
+  }
+
+  .search-option-title {
+    display: flex;
+    height: 6.5rem;
+    padding: 0 3rem;
+    border: 0.3rem solid #f9cfd6;
+    border-bottom: 0;
+    border-top-left-radius: $radius-middle;
+    border-top-right-radius: $radius-middle;
+    background-color: #fdf4f4;
+    align-items: center;
+    @include tableMS {
+      height: 5.5rem;
+      padding: 0 2rem;
+    }
+    @include tabletS {
+      width: 45.333vw;
+      height: 8vw;
+      padding: 0;
+      justify-content: center;
+    }
+
+    &__text {
+      display: inline;
+      color: #090909;
+      @include tabletS {
+        line-height: 1;
+      }
+
+      &--big {
+        font-size: 2.5rem;
+        @extend .search-option-title__text;
+        @include tabletM {
+          font-size: 2rem;
+        }
+        // @include tableMS {
+        //   font-size: 2.4rem;
+        // }
+        @include tabletS {
+          font-size: 3.467vw;
+        }
+      }
+
+      &--middle {
+        font-size: 1.8rem;
+        @extend .search-option-title__text;
+        @include tabletM {
+          font-size: 1.4rem;
+        }
+        // @include tableMS {
+        //   font-size: 1.6rem;
+        // }
+        @include tabletS {
+          font-size: 2.4vw;
+        }
+      }
+    }
+  }
+
+  .text-address {
+    font-size: 1.4rem;
+    margin: 1.5rem 0;
+    padding-left: 4rem;
+    color: #70757a;
+    @include tabletS {
+      font-size: 2.133vw;
+      margin: 1.333vw 0;
+      padding-left: 2.667vw;
+    }
+  }
+
+  .search-option-logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 5rem;
+    @include tableMS {
+      gap: 3rem;
+    }
+    @include tabletS {
+      margin-right: 2.667vw;
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #f9d3da;
+      @include tableMS {
+        font-size: 1.1rem;
+      }
+      @include tabletS {
+        font-family: SourceHanSansJP-Light, sans-serif;
+        font-size: 1.6vw;
+        margin-bottom: 1.333vw;
+      }
+    }
+
+    &__img-box {
+      margin-bottom: -1px;
+      @include tableMS {
+        margin-bottom: -1px;
+      }
+      @include tabletS {
+        width: 16vw;
+        height: 10.667vw;
+        margin-bottom: -.5vw;
+      }
+
+      &--pc {
+        @extend .search-option-logo__img-box;
+        @include tabletS {
+          display: none;
+        }
+      }
+
+      &--sp {
+        display: none;
+        @extend .search-option-logo__img-box;
+        @include tabletS {
+          display: block;
+        }
+      }
+    }
+  }
+}

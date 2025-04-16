@@ -1,0 +1,111 @@
+.section-3 {
+  .s-sidebar {
+    .service-list-mobile {
+      display: none;
+      @include tabletS {
+        display: block;
+        padding: 0 3.2vw;
+      }
+      // @media screen and (max-width: 474px) {
+      //   padding: 0 3.2vw;
+      // }
+    }
+
+    .service-item-group {
+      @include tabletS {
+        width: 45.333vw;
+        margin-bottom: 2.667vw;
+      }
+    }
+
+    .service-item-sp {
+      display: flex;
+      width: 45.333vw;
+      height: 12.267vw;
+      margin-top: 2.667vw;
+      padding-right: 2.133vw;
+      border: 1px solid #dbdbdb;
+      border-radius: $radius;
+      align-items: center;
+      justify-content: space-between;
+
+      &__icon {
+        width: 11.2vw;
+
+        img {
+          transform: scale(1.7) translate(1.333vw, 1.867vw);
+        }
+      }
+
+      &__img2,
+      &__img3 {
+        transform: scale(1.7) translate(1.333vw, .867vw) !important;
+      }
+
+      &__text {
+        //
+      }
+
+      &__title {
+        font-size: 2.933vw;
+        text-align: center;
+        color: #0867bf;
+
+        &--small {
+          font-size: 2.133vw;
+        }
+      }
+
+      &__level {
+        font-size: 1.867vw;
+        text-align: center;
+        color: #888;
+      }
+
+      &__right {
+        font-size: 1.867vw;
+        color: #888;
+      }
+    }
+  }
+
+  .event-mobile {
+    display: none;
+    @include tabletS {
+      display: flex;
+      padding: 0 2.6vw;
+    }
+
+    &__btn {
+      display: none;
+      @include tabletS {
+        display: flex;
+        margin-bottom: 2.933vw;
+        padding: 0 2.6vw;
+        justify-content: space-between;
+      }
+    }
+
+    &__btn-back {
+      width: 8vw;
+      height: 6.667vw;
+      cursor: pointer;
+      border: 1px solid #ffe1e6;
+
+      img {
+        transform: rotate(90deg) translate(-.267vw, .533vw);
+      }
+    }
+
+    &__btn-next {
+      width: 8vw;
+      height: 6.667vw;
+      cursor: pointer;
+      border: 1px solid #ffe1e6;
+
+      img {
+        transform: rotate(-90deg) translate(-.267vw, .533vw);
+      }
+    }
+  }
+}

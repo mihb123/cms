@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="45" viewBox="0 0 54 45">
+  <g id="menu" transform="translate(-70 -693)">
+    <g id="menu_1_" data-name="menu (1)" transform="translate(81 688.984)">
+      <path id="Path_1976" data-name="Path 1976" d="M1.945,7.906h28.11a1.945,1.945,0,0,0,0-3.89H1.945a1.945,1.945,0,1,0,0,3.89Z" fill="#f5bacb"/>
+      <path id="Path_1977" data-name="Path 1977" d="M30.055,14.055H1.945a1.945,1.945,0,1,0,0,3.89h28.11a1.945,1.945,0,0,0,0-3.89Z" fill="#f5bacb"/>
+      <path id="Path_1978" data-name="Path 1978" d="M30.055,24.094H1.945a1.945,1.945,0,0,0,0,3.891h28.11a1.945,1.945,0,0,0,0-3.891Z" fill="#f5bacb"/>
+    </g>
+    <text id="会員メニュー" transform="translate(97 735)" fill="#f9d1db" font-size="10" font-family="YuGothicUI-Regular, Yu Gothic UI" letter-spacing="0.1em"><tspan x="-26.206" y="0">会員メニュー</tspan></text>
+  </g>
+</svg>

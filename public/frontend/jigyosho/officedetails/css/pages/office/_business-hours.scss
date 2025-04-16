@@ -1,0 +1,69 @@
+
+.ls-table.business-hours{
+  padding-right: 65px;
+  .list-radios{
+    padding: 0;
+    border: 0;
+  }
+  .absolute-row{
+    height: 104px;
+  }
+  .ls-table__value,
+  .ls-table__label{
+    border-width: 1px;
+  }
+  .ls-table__value.has-checked{
+    padding-left: 100px;
+    position: relative;
+  }
+  .ls-checked{
+    position: absolute;
+    left: 45px;
+    top: 35px;
+    margin-left: 0;
+  }
+  .operation-policy{
+    .ls-table__value{
+      color: #7E7E7E;
+      &:after{
+        height: 9px;
+      }
+    }
+  }
+  .weekly{
+    .ls-table__row--inner{
+      min-height: 117px;
+    }
+  }
+  @media(max-width: 767px){
+    padding-right: 0;
+  }
+}
+
+@media(max-width: 767px){
+  .weekly-table__column-left--label{
+    min-height: 20.267vw;
+  }
+  .ls-table.business-hours .ls-table__value.has-checked{
+    padding-left: 13.333vw;
+    font-size: 3.200vw;
+  }
+  .ls-table.business-hours .ls-checked{
+    left: 4vw;
+  }
+  .office-manager{
+    .list-radios{
+      flex-wrap: wrap;
+    }
+    .list-radios .radio-item{
+      margin-right: 1.333vw;
+      display: block;
+    }
+    .weekly-table__column-right{
+      overflow-x: auto;
+      overflow-y: hidden;
+      position: relative;
+    }
+  }
+  
+}

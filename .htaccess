@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+#-- That was ONLY to protect you from 500 errors
+#-- if your server did not have mod_rewrite enabled
+
+### メンテモードで表示するHTMLファイル
+ErrorDocument 503 /maintenance.html
+
+RewriteEngine On
+#-- RewriteBase /
+#-- NOT needed unless you're using mod_alias to redirect
+
+### メンテモード用HTMLが存在する場合にメンテモード
+RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
+
+###メンテモード用のHTMLファイルを除外
+RewriteCond %{REQUEST_URI} !=/maintenance.html
+    
+### 画像等リソースファイルを除外
+RewriteCond %{REQUEST_URI} !\.(css|jpg|gif|png|js|svg)$
+
+### HTTPステータスコード 503 を返す
+RewriteRule ^.*$ - [R=503,L]
+
+### メンテナンス時、下記２行をコメントアウト
+RewriteCond %{REQUEST_URI} !/public
+RewriteRule ^(.*)$ public/$1 [L]
+#-- Direct all requests to /public folder
+
+</IfModule>

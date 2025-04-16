@@ -1,0 +1,306 @@
+.section-3 {
+  .s-sp-lists {
+    display: grid;
+    gap: 1.7rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include tabletS {
+      margin: 0 4.8vw;
+      grid-template-columns: 1fr 1fr;
+      gap: 5.6vw;
+    }
+  }
+
+  .s-sp-item {
+    padding: 2rem 0.8rem 0;
+    // min-height: 39.5rem;
+    transition: all 0.1s;
+    border: 0 solid #ffe1e6;
+    border-radius: $radius-middle;
+    outline: solid 0 #ffe1e6;
+    background-color: white;
+    box-shadow: 0 0 1.5rem #f9cfd6;
+    @include tabletLL {
+      padding: 2rem 0;
+    }
+    @include tabletS {
+      padding: 2rem 0;
+
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &:hover {
+      transition: all 0.25s;
+      outline: solid 5px #ffe1e6;
+      outline-offset: -3px;
+      box-shadow: 0 0 1.5rem #ffe1e6;
+      @include tabletS {
+        border: 0 solid #ffe1e6;
+      }
+
+      .s-sp-item__btn {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      .s-sp-item__text-detail {
+        font-size: 1.2rem;
+        transform: translateY(0);
+        @include tabletS {
+          font-size: 2.2vw;
+        }
+      }
+
+      .s-sp-item__start {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .margin-top {
+        margin-top: 0;
+      }
+    }
+
+    &__text {
+      text-align: center;
+      color: rgb(1, 1, 1, .8);
+
+      &--big {
+        font-size: 2.2rem;
+        @extend .s-sp-item__text;
+        @include note {
+          font-size: 2.2rem;
+        }
+        @include tabletL {
+          font-size: 2.1rem;
+        }
+        @include tabletM {
+          font-size: 2.4rem;
+          display: block;
+        }
+        @include tableMS {
+          font-size: 2.1rem;
+        }
+        @include tabletS {
+          font-size: 3.8vw;
+          display: inline;
+        }
+      }
+
+      &--middle {
+        font-size: 1.8rem;
+        @extend .s-sp-item__text;
+        @include note {
+          font-size: 1.6rem;
+        }
+        @include tabletL {
+          font-size: 1.5rem;
+        }
+        @include tabletM {
+          font-size: 1.8rem;
+        }
+        @include tableMS {
+          font-size: 1.5rem;
+        }
+        @include tabletS {
+          font-size: 2.933vw;
+        }
+      }
+
+      &--small {
+        font-size: 1.5rem;
+        @extend .s-sp-item__text;
+        @include note {
+          font-size: 1.4rem;
+        }
+        @include tabletM {
+          font-size: 1.15rem;
+        }
+        @include tableMS {
+          font-size: rem;
+        }
+        @include tabletS {
+          font-size: 2.4vw;
+        }
+      }
+
+      &--smallest {
+        font-size: 1rem;
+        @extend .s-sp-item__text;
+        @include tableMS {
+          font-size: 0.85rem;
+        }
+        @include tabletS {
+          font-size: 1.867vw;
+        }
+      }
+    }
+
+    &__circle {
+      width: 100%;
+      width: 18rem;
+      height: 18rem;
+      border-radius: 50%;
+      background-color: #ffe1e6;
+      @include tabletL {
+        width: 17rem;
+        height: 17rem;
+      }
+      @include tabletM {
+        width: 16rem;
+        height: 16rem;
+
+        img {
+          max-width: 91%;
+        }
+      }
+      @include tableMS {
+        width: 14rem;
+        height: 14rem;
+      }
+      @include tabletS {
+        width: 33.333vw;
+        max-width: unset;
+        height: 33.333vw;
+      }
+
+      img {
+        @include tabletS {
+          width: 29.067vw;
+        }
+      }
+    }
+
+    &__circle-box {
+      position: relative;
+      display: flex;
+      margin: 1rem 0 0;
+      justify-content: center;
+      @include tabletS {
+        margin: 1.333vw 0 4vw;
+      }
+    }
+
+    &__next {
+      display: none;
+      cursor: pointer;
+      @include tabletS {
+        position: absolute;
+        top: 50%;
+        right: 2.133vw;
+        display: block;
+        width: 6.667vw;
+        height: 6.667vw;
+        transform: translateY(-50%);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__start {
+      position: absolute;
+      top: 0;
+      right: 0;
+      visibility: hidden;
+      transition: all 0.1s;
+      transition-delay: 0.2s;
+      opacity: 0;
+      @include tabletS {
+        width: 8vw;
+      }
+    }
+
+    &__btn {
+      position: relative;
+      display: flex;
+      visibility: hidden;
+      width: 20rem;
+      max-width: 100%;
+      height: 5rem;
+      margin: 1rem auto 0;
+      cursor: pointer;
+      transition: all 0.25s;
+      transition-delay: 0.1s;
+      transform: translateY(6rem);
+      opacity: 0;
+      border-radius: 5rem;
+      background-color: #febdc8;
+      align-items: center;
+      justify-content: center;
+      @include note {
+        width: 18rem;
+        height: 4.5rem;
+      }
+      @include tabletL {
+        width: 18rem;
+        height: 4rem;
+      }
+      @include tabletM {
+        width: 16rem;
+        height: 3.5rem;
+      }
+      @include tableMS {
+        width: 80%;
+        height: 3rem;
+      }
+      @include tabletS {
+        width: 29vw;
+        height: 6.667vw;
+      }
+    }
+
+    &__btn-text {
+      font-size: 2.3rem;
+      text-align: center;
+      color: white;
+      filter: drop-shadow(0 0 10px #333);
+      @include tabletM {
+        font-size: 2.1rem;
+      }
+      @include tableMS {
+        font-size: 1.9rem;
+      }
+      @include tabletS {
+        font-size: 4vw;
+      }
+    }
+
+    &__btn-icon {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transition-delay: 0.2s;
+      transform: translateY(-50%);
+      @include tableMS {
+        width: 2rem;
+      }
+    }
+
+    &__text-note {
+      color: rgb(1, 1, 1, .32);
+    }
+
+    &__text-detail {
+      transition: all 0.25s;
+      transform: translateY(-6rem);
+      color: rgb(1, 1, 1, .65);
+      @include tabletS {
+        transform: translateY(-8vw);
+      }
+    }
+  }
+}
+
+.margin-top {
+  margin-top: 2rem;
+  @include tableMS {
+    margin-top: 3rem;
+  }
+  @include tabletS {
+    margin-top: 0;
+  }
+}

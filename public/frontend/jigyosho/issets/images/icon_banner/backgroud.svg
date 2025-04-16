@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="381" height="261" viewBox="0 0 381 261">
+  <defs>
+    <filter id="backgroud" x="0" y="0" width="381" height="261" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#backgroud)">
+    <g id="backgroud-2" data-name="backgroud" transform="translate(10.5 6.5)" fill="#fdf4f5" stroke="#fff" stroke-linejoin="round" stroke-width="3" opacity="0.95">
+      <rect width="360" height="240" rx="11" stroke="none"/>
+      <rect x="1.5" y="1.5" width="357" height="237" rx="9.5" fill="none"/>
+    </g>
+  </g>
+</svg>

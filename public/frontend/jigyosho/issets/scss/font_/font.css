@@ -1,0 +1,58 @@
+@font-face {
+  font-family: meiryo;
+  src: url(./meiryo.ttc);
+}
+
+@font-face {
+  font-family: SourceHanSansJP-Bold;
+  src: url(./SourceHanSansJP-Bold.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansJP-ExtraLight;
+  src: url(./SourceHanSansJP-ExtraLight.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansJP-Heavy;
+  src: url(./SourceHanSansJP-Heavy.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansJP-Light;
+  src: url(./SourceHanSansJP-Light.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansJP-Medium;
+  src: url(./SourceHanSansJP-Medium.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansJP-Normal;
+  src: url(./SourceHanSansJP-Normal.otf);
+}
+
+@font-face {
+  font-family: SourceHanSansJP-Regular;
+  src: url(./SourceHanSansJP-Regular.otf);
+}
+
+@font-face {
+  font-family: BIZUDGothic-bold;
+  src: url('./BIZUDGothic-Bold.ttf');
+}
+
+@font-face {
+  font-family: BIZUDGothic-regular;
+  src: url(./BIZUDGothic-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inkfree;
+  src: url(./Inkfree.ttf);
+}
+
+* {
+  font-family: SourceHanSansJP-Regular, sans-serif;
+}

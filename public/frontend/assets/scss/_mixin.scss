@@ -1,0 +1,15 @@
+@mixin fontStyle($fontSize, $letterSpacing: 0, $lineHeight: 0, $color: 'none') {
+    font-size: #{$fontSize}px;
+    @if($color != 'none'){
+        color: $color;
+    }
+    @if $letterSpacing !=0 {
+        letter-spacing: #{calc(($letterSpacing * $fontSize) / 1000)}px;
+    }
+    @if $letterSpacing == 0 {
+        letter-spacing: 0;
+    }
+    @if $lineHeight !=0 {
+        line-height: calc($lineHeight / $fontSize);
+    }
+}

@@ -1,0 +1,19 @@
+.nurse-header{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    .avatar{
+        width: 50px;
+        display: flex;
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+    .info{
+        flex: 1;
+        @include fontStyle(12, 100, 24, #333333);
+        font-family: "Meiryo", sans-serif;
+    }
+}

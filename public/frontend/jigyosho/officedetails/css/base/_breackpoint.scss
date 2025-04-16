@@ -1,0 +1,89 @@
+$desktopFull: 1920px;
+@mixin desktopFull {
+  @media (max-width: ($desktopFull)) {
+    @content;
+  }
+}
+
+$desktopL: 1800px;
+@mixin desktopL {
+  @media (max-width: ($desktopL)) {
+    @content;
+  }
+}
+
+$desktopM: 1560px;
+@mixin desktopM {
+  @media (max-width: ($desktopM)) {
+    @content;
+  }
+}
+$desktopS: 1448px;
+@mixin desktopS {
+  @media (max-width: ($desktopS)) {
+    @content;
+  }
+}
+$note: 1219px;
+@mixin note {
+  @media (max-width: ($note)) {
+    @content;
+  }
+}
+$tabletLL: 1080px;
+@mixin tabletLL {
+  @media (max-width: ($tabletLL)) {
+    @content;
+  }
+}
+
+$tabletL: 1024px;
+@mixin tabletL {
+  @media (max-width: ($tabletL)) {
+    @content;
+  }
+}
+$tabletM: 960px;
+@mixin tabletM {
+  @media (max-width: ($tabletM)) {
+    @content;
+  }
+}
+
+$tabletMS: 867px;
+
+@mixin tableMS {
+  @media (max-width: ($tabletMS)) {
+    @content;
+  }
+}
+$tabletS: 768px;
+@mixin tabletS {
+  @media (max-width: ($tabletS)) {
+    @content;
+  }
+}
+$mobileLL: 600px;
+@mixin mobileLL {
+  @media (max-width: ($mobileLL)) {
+    @content;
+  }
+}
+$mobileL: 425px;
+@mixin mobileL {
+  @media (max-width: ($mobileL)) {
+    @content;
+  }
+}
+$mobileM: 375px;
+@mixin mobileM {
+  @media (max-width: ($mobileM)) {
+    @content;
+  }
+}
+$mobileS: 359px;
+@mixin mobileS {
+  @media (max-width: ($mobileS)) {
+    @content;
+  }
+}

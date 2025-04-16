@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="54.879" viewBox="0 0 53 54.879">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.661" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="グループ_5080" data-name="グループ 5080" transform="translate(0 -733)">
+    <path id="パス_2671" data-name="パス 2671" d="M25,0A25,25,0,1,1,0,25,25,25,0,0,1,25,0Z" transform="translate(3 737.879)" fill="#f9f9f9"/>
+    <path id="パス_2671_-_アウトライン" data-name="パス 2671 - アウトライン" d="M25,2a23.007,23.007,0,0,0-8.952,44.193,23.006,23.006,0,0,0,17.9-42.387A22.854,22.854,0,0,0,25,2m0-2A25,25,0,1,1,0,25,25,25,0,0,1,25,0Z" transform="translate(3 737.879)" fill="#fedfe0"/>
+    <g id="book" transform="translate(13 744.879)">
+      <path id="パス_2615" data-name="パス 2615" d="M29.9,164.182H1.921A1.92,1.92,0,0,1,0,162.261v-19.2a1.92,1.92,0,0,1,1.92-1.92H29.9a1.92,1.92,0,0,1,1.92,1.92v19.2A1.92,1.92,0,0,1,29.9,164.182Z" transform="translate(0 -132.366)" fill="#d8ecfe"/>
+      <path id="パス_2616" data-name="パス 2616" d="M452.11,141.135h-1.92a1.92,1.92,0,0,1,1.92,1.92v19.2a1.92,1.92,0,0,1-1.92,1.92h1.92a1.92,1.92,0,0,0,1.92-1.92v-19.2A1.92,1.92,0,0,0,452.11,141.135Z" transform="translate(-422.215 -132.365)" fill="#c4e2ff"/>
+      <path id="パス_2617" data-name="パス 2617" d="M44.894,434.192H31.155a.249.249,0,0,1-.249-.249v-2.723H44.894Z" transform="translate(-28.985 -404.425)" fill="#eddbb9"/>
+      <path id="パス_2618" data-name="パス 2618" d="M269.739,434.192H256v-2.971h13.988v2.723A.249.249,0,0,1,269.739,434.192Z" transform="translate(-240.092 -404.425)" fill="#e0cfaf"/>
+      <path id="パス_2619" data-name="パス 2619" d="M44.894,136.058H31.155a.249.249,0,0,1-.249-.249V115.63a.249.249,0,0,1,.249-.249H44.894Z" transform="translate(-28.985 -108.211)" fill="#fbf2df"/>
+      <path id="パス_2620" data-name="パス 2620" d="M269.739,136.058H256V115.381h13.739a.249.249,0,0,1,.249.249v20.18A.249.249,0,0,1,269.739,136.058Z" transform="translate(-240.092 -108.211)" fill="#eddbb9"/>
+      <path id="パス_2621" data-name="パス 2621" d="M267.975,88.223,256,91.217V70.54l11.854-2.964a.249.249,0,0,1,.309.241V87.982A.248.248,0,0,1,267.975,88.223Z" transform="translate(-240.092 -63.37)" fill="#f2e5ce"/>
+      <path id="パス_2622" data-name="パス 2622" d="M134.547,399.681h-4.931a.466.466,0,0,0,0,.932h4.931a.466.466,0,0,0,0-.932Z" transform="translate(-121.125 -374.845)" fill="#78909c"/>
+      <path id="パス_2623" data-name="パス 2623" d="M204.463,3.793l-2.517-.945.913-2.432a.64.64,0,0,1,.824-.374l1.318.5a.64.64,0,0,1,.374.824Z" transform="translate(-189.397 -0.001)" fill="#c4e2ff"/>
+      <path id="パス_2624" data-name="パス 2624" d="M87.615,51.608l-3.6-1.35L90.931,31.85a.249.249,0,0,1,.32-.145l3.13,1.175a.249.249,0,0,1,.145.32Z" transform="translate(-78.798 -29.72)" fill="#c4e2ff"/>
+      <path id="パス_2625" data-name="パス 2625" d="M119.951,41.4l-7,18.64,1.8.675,6.912-18.407a.249.249,0,0,0-.145-.32Z" transform="translate(-105.933 -38.829)" fill="#0573ce"/>
+      <path id="パス_2626" data-name="パス 2626" d="M81.791,330.5l-.148,4.144a.659.659,0,0,0,1.127.423l2.616-3.217Z" transform="translate(-76.57 -309.965)" fill="#78909c"/>
+      <path id="パス_2627" data-name="パス 2627" d="M83.589,341.367l-1.946,3.469a.659.659,0,0,0,1.127.423l2.616-3.217Z" transform="translate(-76.57 -320.154)" fill="#607d8b"/>
+      <path id="パス_2628" data-name="パス 2628" d="M0,0H3.841V6.914H0Z" transform="matrix(0.936, 0.352, -0.352, 0.936, 8.838, 10.889)" fill="#78909c"/>
+      <path id="パス_2629" data-name="パス 2629" d="M0,0H6.914V1.92H0Z" transform="matrix(0.352, -0.936, 0.936, 0.352, 8.213, 18.043)" fill="#607d8b"/>
+    </g>
+    <g id="グループ_1926" data-name="グループ 1926" transform="translate(0 733)">
+      <circle id="楕円形_137" data-name="楕円形 137" cx="9" cy="9" r="9" transform="translate(0 1)" fill="url(#radial-gradient)"/>
+      <text id="_3" data-name="3" transform="translate(5 14)" fill="#e99cad" font-size="13" font-family="Meiryo-Bold, Meiryo" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">3</tspan></text>
+    </g>
+  </g>
+</svg>
