@@ -394,6 +394,8 @@
 <script>
   function showPopupArea() {
     $("#popup-area-layer").css("display", "flex");
+    hideAreaLayer();
+    addressPopActive();
   }
 
   function hidePopupArea() {

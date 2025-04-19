@@ -551,7 +551,6 @@
 @endsection
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const titles = document.querySelectorAll(".search-option-title");
     const optionAddressItem = document.querySelectorAll(".option-address__item");
     const optionAddressSelection = document.querySelector(".option-address");
     const optionAddressSelectionPop = document.querySelector("#popup-area-layer .option-address");
@@ -563,11 +562,6 @@
     const optionAddressContainer = document.querySelector('.option-address-container');
     const searchOptionCategoryParent = document.querySelector('#search-option-category-parent');
 
-    let text = document.querySelector(".dropdown-option-text");
-
-    // chặn chuyển tab area khi đã chọn option
-
-
     document.getElementById('reChosen-id').addEventListener('change', function() {
       const selectedValue = this.value;
       document.querySelector('.search-box .tag-items').innerHTML =
@@ -576,12 +570,12 @@
       document.querySelector('#selected-area').value = this.value;
     });
 
-    // update bên trong khi gõ trên ô search
+    // update inside search input
     document.getElementById('search-input-section-id').addEventListener('keyup', function() {
       document.getElementById('type-address').value = this.value;
     });
 
-    // tắt dropdown cửa reChosen-id 
+    // off dropdown of reChosen-id 
     document.addEventListener('click', function(event) {
       const tagItem = document.querySelector('.search-box .tag-items');
       const reChosen = document.querySelector('#reChosen-id');
@@ -781,39 +775,28 @@
       });
     });
 
+    const $titles = $('.search-option-title');
+    let text = $(".dropdown-option-text");
 
-    titles.forEach(title => {
-      title.addEventListener("click", function() {
-        if ((this.classList.contains("option-address__toggle-dropdown")) ||
-          (this.classList.contains("option-address__toggle-map"))) {
-          titles.forEach(title => {
-            title.classList.remove('active')
-          })
-          hideAreaLayer();
-          deactiveCategory();
-          this.classList.add("active");
+    $titles.on('click', function() {
+      if ($(this).is('.option-address__toggle-dropdown, .option-address__toggle-map')) {
+        $titles.removeClass('active');
+        hideAreaLayer();
+        deactiveCategory();
+        $(this).addClass('active');
+        showAddressOption();
+        showMapOption();
 
-          // Address - Display Dropdown list
-          showAddressOption();
-
-          // Address - Display Clickable map
-          showMapOption()
-
-          // Address - Display Popup
-          // showAdressOptionPop();
-          // showMapOptionPop();
-
-          if ((this.classList.contains("option-address__toggle-dropdown") && this.classList.contains(
-              "active"))) {
-            text.style.display = "block";
-          } else {
-            text.style.display = "none";
-          }
+        // Show or hide the dropdown text
+        if ($(this).is('.option-address__toggle-dropdown.active')) {
+          $texts.show();
+        } else {
+          $texts.hide();
         }
-      });
+      }
     });
 
-    document.querySelector('.option-category__toggle').addEventListener('click', function() {
+    $('.option-category__toggle').on('click', function() {
       activeCategory();
       removeActiveArea();
       showAreaLayer();
@@ -870,7 +853,10 @@
     if (activeNoPopup) {
       $('.option-address').css('display', 'grid');
     } else if (activeMap) {
-      $('#popup-area-layer .option-address').css('display', 'grid');
+      // $('#popup-area-layer .option-address').css('display', 'grid');
+      $('.option-address').each(function() {
+        $(this).show();
+      });
     } else {
       const addr = $('.option-address');
       addr.each(function() {
@@ -887,31 +873,16 @@
     if (activeNoPopup) {
       $('#clickable-map').css('display', 'grid');
     } else if (activeMap) {
-      $('#popup-area-layer #clickable-map').css('display', 'grid');
+      $('#clickable-map').show();
+      $('#popup-area-layer #clickable-map').show()
     } else {
-      const clcb = $('#clickable-map');
-      clcb.each(function() {
-        $(this).hide();
-      });
+      $('#clickable-map').hide();
+      $('#popup-area-layer #clickable-map').hide();
     }
   }
 
-  //   if (addressOption.hasClass('active') && !addressOption.hasClass('map_popup_area')) {
-  //     $('#clickable-map').css('display', 'grid');
-  //   } else if (addressOption.hasClass('active') && addressOption.hasClass('map_popup_area')) {
-  //     $('#popup-area-layer #clickable-map').css('display', 'grid');
-  //   } else {
-  //     $('#clickable-map').hide();
-  //   }
-  // }
-
-  // function showAdressOptionPop() {
-  //   const addressOption = $('.search-option-title.option-address__toggle-dropdown')
-  //   // contain active class
-  //   if (addressOption.hasClass('active') && addressOption.hasClass('address_popup_area')) {
-  //     $('.option-address.address_popup_area').css('display', 'grid');
-  //   } else {
-  //     $('.option-address.address_popup_area').hide();
-  //   }
-  // }
+  function addressPopActive() {
+    $('.option-address__toggle-dropdown.address_popup_area').addClass('active');
+    showAddressOption();
+  }
 </script>
