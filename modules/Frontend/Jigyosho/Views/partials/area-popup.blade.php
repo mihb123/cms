@@ -153,7 +153,7 @@
         <p class="text-address">
           ご自宅のあるエリアから自宅療養を支えてくれる人たちを探す
         </p>
-        <div class="option-address">
+        <div class="option-address address_popup_area">
           <!-- list checkbox banner one start-->
           <div class="option-address__toggle">
             <div class="option-address__item item--show1">
@@ -393,10 +393,10 @@
 
 <script>
   function showPopupArea() {
-    document.getElementById("popup-area-layer").style.display = "flex";
+    $("#popup-area-layer").css("display", "flex");
   }
 
   function hidePopupArea() {
-    document.getElementById("popup-area-layer").style.display = "none";
+    $("#popup-area-layer").css("display", "none");
   }
 </script>

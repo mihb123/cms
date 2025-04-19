@@ -295,7 +295,7 @@
 
     <div class="search-option" id="search-option-category-parent">
       <div id="search-option-category">
-        <!-- <div class="layer-category blur-part1"></div> -->
+        {{-- <div class="layer-category blur-part1"></div> --}}
         <div class="vertical-line"></div>
         <div class="search-option-title option-category__toggle">
           <div class="search-option-title__text-box item--show1 ">
@@ -309,7 +309,7 @@
         <div class="search-option-logo">
           <div class="search-option-logo__img-box">
             <!-- <img class="search-option-logo__img-box--pc" src="{{ asset('frontend/jigyosho/issets/images/select01/Group 298.svg') }}" alt="" /> -->
-            <img class="search-option-logo__img-box--pc"
+            <img class="search-option-logo__img-box--pc logoEnable"
               src="{{ asset('frontend/jigyosho/issets/images/select03/Group 299.svg') }}" alt="" />
             <svg class="search-option-logo__img-box--pc-enabled" xmlns="http://www.w3.org/2000/svg" width="64"
               height="64" viewBox="0 0 64 64">
@@ -340,7 +340,7 @@
 
 
   <div class="option-category-container">
-    <!-- <div class="layer-category blur-part1"></div> -->
+    <div class="layer-category blur-part1"></div>
     <div class="option-category-row">
       <div class="option-category-label">相談所）</div>
       <ul class="option-category-row-list-item">
@@ -557,7 +557,7 @@
     const optionAddressSelectionPop = document.querySelector("#popup-area-layer .option-address");
     const optionAddressMap = document.querySelector("#clickable-map");
     const optionAddressMapPop = document.querySelector("#popup-area-layer #clickable-map");
-    const layerCategory = document.querySelectorAll('.layer-category');
+    const layerCategory = document.querySelector('.layer-category');
     const optionCategoryRowItem = document.querySelectorAll('.option-category-row-item');
     const selectedCategory = document.getElementById('selected-category');
     const optionAddressContainer = document.querySelector('.option-address-container');
@@ -598,16 +598,8 @@
     document.querySelectorAll('input[name="cb_addr21"]').forEach(function(cb) {
       cb.addEventListener('change', function() {
         if (!this.checked) {
-          // layerCategory.forEach(el => {
-          //     el.style.display = 'block';
-          // });
           document.getElementById('selected-area').value = '';
         } else {
-          // if(document.getElementById('selected-area').value !== ''){
-          //     layerCategory.forEach(el => {
-          //     el.style.display = 'block';
-          // });
-          // }
           document.querySelectorAll('.click-map').forEach(item => {
             item.classList.remove('activeClickMap');
           });
@@ -649,16 +641,16 @@
           optionAddressContainer.style.backgroundColor = '#FDF4F4';
           // document.querySelector('.option-category-container').style.backgroundColor = '#FDF4F4';
           document.querySelector('#search-option-category').classList.add('category-enabled')
-          searchOptionCategoryParent.style.backgroundColor = '#FDF4F4';
-          searchOptionCategoryParent.style.borderBottom = '0px solid white';
-          document.querySelector('#search-option-category .triangle-indicator').style.display = 'block'
-          document.querySelector('.search-option-description').style.color = '#FFFFFF'
-          document.querySelector('.search-option-logo__img-box--pc-enabled').style.display = 'block'
-          document.querySelector('#search-option-category .search-option-logo__img-box--pc').classList.add(
-            'logoEnable');
-          layerCategory.forEach(el => {
-            el.style.display = 'none';
-          });
+          searchOptionCategoryParent.classList.add('active');
+          // searchOptionCategoryParent.style.backgroundColor = '#FDF4F4';
+          // searchOptionCategoryParent.style.borderBottom = '0px solid white';
+          // document.querySelector('#search-option-category .triangle-indicator').style.display =
+          //   'block' //done
+          // document.querySelector('.search-option-description').style.color = '#FFFFFF' //done
+          // document.querySelector('.search-option-logo__img-box--pc-enabled').style.display = 'block' //done
+          // document.querySelector('#search-option-category .search-option-logo__img-box--pc').classList.add(
+          //   'logoEnable'); //done
+          layerCategory.style.display = 'none';
           document.querySelector("#from-tab").value = "option-address__toggle-map"
         }
       });
@@ -797,48 +789,36 @@
           titles.forEach(title => {
             title.classList.remove('active')
           })
+          hideAreaLayer();
+          deactiveCategory();
           this.classList.add("active");
+
           // Address - Display Dropdown list
+          showAddressOption();
+
+          // Address - Display Clickable map
+          showMapOption()
+
+          // Address - Display Popup
+          // showAdressOptionPop();
+          // showMapOptionPop();
+
           if ((this.classList.contains("option-address__toggle-dropdown") && this.classList.contains(
               "active"))) {
-            optionAddressSelection.style.display = "grid";
-            text.style.display = "grid";
+            text.style.display = "block";
           } else {
-            optionAddressSelection.style.display = "none";
             text.style.display = "none";
           }
-          // Address - Display Clickable map
-          if ((this.classList.contains("option-address__toggle-map") && this.classList.contains(
-              "active"))) {
-            optionAddressMap.style.display = "grid";
-          } else {
-            optionAddressMap.style.display = "none";
-          }
-
-          if ((this.classList.contains("address_popup_area") && this.classList.contains("active"))) {
-            optionAddressSelectionPop.style.display = "grid";
-            text.style.display = "grid";
-          } else {
-            optionAddressSelectionPop.style.display = "none";
-            text.style.display = "none";
-          }
-          if ((this.classList.contains("map_popup_area") && this.classList.contains("active"))) {
-            optionAddressMapPop.style.display = "grid";
-          } else {
-            optionAddressMapPop.style.display = "none";
-          }
-          // document.querySelector('.option-category__toggle').classList.remove('active');
-          // layerCategory.forEach(el => {
-          //     el.style.display = 'block';
-          // });
-          // document.querySelectorAll('.layer-dropdown-and-map').forEach(el => {
-          //     el.style.display = 'none';
-          // });
         }
       });
     });
-  });
 
+    document.querySelector('.option-category__toggle').addEventListener('click', function() {
+      activeCategory();
+      removeActiveArea();
+      showAreaLayer();
+    });
+  });
 
 
   function toggleSelect() {
@@ -849,4 +829,89 @@
       dropDown.style.display = 'none';
     }
   }
+
+  function activeCategory() {
+    $('#search-option-category-parent').addClass('active');
+    $('#search-option-category').addClass('category-enabled');
+    $('.layer-category').hide();
+  }
+
+  function deactiveCategory() {
+    $('#search-option-category-parent').removeClass('active');
+    $('#search-option-category').removeClass('category-enabled');
+    $('.layer-category').show();
+  }
+
+  function removeActiveArea() {
+    // query all elements with class 'search-option-title option-address__toggle-dropdown' && 'search-option-title option-address__toggle-map', then remove class 'active'
+    const addressDropdown = $('.search-option-title.option-address__toggle-dropdown');
+    const addressMap = $('.search-option-title.option-address__toggle-map');
+    if (addressDropdown.length) {
+      addressDropdown.removeClass('active');
+    }
+    if (addressMap.length) {
+      addressMap.removeClass('active');
+    }
+  }
+
+  function showAreaLayer() {
+    $('.layer-dropdown-and-map.blur-part2').show();
+  }
+
+  function hideAreaLayer() {
+    $('.layer-dropdown-and-map.blur-part2').hide();
+  }
+
+  function showAddressOption() {
+    const $options = $('.search-option-title.option-address__toggle-dropdown');
+    const activeNoPopup = $options.filter('.active').not('.address_popup_area').length > 0;
+    const activeMap = $options.filter('.active.address_popup_area').length > 0;
+
+    if (activeNoPopup) {
+      $('.option-address').css('display', 'grid');
+    } else if (activeMap) {
+      $('#popup-area-layer .option-address').css('display', 'grid');
+    } else {
+      const addr = $('.option-address');
+      addr.each(function() {
+        $(this).hide();
+      });
+    }
+  }
+
+  function showMapOption() {
+    const addressOption = $('.search-option-title.option-address__toggle-map');
+
+    const activeNoPopup = addressOption.filter('.active').not('.map_popup_area').length > 0;
+    const activeMap = addressOption.filter('.active.map_popup_area').length > 0;
+    if (activeNoPopup) {
+      $('#clickable-map').css('display', 'grid');
+    } else if (activeMap) {
+      $('#popup-area-layer #clickable-map').css('display', 'grid');
+    } else {
+      const clcb = $('#clickable-map');
+      clcb.each(function() {
+        $(this).hide();
+      });
+    }
+  }
+
+  //   if (addressOption.hasClass('active') && !addressOption.hasClass('map_popup_area')) {
+  //     $('#clickable-map').css('display', 'grid');
+  //   } else if (addressOption.hasClass('active') && addressOption.hasClass('map_popup_area')) {
+  //     $('#popup-area-layer #clickable-map').css('display', 'grid');
+  //   } else {
+  //     $('#clickable-map').hide();
+  //   }
+  // }
+
+  // function showAdressOptionPop() {
+  //   const addressOption = $('.search-option-title.option-address__toggle-dropdown')
+  //   // contain active class
+  //   if (addressOption.hasClass('active') && addressOption.hasClass('address_popup_area')) {
+  //     $('.option-address.address_popup_area').css('display', 'grid');
+  //   } else {
+  //     $('.option-address.address_popup_area').hide();
+  //   }
+  // }
 </script>
