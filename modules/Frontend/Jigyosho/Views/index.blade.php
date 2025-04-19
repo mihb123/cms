@@ -1,6 +1,6 @@
 @extends('jigyosho::layout')
 
-@section('title', 'Homepage - Life Star')
+@section('title', 'Homepage11 - Life Star')
 
 @section('content')
 
