@@ -84,3 +84,31 @@
     </div>
   </div>
 </div>
+
+<script>
+  function showSearchAction() {
+    $('#search_action_container').css('display', 'flex');
+  }
+
+  function hideSearchAction() {
+    $('#search_action_container').css('display', 'none');
+  }
+
+  function submitPopupForm() {
+    document.getElementById('popup-form').submit();
+  };
+
+  function clearCategory(){
+    const optionCategoryRowItem = document.querySelectorAll('.option-category-row-item');
+    optionCategoryRowItem.forEach((item) => {
+      const checkIcon = item.querySelector('.check-icon');
+      const radio = item.querySelector('input[type="radio"]');
+      checkIcon.style.display = 'none';
+      radio.checked = false;      
+    });
+    lastSelectedItem = null;
+    hideSearchAction();
+    selectedCategory.value = '';  
+  }
+
+</script>

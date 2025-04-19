@@ -35,7 +35,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="action-section22">
+            <div class="action-section">
                 <button class="action-section-btn-white"><span class="button-text">サポートの分類を修正する</span></button>
                 <button class="action-section-btn-white"><span class="button-text">エリアを修正する</span></button>
                 <div class="line-straight"></div>
