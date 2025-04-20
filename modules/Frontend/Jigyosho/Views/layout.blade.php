@@ -37,6 +37,7 @@
     <script src="{{ asset('frontend/jigyosho/issets/script/ownCarosel.js') }}"></script>
     <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
     <script src="{{ asset('frontend/jigyosho/js/header_footer.js') }}"></script>
+    <script src="{{ asset('frontend/jigyosho/issets/script/jigyosho.js') }}"></script>
 </body>
 </html>
 

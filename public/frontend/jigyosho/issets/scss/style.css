@@ -8062,7 +8062,7 @@ common - width: < $width-1
 } */
 .option-category-container {
   position: relative;
-  background-color: #F5F5F5;
+  background-color: #fdf4f4;
   padding-bottom: 5%;
 }
 

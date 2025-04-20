@@ -20,6 +20,10 @@
       margin: 117px auto;
     }
 
+    .popup-area-layer .search-option-title {
+      background-color: rgb(255, 177, 191);
+    }
+
     @media (min-width: 1050px) {
       .popup-container {
         width: 992px;
@@ -179,7 +183,7 @@
                         $checkboxId = 'option1-checkbox' . ($loop->parent->index * 8 + $index + 1);
                       @endphp
                       <p class="option-address__checkboxs-item">
-                        <input class="banner-checkboxs__item-ip" type="checkbox" name="cb_addr21"
+                        <input class="banner-checkboxs__item-ip popup_area" type="checkbox" name="cb_addr21"
                           id="{{ $checkboxId }}" />
                         <label class="banner-label" for="{{ $checkboxId }}">
                           <span class="banner-label--middle">{{ $district }}</span>
@@ -197,7 +201,8 @@
                 <div class="select-btn2__item--pink select-round disabled" id="select-round-one" position="position1">
                   <p class="select-btn2__text--white">決定</p>
                 </div>
-                <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op1">
+                <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op1"
+                  onclick="clearOption(this)">
                   <p class="select-btn2__text--pink">リセット</p>
                 </div>
               </div>
@@ -230,7 +235,7 @@
                         $checkboxId = 'option2-checkbox' . ($loop->parent->index * 9 + $index + 1);
                       @endphp
                       <p class="option-address__checkboxs-item">
-                        <input class="banner-checkboxs__item-ip" type="checkbox" name="cb_addr21"
+                        <input class="banner-checkboxs__item-ip popup_area" type="checkbox" name="cb_addr21"
                           id="{{ $checkboxId }}" />
                         <label class="banner-label" for="{{ $checkboxId }}">
                           <span class="banner-label--middle"> {{ $city }}</span>
@@ -249,7 +254,8 @@
                   position="position1">
                   <p class="select-btn2__text--white">決定</p>
                 </div>
-                <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op1">
+                <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op1"
+                  onclick="clearOption(this)">
                   <p class="select-btn2__text--pink">リセット</p>
                 </div>
               </div>
@@ -282,7 +288,7 @@
                         $checkboxId = 'option7-checkbox' . ($loop->parent->index * 2 + $index + 1);
                       @endphp
                       <p class="option-address__checkboxs-item">
-                        <input class="banner-checkboxs__item-ip" type="checkbox" name="cb_addr21"
+                        <input class="banner-checkboxs__item-ip popup_area" type="checkbox" name="cb_addr21"
                           id="{{ $checkboxId }}" />
                         <label class="banner-label" for="{{ $checkboxId }}">
                           <span class="banner-label--middle">{{ $town }}</span>
@@ -302,7 +308,8 @@
                   position="position3">
                   <p class="select-btn2__text--white">決定</p>
                 </div>
-                <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op3">
+                <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op3"
+                  onclick="clearOption(this)">
                   <p class="select-btn2__text--pink">リセット</p>
                 </div>
               </div>
@@ -336,7 +343,7 @@
                         $checkboxId = 'option10-checkbox' . ($loop->parent->index * 3 + $index + 1);
                       @endphp
                       <p class="option-address__checkboxs-item">
-                        <input class="banner-checkboxs__item-ip" type="checkbox" name="cb_addr21"
+                        <input class="banner-checkboxs__item-ip popup_area" type="checkbox" name="cb_addr21"
                           id="{{ $checkboxId }}" />
                         <label class="banner-label" for="{{ $checkboxId }}">
                           <span class="banner-label--middle">{{ $village }}</span>
@@ -356,7 +363,8 @@
                   position="position4">
                   <p class="select-btn2__text--white">決定</p>
                 </div>
-                <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op4">
+                <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op4"
+                  onclick="clearOption(this)">
                   <p class="select-btn2__text--pink">リセット</p>
                 </div>
               </div>
@@ -391,14 +399,4 @@
   </div>
 </div>
 
-<script>
-  function showPopupArea() {
-    $("#popup-area-layer").css("display", "flex");
-    hideAreaLayer();
-    addressPopActive();
-  }
-
-  function hidePopupArea() {
-    $("#popup-area-layer").css("display", "none");
-  }
-</script>
+<script></script>

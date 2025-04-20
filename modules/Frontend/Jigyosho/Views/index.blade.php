@@ -103,7 +103,8 @@
               <div class="select-btn2__item--pink select-round disabled" id="select-round-one" position="position1">
                 <p class="select-btn2__text--white">決定</p>
               </div>
-              <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op1">
+              <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op1"
+                onclick="clearOption(this)">
                 <p class="select-btn2__text--pink">リセット</p>
               </div>
             </div>
@@ -154,7 +155,8 @@
               <div class="select-btn2__item--pink select-round disabled" id="select-round-two" position="position1">
                 <p class="select-btn2__text--white">決定</p>
               </div>
-              <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op1">
+              <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op1"
+                onclick="clearOption(this)">
                 <p class="select-btn2__text--pink">リセット</p>
               </div>
             </div>
@@ -206,7 +208,8 @@
               <div class="select-btn2__item--pink select-round disabled" id="select-round-three" position="position3">
                 <p class="select-btn2__text--white">決定</p>
               </div>
-              <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op3">
+              <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op3"
+                onclick="clearOption(this)">
                 <p class="select-btn2__text--pink">リセット</p>
               </div>
             </div>
@@ -259,7 +262,8 @@
               <div class="select-btn2__item--pink select-round disabled" id="select-round-four" position="position4">
                 <p class="select-btn2__text--white">決定</p>
               </div>
-              <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op4">
+              <div class="select-btn2__item--white select-btn__item--outline" id="clear-checkbox-op4"
+                onclick="clearOption(this)">
                 <p class="select-btn2__text--pink">リセット</p>
               </div>
             </div>
@@ -329,8 +333,6 @@
                 </text>
               </g>
             </svg>
-
-
           </div>
         </div>
       </div>
@@ -551,106 +553,117 @@
 @endsection
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const optionAddressItem = document.querySelectorAll(".option-address__item");
-    const optionAddressSelection = document.querySelector(".option-address");
-    const optionAddressSelectionPop = document.querySelector("#popup-area-layer .option-address");
-    const optionAddressMap = document.querySelector("#clickable-map");
-    const optionAddressMapPop = document.querySelector("#popup-area-layer #clickable-map");
-    const layerCategory = document.querySelector('.layer-category');
-    const optionCategoryRowItem = document.querySelectorAll('.option-category-row-item');
-    const selectedCategory = document.getElementById('selected-category');
-    const optionAddressContainer = document.querySelector('.option-address-container');
-    const searchOptionCategoryParent = document.querySelector('#search-option-category-parent');
-
-    document.getElementById('reChosen-id').addEventListener('change', function() {
-      const selectedValue = this.value;
-      document.querySelector('.search-box .tag-items').innerHTML =
-        '<button onclick="toggleSelect()" type="button">' + selectedValue +
-        '<svg class="close-tag" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path id="close_1_" data-name="close (1)" d="M8.283,7.136l5.451-5.451A.907.907,0,0,0,12.451.4L7,5.853,1.549.4A.907.907,0,0,0,.266,1.684L5.717,7.136.266,12.587A.907.907,0,1,0,1.549,13.87L7,8.419l5.451,5.451a.907.907,0,0,0,1.283-1.283Zm0,0" transform="translate(0 -0.136)" fill="#7a7a7a"/></svg></button>'
-      document.querySelector('#selected-area').value = this.value;
+    // toggle select
+    $('#reChosen-id').on('change', function() {
+      const selectedValue = $(this).val();
+      $('#selected-area').val(selectedValue);
     });
 
-    // update inside search input
-    document.getElementById('search-input-section-id').addEventListener('keyup', function() {
-      document.getElementById('type-address').value = this.value;
+    // update search input popup and back
+    $('#search-input-section-id').on('keyup', function() {
+      $('#type-address').val($(this).val());
+    });
+    $('#type-address').on('keyup', function() {
+      $('#search-input-section-id').val($(this).val());
     });
 
-    // off dropdown of reChosen-id 
-    document.addEventListener('click', function(event) {
-      const tagItem = document.querySelector('.search-box .tag-items');
-      const reChosen = document.querySelector('#reChosen-id');
-      if (tagItem && reChosen) {
-        if (!tagItem.contains(event.target) && !reChosen.contains(event.target)) {
-          let dropDown = document.querySelector('.reChosen-dropdown');
-          if (dropDown.style.display === 'block') {
-            document.querySelector('.reChosen-dropdown').style.display = 'none';
-          }
+    $(document).on('click', (e) => {
+      if (!$(e.target).closest('.search-box .tag-items, #reChosen-id').length) {
+        $('.reChosen-dropdown').hide();
+      }
+    });
+
+    $('input[name="cb_addr21"]').on('change', function() {
+      let selectedId = '';
+      if (!$(this).is(':checked')) {
+        $('#selected-area').val('');
+      } else {
+        selectedId = $(this).attr('id');
+        removeActiveClickMap();
+      }
+      updateAddressPop(selectedId);
+    });
+
+    $('.click-map').on('click', function() {
+      const $this = $(this);
+      removeActiveClickMap();
+      $this.addClass('activeClickMap');
+
+      const pathId = $this.find('path').attr('id');
+      updateMapPop(pathId);
+
+      const textValue = $this.find('text').text().trim();
+      if (!textValue) return;
+
+      $('#selected-area').val(textValue);
+      removeAddressOption();
+
+      $('.text-address, #clickable-map, .layer-category').hide();
+      $('.search-map-or-dropdown-result').show();
+
+      $('.option-address-container').css({
+        paddingTop: '4%',
+        paddingBottom: '0',
+        backgroundColor: '#FDF4F4'
+      });
+
+      $('#search-option-category').addClass('category-enabled');
+      $('#search-option-category-parent').addClass('active');
+      $('#from-tab').val('option-address__toggle-map');
+    });
+
+    const optionCategoryRowItem = $('.option-category-row-item');
+    optionCategoryRowItem.each(function() {
+      $(this).on('click', function() {
+        const radio = $(this).find('input[type="radio"]');
+        const rowItemImg = $(this).find('.option-category-row-item-img');
+        const checkIcon = $(this).find('.check-icon');
+        // Reset all items
+        resetCategoryOption();
+        if ($('#selected-area').val() == '') {
+          showPopupArea();
+          addressPopActive();
+        }
+        checkIcon.show();
+        rowItemImg.css({
+          width: '60%',
+          height: 'auto',
+          right: '-20%',
+          top: '-130%'
+        }).addClass('no-hover');
+        radio.prop('checked', true);
+        $('#selected-category').val(radio.val());
+      });
+    });
+
+    const $titles = $('.search-option-title');
+    let text = $(".dropdown-option-text");
+
+    $titles.on('click', function() {
+      if ($(this).is('.option-address__toggle-dropdown, .option-address__toggle-map')) {
+        $titles.removeClass('active');
+        hideAreaLayer();
+        deactiveCategory();
+        $(this).addClass('active');
+        showAddressOption();
+        showMapOption();
+
+        // Show or hide the dropdown text
+        if ($(this).is('.option-address__toggle-dropdown.active')) {
+          text.show();
+        } else {
+          text.hide();
         }
       }
     });
 
-    document.querySelectorAll('input[name="cb_addr21"]').forEach(function(cb) {
-      cb.addEventListener('change', function() {
-        if (!this.checked) {
-          document.getElementById('selected-area').value = '';
-        } else {
-          document.querySelectorAll('.click-map').forEach(item => {
-            item.classList.remove('activeClickMap');
-          });
-        }
-      });
+    $('.option-category__toggle').on('click', function() {
+      activeCategory();
+      removeActiveArea();
+      showAreaLayer();
     });
 
-    document.querySelectorAll('.click-map').forEach(el => {
-      el.addEventListener('click', function(e) {
-        document.querySelectorAll('.click-map').forEach(item => {
-          item.classList.remove('activeClickMap');
-        });
-        this.classList.add('activeClickMap');
-        const textElement = this.querySelector('text');
-        if (textElement) {
-          const textValue = textElement.textContent.trim();
-          document.getElementById('selected-area').value = textValue;
-          document.querySelectorAll('input[name="cb_addr21"]').forEach(function(checkbox) {
-            checkbox.checked = false;
-          });
-
-          // titles.forEach(title => { title.classList.remove('active') })
-          document.querySelector('.option-address__toggle-map').classList.add('active');
-          document.querySelector('.text-address').style.display = 'none';
-          document.querySelector('.option-address').style.display = 'none';
-          document.querySelector('#clickable-map').style.display = 'none';
-          document.querySelector('.search-map-or-dropdown-result').style.display = 'block';
-          document.querySelectorAll('.search-option-title').forEach(el => {
-            if (!el.classList.contains('option-category__toggle')) {
-              el.classList.add('displayResult');
-            }
-          });
-
-          document.querySelectorAll('.section-1 .search-option-title').forEach(el => {
-            el.classList.add('no-after');
-          });
-          optionAddressContainer.style.paddingTop = '4%';
-          optionAddressContainer.style.paddingBottom = '0';
-          optionAddressContainer.style.backgroundColor = '#FDF4F4';
-          // document.querySelector('.option-category-container').style.backgroundColor = '#FDF4F4';
-          document.querySelector('#search-option-category').classList.add('category-enabled')
-          searchOptionCategoryParent.classList.add('active');
-          // searchOptionCategoryParent.style.backgroundColor = '#FDF4F4';
-          // searchOptionCategoryParent.style.borderBottom = '0px solid white';
-          // document.querySelector('#search-option-category .triangle-indicator').style.display =
-          //   'block' //done
-          // document.querySelector('.search-option-description').style.color = '#FFFFFF' //done
-          // document.querySelector('.search-option-logo__img-box--pc-enabled').style.display = 'block' //done
-          // document.querySelector('#search-option-category .search-option-logo__img-box--pc').classList.add(
-          //   'logoEnable'); //done
-          layerCategory.style.display = 'none';
-          document.querySelector("#from-tab").value = "option-address__toggle-map"
-        }
-      });
-
-    });
-
+    const selectedCategory = document.getElementById('selected-category');
     ['selected-area', 'selected-category'].forEach(id => {
       const input = document.getElementById(id);
       let currentValue = input.value;
@@ -677,9 +690,9 @@
                 }
                 item.appendChild(newTag);
               });
+              document.querySelector('.option-category-container').style.backgroundColor = '#f5f5f5';
               if (selectedCategory.value !== '') {
                 showPopup();
-                // showSearchAction();
               }
             }
           } else if (id === 'selected-category') {
@@ -727,162 +740,5 @@
         }
       });
     });
-
-    var lastSelectedItem = null;
-
-    optionCategoryRowItem.forEach(item => {
-      item.addEventListener('click', function() {
-        const radio = item.querySelector('input[type="radio"]');
-        const rowItemImg = item.querySelector('.option-category-row-item-img');
-        const checkIcon = item.querySelector('.check-icon');
-
-        // Reset all items
-        optionCategoryRowItem.forEach(item1 => {
-          const radio1 = item1.querySelector('input[type="radio"]');
-          const rowItemImg1 = item1.querySelector('.option-category-row-item-img');
-          const checkIcon1 = item1.querySelector('.check-icon');
-          rowItemImg1.style.width = '40%';
-          rowItemImg1.style.height = '180%';
-          rowItemImg1.style.right = '-10%';
-          rowItemImg1.style.top = '-30%';
-          rowItemImg1.classList.remove('no-hover');
-          checkIcon1.style.display = 'none';
-          radio1.checked = false;
-        });
-
-        // Toggle current item
-        if (lastSelectedItem === item) {
-          // Clicked same item, deselect
-          checkIcon.style.display = 'none';
-          radio.checked = false;
-          lastSelectedItem = null;
-          selectedCategory.value = '';
-        } else {
-          if (document.getElementById('selected-area').value == '') {
-            showPopupArea();
-          }
-          checkIcon.style.display = 'block';
-          rowItemImg.style.width = '60%';
-          rowItemImg.style.height = 'auto';
-          rowItemImg.style.right = '-20%';
-          rowItemImg.style.top = '-130%';
-          rowItemImg.classList.add('no-hover');
-          radio.checked = true;
-          lastSelectedItem = item;
-          selectedCategory.value = radio.value;
-        }
-
-      });
-    });
-
-    const $titles = $('.search-option-title');
-    let text = $(".dropdown-option-text");
-
-    $titles.on('click', function() {
-      if ($(this).is('.option-address__toggle-dropdown, .option-address__toggle-map')) {
-        $titles.removeClass('active');
-        hideAreaLayer();
-        deactiveCategory();
-        $(this).addClass('active');
-        showAddressOption();
-        showMapOption();
-
-        // Show or hide the dropdown text
-        if ($(this).is('.option-address__toggle-dropdown.active')) {
-          $texts.show();
-        } else {
-          $texts.hide();
-        }
-      }
-    });
-
-    $('.option-category__toggle').on('click', function() {
-      activeCategory();
-      removeActiveArea();
-      showAreaLayer();
-    });
   });
-
-
-  function toggleSelect() {
-    let dropDown = document.querySelector('.reChosen-dropdown');
-    if (dropDown.style.display !== 'block') {
-      dropDown.style.display = 'block';
-    } else {
-      dropDown.style.display = 'none';
-    }
-  }
-
-  function activeCategory() {
-    $('#search-option-category-parent').addClass('active');
-    $('#search-option-category').addClass('category-enabled');
-    $('.layer-category').hide();
-  }
-
-  function deactiveCategory() {
-    $('#search-option-category-parent').removeClass('active');
-    $('#search-option-category').removeClass('category-enabled');
-    $('.layer-category').show();
-  }
-
-  function removeActiveArea() {
-    // query all elements with class 'search-option-title option-address__toggle-dropdown' && 'search-option-title option-address__toggle-map', then remove class 'active'
-    const addressDropdown = $('.search-option-title.option-address__toggle-dropdown');
-    const addressMap = $('.search-option-title.option-address__toggle-map');
-    if (addressDropdown.length) {
-      addressDropdown.removeClass('active');
-    }
-    if (addressMap.length) {
-      addressMap.removeClass('active');
-    }
-  }
-
-  function showAreaLayer() {
-    $('.layer-dropdown-and-map.blur-part2').show();
-  }
-
-  function hideAreaLayer() {
-    $('.layer-dropdown-and-map.blur-part2').hide();
-  }
-
-  function showAddressOption() {
-    const $options = $('.search-option-title.option-address__toggle-dropdown');
-    const activeNoPopup = $options.filter('.active').not('.address_popup_area').length > 0;
-    const activeMap = $options.filter('.active.address_popup_area').length > 0;
-
-    if (activeNoPopup) {
-      $('.option-address').css('display', 'grid');
-    } else if (activeMap) {
-      // $('#popup-area-layer .option-address').css('display', 'grid');
-      $('.option-address').each(function() {
-        $(this).show();
-      });
-    } else {
-      const addr = $('.option-address');
-      addr.each(function() {
-        $(this).hide();
-      });
-    }
-  }
-
-  function showMapOption() {
-    const addressOption = $('.search-option-title.option-address__toggle-map');
-
-    const activeNoPopup = addressOption.filter('.active').not('.map_popup_area').length > 0;
-    const activeMap = addressOption.filter('.active.map_popup_area').length > 0;
-    if (activeNoPopup) {
-      $('#clickable-map').css('display', 'grid');
-    } else if (activeMap) {
-      $('#clickable-map').show();
-      $('#popup-area-layer #clickable-map').show()
-    } else {
-      $('#clickable-map').hide();
-      $('#popup-area-layer #clickable-map').hide();
-    }
-  }
-
-  function addressPopActive() {
-    $('.option-address__toggle-dropdown.address_popup_area').addClass('active');
-    showAddressOption();
-  }
 </script>
