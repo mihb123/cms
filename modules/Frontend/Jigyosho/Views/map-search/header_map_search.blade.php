@@ -111,8 +111,8 @@
               <div class="nav-two">
 
                 <!-- start item two  -->
-                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=訪問医師">/変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=訪問医師">
+                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=訪問医師">/変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=訪問医師">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -132,8 +132,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=訪問看護師">/ 変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=訪問看護師">
+                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=訪問看護師">/ 変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=訪問看護師">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -153,8 +153,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php //<<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=訪問介護士"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=訪問介護士">
+                <?php //<<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=訪問介護士"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=訪問介護士">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -174,8 +174,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php //<<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=訪問入浴"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=訪問入浴">
+                <?php //<<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=訪問入浴"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=訪問入浴">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -195,8 +195,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=公共相談所"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=公共の相談所">
+                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=公共相談所"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=公共の相談所">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -216,8 +216,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=専門相談員"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=専門相談員（無料）">
+                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=専門相談員"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=専門相談員（無料）">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -237,8 +237,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=訪問リハビリ"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=訪問リハビリ">
+                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=訪問リハビリ"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=訪問リハビリ">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -258,8 +258,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=福祉用具（ベッド他）"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=福祉用具（ベッド他）">
+                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=福祉用具（ベッド他）"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=福祉用具（ベッド他）">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -279,8 +279,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=訪問薬局"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=訪問薬局">
+                <?php //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=訪問薬局"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=訪問薬局">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -300,8 +300,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php  //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=あん摩・鍼灸"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=あん摩・鍼灸">
+                <?php  //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=あん摩・鍼灸"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=あん摩・鍼灸">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -320,8 +320,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php  //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=夜間対応訪問介護"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=夜間対応訪問介護">
+                <?php  //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=夜間対応訪問介護"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=夜間対応訪問介護">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">
@@ -341,8 +341,8 @@
                 <!-- end item two  -->
 
                 <!-- start item two  -->
-                <?php  //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1.php?search_category=定期巡回"> //変更 (@ edited by a.u  2023.7.20)  ?>
-                <a class="nav-item" href="../jigyosho/TopNarrow-1.php?search_category=定期巡回">
+                <?php  //<a class="nav-item" href="https://test01.lifestar.co.jp/TopNarrow-1?search_category=定期巡回"> //変更 (@ edited by a.u  2023.7.20)  ?>
+                <a class="nav-item" href="../jigyosho/TopNarrow-1?search_category=定期巡回">
                   <div class="data-menu">
                     <div class="nav-item__line"></div>
                     <div class="nav-item__content">

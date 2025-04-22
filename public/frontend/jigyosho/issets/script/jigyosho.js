@@ -46,7 +46,6 @@ function showAddressOption() {
   if (activeNoPopup) {
     $('.option-address').css('display', 'grid');
   } else if (activeMap) {
-    // $('#popup-area-layer .option-address').css('display', 'grid');
     $('.option-address').each(function () {
       $(this).show();
     });
@@ -151,9 +150,14 @@ function showDropdownPop() {
   divParent.find('.option-address__check-box').show();
 }
 
+function hideDropdownPop() {
+  const divParent = $('.option-address__toggle').closest('.option-address.address_popup_area');
+  divParent.find('.option-address__arrow-icon').hide();
+  divParent.find('.option-address__check-box').hide();
+}
+
 function hideDropdown() {
-  const selected = $('input[name="cb_addr21"]:checked').not('.popup_area');
-  const divParent = selected.closest('.option-address__toggle');
+  const divParent = $('.option-address__toggle').closest('.option-address').not('.address_popup_area');
   divParent.find('.option-address__arrow-icon').hide();
   divParent.find('.option-address__check-box').hide();
 }

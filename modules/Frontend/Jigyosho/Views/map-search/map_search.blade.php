@@ -1,8 +1,7 @@
-@extends('jigyosho::layout_map_search')
-@section('title', 'Trang chủ - Life Star')
+@extends('jigyosho::map-search.layout_map_search')
 @section('content')
 <form id="swms_form" name="swms_form">
-  @include('jigyosho::partials.menu_search_category')
+  @include('jigyosho::map-search.menu_search_category')
 
   <!-- banner start -->
   <div class="banner">
@@ -29,7 +28,7 @@
         </ul>
       </div>
       <!-- End Address box -->
-      @include('jigyosho::partials.map_search_menu')
+      @include('jigyosho::map-search.map_search_menu')
     </div>
   </div>
 </form>

@@ -59,7 +59,6 @@ class MapService
             }
         }
         
-        // Fetch data based on svc_type
         switch ($svc_type) {
             case 'clo':
                 $res = $this->mapDataRepository->getCloData($lat, $lng, $dist, $address_2);
@@ -151,7 +150,6 @@ class MapService
         $icon_pop_cont = [];
         $icon_category = "<span class=\"icon-category\">[" . htmlspecialchars($search_category) . "]</span><br>";
         foreach ($rows as $index => $row) {
-            // Default field names and link base
             $lat_field = 'locat_latitd';
             $lng_field = 'locat_longtd';
             $name_field = 'inst_nm';
@@ -159,7 +157,6 @@ class MapService
             $link_base = "/public_counseling/?sral_no=";
             $extra_content = '';
 
-            // Customize based on service type
             if ($svc_type == "clo") {
                 // Counseling: defaults are fine
             } elseif ($svc_type == "doc") {
@@ -205,13 +202,11 @@ class MapService
                 }                
             }
             
-            // Common logic for all service types
             $icon_lat[$index] = (float) $row->$lat_field;
             $icon_lng[$index] = (float) $row->$lng_field;
             $icon_title = htmlspecialchars($row->$name_field);
             $icon_office_name = "<span>" . $icon_title . "</span><br>";
             
-            // Use default link if not already set
             if (!isset($icon_link)) {
                 $icon_link = "<div class=\"icon-link\"><a href=\"../" . $subdir . $link_base . $row->$id_field . "&pref=" . $pref . "\" class=\"icon-link\">詳しく見る >></a> </div>";
             }            
@@ -240,5 +235,19 @@ class MapService
             default:
                 return "/officedetails.html";
         }
+    }
+
+    public function getAllData()
+    {                                                         // debug result:
+        $dataClo = $this->mapDataRepository->getAllCloData(); // 662 units
+        $dataKyo = $this->mapDataRepository->getAllKyoData(); // 29 units
+        $dataDoc = $this->mapDataRepository->getAllDocData(); // 68 units
+        $dataPhm = $this->mapDataRepository->getAllPhmData(); // 5001 units
+        $dataMsg = $this->mapDataRepository->getAllMsgData(); // 950 units
+        $dataGeneral = $this->mapDataRepository->getAllGeneralData(); // 3000 units
+        $dataYog = $this->mapDataRepository->getAllYogData(); // 6 units
+        
+        $total = count($dataClo) + count($dataKyo) + count($dataDoc) + count($dataPhm) + count($dataMsg) + count($dataGeneral) + count($dataYog);
+        return $total;        
     }
 }

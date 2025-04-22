@@ -3,7 +3,14 @@
 @section('title', 'Homepage - Life Star')
 
 @section('content')
-
+  <div class="top-nav-custom">
+    <div class="background-rect"></div>
+    <div class="top-bar"></div>
+    <div class="left-bar"></div>
+    <div class="text-content">
+      療養生活を支えてくれる医療･介護･暮らしの支援事業者を探す
+    </div>
+  </div>
   <div class="top-img-container">
     <div class="top-img"></div>
   </div>
@@ -16,7 +23,7 @@
         <div class="dropdown-option-text">
           <div class="dropdown-option-text-1">東京都の療養支援事業者数</div>
           <div class="dropdown-option-text-2">
-            <div>4,830</div>
+            <div>{{number_format($facilities)}}</div>
             <div>件</div>
           </div>
         </div>
@@ -297,8 +304,8 @@
     @include('jigyosho::partials.area-popup')
 
 
-    <div class="search-option" id="search-option-category-parent">
-      <div id="search-option-category">
+    <div class="search-option active" id="search-option-category-parent">
+      <div id="search-option-category" class="category-enabled">
         {{-- <div class="layer-category blur-part1"></div> --}}
         <div class="vertical-line"></div>
         <div class="search-option-title option-category__toggle">
@@ -342,7 +349,7 @@
 
 
   <div class="option-category-container">
-    <div class="layer-category blur-part1"></div>
+    {{-- <div class="layer-category blur-part1"></div> --}}
     <div class="option-category-row">
       <div class="option-category-label">相談所）</div>
       <ul class="option-category-row-list-item">
@@ -479,6 +486,43 @@
             src="{{ asset('frontend/jigyosho/issets/images/sidebar/icon-Home-massage.png') }}" alt=""
             class="">
         </li>
+        <li class="option-category-row-item">
+          <div class="square-box"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="25.991"
+              height="21.469" viewBox="0 0 25.991 21.469">
+              <path id="check_1_" data-name="check (1)"
+                d="M27.062,10.823c-4.78,1.569-10.873,5.765-16.492,12.953l-3.32-3.685a1.327,1.327,0,0,0-1.97,0L2.834,22.828a1.31,1.31,0,0,0,.073,1.824l7.516,7.225a1.34,1.34,0,0,0,2.08-.328A62.9,62.9,0,0,1,28.12,12.684a1.1,1.1,0,0,0-1.058-1.861Z"
+                transform="translate(-2.5 -10.766)" fill="#ffb1bf" />
+            </svg>
+          </div>
+          <div class="option-category-row-item-data">
+            <span class="option-category-row-item-data-1">定期巡回・随時対応</span>
+            <br>
+            <span class="option-category-row-item-data-2">昼夜問わず対応の訪問看護介護 </span>
+          </div>
+          <input type="radio" value="定期巡回" name="category-option" style="display:none;">
+          <img class="option-category-row-item-img"
+            src="{{ asset('frontend/jigyosho/issets/images/sidebar/icon-Home-term-care.png') }}" alt=""
+            class="">
+        </li>
+        <li class="option-category-row-item">
+          <div class="square-box"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="25.991"
+              height="21.469" viewBox="0 0 25.991 21.469">
+              <path id="check_1_" data-name="check (1)"
+                d="M27.062,10.823c-4.78,1.569-10.873,5.765-16.492,12.953l-3.32-3.685a1.327,1.327,0,0,0-1.97,0L2.834,22.828a1.31,1.31,0,0,0,.073,1.824l7.516,7.225a1.34,1.34,0,0,0,2.08-.328A62.9,62.9,0,0,1,28.12,12.684a1.1,1.1,0,0,0-1.058-1.861Z"
+                transform="translate(-2.5 -10.766)" fill="#ffb1bf" />
+            </svg>
+          </div>
+          <div class="option-category-row-item-data">
+            <span class="option-category-row-item-data-1">夜間対応訪問介護</span>
+            <br>
+            <span class="option-category-row-item-data-2">夜間対応型の訪問介護</span>
+          </div>
+          <input type="radio" value="夜間対応訪問介護" name="category-option" style="display:none;">
+          <img class="option-category-row-item-img"
+            src="{{ asset('frontend/jigyosho/issets/images/sidebar/icon-Home-night-care.png') }}" alt=""
+            class="">
+        </li>
+
       </ul>
     </div>
 
@@ -549,7 +593,6 @@
   <!-- section01 end-->
   </div>
   @include('jigyosho::partials.popup')
-  {{-- @include('jigyosho::partials.confirm-action') --}}
 @endsection
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -597,7 +640,7 @@
 
       $('#selected-area').val(textValue);
       removeAddressOption();
-
+      $('.search-option-title.option-address__toggle-map').not('.map_popup_area').removeClass('active');
       $('.text-address, #clickable-map, .layer-category').hide();
       $('.search-map-or-dropdown-result').show();
 
@@ -643,11 +686,11 @@
       if ($(this).is('.option-address__toggle-dropdown, .option-address__toggle-map')) {
         $titles.removeClass('active');
         hideAreaLayer();
-        deactiveCategory();
+        hideDropdown()
+        hideDropdownPop();
         $(this).addClass('active');
         showAddressOption();
         showMapOption();
-
         // Show or hide the dropdown text
         if ($(this).is('.option-address__toggle-dropdown.active')) {
           text.show();
@@ -655,12 +698,6 @@
           text.hide();
         }
       }
-    });
-
-    $('.option-category__toggle').on('click', function() {
-      activeCategory();
-      removeActiveArea();
-      showAreaLayer();
     });
 
     const selectedCategory = document.getElementById('selected-category');
@@ -690,7 +727,6 @@
                 }
                 item.appendChild(newTag);
               });
-              document.querySelector('.option-category-container').style.backgroundColor = '#f5f5f5';
               if (selectedCategory.value !== '') {
                 showPopup();
               }
@@ -739,6 +775,32 @@
           return currentValue;
         }
       });
+    });
+
+    $('button[class="nav-item"]').on('click', function() {
+      const url = $(this).data('url');
+      const inputs = $('input[type="radio"]');
+      const radio = $(inputs).filter(function() {
+        return $(this).val() == url;
+      });
+
+      const divParant = radio.closest('.option-category-row-item');
+      const rowItemImg = divParant.find('.option-category-row-item-img');
+      const checkIcon = divParant.find('.check-icon');
+      resetCategoryOption();
+      if ($('#selected-area').val() == '' && radio.length > 0) {
+        showPopupArea();
+        addressPopActive();
+      }
+      checkIcon.show();
+      rowItemImg.css({
+        width: '60%',
+        height: 'auto',
+        right: '-20%',
+        top: '-130%'
+      }).addClass('no-hover');
+      radio.prop('checked', true);
+      $('#selected-category').val(radio.val());
     });
   });
 </script>

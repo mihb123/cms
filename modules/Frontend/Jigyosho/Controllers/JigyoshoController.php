@@ -1,5 +1,4 @@
 <?php
-
 namespace Modules\Frontend\Jigyosho\Controllers;
 
 use Illuminate\Http\Request;
@@ -9,7 +8,7 @@ class JigyoshoController extends Controller
 {
     protected $mapService;
 
-    public function __construct(MapService $mapService) 
+    public function __construct(MapService $mapService)
     {
         $this->mapService = $mapService;
     }
@@ -39,7 +38,7 @@ class JigyoshoController extends Controller
             '杉並区',
             '台東区',
             '豊島区',
-            '文京区'
+            '文京区',
         ];
 
         $cities = [
@@ -68,7 +67,7 @@ class JigyoshoController extends Controller
             "町田市",
             "三鷹市",
             "武蔵野市",
-            "武蔵村山市"
+            "武蔵村山市",
         ];
 
         $towns = [
@@ -76,7 +75,7 @@ class JigyoshoController extends Controller
             '日の出町',
             '奥多摩町',
             '瑞穂町',
-            '八丈町'
+            '八丈町',
         ];
 
         $villages = [
@@ -87,7 +86,7 @@ class JigyoshoController extends Controller
             '新島村',
             '三宅村',
             '神津島村',
-            '檜原村'
+            '檜原村',
         ];
 
         $address2List = [
@@ -152,9 +151,10 @@ class JigyoshoController extends Controller
             '御蔵島村',
             '八丈町',
             '青ヶ島村',
-            '小笠原村'
+            '小笠原村',
         ];
-        
+
+        $facilities = $this->mapService->getAllData();
 
         return view('jigyosho::index', compact([
             'districts',
@@ -162,31 +162,32 @@ class JigyoshoController extends Controller
             'towns',
             'villages',
             'address2List',
+            'facilities',
         ]));
     }
-    public function map_search(Request $request)  
+    public function map_search(Request $request)
     {
-        $param = request()->all();        
-        $data = $this->mapService->getMapData($param);
-        if (!is_array($data)) {
+        $param = request()->all();
+        $data  = $this->mapService->getMapData($param);
+        if (! is_array($data)) {
             return response()->json(['error' => 'Invalid data'], 404);
         }
         $result = $this->mapService->getPopupData($data['search_category'], $data['data']);
 
-        return view('jigyosho::map_search', [
-            'address_1' => "東京都",
-            'address_2' => $data['address_2'],
-            'address_3' => $data['address_3'],
+        return view('jigyosho::map-search.map_search', [
+            'address_1'       => "東京都",
+            'address_2'       => $data['address_2'],
+            'address_3'       => $data['address_3'],
             'address_2_onMap' => $data['address_2_onMap'],
             'address_3_onMap' => $data['address_3_onMap'],
-            'lat' => $data['lat'],
-            'lng' => $data['lng'],
-            'dist' => $data['dist'],
+            'lat'             => $data['lat'],
+            'lng'             => $data['lng'],
+            'dist'            => $data['dist'],
             'search_category' => $data['search_category'],
-            'icon_lat' => $result['icon_lat'],
-            'icon_lng' => $result['icon_lng'],
-            'icon_pop_cont' => $result['icon_pop_cont'],
-            'iconClass' => $data['iconClass'],
+            'icon_lat'        => $result['icon_lat'],
+            'icon_lng'        => $result['icon_lng'],
+            'icon_pop_cont'   => $result['icon_pop_cont'],
+            'iconClass'       => $data['iconClass'],
         ]);
     }
 }

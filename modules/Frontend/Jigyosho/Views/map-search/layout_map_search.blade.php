@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="/android-chrome-192x192.png">
 </head>
 <body>
-  @include('jigyosho::partials.header_map_search')
+  @include('jigyosho::map-search.header_map_search')
 
   @yield('content')
 

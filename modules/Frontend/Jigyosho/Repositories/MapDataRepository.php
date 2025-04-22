@@ -131,7 +131,6 @@ class MapDataRepository
   }
   public function getYogData($lat, $lng, $dist, $address_2)
   {
-    // Fetch sales data (販)
     $svc_type_han = '販';
     $rows_han = DB::table($this->tbl_dtlLoctn_yog . ' AS tbl_1')
       ->join($this->tbl_infMng_yog . ' AS tbl_2', function ($join) {
@@ -151,7 +150,6 @@ class MapDataRepository
       ->get()
       ->toArray();
 
-    // Fetch rental data (貸)
     $svc_type_tai = '貸';
     $rows_tai = DB::table($this->tbl_dtlLoctn_yog . ' AS tbl_1')
       ->join($this->tbl_infMng_yog . ' AS tbl_2', function ($join) {
@@ -183,18 +181,15 @@ class MapDataRepository
       // Check if this office also offers rental
       foreach ($rows_tai as $tai_index => $row_tai) {
         if ($offc_no_han === (string) $row_tai->offc_no) {
-          $yog_patern3[] = $offc_no_han; // Offices offering both
-          // Remove this office from rental rows to avoid duplication
+          $yog_patern3[] = $offc_no_han; 
           unset($rows_tai_adjusted[$tai_index]);
           break;
         }
       }
     }
 
-    // Re-index the adjusted rental rows
     $rows_tai_adjusted = array_values($rows_tai_adjusted);
 
-    // Merge results
     $rows = array_merge($rows_han, $rows_tai_adjusted);
 
     return [
@@ -202,5 +197,102 @@ class MapDataRepository
       'yog_patern1' => $yog_patern1,
       'yog_patern3' => $yog_patern3,
     ];
+  }
+
+  public function getAllCloData()
+  {
+    return DB::table($this->tbl_snrCtznCnslCntr)
+      ->whereNotNull('addrs')
+      ->get();
+  }
+
+  public function getAllKyoData()
+  {
+    $svc_type = '居';
+    return DB::table($this->tbl_dtlLoctn_kyo . ' AS tbl_1')
+      ->join($this->tbl_infMng_kyo . ' AS tbl_2', function ($join) {
+        $join->on('tbl_1.offc_no', '=', 'tbl_2.offc_no')
+          ->on('tbl_1.svc_type', '=', 'tbl_2.svc_type');
+      })
+      ->where('tbl_1.svc_type', $svc_type)
+      ->whereNotNull('offc_locat_1')
+      ->get();
+  }  
+
+  public function getAllDocData()
+  {
+    return DB::table($this->tbl_vst_doc . ' as tbl_1')
+    ->join($this->tbl_medInstMdcl . ' as tbl_2', 'tbl_1.inst_cd', '=', 'tbl_2.inst_cd')
+    ->whereNotNull('tbl_2.addrs')
+    ->get();    
+  }  
+ 
+  public function getAllPhmData()
+  {
+    return DB::table($this->tbl_medInstTblPhrmcy)
+      ->whereNotNull('addrs')
+      ->get();
+  }  
+
+  public function getAllMsgData()
+  {
+    return DB::table($this->tbl_hariKyuAnma)
+      ->whereNotNull('addrs')
+      ->where('vist_spec_flg', '○')
+      ->get();
+  }  
+
+  public function getAllGeneralData()
+  {
+    return DB::table($this->tbl_dtlLoctn . ' AS tbl_1')
+      ->join($this->tbl_infMng . ' AS tbl_2', function ($join) {
+        $join->on('tbl_1.offc_no', '=', 'tbl_2.offc_no')
+          ->on('tbl_1.svc_type', '=', 'tbl_2.svc_type');
+      })
+      ->whereNotNull('offc_locat_1')
+      ->get();
+  }
+
+  public function getAllYogData()
+  {
+    $svc_type_han = '販';
+    $rows_han = DB::table($this->tbl_dtlLoctn_yog . ' AS tbl_1')
+      ->join($this->tbl_infMng_yog . ' AS tbl_2', function ($join) {
+        $join->on('tbl_1.offc_no', '=', 'tbl_2.offc_no')
+          ->on('tbl_1.svc_type', '=', 'tbl_2.svc_type');
+      })
+      ->where('tbl_1.svc_type', $svc_type_han)
+      ->whereNotNull('offc_locat_1')
+      ->get()
+      ->toArray();
+
+    $svc_type_tai = '貸';
+    $rows_tai = DB::table($this->tbl_dtlLoctn_yog . ' AS tbl_1')
+      ->join($this->tbl_infMng_yog . ' AS tbl_2', function ($join) {
+        $join->on('tbl_1.offc_no', '=', 'tbl_2.offc_no')
+          ->on('tbl_1.svc_type', '=', 'tbl_2.svc_type');
+      })
+      ->where('tbl_1.svc_type', $svc_type_tai)
+      ->whereNotNull('offc_locat_1')
+      ->get()
+      ->toArray();
+
+    $rows_tai_adjusted = $rows_tai;
+
+    foreach ($rows_han as $index => $row_han) {
+      $offc_no_han = (string) $row_han->offc_no; 
+      // Check if this office also offers rental
+      foreach ($rows_tai as $tai_index => $row_tai) {
+        if ($offc_no_han === (string) $row_tai->offc_no) {
+          unset($rows_tai_adjusted[$tai_index]);
+          break;
+        }
+      }
+    }
+
+    $rows_tai_adjusted = array_values($rows_tai_adjusted);
+    $rows = array_merge($rows_han, $rows_tai_adjusted);
+
+    return $rows;
   }
 }

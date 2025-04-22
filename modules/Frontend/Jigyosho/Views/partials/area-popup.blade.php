@@ -21,7 +21,7 @@
     }
 
     .popup-area-layer .search-option-title {
-      background-color: rgb(255, 177, 191);
+      background-color: #E1E1E1;
     }
 
     @media (min-width: 1050px) {
@@ -103,10 +103,10 @@
         <div class="search-option-logo__text top-text">［Tokyo-東京］</div>
         <div class="dropdown-option-text">
           <div class="dropdown-option-text-1">東京都の療養支援事業者数</div>
-          <div class="dropdown-option-text-2">
+          {{-- <div class="dropdown-option-text-2">
             <div>4,830</div>
             <div>件</div>
-          </div>
+          </div> --}}
         </div>
       </div>
       <div class="search-option">
@@ -398,5 +398,3 @@
     </div>
   </div>
 </div>
-
-<script></script>
