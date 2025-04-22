@@ -102,7 +102,7 @@
                                     @endphp
 
                                     @foreach ($menuItems as $item)
-                                        <a class="nav-item" href="{{ asset("/TopNarrow-1.php?search_category={$item['url']}") }}">
+                                        <a class="nav-item" href="{{ asset("../jigyosho/TopNarrow-1?search_category={$item['url']}") }}">
                                             <div class="data-menu">
                                                 <div class="nav-item__line"></div>
                                                 <div class="nav-item__content">
