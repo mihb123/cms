@@ -71,6 +71,16 @@ function showMapOption() {
   }
 }
 
+function hideMapOption() {
+  const mapOption = $('.search-option-title.option-address__toggle-map');
+  const activeNoPopup = mapOption.filter('.active').not('.map_popup_area').length > 0;
+  const activeMap = mapOption.filter('.active.map_popup_area').length > 0;
+  if (activeNoPopup || activeMap) {
+    $('#clickable-map').hide();
+    $('#popup-area-layer #clickable-map').hide();
+  }
+}
+
 function addressPopActive() {
   $('.option-address__toggle-dropdown.address_popup_area').addClass('active');
   showAddressOption();
@@ -163,12 +173,11 @@ function hideDropdown() {
 }
 
 function showPopupArea() {
-  $("#popup-area-layer").css("display", "flex");
-  hideAreaLayer();
+  $("#popup-area-layer").addClass('active');
 }
 
 function hidePopupArea() {
-  $("#popup-area-layer").css("display", "none");
+  $("#popup-area-layer").removeClass('active');
 }
 
 function showPopup() {

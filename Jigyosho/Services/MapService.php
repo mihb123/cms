@@ -19,13 +19,12 @@ class MapService
     {
         $search_category = $param['search_category'] ?? '訪問医師';
         $address_2 = $param['address_2'] ?? '千代田区';
-        if (isset($param['address_3']) && strlen($param['address_3']) > 0) {
+        if(isset($param['address_3']) && strlen($param['address_3']) > 0) {
             $address_3 = trim($param['address_3']);
             $address_3_onMap = $address_3 . " 付近";
         } else {
-            $address_3 = '';
-        }
-        ;
+            $address_3 = '';                
+        };
         $dist = $param['dist'] ?? '10';
         $svc_type = $this->mapSearchCategoryToSvcType($search_category);
         if (empty($search_category) || empty($address_2)) {
@@ -59,7 +58,7 @@ class MapService
                 throw new \Exception("Failed to get coordinates for address: $address");
             }
         }
-
+        
         switch ($svc_type) {
             case 'clo':
                 $res = $this->mapDataRepository->getCloData($lat, $lng, $dist, $address_2);
@@ -83,10 +82,9 @@ class MapService
                 $res = $this->mapDataRepository->getGeneralData($lat, $lng, $dist, $address_2, $svc_type);
                 break;
         }
-        if (empty($res)) {
+        if(empty($res)) {
             return response()->json(['error' => 'No data found for the given parameters'], 404);
-        }
-        ;
+        };
         $iconClass = $this->checkIconClass($search_category);
         return ['data' => $res, 'lat' => $lat, 'lng' => $lng, 'address_2' => $address_2, 'address_2_onMap' => $address_2_onMap, 'address_3_onMap' => $address_3_onMap, 'address_3' => $address_3, 'iconClass' => $iconClass, 'dist' => $dist, 'search_category' => $search_category];
     }
@@ -94,18 +92,18 @@ class MapService
     private function checkIconClass($search_category)
     {
         $mapping = [
-            '公共の相談所' => 'marker_clo',
-            '専門相談員（無料）' => 'marker_kyo',
-            '訪問医師' => 'marker_doc',
-            '訪問介護士' => 'marker_kai',
-            '訪問看護師' => 'marker_kan',
-            '訪問リハビリ' => 'marker_rih',
-            '福祉用具（ベッド他）' => 'marker_yog',
-            '訪問入浴' => 'marker_nyu',
-            '訪問薬局' => 'marker_phm',
-            '定期巡回' => 'marker_tei',
-            '訪問介護夜間対応' => 'marker_yak',
-            '訪問マッサージ' => 'marker_msg',
+        '公共の相談所' => 'marker_clo',
+        '専門相談員（無料）' => 'marker_kyo',
+        '訪問医師' => 'marker_doc',
+        '訪問介護士' => 'marker_kai',
+        '訪問看護師' => 'marker_kan',
+        '訪問リハビリ' => 'marker_rih',
+        '福祉用具（ベッド他）' => 'marker_yog',
+        '訪問入浴' => 'marker_nyu',
+        '訪問薬局' => 'marker_phm',
+        '定期巡回' => 'marker_tei',
+        '訪問介護夜間対応' => 'marker_yak',
+        '訪問マッサージ' => 'marker_msg',
         ];
 
         if (isset($mapping[$search_category])) {
@@ -201,17 +199,17 @@ class MapService
                 } else {
                     $link_base = $this->getLinkBaseForSearchCategory($search_category);
                     $icon_link = "<div class=\"icon-link\"><a href=\"../" . $subdir . $link_base . "?offc_no=" . $row->offc_no . "&pref=" . $pref . "\" class=\"icon-link\">詳しく見る >></a> </div>";
-                }
+                }                
             }
-
+            
             $icon_lat[$index] = (float) $row->$lat_field;
             $icon_lng[$index] = (float) $row->$lng_field;
             $icon_title = htmlspecialchars($row->$name_field);
             $icon_office_name = "<span>" . $icon_title . "</span><br>";
-
+            
             if (!isset($icon_link)) {
                 $icon_link = "<div class=\"icon-link\"><a href=\"../" . $subdir . $link_base . $row->$id_field . "&pref=" . $pref . "\" class=\"icon-link\">詳しく見る >></a> </div>";
-            }
+            }            
             $icon_pop_cont[$index] = $icon_category . $icon_office_name . $extra_content . $icon_link;
         }
         return ['icon_lat' => $icon_lat, 'icon_lng' => $icon_lng, 'icon_pop_cont' => $icon_pop_cont];
@@ -241,6 +239,6 @@ class MapService
 
     public function countFacilities()
     {
-        return $total = $this->mapDataRepository->countAllDataExceptYog() + $this->mapDataRepository->countAllYogData();
+        return $total = $this->mapDataRepository->countAllDataExceptYog() + $this->mapDataRepository->countAllYogData();    
     }
 }

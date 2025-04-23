@@ -1,4 +1,71 @@
 {
-  "git.ignoreLimitWarning": true,
-  "bladeFormatter.format.indentSize": 2
+  "open-php-html-js-in-browser.selectedBrowser": "Chrome",
+  "[html]": {
+    "editor.defaultFormatter": "j69.ejs-beautify"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "workbench.tree.enableStickyScroll": false,
+  "editor.hover.sticky": false,
+  "editor.stickyScroll.enabled": false,
+  "emmet.syntaxProfiles": {
+    "html": {
+      "inline_break": 1
+    }
+  },
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "workbench.editor.empty.hint": "hidden",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "git.decorations.enabled": false,
+  "git.autofetch": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.enableSmartCommit": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "vscode-great-icons",
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "js-beautify.indent_with_tabs": true,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "cody.suggestions.mode": "autocomplete",
+  "cody.auth.externalProviders": [],
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+
+    //  "editor.autoClosingBrackets": "always",
+    //   "editor.autoClosingQuotes": "always",
+    //   "editor.autoSurround": "languageDefined",
+    //   "editor.formatOnType": true,
+    //   "editor.formatOnPaste": true,
+    //   "editor.formatOnSave": true,
+    //   "editor.tabSize": 2,
+    //   "editor.wordWrap": "on"
+  },
+  "editor.minimap.enabled": false,
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "editor.formatOnType": true,
+  "bladeFormatter.format.indentSize": 2,
+  "editor.formatOnPaste": true,
+  "workbench.startupEditor": "none",
+  "phpfmt.indent_with_space": 2,
+  "php.executablePath": "",
+  "php.inlayHints.types.lambdaParameter": false,
+  "php.inlayHints.insertOnDoubleClick": false,
+  "php.inlayHints.parameters.byReference": false,
+  "php.inlayHints.parameters.enabled": false,
+  "php.inlayHints.types.suppressVariableFromLiteral": false,
+  "php.inlayHints.types.return": false
 }
