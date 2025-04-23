@@ -156,20 +156,20 @@ class MapService
             $lng_field = 'locat_longtd';
             $name_field = 'inst_nm';
             $id_field = 'sral_no';
-            $link_base = "/public_counseling/?sral_no=";
+            $link_base = "/public_counseling.php/?sral_no=";
             $extra_content = '';
 
             if ($svc_type == "clo") {
                 // Counseling: defaults are fine
             } elseif ($svc_type == "doc") {
                 $id_field = 'inst_cd';
-                $link_base = "/home_doctor/?inst_cd=";
+                $link_base = "/home_doctor.php/?inst_cd=";
             } elseif ($svc_type == "phm") {
                 $id_field = 'inst_cd';
-                $link_base = "/home_pharmacist/?inst_cd=";
+                $link_base = "/home_pharmacist.php/?inst_cd=";
             } elseif ($svc_type == "msg") {
                 $id_field = 'item_nm';
-                $link_base = "/home_masseur/?item_nm=";
+                $link_base = "/home_masseur.php/?item_nm=";
                 $treat_str = "<span class=\"icon-msg-type\">施術種別：</span><span>";
                 if (!empty($row->hari_med_treat_mng)) {
                     $treat_str .= "「はり」";
@@ -192,11 +192,11 @@ class MapService
                     $svc_type_tai = '貸';
                     $svc_type_han = '販';
                     if (in_array($row->offc_no, $yog_patern3)) {
-                        $icon_link = "<div class=\"icon-link-yog\"><span class=\"icon-link-yog-title\">詳しく見る >>  </span><a href=\"../" . $subdir . "/welfareequipment_rent/?offc_no=" . $row->offc_no . "&pref=" . $pref . "&svc_type=" . urlencode($svc_type_tai) . "\" style=\"text-decoration: underline; color: blue;\">ﾚﾝﾀﾙ</a><span class=\"icon-link-yog-title\">  OR  </span><a href=\"../" . $subdir . "/welfareequipment_sales/?offc_no=" . $row->offc_no . "&pref=" . $pref . "&svc_type=" . urlencode($svc_type_han) . "\" style=\"text-decoration: underline; color: blue;\">販売</a></div>";
+                        $icon_link = "<div class=\"icon-link-yog\"><span class=\"icon-link-yog-title\">詳しく見る >>  </span><a href=\"../" . $subdir . "/welfareequipment_rent.php/?offc_no=" . $row->offc_no . "&pref=" . $pref . "&svc_type=" . urlencode($svc_type_tai) . "\" style=\"text-decoration: underline; color: blue;\">ﾚﾝﾀﾙ</a><span class=\"icon-link-yog-title\">  OR  </span><a href=\"../" . $subdir . "/welfareequipment_sales.php/?offc_no=" . $row->offc_no . "&pref=" . $pref . "&svc_type=" . urlencode($svc_type_han) . "\" style=\"text-decoration: underline; color: blue;\">販売</a></div>";
                     } elseif (in_array($row->offc_no, $yog_patern1)) {
-                        $icon_link = "<div class=\"icon-link-yog\"><span class=\"icon-link-yog-title\">詳しく見る >>  </span><a href=\"../" . $subdir . "/welfareequipment_sales/?offc_no=" . $row->offc_no . "&pref=" . $pref . "&svc_type=" . urlencode($svc_type_han) . "\" style=\"text-decoration: underline; color: blue;\">販売</a></div>";
+                        $icon_link = "<div class=\"icon-link-yog\"><span class=\"icon-link-yog-title\">詳しく見る >>  </span><a href=\"../" . $subdir . "/welfareequipment_sales.php/?offc_no=" . $row->offc_no . "&pref=" . $pref . "&svc_type=" . urlencode($svc_type_han) . "\" style=\"text-decoration: underline; color: blue;\">販売</a></div>";
                     } else {
-                        $icon_link = "<div class=\"icon-link-yog\"><span class=\"icon-link-yog-title\">詳しく見る >>  </span><a href=\"../" . $subdir . "/welfareequipment_rent/?offc_no=" . $row->offc_no . "&pref=" . $pref . "&svc_type=" . urlencode($svc_type_tai) . "\" style=\"text-decoration: underline; color: blue;\">レンタル</a></div>";
+                        $icon_link = "<div class=\"icon-link-yog\"><span class=\"icon-link-yog-title\">詳しく見る >>  </span><a href=\"../" . $subdir . "/welfareequipment_rent.php/?offc_no=" . $row->offc_no . "&pref=" . $pref . "&svc_type=" . urlencode($svc_type_tai) . "\" style=\"text-decoration: underline; color: blue;\">レンタル</a></div>";
                     }
                 } else {
                     $link_base = $this->getLinkBaseForSearchCategory($search_category);
@@ -221,19 +221,19 @@ class MapService
     {
         switch ($search_category) {
             case '専門相談員（無料）':
-                return "/consultation/";
+                return "/consultation.php/";
             case '訪問介護士':
-                return "/home_care/";
+                return "/home_care.php/";
             case '訪問看護師':
-                return "/home_nurse/";
+                return "/home_nurse.php/";
             case '訪問リハビリ':
-                return "/home_rehabilitation/";
+                return "/home_rehabilitation.php/";
             case '訪問入浴':
-                return "/bathing_care/";
+                return "/bathing_care.php/";
             case '定期巡回':
-                return "/nurseandcarer/";
+                return "/nurseandcarer.php/";
             case '訪問介護夜間対応':
-                return "/night_caregiver/";
+                return "/night_caregiver.php/";
             default:
                 return "/officedetails.html";
         }

@@ -1,8 +1,8 @@
 <footer class="ls-footer">
   <div class="wrapper_pc op">
     <a href="/" class="logo">
-      <img class="pc" src="frontend/assets/images/LSlogo-pctb.svg" alt="Life Star">
-      <img class="sp" src="frontend/assets/images/LSlogo-sp.svg" alt="Life Star">
+      <img class="pc" src="{{asset('frontend/assets/images/LSlogo-pctb.svg')}}" alt="Life Star">
+      <img class="sp" src="{{asset('frontend/assets/images/LSlogo-sp.svg')}}" alt="Life Star">
     </a>
     <ul class="ul01">
       <li class="li01">
