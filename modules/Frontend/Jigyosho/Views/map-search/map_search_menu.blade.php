@@ -23,7 +23,7 @@
           <input type="checkbox" id="address_2_box" />
           <ul id="address_2_list">
             @php
-            $json = file_get_contents(asset('frontend/jigyosho/json/city_13.json'));
+            $json = file_get_contents(public_path('frontend/jigyosho/json/city_13.json'));
                   // 文字エンコーディングの変換（文字化け対策）
                   $json = mb_convert_encoding($json, "UTF-8", "ASCII, JIS, UTF-8, EUC-JP, SJIS-WIN");
                   // JSONデータを連想配列に変換

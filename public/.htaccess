@@ -1,3 +1,7 @@
+AuthUserFile /home/minhchu1336/lifestar_cms_origin/public/.htpasswd
+AuthType Basic
+AuthName "Super Secret Site"
+Require valid-user
 <IfModule mod_rewrite.c>
    <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -16,12 +20,12 @@
     # ---------------------------
     # PRIORITIZE ASSET HANDLING RULES
     # ---------------------------
-    RewriteCond %{REQUEST_URI} ^/(fonts|officedetails|css|img|js|json|guide|issets|member|pages|topnarrow|about|consultation)/ [NC]
-    RewriteRule ^(.*)$ jigyosho/$1 [L]
+    # RewriteCond %{REQUEST_URI} ^/(fonts|officedetails|css|img|js|json|guide|issets|member|pages|topnarrow|about|consultation)/ [NC]
+    # RewriteRule ^(.*)$ jigyosho/$1 [L]
 
-    # Rule for /jigyosho
-    RewriteCond %{REQUEST_URI} ^/jigyosho/?$
-    RewriteRule ^jigyosho/?$ /index.php [L]
+    # # Rule for /jigyosho
+    # RewriteCond %{REQUEST_URI} ^/jigyosho/?$
+    # RewriteRule ^jigyosho/?$ /index.php [L]
 
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
