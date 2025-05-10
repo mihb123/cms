@@ -46,7 +46,6 @@ function showAddressOption() {
   if (activeNoPopup) {
     $('.option-address').css('display', 'grid');
   } else if (activeMap) {
-    // $('#popup-area-layer .option-address').css('display', 'grid');
     $('.option-address').each(function () {
       $(this).show();
     });
@@ -67,6 +66,16 @@ function showMapOption() {
     $('#clickable-map').show();
     $('#popup-area-layer #clickable-map').show()
   } else {
+    $('#clickable-map').hide();
+    $('#popup-area-layer #clickable-map').hide();
+  }
+}
+
+function hideMapOption() {
+  const mapOption = $('.search-option-title.option-address__toggle-map');
+  const activeNoPopup = mapOption.filter('.active').not('.map_popup_area').length > 0;
+  const activeMap = mapOption.filter('.active.map_popup_area').length > 0;
+  if (activeNoPopup || activeMap) {
     $('#clickable-map').hide();
     $('#popup-area-layer #clickable-map').hide();
   }
@@ -151,20 +160,24 @@ function showDropdownPop() {
   divParent.find('.option-address__check-box').show();
 }
 
+function hideDropdownPop() {
+  const divParent = $('.option-address__toggle').closest('.option-address.address_popup_area');
+  divParent.find('.option-address__arrow-icon').hide();
+  divParent.find('.option-address__check-box').hide();
+}
+
 function hideDropdown() {
-  const selected = $('input[name="cb_addr21"]:checked').not('.popup_area');
-  const divParent = selected.closest('.option-address__toggle');
+  const divParent = $('.option-address__toggle').closest('.option-address').not('.address_popup_area');
   divParent.find('.option-address__arrow-icon').hide();
   divParent.find('.option-address__check-box').hide();
 }
 
 function showPopupArea() {
-  $("#popup-area-layer").css("display", "flex");
-  hideAreaLayer();
+  $("#popup-area-layer").addClass('active');
 }
 
 function hidePopupArea() {
-  $("#popup-area-layer").css("display", "none");
+  $("#popup-area-layer").removeClass('active');
 }
 
 function showPopup() {

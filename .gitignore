@@ -36,8 +36,10 @@ public/js/plugins/bootstrap-v4-rtl/css/bootstrap.css.map
 public/frontend/assets/css/style.css
 public/frontend/assets/css/style.css.map
 
-/jigyosho_link
-/info_link
 
-public/jigyosho_link
-public/info_link
+/public/jigyosho
+public/info
+public/jigyosho-raw
+public/jigyosho
+info
+jigyosho_test.sql

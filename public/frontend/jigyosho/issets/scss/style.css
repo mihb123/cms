@@ -8382,6 +8382,10 @@ common - width: < $width-1
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.option-category-row-item.focus {
+  animation: changeInputColor 1.5s ease-in-out;
+}
+
 .option-category-row-item-img {
   height: 180%;
   width: 40%;
@@ -8405,6 +8409,7 @@ common - width: < $width-1
 
 .option-category-row-item:hover {
   background-color: #E9F3FD;
+  cursor: pointer;
 }
 
 .option-category-row-item .square-box {
@@ -8650,11 +8655,16 @@ common - width: < $width-1
 }
 
 .checkbox-item .check-icon {
-  top: -30%;
+  top: -10%;
   left: 10%;
   position: absolute;
+  width: 29px;
+  height: 25px;
 }
 
+.checkbox-item .check-icon path {
+  font-size: 200%;
+}
 
 /* -------------------------- */
 
@@ -8840,4 +8850,22 @@ common - width: < $width-1
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+@keyframes changeInputColor {
+  0% {
+    background-color: #E9F3FD;
+  }
+
+  33% {
+    background-color: #FFF;
+  }
+
+  66% {
+    background-color: #E9F3FD;
+  }
+
+  100% {
+    background-color: #FFF;
+  }
 }

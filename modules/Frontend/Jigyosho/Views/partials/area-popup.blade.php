@@ -1,18 +1,26 @@
 @verbatim
   <style>
     .popup-area-layer {
+      opacity: 0;
+      transform: translate(-50%, -20px);
+      transition: opacity 3s ease, transform 3s ease;
       display: none;
       justify-content: center;
       align-items: center;
       position: fixed;
       top: 50px;
       left: 50%;
-      transform: translate(-50%, 0%);
       width: 1349px;
       height: auto;
       background-color: rgba(0, 0, 0, 0.81);
       border-radius: 10px;
       z-index: 101;
+    }
+
+    .popup-area-layer.active {
+      display: block;
+      opacity: 1;
+      transform: translate(-50%, 0);
     }
 
     .popup-container {
@@ -21,7 +29,7 @@
     }
 
     .popup-area-layer .search-option-title {
-      background-color: rgb(255, 177, 191);
+      background-color: #E1E1E1;
     }
 
     @media (min-width: 1050px) {
@@ -103,10 +111,10 @@
         <div class="search-option-logo__text top-text">［Tokyo-東京］</div>
         <div class="dropdown-option-text">
           <div class="dropdown-option-text-1">東京都の療養支援事業者数</div>
-          <div class="dropdown-option-text-2">
+          {{-- <div class="dropdown-option-text-2">
             <div>4,830</div>
             <div>件</div>
-          </div>
+          </div> --}}
         </div>
       </div>
       <div class="search-option">
@@ -398,5 +406,3 @@
     </div>
   </div>
 </div>
-
-<script></script>
